@@ -1,0 +1,107 @@
+  https://www.bilibili.com/video/BV1DJ411J7kz
+  - Spring基础知识
+  - ...
+
+  https://www.bilibili.com/video/BV1BJ411t7Tb?p=1
+  - 微服务架构
+  - Spring IOC
+  - ...与上面重合
+
+  spring源码视频 https://www.bilibili.com/video/BV1GB4y1u7YR  3节课
+  - 面试金典题目的解析和原理
+  - Spring Framework 核心技术 IOC和AOP
+  - Spring Boot 难点和源码解析
+
+  Spring Boot技术难点源码剖析 https://www.bilibili.com/video/BV17i4y1N7Cd  1节课
+  - 高阶难点问题
+
+  Spring AOP深度解析 ---------------------------------------------------------
+  https://www.bilibili.com/video/BV1BJ411t7Tb?p=21
+  手写Spring AOP源码
+  https://www.bilibili.com/video/BV1r5411A7hZ?p=13
+
+  TODO: AOP动态代理的实现原理
+  https://cloud.tencent.com/developer/article/1461796
+  AOP源码 https://www.javadoop.com/post/spring-aop-source
+  Spring AOP 底层代理的实现，官方文档
+  https://docs.spring.io/spring-framework/docs/3.0.0.M3/reference/html/ch08s06.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------
+
+SpringBoot 究竟是如何跑起来的?  https://zhuanlan.zhihu.com/p/54146400
+
+spring boot之从零开始开发自己的网站 https://www.cnblogs.com/superfj/p/9044532.html
+Spring Boot Admin 2.1.1 发布 https://www.oschina.net/news/101796/spring-boot-admin-2-1-1-released
+
+SpringBoot系列教程之Bean加载顺序之错误  https://my.oschina.net/u/566591/blog/3123639
+Spring Boot 2.0 项目属性配置 ： https://my.oschina.net/jeffli1993/blog/3019656
+Spring Boot 2 快速教程：WebFlux 快速入门（二）  https://my.oschina.net/jeffli1993/blog/3047269
+SpringBoot入坑指南之六：使用过滤器或拦截器： https://my.oschina.net/centychen/blog/3018007
+
+Spring Boot项目模板       https://www.cnblogs.com/davenkin/p/spring-boot-template.html 
+Spring Boot 多环境配置    https://www.infoq.cn/article/Q-ese4CxV2IWmltsJcGX
+thymeleaf中的fragment使用 https://blog.csdn.net/liyanlei5858/article/details/80183409
+
+Spring Boot + Spring Cloud 实现权限管理系统 后端篇:  https://www.cnblogs.com/xifengxiaoma/p/9916363.html
+Spring Boot 工程集成全局唯一ID生成器: https://my.oschina.net/hansonwang99/blog/2906778
+
+Spring Boot集成Redis: 
+https://segmentfault.com/a/1190000011661209?utm_source=sf-similar-article
+https://segmentfault.com/a/1190000017151786
+
+Spring Cache 缓存使用方式 https://www.cnblogs.com/boboooo/p/11248145.html
+SpringBoot服务器压测对比 https://my.oschina.net/shyloveliyi/blog/2980868
+Java Web 应用程序中启用 Spring Security：https://www.infoq.cn/article/mB_xHKAHQL53l6GeCxBa
+Spring Boot引起的“堆外内存泄漏”排查及经验总结 https://tech.meituan.com/2019/01/03/spring-boot-native-memory-leak.html
+
+-------------------------------  
+补充Spring AOP的实现原理和逻辑
+-------------------------------
+
+20道Spring Boot面试题 https://mp.weixin.qq.com/s?__biz=MzI3ODcxMzQzMw==&mid=2247487373&idx=1&sn=afbcb1f7a008d6b06f3e8703c0255692&chksm=eb538abbdc2403ade208640df89ce0c023cc095c0a5260fcbec1877f74e78fbdcce0e7e97768&scene=21#wechat_redirect
+
+为什么需要代理模式？
+
+讲讲静态代理模式的优点及其瓶颈？
+
+对Java 接口代理模式的实现原理的理解？
+
+如何使用 Java 反射实现动态代理？
+
+Java 接口代理模式的指定增强？
+
+谈谈对Cglib 类增强动态代理的实现？
+
+point cut，advice，Join point是什么？
+
+join point 和 point cut 的区别？
+
+怎么理解面向切面编程的切面？
+
+谈谈对SpringAOP Weaving（织入）的理解？
+
+谈谈SpringAOP Introduction（引入）的理解？
+
+讲解OOP与AOP的简单对比？
+
+讲解JDK 动态代理和 CGLIB 代理原理以及区别？
+
+讲解Spring 框架中基于 Schema 的 AOP 实现原理？
+
+讲解Spring 框架中如何基于 AOP 实现的事务管理？
+
+谈谈对控制反转的设计思想的理解？
+
+怎么理解 Spring IOC 容器？
