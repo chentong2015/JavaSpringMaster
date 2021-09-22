@@ -1,4 +1,8 @@
-package ioc;
+package spring_ioc;
+
+import config.AppConfig;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import spring_ioc.model.MyBean;
 
 // Spring IOC: 依赖注入 --> 控制反转
 // 1. 谁控制谁: IOC容器控制bean的声明周期
@@ -17,14 +21,12 @@ public class BaseSpringIOC {
     // @DependsOn
     // @Scope
 
-    // IOC Container: 完成一序列功能的一系列组件共同构成IOC容器，都在BeanFactory中
+    // TODO: IOC Container，完成一序列功能的一系列组件共同构成IOC容器，都在BeanFactory中
     // BeanDefinitionMap
     // SingletonObjects  单例缓存池
     // BeanPostProcess
     // ...
-
-    // 父子容器: Spring整合Spring MVC时的概念
-
+    
     // 后置处理器BeanPostProcessors
     // 1. 通过后置处理器在对象初始化前后，修改对象的属性值和特征
     //    applyBeanPostProcessorsBeforeInitialization
@@ -36,4 +38,10 @@ public class BaseSpringIOC {
     // @PostConstruct
     // @PreDestroy
 
+    // 源码分析入口: Spring Beans + Spring Context
+    public static void main(String[] args) {
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+        MyBean bean = context.getBean(MyBean.class);
+        bean.print();
+    }
 }

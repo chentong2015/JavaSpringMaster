@@ -1,15 +1,14 @@
 <web-app>
 
-    <!-- TODO: 初始化IoC父容器 -->
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
     </listener>
+
     <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>/WEB-INF/app-context.xml</param-value>
     </context-param>
 
-    <!-- TODO: 初始化Web子容器: 避免和上面造成"两次扫描", 浪费内存 -->
     <servlet>
         <servlet-name>app</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
@@ -24,4 +23,5 @@
         <servlet-name>app</servlet-name>
         <url-pattern>/app/*</url-pattern>
     </servlet-mapping>
+
 </web-app>

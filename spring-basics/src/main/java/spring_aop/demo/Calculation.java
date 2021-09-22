@@ -1,4 +1,4 @@
-package aop.demo;
+package spring_aop.demo;
 
 public interface Calculation {
 
