@@ -26,13 +26,13 @@ public class BaseSpringIOC {
     // SingletonObjects  单例缓存池
     // BeanPostProcess
     // ...
-    
-    // 后置处理器BeanPostProcessors
+
+    // bean的后置处理器BeanPostProcessors
     // 1. 通过后置处理器在对象初始化前后，修改对象的属性值和特征
-    //    applyBeanPostProcessorsBeforeInitialization
-    //    invokeInitMethods(beanName, wrappedBean, mbd);
-    //    applyBeanPostProcessorsAfterInitialization
-    // 2.
+    // AbstractAutowireCapableBeanFactory.initializeBean()
+    //    applyBeanPostProcessorsBeforeInitialization()   初始化前
+    //    invokeInitMethods(beanName, wrappedBean, mbd);  初始化
+    //    applyBeanPostProcessorsAfterInitialization()    初始化后
 
     // interface InitializingBean生命周期的回调
     // @PostConstruct

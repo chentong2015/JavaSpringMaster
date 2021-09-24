@@ -34,4 +34,40 @@ public class AspectCalculation {
     }
 
     // @AfterThrowing(value="pointCut()")
+
+    // 最终的解析效果ReflectiveAspectJAdvisorFactory.getAdvice();
+    // TODO: 把切面的通知解析成对应的类型
+    // switch (aspectJAnnotation.getAnnotationType()) {
+    //	case AtPointcut:
+    //		if (logger.isDebugEnabled()) {
+    //			logger.debug("Processing pointcut '" + candidateAdviceMethod.getName() + "'");
+    //		}
+    //		return null;
+    //	case AtAround:
+    //		springAdvice = new AspectJAroundAdvice(candidateAdviceMethod, expressionPointcut, aspectInstanceFactory);
+    //		break;
+    //	case AtBefore:
+    //		springAdvice = new AspectJMethodBeforeAdvice(candidateAdviceMethod, expressionPointcut, aspectInstanceFactory);
+    //		break;
+    //	case AtAfter:
+    //		springAdvice = new AspectJAfterAdvice(candidateAdviceMethod, expressionPointcut, aspectInstanceFactory);
+    //		break;
+    //	case AtAfterReturning:
+    //		springAdvice = new AspectJAfterReturningAdvice(candidateAdviceMethod, expressionPointcut, aspectInstanceFactory);
+    //		AfterReturning afterReturningAnnotation = (AfterReturning) aspectJAnnotation.getAnnotation();
+    //		if (StringUtils.hasText(afterReturningAnnotation.returning())) {
+    //			springAdvice.setReturningName(afterReturningAnnotation.returning());
+    //		}
+    //		break;
+    //	case AtAfterThrowing:
+    //		springAdvice = new AspectJAfterThrowingAdvice(
+    //				candidateAdviceMethod, expressionPointcut, aspectInstanceFactory);
+    //		AfterThrowing afterThrowingAnnotation = (AfterThrowing) aspectJAnnotation.getAnnotation();
+    //		if (StringUtils.hasText(afterThrowingAnnotation.throwing())) {
+    //			springAdvice.setThrowingName(afterThrowingAnnotation.throwing());
+    //		}
+    //		break;
+    //	default:
+    //		throw new UnsupportedOperationException("Unsupported advice type on method: " + candidateAdviceMethod);
+    //	}
 }

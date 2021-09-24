@@ -21,7 +21,7 @@
   手写Spring AOP源码
   https://www.bilibili.com/video/BV1r5411A7hZ?p=13
 
-  TODO: AOP动态代理的实现原理
+  TODO: AOP动态代理的实现原理  ==>  interface AopProxy.getProxy()
   https://cloud.tencent.com/developer/article/1461796
   AOP源码 https://www.javadoop.com/post/spring-spring_aop-source
   Spring AOP 底层代理的实现，官方文档
