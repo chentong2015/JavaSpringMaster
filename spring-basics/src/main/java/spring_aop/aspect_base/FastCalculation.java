@@ -1,4 +1,6 @@
-package spring_aop.demo;
+package spring_aop.aspect_base;
+
+import org.springframework.aop.framework.AopContext;
 
 public class FastCalculation implements Calculation {
 
@@ -17,6 +19,8 @@ public class FastCalculation implements Calculation {
     @Override
     public int div(int num1, int num2) {
         System.out.println("Call div");
+        int value1 = ((Calculation) AopContext.currentProxy()).add(10, 10);
+        int value2 = this.add(10, 10);
         return 0;
     }
 }
