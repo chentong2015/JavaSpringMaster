@@ -2,15 +2,19 @@ package spring_aop.demo;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.*;
+import org.springframework.core.annotation.Order;
 
 // 将相同功能的非业务代码抽象到指定类型中
-// 拦截器调用的步骤:
-// 1. Before the method called: add
-// 2. Call add
-// 3. After returning of the method
-// 4. After the method called
+// 通过添加Order注解来指定多个切面的执行顺序，数值越大优先级越低，默认Integer.Max
 @Aspect
+@Order(value = 10)
 public class AspectCalculation {
+
+    // 拦截器调用的步骤:
+    // 1. Before the method called: add
+    // 2. Call add
+    // 3. After returning of the method
+    // 4. After the method called
 
     // 切入点：调用指定类型中的所有方法
     @Pointcut("execution(* spring_aop.demo.FastCalculation.*(..))")

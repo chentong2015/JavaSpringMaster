@@ -1,6 +1,7 @@
   https://www.bilibili.com/video/BV1DJ411J7kz 18小时
   - Spring IOC 基础知识
   - Spring AOP
+  -
 
 
   https://www.bilibili.com/video/BV1BJ411t7Tb?p=1
@@ -15,6 +16,9 @@
 
   Spring Boot技术难点源码剖析 https://www.bilibili.com/video/BV17i4y1N7Cd  1节课
   - 高阶难点问题
+
+  // 官方文档
+  https://docs.spring.io/spring-framework/docs/2.0.x/reference/aop.html
 
   Spring AOP深度解析 ---------------------------------------------------------
   https://www.bilibili.com/video/BV1BJ411t7Tb?p=21
