@@ -2,7 +2,7 @@ package spring_aop;
 
 import org.springframework.transaction.annotation.Transactional;
 
-// Spring AOP应用场景：
+// Spring AOP应用场景
 // 1. 做分布式事务
 // 2. 做分库分表
 public class SpringAopProject {

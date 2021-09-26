@@ -14,7 +14,7 @@ import spring_aop.aspect_base.model.Calculation;
 //      applyBeanPostProcessorsBeforeInitialization()    初始化前 ==> 解析切面，放到缓存中
 //      invokeInitMethods(beanName, wrappedBean, mbd);   初始化
 //      applyBeanPostProcessorsAfterInitialization()     初始化后
-
+ 
 // TODO: AOP如何解析切面 ?
 // BeanFactoryAspectJAdvisorsBuilder.buildAspectJAdvisors()
 // 1. 从容器中获取所有的bean进行遍历，从bean的名称中获取class对象，然后判断是否标注@Aspect注解，如果是则为切面类型
@@ -29,12 +29,12 @@ import spring_aop.aspect_base.model.Calculation;
 @EnableAspectJAutoProxy(proxyTargetClass = false, exposeProxy = false)
 public class EnableSpringAOP {
 
+    // 默认配置@EnableAspectJAutoProxy(proxyTargetClass = false)，不使用cglib代理，true表示使用
     // TODO: 使用了工厂模式和动态代理模式(两种)
     // 1. JdkDynamicAopProxy: 适用于代理的类型实现了接口
     //    Proxy.newProxyInstance(classLoader, this.proxiedInterfaces, this);
     // 2. CglibAopProxy: 适用于代理的类型没有实现接口
-    //    默认配置@EnableAspectJAutoProxy(proxyTargetClass = false)，不使用cglib代理，true表示使用
-    //
+    //    TODO: 基于"Asm字节码编辑技术"实现动态创建类，并且基于ClassLoader转载
     //    源码 DefaultAopProxyFactory.createAopProxy()
     //    @Override
     //	  public AopProxy createAopProxy(AdvisedSupport config) throws AopConfigException {

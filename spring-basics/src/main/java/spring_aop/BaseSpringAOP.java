@@ -7,8 +7,6 @@ import spring_aop.aspect_base.model.Calculation;
 // Spring AOP的底层实现
 // class com.sun.proxy.$Proxy20 创建的动态代理对象
 // Proxy20 extends Proxy implements Calculation 生成的动态代理类(class文件)必须实现指定接口
-
-
 public class BaseSpringAOP {
 
     // 源码分析入口: Spring AOP
