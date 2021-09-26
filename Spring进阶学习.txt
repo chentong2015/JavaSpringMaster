@@ -3,6 +3,8 @@
   - Spring AOP part01
   - Spring AOP part02
   - Spring transaction
+  - Spring整合Spring MVC
+  - Spring Boot
 
   https://www.bilibili.com/video/BV1BJ411t7Tb?p=1
   - 微服务架构
@@ -10,15 +12,11 @@
   - ...与上面重合
 
   spring源码视频 https://www.bilibili.com/video/BV1GB4y1u7YR  3节课
-  - 面试金典题目的解析和原理
-  - Spring Framework 核心技术 IOC和AOP
-  - Spring Boot 难点和源码解析
-
+    - 面试金典题目的解析和原理
+    - Spring Framework 核心技术 IOC和AOP
+    - Spring Boot 难点和源码解析
   Spring Boot技术难点源码剖析 https://www.bilibili.com/video/BV17i4y1N7Cd  1节课
-  - 高阶难点问题
-
-  // 官方文档
-  https://docs.spring.io/spring-framework/docs/2.0.x/reference/aop.html
+    - 高阶难点问题
 
   Spring AOP深度解析 ---------------------------------------------------------
   https://www.bilibili.com/video/BV1BJ411t7Tb?p=21

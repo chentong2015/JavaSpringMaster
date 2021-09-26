@@ -12,10 +12,13 @@
     <!-- TODO: 初始化Web子容器: 避免和上面造成"两次扫描", 浪费内存 -->
     <servlet>
         <servlet-name>app</servlet-name>
+        <!-- DispatcherServlet前端控制器 -->
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <init-param>
             <param-name>contextConfigLocation</param-name>
             <param-value></param-value>
+            <!-- 使用自定义的applicationContext.xml
+            <param-value>/WEB-INF/dispatcher-servlet.xml</param-value> -->
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
