@@ -5,7 +5,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import spring_aop.aspect_base.AspectFastCalculation;
-import spring_aop.aspect_base.FastCalculation;
+import spring_aop.aspect_base.model.FastCalculation;
 
 @Configuration // 主配置类，等效于beans.xml
 @EnableAspectJAutoProxy

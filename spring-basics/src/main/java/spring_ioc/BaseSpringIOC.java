@@ -9,6 +9,11 @@ import spring_ioc.model.MyBean;
 // 2. 控制什么: Bean(对象)
 // 3. 为什么要控制: 解耦，依赖抽象
 // 4. 那些方面反转: 创建的权利反转，交给容器来托管
+
+// Spring 依赖查找:
+// UserController {
+//   Map<String, IRule> 使用接口
+// }
 public class BaseSpringIOC {
 
     // ApplicationContext: 构建于Core和Bean之上

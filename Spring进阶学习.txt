@@ -1,8 +1,8 @@
   https://www.bilibili.com/video/BV1DJ411J7kz 18小时
   - Spring IOC 基础知识
-  - Spring AOP
+  - Spring AOP part01
+  - Spring AOP part02
   -
-
 
   https://www.bilibili.com/video/BV1BJ411t7Tb?p=1
   - 微服务架构

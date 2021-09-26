@@ -2,15 +2,13 @@ package spring_aop;
 
 import config.AppConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import spring_aop.aspect_base.Calculation;
+import spring_aop.aspect_base.model.Calculation;
 
 // Spring AOP的底层实现
 // class com.sun.proxy.$Proxy20 创建的动态代理对象
 // Proxy20 extends Proxy implements Calculation 生成的动态代理类(class文件)必须实现指定接口
 
-// Spring AOP应用场景：
-// 1. 做分布式事务
-// 2. 做分库分表
+
 public class BaseSpringAOP {
 
     // 源码分析入口: Spring AOP
@@ -30,7 +28,7 @@ public class BaseSpringAOP {
     //          AbstractAutoProxyCreator.postProcessBeforeInstantiation()
     //          AbstractAutoProxyCreator.createProxy()
     //          proxyFactory.getProxy(classLoader);
-    //          两种代理模式的使用f
+    //          两种代理模式的使用
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
         // 1. 拿到返回的代理对象
@@ -38,8 +36,4 @@ public class BaseSpringAOP {
         // 2. 通过代理对象调用目标方法
         int result = calculation.add(10, 10);
     }
-
-    // TODO: 代理对象如何调用到目标方法 ?
-    // 源码调用JdkDynamicAopProxy.invoke()
-    //
 }
