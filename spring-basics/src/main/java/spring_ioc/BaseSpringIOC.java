@@ -16,32 +16,15 @@ import spring_ioc.model.MyBean;
 // }
 public class BaseSpringIOC {
 
-    // ApplicationContext: 构建于Core和Bean之上
-    // 提供国际化，资源加载等高级支持，非延时加载
-    // (包含) BeanFactory: 实现基础的bean, 控制反转，延时加载
-
-    // beanDefinition 通过注解来描述bean的行为和信息
-    // AbstractBeanDefinition.java ==> 存放在BeanDefinitionMap
-    // @Lazy
-    // @DependsOn
-    // @Scope
-
-    // TODO: IOC Container，完成一序列功能的一系列组件共同构成IOC容器，都在BeanFactory中
-    // BeanDefinitionMap
+    // TODO: Spring IOC Container 是什么? 完成一序列功能的一系列组件共同构成IOC容器，都在BeanFactory中
+    // BeanDefinitionMap bean定义对象
     // SingletonObjects  单例缓存池
-    // BeanPostProcess
+    // BeanPostProcess   bean后置处理器的集合
     // ...
 
-    // bean的后置处理器BeanPostProcessors
-    // 1. 通过后置处理器在对象初始化前后，修改对象的属性值和特征
-    // AbstractAutowireCapableBeanFactory.initializeBean()
-    //    applyBeanPostProcessorsBeforeInitialization()   初始化前
-    //    invokeInitMethods(beanName, wrappedBean, mbd);  初始化
-    //    applyBeanPostProcessorsAfterInitialization()    初始化后
-
-    // interface InitializingBean生命周期的回调
-    // @PostConstruct
-    // @PreDestroy
+    // ApplicationContext:
+    // 1. 构建于Core和Bean之上，提供国际化，资源加载等高级支持，非延时加载
+    // 2. (包含) BeanFactory: 实现基础的bean, 控制反转，延时加载
 
     // 源码分析入口: Spring Beans + Spring Context
     public static void main(String[] args) {
