@@ -4,6 +4,7 @@
   - Spring AOP part02
   - Spring transaction
   - Spring整合Spring MVC
+  - Spring整合Mybatis
   - Spring Boot
 
   https://www.bilibili.com/video/BV1BJ411t7Tb?p=1
@@ -30,10 +31,7 @@
   https://docs.spring.io/spring-framework/docs/3.0.0.M3/reference/html/ch08s06.html
 
 
-
-
-
-
+  回顾之前项目JavaSpringBasic
 
 
 

@@ -1,5 +1,6 @@
 <web-app>
 
+    <!-- 注意不同的扫描策略的问题: service和dao是否扫描多次 -->
     <!-- TODO: 初始化IoC父容器 -->
     <listener>
         <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>

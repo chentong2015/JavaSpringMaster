@@ -6,14 +6,17 @@ import java.util.ServiceLoader;
 
 // TODO: 如何往容器中注入Web三大组件(servlet, listener, filter)
 // 1. 配置xml文件
-//    web.xml; dispatcher-servlet.xml
+//    web.xml;
+//    dispatcher-servlet.xml
 // 2. 使用特定的注解
-//    @WebServlet("/HomeServlet"); @WebListener; @WebFilter(value="/hello")
-// 3. SPI机制: 基于Servlet3.0规范
+//    @WebServlet("/HomeServlet");
+//    @WebListener;
+//    @WebFilter(value="/hello")
+// 3. SPI机制: 基于Servlet3.0规范//
 //    3.1 在/resources classpath路径下面配置指定的文件名称，使用接口的全路径
 //    3.2 在文件中配置使用的具体配置类型的全路径
 //    3.3 要求配置的类型必须有无参的构造器
-public class WebComponents {
+public class WebContainerComponents {
 
     // TODO: 通过ServiceLoader类读取前面配置的文件，将配置的类型通过反射创建对象
     public void testSPI() {
@@ -24,8 +27,10 @@ public class WebComponents {
         }
     }
 
-    // TODO: Spring Web如何整合Spring MVC(原始使用.xml配置文件)，以及启动流程
+    // TODO: Spring如何整合Spring MVC以及启动流程
     // 配置文件名称：javax.servlet.ServletContainerInitializer
+    // org.springframework.web.SpringServletContainerInitializer
+    //
     // @HandlesTypes(WebApplicationInitializer.class)
     // public class SpringServletContainerInitializer implements ServletContainerInitializer {
     //   TODO: 该方法在tomcat.startup启动时自动调用
@@ -61,6 +66,6 @@ public class WebComponents {
     //          //       WebAppInitializer中配置web的三大组件，等效于xml的配置
     //			initializer.onStartup(servletContext);
     //		}
-    //  }
+    //   }
     // }
 }
