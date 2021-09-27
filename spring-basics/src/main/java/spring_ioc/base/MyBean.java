@@ -1,4 +1,4 @@
-package spring_ioc.model;
+package spring_ioc.base;
 
 public interface MyBean {
 

@@ -5,7 +5,7 @@
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- 使用xml方式来配置Aspect
-    <bean id="aBean" class="spring_ioc.model.MyBeanImpl"/>
+    <bean id="aBean" class="spring_ioc.baseMyBeanImpl"/>
     <aop:config>
         <aop:aspect id="myAspect" ref="aBean"></aop:aspect>
         <spring_aop:pointcut id="businessService" expression="execution(* transfer(..))"/>
