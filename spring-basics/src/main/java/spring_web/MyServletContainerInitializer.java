@@ -1,14 +1,14 @@
-package spring_mvc.spi;
+package spring_web;
 
+// TODO: 自定义ServletContainerInitializer
 // @HandlesTypes(value = {IParseDoc.class})
-public class ServletContainInitializer { // implements ServletContainerInitializer
+public class MyServletContainerInitializer { // implements ServletContainerInitializer
 
-    // 1. Set<Class<?>> 集合包含了所有实现注解标注的接口的类型
-    // 2. 在tomcat.startup 启动的时候，会自动调用该方法
+    // 在容器中注册web的三大组件
     // public void onStartup(Set<Class<?>> set, ServletContext servletContext) {
     //     servletContext.addListener(AngleListener);
-    //     TODO: 在容器中注册web的三大组件
     //     ServletRegistration.Dynamic servletRegistration = servletContext.addServlet("angleServlet", new AngleServlet());
+    //     servletRegistration.addMapping("/angleServlet");
     //     FilterRegistration.Dynamic angleFilter = servletContext.addFilter("angleFilter", AngleFilter.class);
     //     angleFilter.addMappingForUrlPatterns(EnumSet.of(Dispatcher.REQUEST), true, "/*"):
     // }

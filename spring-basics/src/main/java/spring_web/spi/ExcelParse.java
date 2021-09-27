@@ -1,4 +1,4 @@
-package spring_mvc.spi.model;
+package spring_web.spi;
 
 public class ExcelParse implements IParseDoc {
 
