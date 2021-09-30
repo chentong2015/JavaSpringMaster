@@ -1,14 +1,14 @@
 <web-app>
-
-    <!-- 注意不同的扫描策略的问题: service和dao是否扫描多次 -->
-    <!-- TODO: 初始化IoC父容器 -->
-    <listener>
-        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
-    </listener>
     <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>/WEB-INF/app-context.xml</param-value>
     </context-param>
+
+    <!-- 注意不同的扫描策略的问题: service和dao是否扫描多次 -->
+    <!-- TODO: 初始化IoC父容器, ContextLoaderListener是用来启动IoC容器的 -->
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
 
     <!-- TODO: 初始化Web子容器: 避免和上面造成"两次扫描", 浪费内存 -->
     <servlet>

@@ -1,4 +1,4 @@
-package spring_web.spi;
+package spring_web.base;
 
 public interface IParseDoc {
     void parse();

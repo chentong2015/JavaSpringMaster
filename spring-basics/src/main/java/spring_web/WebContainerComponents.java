@@ -1,17 +1,16 @@
 package spring_web;
 
-import spring_web.spi.IParseDoc;
+import spring_web.base.IParseDoc;
 
 import java.util.ServiceLoader;
 
 // TODO: 如何往容器中注入Web三大组件(servlet, listener, filter)
 // 1. 配置xml文件
-//    web.xml;
-//    dispatcher-servlet.xml
+//    web.xml;  dispatcher-servlet.xml
 // 2. 使用特定的注解
-//    @WebServlet("/HomeServlet");
-//    @WebListener;
-//    @WebFilter(value="/hello")
+//    @WebServlet("/HomeServlet")      => MyServlet extends HttpServlet
+//    @WebListener                     => MyListener implements ServletContextListener
+//    @WebFilter(value="/hello")       => MyFilter implements Filter
 // 3. SPI机制: 基于Servlet3.0规范//
 //    3.1 在/resources classpath路径下面配置指定的文件名称，使用接口的全路径
 //    3.2 在文件中配置使用的具体配置类型的全路径

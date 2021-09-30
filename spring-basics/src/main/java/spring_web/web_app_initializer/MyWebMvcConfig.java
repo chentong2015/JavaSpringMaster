@@ -15,7 +15,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 // 配置扫描的package包，指定扫描特定的类型
 @ComponentScan(basePackages = {"spring_web"},
         includeFilters = {@ComponentScan.Filter(type = FilterType.ANNOTATION, value = {RestController.class})})
-public class MyWebAppConfig implements WebMvcConfigurer {
+public class MyWebMvcConfig implements WebMvcConfigurer {
 
     // 文件上传和下载的组件
     @Bean

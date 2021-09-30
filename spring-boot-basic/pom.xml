@@ -16,4 +16,13 @@
         <maven.compiler.target>15</maven.compiler.target>
     </properties>
 
+    <dependencies>
+        <!-- 使用内嵌的tomcat容器 -->
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-core</artifactId>
+            <version>10.0.11</version>
+        </dependency>
+    </dependencies>
+
 </project>
