@@ -1,4 +1,4 @@
-package spring_mybatis;
+package spring_mybatis.base;
 
 import javax.sql.DataSource;
 import java.io.PrintWriter;
@@ -9,7 +9,7 @@ import java.sql.SQLFeatureNotSupportedException;
 import java.util.logging.Logger;
 
 public class MyDataSource implements DataSource {
-    
+
     @Override
     public Connection getConnection() throws SQLException {
         return null;

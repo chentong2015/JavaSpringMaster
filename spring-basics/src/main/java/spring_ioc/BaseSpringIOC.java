@@ -23,6 +23,9 @@ public class BaseSpringIOC {
     // ApplicationContext:
     // 1. 构建于Core和Bean之上，提供国际化，资源加载等高级支持，非延时加载
     // 2. (包含) BeanFactory: 实现基础的bean, 控制反转，延时加载
+    //
+    // BeanFactory IoC容器
+    // FactoryBean 工厂bean: getObject() 从容器中返回的对象由这个对象确定
 
     // TODO: Spring Bean完整的生命周期
     // 1. bean定义对象
