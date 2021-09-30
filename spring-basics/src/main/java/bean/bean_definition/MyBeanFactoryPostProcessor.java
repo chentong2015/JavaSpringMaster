@@ -1,4 +1,4 @@
-package spring_mybatis.bean_definition;
+package bean.bean_definition;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanFactoryPostProcessor;

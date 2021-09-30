@@ -1,4 +1,4 @@
-package config.import_bean;
+package bean.import_bean;
 
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.beans.factory.support.RootBeanDefinition;

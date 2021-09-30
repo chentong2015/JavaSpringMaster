@@ -1,11 +1,10 @@
-package spring_mybatis.bean_definition;
+package bean.bean_definition;
 
-// BeanDefinition
-// bean 定义对象，描述对象: 通过注解来描述bean的行为和信息
-// AbstractBeanDefinition.java 定义不同的属性 ==> 最终存放在BeanDefinitionMap
-// @Lazy
-// @DependsOn
-// @Scope
+// BeanDefinition: bean 定义对象，描述对象:
+// AbstractBeanDefinition.java 定义不同的属性，每一个属性都是用来控制某一个流程的
+// @Lazy @DependsOn @Scope 通过注解来描述bean的行为和信息
+
+// BeanDefinitionMap<beanName, BeanDefinition>: 存储BeanDefinition的地方
 public class BaseBeanDefinition {
 
     // bean的后置处理器BeanPostProcessors: 通过后置处理器在对象初始化前后，修改对象的属性值和特征
