@@ -1,4 +1,4 @@
-package spring_web.parent_children_container;
+package spring_web;
 
 public class SpringMvcContainer {
 

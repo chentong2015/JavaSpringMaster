@@ -1,6 +1,7 @@
 package spring_mybatis.bean_definition;
 
-// BeanDefinition对象: 通过注解来描述bean的行为和信息
+// BeanDefinition
+// bean 定义对象，描述对象: 通过注解来描述bean的行为和信息
 // AbstractBeanDefinition.java 定义不同的属性 ==> 最终存放在BeanDefinitionMap
 // @Lazy
 // @DependsOn
