@@ -1,6 +1,3 @@
- https://www.bilibili.com/video/BV1DJ411J7kz 18小时
- https://www.bilibili.com/video/BV1BJ411t7Tb?p=1 查看是否有遗漏的
-
  spring源码视频 https://www.bilibili.com/video/BV1GB4y1u7YR  3节课
    - 面试金典题目的解析和原理
    - Spring Framework 核心技术 IOC和AOP

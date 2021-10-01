@@ -9,7 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 //    1.2 通过SPIji机制来实现
 // 2. 去掉外部的tomcat启动起来
 //    2.1 使用内嵌的tomcat包
-@SpringBootApplication
+@SpringBootApplication(excludeName = {})
 public class BaseSpringBoot { // 该启动类型不能放置在default package
 
     public static void main(String[] args) {
@@ -29,7 +29,8 @@ public class BaseSpringBoot { // 该启动类型不能放置在default package
     // @ConditionalOnClass({ Servlet.class, DispatcherServlet.class, WebMvcConfigurer.class })
     // @ConditionalOnMissingBean(WebMvcConfigurationSupport.class)
     // @AutoConfigureOrder(Ordered.HIGHEST_PRECEDENCE + 10)
-    // @AutoConfigureAfter({ DispatcherServletAutoConfiguration.class, TaskExecutionAutoConfiguration.class, ValidationAutoConfiguration.class })
+    // @AutoConfigureAfter({ DispatcherServletAutoConfiguration.class, TaskExecutionAutoConfiguration.class,
+    //   ValidationAutoConfiguration.class })
     // public class WebMvcAutoConfiguration {
     //    访问静态资源文件
     // }
