@@ -5,6 +5,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import spring_aop.aspect_base.model.Calculation;
 
 // https://docs.spring.io/spring-framework/docs/2.0.x/reference/aop.html
+
 // Spring AOP的底层实现
 // class com.sun.proxy.$Proxy20 创建的动态代理对象
 // Proxy20 extends Proxy implements Calculation 生成的动态代理类(class文件)必须实现指定接口

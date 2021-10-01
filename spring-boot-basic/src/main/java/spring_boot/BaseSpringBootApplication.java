@@ -7,13 +7,13 @@ public class BaseSpringBootApplication {
     // @Target({ElementType.TYPE})
     // @Retention(RetentionPolicy.RUNTIME)
     // @Documented
-    // TODO @Inherited
+    // @Inherited 标明可以从super class上查找注解
     // @SpringBootConfiguration
     //     @Target({ElementType.TYPE})
     //     @Retention(RetentionPolicy.RUNTIME)
     //     @Documented
     //     @Configuration 该注解标明可以在"标明了该注解的类型"使用@Bean注入
-    //     TODO @Indexed
+    //     @Indexed  Java原生类库中没有提供此注解
     // @EnableAutoConfiguration
     //     @Target({ElementType.TYPE})
     //     @Retention(RetentionPolicy.RUNTIME)

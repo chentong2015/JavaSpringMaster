@@ -3,19 +3,15 @@
    - Spring Framework 核心技术 IOC和AOP
    - Spring Boot 难点和源码解析
  Spring Boot技术难点源码剖析 https://www.bilibili.com/video/BV17i4y1N7Cd  1节课
-   - 高阶难点问题
 
- TODO: AOP动态代理的实现原理  ==>  interface AopProxy.getProxy()
- https://cloud.tencent.com/developer/article/1461796
+ 手写Spring AOP源码核心 https://www.bilibili.com/video/BV1r5411A7hZ?p=13  18节视频课
+ AOP动态代理实现原理 https://cloud.tencent.com/developer/article/1461796
  AOP源码 https://www.javadoop.com/post/spring-spring_aop-source
- Spring AOP 底层代理的实现，官方文档
- https://docs.spring.io/spring-framework/docs/3.0.0.M3/reference/html/ch08s06.html
-
- https://www.bilibili.com/video/BV1r5411A7hZ?p=13  18节视频课
- - 手写Spring AOP源码核心功能
+ AOP底层代理实现 https://docs.spring.io/spring-framework/docs/3.0.0.M3/reference/html/ch08s06.html
 
 
------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------------------------
 
 回顾之前项目JavaSpringBasic几个模块的基础功能 !!
 
