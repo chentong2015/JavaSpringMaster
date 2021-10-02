@@ -4,7 +4,7 @@ import spring_web.base.IParseDoc;
 
 import java.util.ServiceLoader;
 
-public class WebContainerComponents {
+public class BaseWebContainerComponents {
 
     // TODO: 如何往容器中注入Web三大组件(servlet, listener, filter)
     // 1. 配置xml文件

@@ -1,4 +1,4 @@
-package bean.bean_lifecycle.service;
+package bean.bean_lifecycle.component;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -7,7 +7,7 @@ import javax.annotation.PostConstruct;
 
 // Spring会将该类型视为一个bean
 @Component
-public class UserService {
+public class BaseService {
 
     // Field injection is not recommended !
     @Autowired
@@ -22,7 +22,7 @@ public class UserService {
         // mysql --> user object --> defaultUser
     }
 
-    // Spring默认使用无参的构造方法
+    // Spring默认使用无参的构造方法 ==> 推荐使用构造器注入
     // public UserService() { }
 
     // 在没有默认构造方法的情况下，Spring无法判断使用那个含参数的构造器
@@ -34,14 +34,14 @@ public class UserService {
     // Spring从容器中取指定的bean对象来传递参数，不能将参数名称视为beanName去容器中找
     // TODO: 如果根据类型去找，可能会找到多个，只是bean的名称不同  --> byType
     //       再根据参数名称来找，视为bean的名称                 --> byName
-    public UserService(OrderService orderService) {
+    public BaseService(OrderService orderService) {
         this.orderService1 = orderService;
         System.out.println("Construct 1");
     }
 
     // 构造器注入(如果只有唯一一个构造器)
     // Spring必须全部找到bean，才能成功执行
-    public UserService(OrderService orderService, OrderService orderService1) {
+    public BaseService(OrderService orderService, OrderService orderService1) {
         this.orderService1 = orderService;
         System.out.println("Construct 2");
     }
