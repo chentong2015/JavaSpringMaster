@@ -1,9 +1,6 @@
- spring源码视频 https://www.bilibili.com/video/BV1GB4y1u7YR  3节课
-   - 面试金典题目的解析和原理
-   - Spring Framework 核心技术 IOC和AOP
-   - Spring Boot 难点和源码解析
- Spring Boot难点源码剖析 https://www.bilibili.com/video/BV17i4y1N7Cd  1节课
+ https://www.bilibili.com/video/BV1GB4y1u7YR?p=22
 
+ Spring Boot难点源码剖析 https://www.bilibili.com/video/BV17i4y1N7Cd  1节课
  手写Spring AOP源码核心 https://www.bilibili.com/video/BV1r5411A7hZ?p=13  18节视频课
  AOP动态代理实现原理 https://cloud.tencent.com/developer/article/1461796
  AOP源码 https://www.javadoop.com/post/spring-spring_aop-source

@@ -4,17 +4,18 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 // Spring Boot实现的两个效果
-// 1. 不需要配置Spring MVC的原始web.xml文件
-//    1.1 直接通过注解, servlet3.0规范
-//    1.2 通过SPIji机制来实现
-// 2. 去掉外部的tomcat启动起来
-//    2.1 使用内嵌的tomcat包
+// 1. 不需配置Spring MVC的原始web.xml文件 ==> 注解+通过SPI机制(servlet3.0规范)
+// 2. 去掉外部的tomcat启动起来 ==> 使用内嵌的tomcat包
 @SpringBootApplication(excludeName = {})
 public class BaseSpringBoot { // 该启动类型不能放置在default package
 
     public static void main(String[] args) {
         SpringApplication.run(BaseSpringBoot.class, args);
     }
+
+    // Spring Boot + tomcat
+    // 1. 先创建Spring容器
+    // 2. 再启动tomcat
 
     // TODO: 使用Spring Boot时不推荐使用注解@EnableWebMvc ==> 导致功能缺失
     // @EnableWebMvc的作用会导致引入WebMvcConfigurationSupport类型(bean)

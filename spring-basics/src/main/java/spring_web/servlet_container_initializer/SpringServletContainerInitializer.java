@@ -5,7 +5,7 @@ public class SpringServletContainerInitializer {
 
     // 1. 配置文件名称
     // resources/META-INF/services/javax.servlet.ServletContainerInitializer
-    //   org.springframework.web.SpringServletContainerInitializer
+    // org.springframework.web.SpringServletContainerInitializer 找到启动时需要调用的类型的onStartup()方法
     //
     // 2. 定义Servlet容器启动器
     // @HandlesTypes(WebApplicationInitializer.class)

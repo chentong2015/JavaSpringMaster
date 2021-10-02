@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-basics" />
         <module name="spring-boot-basic" />
+        <module name="spring-boot-template" />
       </profile>
     </annotationProcessing>
   </component>

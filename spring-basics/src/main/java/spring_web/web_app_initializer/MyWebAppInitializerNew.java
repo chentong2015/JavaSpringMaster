@@ -20,6 +20,7 @@ public class MyWebAppInitializerNew extends AbstractDispatcherServletInitializer
         // 2. 创建DispatcherServlet
         registerDispatcherServlet(servletContext);
     }
+
     // ContextLoaderListener(Listener)的特点: 在启动的时候会调用初始化方法
     // 	@Override
     //	public void contextInitialized(ServletContextEvent event) {
@@ -51,7 +52,7 @@ public class MyWebAppInitializerNew extends AbstractDispatcherServletInitializer
     // }
     //
     //  configureAndRefreshWebApplicationContext() {
-    //    该方法的调用为父(子)容器加载组件，填充service dao对象  ==> 确定容器中不为空
+    //    调用方法为父(子)容器加载组件，填充service dao对象，确定容器中不为空
     //    wac.refresh();
     //  }
 

@@ -8,13 +8,12 @@ import org.springframework.util.StringUtils;
 
 import java.util.List;
 
+// 1. 如何自动的?
+//    使用@Import导入bean定义的，使用ImportSelector支持批量导入
+//    通过SPI机制读取\META-INF\spring.factories文件中配置类, 批量的加载bean定义，自动解析
+// 2. 装配的对象是什么?
+//    Bean Definition 装配的是bean定义对象
 public class SpringBootAutoConfigure implements ImportSelector {
-
-    // 1. 如何自动的? 使用@Import导入bean定义的，使用ImportSelector支持批量导入
-    //    通过SPI机制读取\META-INF\spring.factories文件中符号条件的配置类(bean定义)
-    //    批量的加载bean定义，自动解析
-    // 2. 装配的对象是什么?
-    //    Bean Definition 装配的是bean定义对象
 
     // Spring Boot 自动装配
     // Version 1: .xml配置

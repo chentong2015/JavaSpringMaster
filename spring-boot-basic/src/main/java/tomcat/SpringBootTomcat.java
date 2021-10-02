@@ -23,7 +23,13 @@ public class SpringBootTomcat {
     //			tomcat.getService().addConnector(additionalConnector);
     //		}
     //		prepareContext(tomcat.getHost(), initializers);
-    //      TODO: 方法中调用.start(), tomcat.getServer().await();方法
     //		return getTomcatWebServer(tomcat);
     //	}
+    //
+    //  WebServer getTomcatWebServer(tomcat) {
+    //     ...
+    //     最终会调用的两个方法
+    //     tomcat.start();
+    //     tomcat.getServer().await()
+    // }
 }
