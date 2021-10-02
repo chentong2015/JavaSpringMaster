@@ -15,7 +15,7 @@ public class AspectFastCalculation {
     // 设计精髓: 通过5个结点放到链条中，通过"责任链+递归"的方式驱动执行，0驱动1，1驱动2，，，
     //
     // TODO: 将链接器中的advisor(@Before, @After..)取出来，转成拦截器的链条
-    //        链条中保存的顺序就时执行的顺序(spring会控制排序)
+    //       链条中保存的顺序就时执行的顺序(spring会控制排序)
     // JdkDynamicAopProxy.invoke()
     // 0. ExposeInvocationInterceptor
     // 1. AspectAfterThrowingAdvice
@@ -32,6 +32,7 @@ public class AspectFastCalculation {
     // 1. 前置通知
     @Before(value = "pointCut()")
     public void methodBefore(JoinPoint joinPoint) {
+        joinPoint.getTarget();  // TODO: 拿到被代理的原始对象
         String methodName = joinPoint.getSignature().getName();
         System.out.println(methodName);
     }

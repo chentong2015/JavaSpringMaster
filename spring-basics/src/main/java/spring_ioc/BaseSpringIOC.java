@@ -1,8 +1,8 @@
 package spring_ioc;
 
-import config.AppConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import spring_ioc.base.MyBean;
+import spring_ioc.config.AppConfig;
 
 // Spring IOC: 依赖注入 --> 控制反转
 // 1. 谁控制谁: IOC容器控制bean的声明周期
@@ -28,13 +28,6 @@ public class BaseSpringIOC {
     //
     // BeanFactory IoC容器
     // FactoryBean bean工厂: getObject() 从容器中返回的对象由这个对象确定
-
-    // TODO: Spring Bean完整的生命周期 ?
-    // 1. bean定义(的解析)
-    // -> BeanFactoryPostProcessor 该组件可以修改bean的定义
-    // 2. getBean()获取bean，生成bean
-    // -> BeanPostProcessor 该组件用于生成bean的属性(bean已经生成了)
-    // 3. bean实例化完成，放到单例缓存池中
 
     // 源码分析入口: Spring Beans + Spring Context
     public static void main(String[] args) {
