@@ -3,6 +3,7 @@
  AOP源码 https://www.javadoop.com/post/spring-spring_aop-source
  AOP底层代理实现 https://docs.spring.io/spring-framework/docs/3.0.0.M3/reference/html/ch08s06.html
 
+ 博客：SPI机制，Bean创建的完整生命周期
 --------------------------------------------------------------------------------------------------
 
 回顾之前项目JavaSpringBasic几个模块的基础功能 !!

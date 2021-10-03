@@ -1,5 +1,6 @@
 package bean.import_bean;
 
+import bean.import_bean.base.Person;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.beans.factory.support.RootBeanDefinition;
 import org.springframework.context.annotation.ImportBeanDefinitionRegistrar;

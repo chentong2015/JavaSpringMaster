@@ -2,9 +2,9 @@ package spring_aop;
 
 import org.springframework.transaction.annotation.Transactional;
 
-// SAOP应用场景:
+// AOP应用场景:
 // 1. 日志，性能监控
-// 2. 读写分离，多数据源的切换 ==> 让自定的切面被Spring识别
+// 2. 读写分离，多数据源的切换(Router路由)
 // 3. 做分布式事务，分库分表
 public class SpringAopProject {
 

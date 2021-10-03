@@ -1,18 +1,11 @@
 package bean.bean_lifecycle;
 
-// TODO: Spring Bean完整的生命周期
-// 1. bean定义(的解析)
-// -> BeanFactoryPostProcessor 该组件可以修改bean的定义
-// 2. getBean()获取bean，生成bean
-// -> BeanPostProcessor 该组件用于生成bean的属性(bean已经生成了)
-// 3. bean实例化完成，放到单例缓存池中
 public class BaseBeanLifecycle {
 
     // Bean: 被Spring管理的对象(A simple java Object)叫做bean
     //       beanName(key) -> Bean对(value)
-    // 单例bean:
-    // TODO: 和单例模式(类型只能创建一个对象)没有关系
-    //       可能有多个bean名称对应同类型的bean，所谓的单例是指同一个bean名称，对应的是同一个对象
+    // 单例bean: 和单例模式(类型只能创建一个对象)没有关系
+    //          可能有多个bean名称对应同类型的bean，所谓的单例是指同一个bean名称，对应的是同一个对象
 
     // Bean的创建过程:
     // UserService component = context.getBean("UserService", MyBean.class);
