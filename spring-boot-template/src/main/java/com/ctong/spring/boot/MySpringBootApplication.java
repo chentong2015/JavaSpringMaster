@@ -10,6 +10,6 @@ import java.lang.annotation.*;
 @Documented
 @Inherited
 @Configuration
-@ComponentScan
+@ComponentScan // 默认扫描同一个级别的包路径
 public @interface MySpringBootApplication {
 }

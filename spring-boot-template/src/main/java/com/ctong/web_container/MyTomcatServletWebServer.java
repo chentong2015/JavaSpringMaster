@@ -1,9 +1,25 @@
-package tomcat;
+package com.ctong.web_container;
 
-public class SpringBootTomcat {
+import org.apache.catalina.LifecycleException;
+import org.apache.catalina.startup.Tomcat;
+
+public class MyTomcatServletWebServer {
+
+    // 自定义tomcat启动方法，设置接受请求的路径和端口
+    public static void run() {
+        Tomcat tomcat = new Tomcat();
+        tomcat.setPort(8080);
+        try {
+            tomcat.addWebapp("/", "D:\\");
+            tomcat.start();
+            tomcat.getServer().await();
+        } catch (LifecycleException ex) {
+            ex.printStackTrace();
+        }
+    }
 
     // TomcatServletWebServerFactory类型源码
-    // 内嵌tomcat的启动和配置
+    // Spring Boot内嵌tomcat的启动和配置
     // @Override
     //	public WebServer getWebServer(ServletContextInitializer... initializers) {
     //		if (this.disableMBeanRegistry) {

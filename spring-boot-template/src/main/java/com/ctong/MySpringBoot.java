@@ -1,12 +1,21 @@
 package com.ctong;
 
-import com.ctong.spring.boot.MySpringApplication;
 import com.ctong.spring.boot.MySpringBootApplication;
+import org.springframework.context.annotation.Bean;
+import org.springframework.web.servlet.DispatcherServlet;
 
 @MySpringBootApplication
 public class MySpringBoot {
 
+    // 自定义注入的bean，作为添加到Tomcat中的Servlet
+    @Bean
+    public DispatcherServlet dispatcherServlet() {
+        DispatcherServlet dispatcherServlet = new DispatcherServlet();
+        return dispatcherServlet;
+    }
+
     public static void main(String[] args) {
-        MySpringApplication.run(MySpringBoot.class);
+        System.out.println("test");
+        // MySpringApplicationStarter.run(MySpringBoot.class);
     }
 }

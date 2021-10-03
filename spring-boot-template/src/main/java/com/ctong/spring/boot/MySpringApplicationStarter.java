@@ -7,23 +7,23 @@ import org.apache.catalina.core.StandardEngine;
 import org.apache.catalina.core.StandardHost;
 import org.apache.catalina.startup.Tomcat;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
+import org.springframework.web.servlet.DispatcherServlet;
 
-public class MySpringApplication {
+public class MySpringApplicationStarter {
 
-    // Spring Boot + Tomcat 默认启动顺序
-    // java.lang.NoClassDefFoundError: javax/servlet/ServletRequest
+    // 1. 先创建Spring容器
+    // 2. 再创建Web Server
     public static AnnotationConfigWebApplicationContext run(Class config) {
-        // 1. 先创建Spring容器
         AnnotationConfigWebApplicationContext appContext = new AnnotationConfigWebApplicationContext();
         appContext.register(config);
         // appContext.refresh(); // 激活容器，为容器加载组件，然后填充指定bean
-        // 2. 启动Tomcat
         startTomcat(appContext);
         return appContext;
     }
 
     private static void startTomcat(AnnotationConfigWebApplicationContext appContext) {
         Tomcat tomcat = new Tomcat();
+        tomcat.getHost().setAutoDeploy(false);
         Server server = tomcat.getServer();
         Service service = server.findService("Tomcat");
         Connector connector = new Connector();
@@ -42,11 +42,15 @@ public class MySpringApplication {
         host.addChild(context);
         engine.addChild(host);
 
-        // DispatcherServlet dispatcherServlet = new DispatcherServlet(appContext);
+        // Spring MVC中的servlet, 根据接收到的请求从自己的容器中找到特定的Controller
+        DispatcherServlet dispatcherServlet = new DispatcherServlet(appContext);
+        // TODO: 添加自定义配置的bean, 提高程序的扩展性
+        DispatcherServlet myDispatcherServlet = appContext.getBean(DispatcherServlet.class);
+        myDispatcherServlet.setApplicationContext(appContext);
         // tomcat.addServlet(contextPath, "dispatcher", dispatcherServlet);
-        // context.addServletMappingDecoded("/*", "dispatcher");
+        context.addServletMappingDecoded("/*", "default");
+
         try {
-            //  Cannot invoke "String.equals(Object)" because "newHost.name" is null
             tomcat.start();
             tomcat.getServer().await();
         } catch (LifecycleException ex) {
