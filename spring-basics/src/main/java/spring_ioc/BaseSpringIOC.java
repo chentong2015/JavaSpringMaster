@@ -16,7 +16,7 @@ public class BaseSpringIOC {
 
     // 如何理解Spring IoC容器?  Spring IOC Container是什么?
     // TODO: 完成一序列功能的一系列组件共同构成IOC容器，都在BeanFactory中
-    // SingletonObjects  单例缓存池(存放bean对象的)
+    // SingletonObjects  单例缓存池(存放bean对象的)  ==> 多个线程可以使用Spring中的同一个单例缓存池，使用的是ConcurrentHashMap
     // BeanDefinitionMap bean定义对象存储地方
     // BeanFactoryPostProcessor
     // BeanPostProcess   bean后置处理器的集合

@@ -40,7 +40,7 @@ public class BeanLifecycleSourceCode {
     //		// Eagerly cache singletons to be able to resolve circular references
     //		// even when triggered by lifecycle interfaces like BeanFactoryAware.
     //		// TODO: 如果当前创建的是单例bean，并且允许循环依赖，并且还在创建过程中
-    //		// Set<String> singletonsCurrentlyInCreation
+    //		// Set<String> singletonsCurrentlyInCreation 基本都是true的
     //		boolean earlySingletonExposure = (mbd.isSingleton() &&
     //	     	this.allowCircularReferences && isSingletonCurrentlyInCreation(beanName));
     //		if (earlySingletonExposure) {
@@ -56,15 +56,9 @@ public class BeanLifecycleSourceCode {
     //		// Initialize the bean instance.
     //		Object exposedObject = bean;
     //		try {
-    //			// TODO: @Autowired DI 依赖注入的完成, 给属性进行赋值
+    //			TODO: 填充属性@Autowired DI 依赖注入的完成, 给属性进行赋值
     //			populateBean(beanName, mbd, instanceWrapper);
-    //
-    //			// 调用后置处理器BeanPostProcessors初始化对象，对对象进行修改
-    //			//   applyBeanPostProcessorsBeforeInitialization
-    //			//   invokeInitMethods(beanName, wrappedBean, mbd);
-    //			//   applyBeanPostProcessorsAfterInitialization
-    //
-    //          初始化原始对象
+    //		    TODO: 初始化和BeanPostProcessor 正常AOP
     //			exposedObject = initializeBean(beanName, exposedObject, mbd); // 生成代理对象
     //		} catch (Throwable ex) {
     //			if (ex instanceof BeanCreationException && beanName.equals(((BeanCreationException) ex).getBeanName())) {
@@ -73,10 +67,13 @@ public class BeanLifecycleSourceCode {
     //				throw new BeanCreationException(mbd.getResourceDescription(), beanName, "Initialization of bean failed", ex);
     //			}
     //		}
-    //
     //		if (earlySingletonExposure) {
+    //          TODO: 对应缓存解法的第4.5步逻辑
+    //                在解决循环依赖时，当AService的属性注入完成之后，从getSingleton中得到AService AOP之后代理对象
     //			Object earlySingletonReference = getSingleton(beanName, false);
     //			if (earlySingletonReference != null) {
+    //              如果提前暴露的对象和经过了完整生命周期之后的对象相等，则把代理对象赋值给exposedObject
+    //              最终会添加到singletonObjects中去
     //				if (exposedObject == bean) {
     //					exposedObject = earlySingletonReference;
     //				} else if (!this.allowRawInjectionDespiteWrapping && hasDependentBean(beanName)) {
@@ -101,7 +98,47 @@ public class BeanLifecycleSourceCode {
     //		return exposedObject;
     //	}
 
-    // lambda表达式执行的判断
+    // 在填充属性完成之后，关于初始化的代码
+    // protected Object initializeBean(String beanName, Object bean, @Nullable RootBeanDefinition mbd) {
+    //		// 执行aware
+    //		invokeAwareMethods(beanName, bean);
+    //		Object wrappedBean = bean;
+    //		if (mbd == null || !mbd.isSynthetic()) {
+    //			// 4.2 初始化前
+    //			wrappedBean = applyBeanPostProcessorsBeforeInitialization(wrappedBean, beanName);
+    //		}
+    //		try {
+    //			// 4.3 初始化
+    //			invokeInitMethods(beanName, wrappedBean, mbd);
+    //		} catch (Throwable ex) {
+    //			throw new BeanCreationException((mbd != null ? mbd.getResourceDescription() : null), beanName, "Invocation of init method failed", ex);
+    //		}
+    //		if (mbd == null || !mbd.isSynthetic()) {
+    //			// 4.4 初始化后
+    //          TODO: 在初始化后会判断当前正在创建的bean是否需要进行AOP, 最终会执行到下面的方法
+    //                其中需要判断是否"还需要执行AOP", 判断
+    //			wrappedBean = applyBeanPostProcessorsAfterInitialization(wrappedBean, beanName);
+    //		}
+    //		return wrappedBean;
+    //	}
+
+    // 上面4.4步初始化后调用的方法 >> 正常进行AOP的地方
+    // public Object postProcessAfterInitialization(@Nullable Object bean, String beanName) {
+    //     if (bean != null) {
+    //         Object cacheKey = getCacheKey(bean.getClass(), beanName);
+    //         // earlyProxyReference存储的是那些提前进行了AOP的bean, beanName: AOP之前的对象
+    //         // 判断如果没有提前进行AOP, 则进行AOP
+    //         if (this.earlyProxyReferences.remove(cacheKey) != bean) { // 如果执行过，则不进入if条件
+    //             return wrapIfNecessary(bean, beanName, cacheKey);
+    //         }
+    //     }
+    //     // 直接返回原始对象
+    //     // 最终如果有AOP之后的代理对象，则后面4.5步会中二级缓存中取拿到"代理对象"
+    //     return bean;
+    // }
+
+    // TODO: 执行lambda表达式的过程中会调用的方法 >> 提前AOP
+    // 如果没有提前进行过AOP, 则进行AOP
     // protected Object wrapIfNecessary(Object bean, String beanName, Object cacheKey) {
     //		if (StringUtils.hasLength(beanName) && this.targetSourcedBeans.contains(beanName)) {
     //			return bean;

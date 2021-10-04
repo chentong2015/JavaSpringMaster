@@ -1,12 +1,10 @@
-
- AOP动态代理实现原理 https://cloud.tencent.com/developer/article/1461796
- AOP源码 https://www.javadoop.com/post/spring-spring_aop-source
- AOP底层代理实现 https://docs.spring.io/spring-framework/docs/3.0.0.M3/reference/html/ch08s06.html
-
- 博客：SPI机制，Bean创建的完整生命周期
---------------------------------------------------------------------------------------------------
-
+博客：SPI机制，Bean创建的完整生命周期，循环依赖
 回顾之前项目JavaSpringBasic几个模块的基础功能 !!
+
+AOP动态代理实现原理 https://cloud.tencent.com/developer/article/1461796
+AOP源码 https://www.javadoop.com/post/spring-spring_aop-source
+AOP底层代理实现 https://docs.spring.io/spring-framework/docs/3.0.0.M3/reference/html/ch08s06.html
+
 SpringBoot 究竟是如何跑起来的?  https://zhuanlan.zhihu.com/p/54146400
 spring boot之从零开始开发自己的网站 https://www.cnblogs.com/superfj/p/9044532.html
 Spring Boot Admin 2.1.1 发布 https://www.oschina.net/news/101796/spring-boot-admin-2-1-1-released
