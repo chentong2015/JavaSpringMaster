@@ -1,4 +1,4 @@
-package spring_aop.aspect_base;
+package spring_aop.aspect_demo;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.*;
@@ -25,7 +25,7 @@ public class AspectFastCalculation {
     // List<Object> chain = this.advised.getInterceptorsAndDynamicInterceptionAdvice(method, targetClass);
 
     // 切入点：调用指定类型中的所有方法
-    @Pointcut("execution(* spring_aop.aspect_base.model.FastCalculation.*(..))")
+    @Pointcut("execution(* spring_aop.aspect_demo.model.FastCalculation.*(..))")
     private void pointCut() {
     }
 

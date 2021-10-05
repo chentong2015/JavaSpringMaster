@@ -116,13 +116,14 @@ public class BeanLifecycleSourceCode {
     //		if (mbd == null || !mbd.isSynthetic()) {
     //			// 4.4 初始化后
     //          TODO: 在初始化后会判断当前正在创建的bean是否需要进行AOP, 最终会执行到下面的方法
-    //                其中需要判断是否"还需要执行AOP", 判断
+    //                其中需要判断是否"还需要执行AOP"
     //			wrappedBean = applyBeanPostProcessorsAfterInitialization(wrappedBean, beanName);
     //		}
     //		return wrappedBean;
     //	}
 
     // 上面4.4步初始化后调用的方法 >> 正常进行AOP的地方
+    // TODO: 这个时候将@Before(value = "pointCut()")解析出来，放到缓存 !!
     // public Object postProcessAfterInitialization(@Nullable Object bean, String beanName) {
     //     if (bean != null) {
     //         Object cacheKey = getCacheKey(bean.getClass(), beanName);

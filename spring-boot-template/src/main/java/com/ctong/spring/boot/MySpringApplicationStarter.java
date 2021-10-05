@@ -42,7 +42,8 @@ public class MySpringApplicationStarter {
         host.addChild(context);
         engine.addChild(host);
 
-        // Spring MVC中的servlet, 根据接收到的请求从自己的容器中找到特定的Controller
+        // Spring MVC中的servlet, 指定其中的Spring容器
+        // 根据接收到的请求从自己的容器中找到特定的Controller
         DispatcherServlet dispatcherServlet = new DispatcherServlet(appContext);
         // TODO: 添加自定义配置的bean, 提高程序的扩展性
         DispatcherServlet myDispatcherServlet = appContext.getBean(DispatcherServlet.class);

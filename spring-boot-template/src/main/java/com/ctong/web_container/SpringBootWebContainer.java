@@ -2,8 +2,7 @@ package com.ctong.web_container;
 
 public class SpringBootWebContainer {
 
-    // 关于Spring Boot选择的port端口的配置
-    // 写在三种Web Server的父类中，该端口不止给一个使用
+    // 关于Spring Boot选择的port端口配置(该端口不止给一种Web Server使用)
     // AbstractConfigurationWebServerFactory.java
     // private int port=8080;
 

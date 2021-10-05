@@ -6,6 +6,9 @@ import org.springframework.transaction.annotation.Transactional;
 // 1. 日志，性能监控
 // 2. 读写分离，多数据源的切换(Router路由)
 // 3. 做分布式事务，分库分表
+
+// AOP基本使用:
+// https://docs.spring.io/spring-framework/docs/2.0.x/reference/aop.html
 public class SpringAopProject {
 
     // 将Spring AOP中"责任链+递归"的设计应用到实战项目中

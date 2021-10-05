@@ -13,7 +13,7 @@ public class BaseAspectProxy {
     // TODO: 使用了工厂模式和动态代理模式(两种)
     // 1. JdkDynamicAopProxy: 适用于代理的类型实现了接口
     //    Proxy.newProxyInstance(classLoader, this.proxiedInterfaces, this);
-    // 2. CglibAopProxy: 适用于代理的类型没有实现接口
+    // 2. CglibAopProxy: 适用于代理的类型没有实现接口, 基于继承
     //    源码 DefaultAopProxyFactory.createAopProxy()
     //    @Override
     //	  public AopProxy createAopProxy(AdvisedSupport config) throws AopConfigException {
@@ -31,8 +31,7 @@ public class BaseAspectProxy {
     //	  }
 
     // CglibAopProxy使用原理: 代理对象只存在JVM中，不在spring的容器中
-    // TODO: 基于"Asm字节码编辑技术"实现动态创建类，并且基于ClassLoader转载
-    // 基于父子类来进行动态代理的，生成的代理类继承原始类
+    // 基于父子类来进行动态代理的，生成的代理类继承原始类(原始类不能用final来修饰)
     // class FastCalculationProxy extends FastCalculation {
     //     FastCalculation target; 容器中bean的原始对象，作为代理对象的属性
     //
@@ -42,4 +41,7 @@ public class BaseAspectProxy {
     //          super.method();  一般不使用
     //          target.method(); 原始对象中是经过了bean后面的初始化周期步骤，所以属性是有值的
     // }
+
+    // TODO: cglib动态代理底层是借助"asm字节码技术"
+    // https://cloud.tencent.com/developer/article/1461796
 }

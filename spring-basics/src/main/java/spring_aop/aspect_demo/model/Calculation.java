@@ -1,4 +1,4 @@
-package spring_aop.aspect_base.model;
+package spring_aop.aspect_demo.model;
 
 public interface Calculation {
 

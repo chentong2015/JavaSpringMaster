@@ -18,8 +18,8 @@ public class MyTomcatServletWebServer {
         }
     }
 
+    // TODO: Spring Boot内嵌tomcat的启动和配置
     // TomcatServletWebServerFactory类型源码
-    // Spring Boot内嵌tomcat的启动和配置
     // @Override
     //	public WebServer getWebServer(ServletContextInitializer... initializers) {
     //		if (this.disableMBeanRegistry) {

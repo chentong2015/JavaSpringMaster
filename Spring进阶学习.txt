@@ -1,18 +1,4 @@
-博客：SPI机制，Bean创建的完整生命周期，循环依赖
-回顾之前项目JavaSpringBasic几个模块的基础功能 !!
 
-AOP动态代理实现原理 https://cloud.tencent.com/developer/article/1461796
-AOP源码 https://www.javadoop.com/post/spring-spring_aop-source
-AOP底层代理实现 https://docs.spring.io/spring-framework/docs/3.0.0.M3/reference/html/ch08s06.html
-
-SpringBoot 究竟是如何跑起来的?  https://zhuanlan.zhihu.com/p/54146400
-spring boot之从零开始开发自己的网站 https://www.cnblogs.com/superfj/p/9044532.html
-Spring Boot Admin 2.1.1 发布 https://www.oschina.net/news/101796/spring-boot-admin-2-1-1-released
-SpringBoot系列教程之Bean加载顺序之错误  https://my.oschina.net/u/566591/blog/3123639
-Spring Boot 2.0 项目属性配置 ： https://my.oschina.net/jeffli1993/blog/3019656
-Spring Boot 2 快速教程：WebFlux 快速入门（二）  https://my.oschina.net/jeffli1993/blog/3047269
-SpringBoot入坑指南之六：使用过滤器或拦截器： https://my.oschina.net/centychen/blog/3018007
-Spring Boot项目模板       https://www.cnblogs.com/davenkin/p/spring-boot-template.html 
 Spring Boot 多环境配置    https://www.infoq.cn/article/Q-ese4CxV2IWmltsJcGX
 thymeleaf中的fragment使用 https://blog.csdn.net/liyanlei5858/article/details/80183409
 Spring Boot + Spring Cloud 实现权限管理系统 后端篇:  https://www.cnblogs.com/xifengxiaoma/p/9916363.html
