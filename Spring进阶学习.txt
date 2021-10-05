@@ -1,12 +1,4 @@
 
-Spring Boot 多环境配置    https://www.infoq.cn/article/Q-ese4CxV2IWmltsJcGX
-thymeleaf中的fragment使用 https://blog.csdn.net/liyanlei5858/article/details/80183409
-Spring Boot + Spring Cloud 实现权限管理系统 后端篇:  https://www.cnblogs.com/xifengxiaoma/p/9916363.html
-Spring Boot 工程集成全局唯一ID生成器: https://my.oschina.net/hansonwang99/blog/2906778
-Spring Boot集成Redis: 
-https://segmentfault.com/a/1190000011661209?utm_source=sf-similar-article
-https://segmentfault.com/a/1190000017151786
-Spring Cache 缓存使用方式 https://www.cnblogs.com/boboooo/p/11248145.html
 SpringBoot服务器压测对比 https://my.oschina.net/shyloveliyi/blog/2980868
 Java Web 应用程序中启用 Spring Security：https://www.infoq.cn/article/mB_xHKAHQL53l6GeCxBa
 Spring Boot引起的“堆外内存泄漏”排查及经验总结 https://tech.meituan.com/2019/01/03/spring-boot-native-memory-leak.html
