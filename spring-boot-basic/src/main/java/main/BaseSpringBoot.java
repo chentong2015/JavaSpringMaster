@@ -5,8 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cache.annotation.EnableCaching;
 
 // Spring Boot实现的两个效果
-// 1. 不需配置Spring MVC的原始web.xml文件 ==> 注解+通过SPI机制(servlet3.0规范)
-// 2. 去掉外部的tomcat启动起来 ==> 使用内嵌的tomcat包
+// 1. 不需Spring MVC原始web.xml配置 ==> 注解+通过SPI机制(servlet3.0规范)
+// 2. 去掉外部的tomcat启动起来       ==> 使用内嵌的tomcat包
 @SpringBootApplication(excludeName = {})
 @EnableCaching
 public class BaseSpringBoot { // 该启动类型不能放置在default package
@@ -25,7 +25,7 @@ public class BaseSpringBoot { // 该启动类型不能放置在default package
     //    DelegatingWebMvcConfiguration extends WebMvcConfigurationSupport
 
     // TODO: Spring boot自动装配类型WebMvcAutoConfiguration ==> Spring boot为Spring MVC提供的功能
-    //  仅在容器中没有WebMvcConfigurationSupport.class bean时起作用
+    //       仅在容器中没有WebMvcConfigurationSupport.class bean时起作用
     // @Configuration(proxyBeanMethods = false)
     // @ConditionalOnWebApplication(type = Type.SERVLET)
     // @ConditionalOnClass({ Servlet.class, DispatcherServlet.class, WebMvcConfigurer.class })
@@ -36,4 +36,7 @@ public class BaseSpringBoot { // 该启动类型不能放置在default package
     // public class WebMvcAutoConfiguration {
     //    访问静态资源文件
     // }
+
+    // 3. 在tomcat启动完成之后，自动运行指定逻辑
+    // 实现接口ApplicationRunner & CommandLineRunner的run()方法
 }

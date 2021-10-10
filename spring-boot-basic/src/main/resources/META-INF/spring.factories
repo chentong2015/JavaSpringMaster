@@ -1,1 +1,2 @@
+# Demo Spring Auto Config
 com.ctong.example.EnableAutoConfig=com.ctong.example.config.SpringBootAutoConfig

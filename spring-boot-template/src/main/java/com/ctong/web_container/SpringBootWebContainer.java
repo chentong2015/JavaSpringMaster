@@ -7,7 +7,7 @@ public class SpringBootWebContainer {
     // private int port=8080;
 
     // TODO: Spring Boot如何判断启动对应的Web Container(只能配置一个)
-    // 判断classpath中具体使用拿一个tomcat.class, jetty.class, unsertow.class
+    // 判断classpath中具体使用拿一个tomcat.class, jetty.class, undertow.class
     // ServletWebServerApplicationContext.java
     // private void createWebServer() {
     //    ServletWebServerFactory factory = getWebServerFactory();
@@ -21,7 +21,7 @@ public class SpringBootWebContainer {
     //	  return getBeanFactory().getBean(beanNames[0], ServletWebServerFactory.class);
     //	}
 
-    // TODO: 使用Conditional条件注解判断Spring容器中有什么bean ?
+    // TODO: 使用@ConditionalOnClass条件注解判断Spring容器中有什么bean ?
     // ServletWebServerFactoryConfiguration.java
     // @Configuration(proxyBeanMethods = false)
     // class ServletWebServerFactoryConfiguration {

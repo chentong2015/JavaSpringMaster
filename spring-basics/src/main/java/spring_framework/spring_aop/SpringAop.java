@@ -9,7 +9,7 @@ import spring_framework.spring_ioc.config.AppConfig;
 // 该注解会注册一个AnnotationAwareAspectJAutoProxyCreator bean组件
 // 该组件实现了BeanPostProcessor接口 ==> 确定使用的后置处理器
 @EnableAspectJAutoProxy(proxyTargetClass = false, exposeProxy = false)
-public class SpringAOP {
+public class SpringAop {
 
     // TODO: Spring如何判断Service类/原始对象需要执行AOP? 是否有切面?
     // Aspect切面本身是一个bean，会添加到Spring容器中
@@ -29,7 +29,7 @@ public class SpringAOP {
 
     // TODO: exposeProxy: 配置是否将proxy暴露到ThreadLocal
     // Proxy should be exposed by the AOP framework as a ThreadLocal for retrieval via the AopContext class.
-    // 指示代理应由AOP框架公开为ThreadLocal(线程本地存储)以通过AopContext类进行检索
+    // 指示代理应由AOP框架公开为ThreadLocal(线程本地存储), 之后通过AopContext类来进行检索
     // JdkDynamicAopProxy.invoke()
     // 	if (this.advised.exposeProxy) {
     //		保存之前老的proxy，用于在finally中恢复

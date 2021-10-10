@@ -1,5 +1,6 @@
 package com.ctong;
 
+import com.ctong.spring.boot.MySpringApplicationStarter;
 import com.ctong.spring.boot.MySpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.servlet.DispatcherServlet;
@@ -15,7 +16,6 @@ public class MySpringBoot {
     }
 
     public static void main(String[] args) {
-        System.out.println("test");
-        // MySpringApplicationStarter.run(MySpringBoot.class);
+        MySpringApplicationStarter.run(MySpringBoot.class);
     }
 }
