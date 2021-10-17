@@ -2,20 +2,22 @@ package com.ctong;
 
 import com.ctong.spring.boot.MySpringApplicationStarter;
 import com.ctong.spring.boot.MySpringBootApplication;
-import org.springframework.context.annotation.Bean;
-import org.springframework.web.servlet.DispatcherServlet;
 
 @MySpringBootApplication
 public class MySpringBoot {
-
-    // 自定义注入的bean，作为添加到Tomcat中的Servlet
-    @Bean
-    public DispatcherServlet dispatcherServlet() {
-        DispatcherServlet dispatcherServlet = new DispatcherServlet();
-        return dispatcherServlet;
-    }
+    
+    // @Bean
+    // public DispatcherServlet dispatcherServlet() {
+    //     DispatcherServlet dispatcherServlet = new DispatcherServlet();
+    //     return dispatcherServlet;
+    // }
+    //
+    // TODO: 可以将自定义的bean(DispatcherServlet)动态配置到tomcat启动时
+    // DispatcherServlet myDispatcherServlet = appContext.getBean(DispatcherServlet.class);
+    // myDispatcherServlet.setApplicationContext(appContext);
 
     public static void main(String[] args) {
         MySpringApplicationStarter.run(MySpringBoot.class);
+        System.out.println("App started");
     }
 }
