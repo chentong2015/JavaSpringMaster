@@ -20,11 +20,12 @@ import javax.sql.DataSource;
 public class MyBatisConfig {
 
     // Spring何如整合Mybatis? 源码级别的理解
+    // 为什么Spring整合Mybatis之后，一级缓存会失效 ?
 
     // @MapperScan注解的作用和@Bean(mapperScannerConfigurer)功能一致 ?
     // TODO: 注解最终的效果是导入bean定义 > MapperScannerConfigurer定义
     // 使用@Import({MapperScannerRegistrar.class})
-    // 使用@Import的第二种方式 MapperScannerRegistrar implements ImportBeanDefinitionRegistrar
+    // 使用@Import第二种方式 MapperScannerRegistrar implements ImportBeanDefinitionRegistrar
 
     // TODO: 最终扫描的Mapper Interface会被设置beanClass: MapperFactoryBean
     // ClassPathMapperScanner.processBeanDefinitions(Set<BeanDefinitionHolder> beanDefinitions) {

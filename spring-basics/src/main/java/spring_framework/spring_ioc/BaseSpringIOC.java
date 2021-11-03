@@ -4,6 +4,9 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import spring_framework.spring_ioc.base.MyBean;
 import spring_framework.spring_ioc.config.AppConfig;
 
+// Spring能够更好的管理java中的对象，相当于对象的管理者 !!
+// 被Spring管理的对象才能完成自动注入，依赖注入
+
 // Spring IOC: 依赖注入 --> 控制反转
 // 1. 谁控制谁: IOC容器控制bean的声明周期
 // 2. 控制什么: Bean(对象)
