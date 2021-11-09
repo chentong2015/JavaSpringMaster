@@ -18,8 +18,7 @@ import javax.sql.DataSource;
 @EnableTransactionManagement
 @MapperScan(basePackages = {"spring_mybatis"})
 public class MyBatisConfig {
-
-    // Spring何如整合Mybatis? 源码级别的理解
+    
     // 为什么Spring整合Mybatis之后，一级缓存会失效 ?
 
     // @MapperScan注解的作用和@Bean(mapperScannerConfigurer)功能一致 ?
