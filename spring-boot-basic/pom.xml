@@ -38,6 +38,8 @@
             <artifactId>spring-web</artifactId>
             <version>5.3.10</version>
         </dependency>
+
+        <!-- TODO: spring-boot-starter起到了怎样的作用? 基于spring-web mvc? -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>

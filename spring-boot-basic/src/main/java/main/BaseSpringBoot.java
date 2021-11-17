@@ -38,5 +38,5 @@ public class BaseSpringBoot { // 该启动类型不能放置在default package
     // }
 
     // 3. 在tomcat启动完成之后，自动运行指定逻辑
-    // 实现接口ApplicationRunner & CommandLineRunner的run()方法
+    //    实现接口ApplicationRunner & CommandLineRunner的run()方法
 }

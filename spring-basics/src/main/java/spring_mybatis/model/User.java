@@ -1,4 +1,4 @@
-package spring_mybatis.service;
+package spring_mybatis.model;
 
 import org.springframework.stereotype.Component;
 
