@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cache.annotation.EnableCaching;
 
 // Spring Boot实现的两个效果
+// 构建在Spring MVC的上层，提供更高效的开发
 // 1. 不需Spring MVC原始web.xml配置 ==> 注解+通过SPI机制(servlet3.0规范)
 // 2. 去掉外部的tomcat启动起来       ==> 使用内嵌的tomcat包
 @SpringBootApplication(excludeName = {})

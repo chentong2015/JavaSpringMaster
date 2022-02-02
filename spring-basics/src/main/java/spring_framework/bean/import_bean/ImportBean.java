@@ -12,4 +12,5 @@ import org.springframework.context.annotation.Import;
 @Import(value = {PersonImportSelector.class})
 @Configuration
 public class ImportBean {
+
 }

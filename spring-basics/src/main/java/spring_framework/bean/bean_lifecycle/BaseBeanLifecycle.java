@@ -13,7 +13,7 @@ public class BaseBeanLifecycle {
     // --> 基于构造器反射 推断构造方法 ?
     // --> 原始对象      内部属性为null
     // --> 依赖注入      填充属性, 属性赋值 populateBean()
-    //                 设置添加了@Autowired注解的属性
+    //                  设置添加了@Autowired注解的属性
     // --> 初始化前      调用添加了@PostConstruct注解的方法, 自定义的逻辑
     // --> 初始化        执行InitializingBean接口的方法 initializeBean()
     // --> 初始化后      进行AOP

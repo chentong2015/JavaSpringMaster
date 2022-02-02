@@ -97,7 +97,7 @@
             <version>2.12.5</version>
         </dependency>
 
-        <!-- 使用内嵌的tomcat容器
+        <!-- 使用内嵌的tomcat容器 - Spring Boot会内嵌该tomcat
         <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-core</artifactId>
