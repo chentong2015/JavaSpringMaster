@@ -1,10 +1,14 @@
-package model;
+package com.springboot.demo.model;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
 import java.util.List;
 
 // Entity实体映射到数据库中的Table表格，确定使用的table名称
 @Entity(name = "sessions")
+// 忽略指定的属性，在序列化object对象的时候，不需要序列下面的内容
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Session {
 
     // 字段的名称需要和表的列的名称严格的一致
@@ -13,7 +17,7 @@ public class Session {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long session_id;
     private String session_name;
-    private String getSession_description;
+    private String session_description;
     private Integer session_length;
 
     // 定义表格之间的关联, 以及汇总的表格
@@ -51,12 +55,12 @@ public class Session {
         this.session_name = session_name;
     }
 
-    public String getGetSession_description() {
-        return getSession_description;
+    public String getSession_description() {
+        return session_description;
     }
 
-    public void setGetSession_description(String getSession_description) {
-        this.getSession_description = getSession_description;
+    public void setSession_description(String session_description) {
+        this.session_description = session_description;
     }
 
     public Integer getSession_length() {

@@ -9,7 +9,7 @@
         <module name="spring-basics" />
         <module name="spring-boot-basic" />
         <module name="spring-boot-template" />
-        <module name="spring-boot-demo" />
+        <module name="spring-data-jpa-demo" />
       </profile>
     </annotationProcessing>
   </component>

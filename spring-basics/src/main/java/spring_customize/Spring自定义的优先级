@@ -1,0 +1,18 @@
+1. command line args
+2. spring application json args
+3. servlet paras
+4. jndi
+5. java system properties
+6. OS environment variables
+7. profile properties
+8. application properties
+9. @PropertySource annotations
+10. Default properties
+
+Environment Configuration
+application-{profile}.properties
+application-dev.properties
+application-prod.properties
+-Dspring.profiles.active=dev 指定要运行的profile的配置
+
+application.yml configuration

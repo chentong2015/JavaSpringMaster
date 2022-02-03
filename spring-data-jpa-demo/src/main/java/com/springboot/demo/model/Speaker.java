@@ -1,11 +1,14 @@
-package model;
+package com.springboot.demo.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 import java.util.List;
 
 @Entity(name = "speakers")
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Speaker {
 
     @Id
@@ -24,6 +27,7 @@ public class Speaker {
 
     // mappedBy = "speakers": refer to the Session attribute 'speakers'
     @ManyToMany(mappedBy = "speakers")
+    @JsonIgnore // 避免嵌套的循环，减少json数据结果的深度
     private List<Session> sessions;
 
     public Speaker() {
