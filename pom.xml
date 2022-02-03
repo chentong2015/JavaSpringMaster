@@ -12,6 +12,7 @@
         <module>spring-basics</module>
         <module>spring-boot-basic</module>
         <module>spring-boot-template</module>
+        <module>spring-boot-demo</module>
     </modules>
 
     <properties>
