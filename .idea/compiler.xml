@@ -9,12 +9,12 @@
         <module name="spring-basics" />
         <module name="spring-boot-basic" />
         <module name="spring-boot-template" />
-        <module name="spring-data-jpa-demo" />
         <module name="spring-data-jpa-basic" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="spring-boot-demo" target="11" />
+      <module name="spring-data-jpa-demo" target="11" />
     </bytecodeTargetLevel>
   </component>
 </project>
