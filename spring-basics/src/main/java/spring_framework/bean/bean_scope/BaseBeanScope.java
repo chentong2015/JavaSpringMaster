@@ -1,11 +1,16 @@
 package spring_framework.bean.bean_scope;
 
+// TODO: 注意对Singleton Scope的理解
+// 始终产生的是一个新的实例对象，单列指名称和对象的一一对应 !!
+// Bean scope forces Spring to produce a new bean instance as per the scope defined
+
 // https://docs.spring.io/spring-framework/docs/3.0.0.M3/reference/html/ch04s04.html
 public class BaseBeanScope {
 
     //Beans Scope 5种作用域
     // 1. singleton(Default):
-    //    Scopes a single bean definition to a single object instance per Spring IoC container.
+    //    Scopes a single bean definition to a single object instance per Spring IoC container
+
     // 2. prototype 原型:
     //    Scopes a single bean definition to any number of object instances 不限bean的实例对象数目
 
