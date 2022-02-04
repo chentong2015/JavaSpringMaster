@@ -9,10 +9,12 @@
 9. @PropertySource annotations
 10. Default properties
 
+-Dspring.profiles.active=dev
+在运行时，指定使用何种profile的配置
 Environment Configuration
 application-{profile}.properties
 application-dev.properties
 application-prod.properties
--Dspring.profiles.active=dev 指定要运行的profile的配置
 
 application.yml configuration
+yml配置文件和properties一致，两者可以混合使用

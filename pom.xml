@@ -12,12 +12,11 @@
         <module>spring-basics</module>
         <module>spring-boot-basic</module>
         <module>spring-boot-template</module>
-        <module>spring-boot-demo</module>
+        <module>spring-data-jpa-basic</module>
     </modules>
 
     <properties>
         <maven.compiler.source>15</maven.compiler.source>
         <maven.compiler.target>15</maven.compiler.target>
     </properties>
-
 </project>

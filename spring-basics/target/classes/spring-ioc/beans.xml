@@ -6,11 +6,11 @@
 
     <!-- 为Spring IoC所做的配置文件 -->
 
-    <!-- 使用xml方式来配置Aspect
-    <bean id="aBean" class="spring_ioc.baseMyBeanImpl"/>
+    <!-- 通过Spring aop schema来使用Aspect, 配置逻辑和注解一致
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    <spring_framework.bean id="aBean" class="spring_framework.spring_ioc.baseMyBeanImpl"/>
     <aop:main.config>
         <aop:aspect id="myAspect" ref="aBean"></aop:aspect>
-        <spring_aop:pointcut id="businessService" expression="execution(* transfer(..))"/>
+        <spring_framework.spring_aop:pointcut id="businessService" expression="execution(* transfer(..))"/>
     </aop:main.config> -->
-
 </beans>
