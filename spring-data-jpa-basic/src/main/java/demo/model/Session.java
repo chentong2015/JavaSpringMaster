@@ -1,6 +1,7 @@
 package demo.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.sun.istack.NotNull;
 
 import javax.persistence.*;
 import java.util.List;
@@ -16,8 +17,13 @@ public class Session {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long session_id;
+
+    @NotNull
     private String session_name;
+
+    @NotNull
     private String session_description;
+    
     private Integer session_length;
 
     // 定义表格之间的关联, 以及汇总的表格

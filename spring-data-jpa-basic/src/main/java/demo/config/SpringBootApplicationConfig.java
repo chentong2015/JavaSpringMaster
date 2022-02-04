@@ -7,6 +7,7 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import javax.sql.DataSource;
 
 @Configuration
+// @EnableTransactionManagement
 public class SpringBootApplicationConfig {
 
     // TODO: 从配置文件中自动加载配置的信息，完成DataSource的设置
