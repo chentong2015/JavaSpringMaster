@@ -18,12 +18,14 @@ public class Session {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long session_id;
 
+    // TODO: 下面的名称在数据库中会自动的映射到指定的列名称中
+    //      table中的名称是lower case, 会转换映射到"session_name"列名称上 !!
     @NotNull
-    private String session_name;
+    private String sessionName;
 
     @NotNull
     private String session_description;
-    
+
     private Integer session_length;
 
     // 定义表格之间的关联, 以及汇总的表格
@@ -53,12 +55,12 @@ public class Session {
         this.session_id = session_id;
     }
 
-    public String getSession_name() {
-        return session_name;
+    public String getSessionName() {
+        return sessionName;
     }
 
-    public void setSession_name(String session_name) {
-        this.session_name = session_name;
+    public void setSessionName(String sessionName) {
+        this.sessionName = sessionName;
     }
 
     public String getSession_description() {

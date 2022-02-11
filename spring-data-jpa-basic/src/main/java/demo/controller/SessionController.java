@@ -34,6 +34,7 @@ public class SessionController {
     }
 
     // TODO: Spring MVC 将Body中的Json数据中的attributes自动生成指定类型的对象
+    //   提供的是JSON的数据格式，传入并发送请求到指定的URL
     @PostMapping
     // @ResponseStatus(HttpStatus.CREATED) // 自定义要返回的HTTP状态
     public Session create(@RequestBody final Session session) {
