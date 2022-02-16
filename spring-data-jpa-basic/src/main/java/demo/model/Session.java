@@ -1,9 +1,9 @@
 package demo.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.sun.istack.NotNull;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.List;
 
 // Entity实体映射到数据库中的Table表格，确定使用的table名称
@@ -20,6 +20,7 @@ public class Session {
 
     // TODO: 下面的名称在数据库中会自动的映射到指定的列名称中
     //      table中的名称是lower case, 会转换映射到"session_name"列名称上 !!
+    // @Column(name = "component_id", nullable = false) 或者使用列的对应标注
     @NotNull
     private String sessionName;
 
