@@ -25,3 +25,5 @@ spring.datasource.username=admin
 spring.datasource.password=admin
 spring.jpa.database-platform=com.retail.experience.config.SQLDialect
 spring.jpa.hibernate.ddl-auto=update
+
+TODO. 使用嵌入式的数据库只能有一个Connection(一个Application Process去连接数据库)
