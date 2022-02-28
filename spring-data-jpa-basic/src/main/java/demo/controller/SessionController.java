@@ -13,6 +13,10 @@ import java.util.List;
 // Spring只提供@GetMapping和@PostMapping
 //  1. 可以指明请求的类型
 //  2. 使用特定的URL路径来处理
+
+// PUT   覆盖数据库中原始的数据
+// PATCH 更新数据库中原始数据的一部分
+// NOTE: 需要验证参数的有效性，再执行数据查询操作
 @RestController
 @RequestMapping("/api/v1/sessions")
 public class SessionController {
@@ -48,10 +52,9 @@ public class SessionController {
         repository.deleteById(id);
     }
 
-    // PUT   覆盖数据库中原始的数据
-    // PATCH 更新数据库中原始数据的一部分
-    // NOTE: 需要验证参数的有效性，再执行数据查询操作
-    //
+    // TODO: 数据在通过body发送到EndPoint时，Jackson将json数据解析成object时
+    //       必须和原始发送数据所对于的object类型字段一致
+    //       和getter & setter方法的自动调用有关
     // http://localhost:8080/api/v1/sessions/2
     // Row body, Type: JSON
     // {
