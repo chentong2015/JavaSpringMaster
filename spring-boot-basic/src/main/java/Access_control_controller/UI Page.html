@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello CORS</title>
+    <script src="../static/js/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+<div>
+    <p class="greeting-id">The ID is </p>
+    <p class="greeting-content">The content is </p>
+</div>
+
+<script>
+    // Ajax: jQuery Library封装的方法
+    // 前端JS向跨域的URL发送H请求
+    $(document).ready(function () {
+        $.ajax({
+            url: "http://localhost:8080/greeting"
+        }).then(function (data, status, jqxhr) {
+            $('.greeting-id').append(data.id);
+            $('.greeting-content').append(data.content);
+            console.log(jqxhr);
+        });
+    });
+</script>
+
+</body>
+</html>

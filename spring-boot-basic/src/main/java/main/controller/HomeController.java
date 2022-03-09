@@ -7,7 +7,7 @@ import springfox.documentation.annotations.Cacheable;
 
 @Controller
 public class HomeController {
-
+    
     @ResponseBody
     @GetMapping("/home")
     @Cacheable(value = "homeCache")
