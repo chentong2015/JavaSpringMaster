@@ -10,6 +10,8 @@
         <module name="spring-boot-basic" />
         <module name="spring-boot-template" />
         <module name="spring-data-jpa-basic" />
+        <module name="spring-boot-demo1" />
+        <module name="spring-basics-ioc" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+
+<!-- 引入指定的Fragment: 提供文件的路径和Fragment名称
+     th:replace="~{fragments/head_fragment::headFragment}"
+     在这里通过selector选择器从模板逻辑的文件中加载 -->
+<head id="headId">
+    <meta charset="UTF-8">
+    <title>Home page</title>
+
+    <!-- 前面的配置是静态的配置，后者才是thymeleaf启动后会自动渲染的CSS效果 -->
+    <!-- <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+   <link rel="stylesheet" href="../static/css/bootstrap.min.css">  -->
+
+    <!-- TODO: 注意位置命名的规范化，默认在static目录下面，所有不需要添加 ../static/ -->
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+    <link rel="stylesheet" th:href="@{css/bootstrap.min.css}">
+
+</head>
+
+<body>
+<div align="center">
+    <h1 th:text="#{headerMessage}"> This is home page </h1>
+    <!-- 这里的attributes值需要在运行的时候进行解析
+         href="game.html" 使用静态渲染出来的效果 -->
+    <a th:text="${value}" th:href="game" href="game.html">Go to game page</a>
+
+    <h3 th:text="${resultMessage}">Result message</h3>
+    <form action="play" method="post">
+        <label> Enter one number </label>
+        <!-- type约束出入值的范围, name名称必须是POST的参数的变量名称 -->
+        <input id="guess" type="number" name="input"/>
+        <input id="submit" type="submit" value="Submit_Button">
+    </form>
+
+    <footer>
+        <p> This is the home web page </p>
+    </footer>
+</div>
+</body>
+
+</html>

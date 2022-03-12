@@ -1,0 +1,18 @@
+<!-- If you use standard configuration locations, Spring cannot completely control log initialization.
+     推荐使用logback-spring.xml命名, 将log的初始化完全交给Spring
+     使用原始logback.xml命名, 将无法做到, 因为过早加载 -->
+
+<configuration>
+    <!-- Include the default configuration, the base xml file in Spring Boot Dependencies
+         使用Spring Boot默认的配置：提供文件完整的路径
+         External Libraries > maven: org.springframework.boot:spring-boot:2.4.4 > org.springframework.boot > logging > logback
+         base.xml 使用<included>标记，表示可以被被的文件引入 -->
+    <include resource="org/springframework/boot/logging/logback/base.xml"/>
+
+    <logger name="main" level="DEBUG"/>
+
+    <logger name="org.springframework" level="INFO"/>
+    <!-- 日期          Level process_ID  thead_Name        Logger_Name                     Logger_Message
+         2021-03-21.. INFO  7920    -   [nio-8080-exec-1] c.e.b.com.ctong.springboot.controller.BaseController : home method called ... -->
+
+</configuration>
