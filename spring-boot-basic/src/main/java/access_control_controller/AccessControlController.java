@@ -1,4 +1,4 @@
-package Access_control_controller;
+package access_control_controller;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
