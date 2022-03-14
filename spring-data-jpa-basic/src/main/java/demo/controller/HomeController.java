@@ -4,8 +4,12 @@ import demo.model.User;
 import demo.repositories.HomeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.net.InetSocketAddress;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -46,7 +50,7 @@ public class HomeController {
         return "Create user with id = " + userId;
     }
 
-    // TODO: 使用@RequestParam来获取URL中的参数
+    // TODO: @RequestParam获取URL中的参数
     @GetMapping("/api/foos1")
     @ResponseBody
     public String getParam1(@RequestParam Optional<String> id) {
@@ -71,5 +75,27 @@ public class HomeController {
     @ResponseBody
     public String getParam4(@RequestParam List<String> id) {
         return "IDs are " + id;
+    }
+
+    // TODO: @RequestHeader获取请求的header中的信息
+    @GetMapping("/greeting")
+    public ResponseEntity<String> greeting(@RequestHeader("accept-language") String language) {
+        // code that uses the language variable
+        // 返回请求的实体，其中配置response信息和详细的状态
+        return new ResponseEntity<>("greeting", HttpStatus.OK);
+    }
+
+    @GetMapping("/double")
+    public ResponseEntity<String> doubleNumber(@RequestHeader("my-number") int myNumber) {
+        String result = String.format("%d * 2 = %d", myNumber, (myNumber * 2));
+        return new ResponseEntity<>(result, HttpStatus.OK);
+    }
+
+    // Get our headers as an HttpHeaders object
+    @GetMapping("/getBaseUrl")
+    public ResponseEntity<String> getBaseUrl(@RequestHeader HttpHeaders headers) {
+        InetSocketAddress host = headers.getHost();
+        String url = "http://" + host.getHostName() + ":" + host.getPort();
+        return new ResponseEntity<String>(String.format("Base URL = %s", url), HttpStatus.OK);
     }
 }
