@@ -16,7 +16,7 @@ public class AccessControlController {
     @CrossOrigin(origins = "http://localhost:8080")
     @GetMapping("/status/test")
     public String test() {
-        //  return "<div>test</div>";
+        // return "<div>test</div>";
         return "{\"order_id\": \"test order id\"}";
     }
 
