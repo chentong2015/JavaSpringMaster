@@ -97,3 +97,5 @@ z
 Jspring-data-jpa-basic/src/main/java/demo/controller/SessionController.java,8\6\86467bee28d1702658db37eb6a6ef5169306e89b
 †
 Vspring-boot-basic/src/main/java/access_control_controller/AccessControlController.java,2\f\2f2bcfad4df3a1ec85855c83de98b70a07bc22df
+x
+Hspring-boot-basic/src/main/java/main/config/CommandLineRunnerConfig.java,a\2\a21ca2aec4682fdbedf6f940df111b06dd447672

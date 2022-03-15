@@ -1,6 +1,6 @@
 package main.app_initializer;
 
-import main.config.SpringBootConfig;
+import base.swagger.ui.SpringBootConfig;
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.ContextLoaderListener;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
