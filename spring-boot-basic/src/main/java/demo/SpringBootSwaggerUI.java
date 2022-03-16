@@ -1,4 +1,4 @@
-package master.swagger_ui;
+package demo;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -13,7 +13,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @Configuration
 @EnableWebMvc
 @EnableSwagger2
-public class SpringBootConfig implements WebMvcConfigurer {
+public class SpringBootSwaggerUI implements WebMvcConfigurer {
 
     // springfox-swagger 提供UI界面的API请求操作
     // https://springfox.github.io/springfox/docs/current/

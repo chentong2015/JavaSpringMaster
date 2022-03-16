@@ -1,4 +1,4 @@
-package demo.config;
+package demo;
 
 import org.springframework.boot.CommandLineRunner;
 
