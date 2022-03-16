@@ -25,7 +25,7 @@ public class SessionController {
     private SessionRepository repository;
 
     // TODO: JPA Repository查询数据，返回List<Session>
-    //  Spring MVC 将数据传递给Jackson(序列号类库)，将数据转换成JSON返回
+    //  Spring MVC 将数据传递给Jackson(序列类库)，将数据转换成JSON返回
     @GetMapping
     public List<Session> list() {
         return repository.findAll();

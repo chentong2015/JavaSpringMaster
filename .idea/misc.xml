@@ -13,6 +13,7 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/spring-boot-demo1/pom.xml" />
         <option value="$PROJECT_DIR$/spring-data-jpa-demo/pom.xml" />
       </set>
     </option>
