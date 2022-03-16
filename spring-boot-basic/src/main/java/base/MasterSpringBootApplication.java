@@ -14,7 +14,7 @@ public class MasterSpringBootApplication {
     //     @Documented
     //     @Configuration 该注解标明可以在"标明了该注解的类型"使用@Bean注入
     //     @Indexed  Java原生类库中没有提供此注解
-    // @EnableAutoConfiguration
+    // @SpringBootAutoConfiguration
     //     @Target({ElementType.TYPE})
     //     @Retention(RetentionPolicy.RUNTIME)
     //     @Documented
