@@ -1,2 +1,2 @@
-# Demo Spring Auto Config
-com.ctong.example.EnableAutoConfig=com.ctong.example.config.SpringBootAutoConfig
+# To Check ?
+com.spring.boot.EnableAutoConfig=master.auto_configure.config.SystemIntegrationConfiguration

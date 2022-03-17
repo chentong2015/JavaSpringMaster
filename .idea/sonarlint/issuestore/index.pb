@@ -71,16 +71,10 @@ h
 8spring-boot-basic/src/main/webapp/WEB-INF/view/about.jsp,9\6\96a024ee5c63db10d2d5886d6cba1793d9c05549
 h
 8spring-boot-basic/src/main/java/base/BaseSpringBoot.java,0\0\00adc56d43e9ab6442e73d22352cc599add9ed7e
-q
-Aspring-boot-basic/src/main/java/base/MasterSpringBootStarter.java,e\2\e29456dc78a14b9afe4ac2dfacecfe73afe28375
-j
-:spring-boot-basic/src/main/java/base/MasterSpringBoot.java,9\6\961154dd68d673d3c6706d109a5da3b4ba491241
 I
 spring-boot-basic/pom.xml,f\7\f7ade08e018c9621e585b0d16da6f4dc0bb0ec8f
 s
 Cspring-boot-basic/src/main/java/demo/controller/BaseController.java,9\c\9ce9505d3a598772df0dbb2f3a171f1e5ac53a8d
-u
-Espring-boot-basic/src/main/java/base/MasterSpringBootApplication.java,c\2\c2eef80d623b854859c272c1072634b03422f586
 m
 =spring-boot-basic/src/main/java/demo/SpringBootSwaggerUI.java,d\b\dbbf865f793f44a259f717cfcd3e557514b0d4a2
 i
