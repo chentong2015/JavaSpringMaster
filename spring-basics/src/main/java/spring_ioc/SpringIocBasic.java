@@ -1,8 +1,6 @@
 package spring_ioc;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import spring_ioc.base.MyBean;
-import spring_ioc.config.AppConfig;
 
 // Spring能够更好的管理java中的对象，相当于对象的管理者 !!
 // 被Spring管理的对象才能完成自动注入，依赖注入
@@ -15,7 +13,7 @@ import spring_ioc.config.AppConfig;
 
 // Spring 依赖查找:
 // UserController { Map<String, IRule> 使用接口 }
-public class BaseSpringIOC {
+public class SpringIocBasic {
 
     // 如何理解Spring IoC容器?  Spring IOC Container是什么?
     // TODO: 完成一序列功能的一系列组件共同构成IOC容器，都在BeanFactory中

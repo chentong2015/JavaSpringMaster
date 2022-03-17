@@ -10,11 +10,11 @@ public class BaseBeanScope {
     // Beans Scope 5种作用域
     // 1. singleton(Default):
     //    Scopes a single bean definition to a single object instance per Spring IoC container
+    //    The singleton scope should be used for stateless beans 无状态的
 
     // 2. prototype 原型:
     //    Scopes a single bean definition to any number of object instances
-    //    > use the prototype scope for all beans that are stateful 原型作用域应该使用在无状态上
-    //    > while the singleton scope should be used for stateless beans.
+    //    The prototype scope for all beans that are stateful 原型是包含有状态的
 
     // ## 以下两个作用需要使用在Web Application上 ##
     // 3. request:

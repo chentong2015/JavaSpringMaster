@@ -4,7 +4,7 @@ import org.springframework.aop.framework.AopContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import spring_aop.aspect_demo.model.Calculation;
-import spring_ioc.config.AppConfig;
+import spring_ioc.AppConfig;
 
 // 该注解会注册一个AnnotationAwareAspectJAutoProxyCreator bean组件
 // 该组件实现了BeanPostProcessor接口 ==> 确定使用的后置处理器

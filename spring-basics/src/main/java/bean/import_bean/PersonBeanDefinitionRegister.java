@@ -1,6 +1,5 @@
 package bean.import_bean;
 
-import bean.import_bean.base.Person;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.beans.factory.support.RootBeanDefinition;
 import org.springframework.context.annotation.ImportBeanDefinitionRegistrar;
@@ -12,7 +11,7 @@ public class PersonBeanDefinitionRegister implements ImportBeanDefinitionRegistr
     // 在ioc扫描bean并注册时，会自动的调用这个方法
     @Override
     public void registerBeanDefinitions(AnnotationMetadata importingClassMetadata, BeanDefinitionRegistry registry) {
-        RootBeanDefinition rootBeanDefinition = new RootBeanDefinition(Person.class);
+        RootBeanDefinition rootBeanDefinition = new RootBeanDefinition(BaseBean.class);
         registry.registerBeanDefinition("person", rootBeanDefinition);
     }
 }

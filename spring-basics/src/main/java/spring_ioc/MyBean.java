@@ -1,4 +1,4 @@
-package spring_ioc.base;
+package spring_ioc;
 
 public interface MyBean {
 
