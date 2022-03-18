@@ -1,2 +1,4 @@
-# To Check ?
-com.spring.boot.EnableAutoConfig=master.auto_configure.config.SystemIntegrationConfiguration
+# 这里配置自动装配时，要引入的Configuration
+# 通过@EnableAutoConfiguration > AutoConfigurationImportSelector来实现装配
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  master.auto_configure.demo.SystemIntegrationConfiguration

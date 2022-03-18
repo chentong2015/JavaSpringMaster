@@ -1,4 +1,4 @@
-package master.auto_configure.config;
+package master.auto_configure.demo;
 
 import org.springframework.context.annotation.Configuration;
 

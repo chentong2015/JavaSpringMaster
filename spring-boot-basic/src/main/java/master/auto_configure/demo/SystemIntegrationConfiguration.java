@@ -1,6 +1,5 @@
-package master.auto_configure.config;
+package master.auto_configure.demo;
 
-import master.auto_configure.service.AutoConfigService;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

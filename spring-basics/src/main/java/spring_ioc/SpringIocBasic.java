@@ -1,6 +1,7 @@
 package spring_ioc;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import spring_ioc.bean.MyBean;
 
 // Spring能够更好的管理java中的对象，相当于对象的管理者 !!
 // 被Spring管理的对象才能完成自动注入，依赖注入

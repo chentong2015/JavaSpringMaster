@@ -1,4 +1,4 @@
-package spring_ioc;
+package spring_ioc.bean;
 
 // 声明bean不可被继承
 public final class MyBeanInstance {
