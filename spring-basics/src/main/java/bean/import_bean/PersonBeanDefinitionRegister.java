@@ -10,8 +10,9 @@ public class PersonBeanDefinitionRegister implements ImportBeanDefinitionRegistr
 
     // 在ioc扫描bean并注册时，会自动的调用这个方法
     @Override
-    public void registerBeanDefinitions(AnnotationMetadata importingClassMetadata, BeanDefinitionRegistry registry) {
-        RootBeanDefinition rootBeanDefinition = new RootBeanDefinition(BaseBean.class);
+    public void registerBeanDefinitions(AnnotationMetadata importingClassMetadata,
+                                        BeanDefinitionRegistry registry) {
+        RootBeanDefinition rootBeanDefinition = new RootBeanDefinition(MyBean.class);
         registry.registerBeanDefinition("person", rootBeanDefinition);
     }
 }

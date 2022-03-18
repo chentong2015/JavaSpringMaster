@@ -17,9 +17,8 @@ public class BaseBeanScope {
     //    The prototype scope for all beans that are stateful 原型是包含有状态的
 
     // ## 以下两个作用需要使用在Web Application上 ##
-    // 3. request:
-    //    Scopes a single bean definition to the lifecycle of a single HTTP request
-    //    限制单个HTTP请求的生命周期
+    // 3. request: @RequestScope
+    //    Scopes a single bean definition to the lifecycle of a single HTTP request 区间在一个单独的http请求
     //    each HTTP request has its own instance of a bean created off the back of a single bean definition.
     //    Only valid in the context of a web-aware Spring ApplicationContext.
 
