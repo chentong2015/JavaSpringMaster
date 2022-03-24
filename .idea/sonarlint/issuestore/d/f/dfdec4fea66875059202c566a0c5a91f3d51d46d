@@ -1,0 +1,23 @@
+
+P
+java:S1854+":Remove this useless assignment to local variable "value1".(ŠıÃà
+K
+java:S1172)"5Remove these unused method parameters "num1", "num2".(›èõó
+V	java:S125""<This block of commented-out lines of code should be removed.(ÂÕ¡úüÿÿÿÿ
+H
+java:S1135"2Complete the task associated to this TODO comment.(ğ¡ÿ
+M
+java:S1135"2Complete the task associated to this TODO comment.(Ú÷øšüÿÿÿÿ
+H
+java:S1135"2Complete the task associated to this TODO comment.(¢÷·‹
+H
+java:S1135"2Complete the task associated to this TODO comment.(§´İŸ
+S	java:S106*"9Replace this use of System.out or System.err by a logger.(×äœˆúÿÿÿÿ
+A
+java:S1481+"+Remove this unused "value1" local variable.(ŠıÃà
+V	java:S125,"<This block of commented-out lines of code should be removed.(Ó×›Õÿÿÿÿÿ
+U
+java:S1854G":Remove this useless assignment to local variable "result".(±£å˜ûÿÿÿÿ
+Q	java:S1257"<This block of commented-out lines of code should be removed.(»¾ø
+F
+java:S1481G"+Remove this unused "result" local variable.(±£å˜ûÿÿÿÿ

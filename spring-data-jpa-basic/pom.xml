@@ -88,9 +88,7 @@
 
     <build>
         <plugins>
-            <!-- TODO: 该插件的作用是能够不使用Java运行 >./spring-data-jpa-demo.jar
-                 而不是使用 >java -jar spring-data-jpa-demo.jar
-                 仅作用在Linux或者是MacOS -->
+            <!-- 在Linux和MacOS平台，通过插件直接>./spring-data-jpa-demo.jar运行 -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
