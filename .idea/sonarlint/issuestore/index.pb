@@ -15,16 +15,12 @@ Lspring-data-jpa-basic/src/main/java/demo/repositories/SessionRepository.java,2
 Pspring-data-jpa-basic/src/test/java/demo/repositories/SpringMockitoDemoTest.java,a\4\a4506e806153a75f50a8679506a68920ef4ff640
 
 Qspring-data-jpa-basic/src/test/java/demo/repositories/SpringMockBeanDemoTest.java,1\7\17205ba479ef21cad2a37c49bc61ff9daa781044
-E
-spring-basics/pom.xml,1\0\10fef577872696fc773f80d6ffe9589ec1e20560
 n
 >spring-boot-template/src/main/java/com/ctong/MySpringBoot.java,1\0\1069c718f2e5d3e94ec25cc360429c294a45594a
 m
 =spring-basics-ioc/src/main/java/main/config/MyDateSource.java,e\5\e5d59da9323c10accf2ee13f6b9118d60501ff51
 u
 Espring-basics-ioc/src/main/java/main/event/BaseApplicationEvents.java,d\1\d189dd1138b8ac4253d31669d9b4dfbd140721c2
-I
-spring-basics-ioc/pom.xml,9\7\978e47c3d725f41f9a4e1bb584f498275eb97c0e
 {
 Kspring-boot-template/src/main/java/com/ctong/controller/HomeController.java,6\7\6795e6646226fa0aa1b5e213abf33f912f880ae6
 r
@@ -141,3 +137,7 @@ o
 ?spring-basics/src/main/java/spring_ioc/bean/MyBeanInstance.java,9\0\906176b2110cde49eda1d3810711ea08c02cb68b
 k
 ;spring-basics/src/main/java/spring_ioc/bean/MyBeanImpl.java,f\b\fb5443d48158a1e766450fbc943c272a5f85b1d2
+M
+spring-data-jpa-basic/pom.xml,2\2\2250b66a00f19b2ca85551551a22585169aa529a
+I
+spring-basics-ioc/pom.xml,9\7\978e47c3d725f41f9a4e1bb584f498275eb97c0e
