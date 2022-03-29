@@ -1,6 +1,6 @@
 package demo.service;
 
-import com.ctong.springboot.thymeleaf.ISpringInternationalization;
+import demo.thymeleaf.ISpringInternationalization;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

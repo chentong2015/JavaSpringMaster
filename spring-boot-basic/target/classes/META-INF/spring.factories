@@ -1,2 +1,4 @@
-# Demo Spring Auto Config
-com.ctong.example.EnableAutoConfig=com.ctong.example.config.SpringBootAutoConfig
+# 这里配置自动装配时，要引入的Configuration
+# 通过@EnableAutoConfiguration > AutoConfigurationImportSelector来实现装配
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  master.auto_configure.demo.SystemIntegrationConfiguration

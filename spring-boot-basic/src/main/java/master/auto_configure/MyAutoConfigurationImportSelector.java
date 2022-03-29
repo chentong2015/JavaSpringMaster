@@ -13,7 +13,7 @@ public class MyAutoConfigurationImportSelector implements ImportSelector {
     // 方式1: 直接通过完整路径(全类名路径)导入 ==> 不推荐
     // @Override
     // public String[] selectImports(AnnotationMetadata importingClassMetadata) {
-    //   return new String[]{"spring_framework.bean.import_bean.Person"};
+    //   return new String[]{"spring_framework.bean.import_bean.PersonClass"};
     // }
 
     // 方式2: 通过读取properties文件中的配置来解耦 ==> 不推荐
