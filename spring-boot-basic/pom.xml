@@ -39,17 +39,13 @@
             <version>5.3.10</version>
         </dependency>
 
-        <!-- TODO: spring-boot-starter起到了怎样的作用? 基于spring-web mvc? -->
+        <!-- TODO: spring-boot-starter的作用: 集成和准备项目所需要的依赖，只使用一个依赖启动项目 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
             <version>2.5.5</version>
         </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-webmvc</artifactId>
-            <version>5.3.10</version>
-        </dependency>
+
         <!-- Java EE底层原生包 -->
         <dependency>
             <groupId>javax.servlet</groupId>
@@ -58,16 +54,6 @@
             <scope>provided</scope>
         </dependency>
 
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot</artifactId>
-            <version>2.5.5</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter</artifactId>
-            <version>2.5.5</version>
-        </dependency>
         <!-- 提供缓存支持 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 // PUT http://localhost:8080/v2/api/data    > 404: "Not Found Exception"
 // PUT http://localhost:8080/v1/api/data    > 405: "Method Not Allowed Exception"
 // PUT http://localhost:8080/v1/api/data/xx > 400: "Bad Request Exception"
-// 相信的异常信息可以返回给客户端
+// 详细的异常信息可以返回给客户端
 
 @RestController
 @RequestMapping("/v1/api/")
