@@ -6,12 +6,13 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Component;
 
-// 如何拿到Spring生成的bean的名称
-// 如何获取创建bean的bean工厂
+// TODO. Spring启动后，获取到指定的Spring Context
+//    从applicationContext中获取bean工厂和指定的bean(通过名称或者类型)
 @Component
 public class BaseBeanAware implements BeanNameAware, ApplicationContextAware {
 
     private String beanName;
+    private ApplicationContext applicationContext;
 
     @Override
     public void setBeanName(String name) {
@@ -20,6 +21,14 @@ public class BaseBeanAware implements BeanNameAware, ApplicationContextAware {
 
     @Override
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
-        // applicationContext 拿到bean factory
+        this.applicationContext = applicationContext;
+    }
+
+    public Object getBean(String name) {
+        return applicationContext.getBean(name);
+    }
+
+    public <T> T getBean(Class<T> clazz) {
+        return applicationContext.getBean(clazz);
     }
 }
