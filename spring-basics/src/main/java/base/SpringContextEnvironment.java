@@ -1,10 +1,11 @@
-package base.config;
+package base;
 
+import base.config.AppContainerConfig;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.core.env.Environment;
 
-public class BaseSpringContextEnvironment {
+public class SpringContextEnvironment {
 
     // 从Spring Application启动的环境变量中获取指定的变量值
     // demo.project.name=chentong;demo.project.coder=ctong

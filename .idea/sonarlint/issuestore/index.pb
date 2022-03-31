@@ -113,8 +113,6 @@ Espring-basics/src/main/java/master/bean/bean_scope/BaseBeanScope.java,0\f\0f02
 Qspring-basics/src/main/java/master/bean/bean_lifecycle/component/BaseService.java,c\8\c8bc8f20ea328da8705e4ca982abf81db68c3f68
 `
 0spring-basics/src/main/java/base/BaseSpring.java,e\5\e5888b2b2e0fecb571a980ca6646dd3dba375964
-y
-Ispring-basics/src/main/java/base/config/BaseSpringContextEnvironment.java,2\5\252f7be0a9e60185f1c10e10f0ba6f70b55da64f
 h
 8spring-basics/src/main/java/base/BaseSpringProjects.java,8\f\8fdbf866111623bc872e2932023244ce56fe3994
 ƒ
@@ -169,8 +167,6 @@ z
 Jspring-basics/src/main/java/master/bean/bean_lifecycle/component/User.java,a\8\a83f4464240ecf726f9cea1f8f8230a810f29b50
 h
 8spring-boot-basic/src/main/java/demo/BaseSpringBoot.java,1\f\1fa54e4c4749586b9eb86bcb56f6f363b94a03e2
-t
-Dspring-boot-basic/src/main/java/demo/BasicSpringbootApplication.java,f\2\f217be0185c925749b13ed506bdf20eb46645221
 |
 Lspring-boot-basic/src/main/java/demo/controller/RequestTesterController.java,0\1\01b5f7336343d9590f4c33dfa2ff79cb704e8573
 „
@@ -183,3 +179,5 @@ u
 Espring-boot-basic/src/main/java/demo/controller/MasterController.java,d\f\dff1850bfde880168a5a5ecd78c33e017f87f074
 s
 Cspring-boot-basic/src/main/java/demo/controller/BaseController.java,9\c\9ce9505d3a598772df0dbb2f3a171f1e5ac53a8d
+y
+Ispring-basics/src/main/java/master/bean/bean_lifecycle/BaseBeanAware.java,f\f\ffe5a99bbdfe22a92dfbb40378760489ebc984c8
