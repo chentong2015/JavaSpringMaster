@@ -79,8 +79,6 @@ v
 Fspring-boot-basic/src/main/java/demo/interceptors/BaseInterceptor.java,5\e\5e5f3de2e062dc33443bf237a8b97b0cd0b71b26
 Œ
 \spring-boot-basic/src/main/java/master/auto_configure/MyAutoConfigurationImportSelector.java,0\4\04a77b63689109f96796a7401044e9c0b349c397
-w
-Gspring-data-jpa-basic/src/main/java/demo/controller/HomeController.java,4\a\4aa71ab536662a3bd704f7da9e5877fc5b3f3dd1
 z
 Jspring-data-jpa-basic/src/main/java/demo/controller/SessionController.java,8\6\86467bee28d1702658db37eb6a6ef5169306e89b
 k
@@ -91,8 +89,6 @@ o
 ?spring-boot-basic/src/main/java/master/SpringBootSwaggerUI.java,e\b\eb80d5f8e3b8790e6368ee457d3d72437b00ac8d
 m
 =spring-boot-basic/src/main/java/demo/service/BaseService.java,9\d\9d56f3730c07ba0a06034b94b2cadfa220208ab3
-s
-Cspring-boot-basic/src/main/java/demo/controller/BaseController.java,9\c\9ce9505d3a598772df0dbb2f3a171f1e5ac53a8d
 o
 ?spring-basics/src/main/java/base/config/AppContainerConfig.java,a\b\abd5a1f2785c1ceb61062ea491a7d042e082365f
 s
@@ -103,8 +99,6 @@ S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
 g
 7spring-basics/src/main/java/base/application.properties,0\a\0a8c792ae4f20c17b1c7556ffa383cffe6261e9e
-l
-<spring-basics/src/main/java/master/spring_ioc/AppConfig.java,d\4\d4fb9e4e13e98617fca57e11a3cfcc728617e8d8
 „
 Tspring-basics/src/main/java/master/spring_aop/aspect_demo/AspectFastCalculation.java,f\9\f9d44a03d5be5e6fbb408b4c47eb187cf3d8519a
 

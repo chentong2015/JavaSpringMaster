@@ -48,7 +48,7 @@ public class BaseController {
         return "home";
     }
 
-    @PostMapping("play")
+    @PostMapping(value = "play")
     public String play(@RequestParam int input) {
         System.out.println("Process the input for playing ...");
         return "redirect:/home";
