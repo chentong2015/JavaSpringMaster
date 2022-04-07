@@ -7,9 +7,6 @@ package base;
  * 3. Spring是轻量级的，很容易使用轻量级的Web Server, 可以只选择需要的module模块
  * 3. Spring提倡使用POJO: Plain Old Java Object
  */
-// TODO: 对于Spring框架利弊的认识
-// 1. 开源项目，功能齐全，直接使用
-// 2. 版本过多问题，源代码问题，潜在bug问题
 public class BaseSpringProjects {
 
     //                  运行时: 架构和所包含的Modules模块

@@ -1,5 +1,7 @@
 package demo.controller;
 
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 // TODO. Spring对请求异常的默认解析，对应到指定的Http Status Code上面 > DefaultHandlerExceptionResolver
@@ -34,5 +36,17 @@ public class RequestTesterController {
     @PutMapping("/data/{id}")
     public String delete(@PathVariable Long id) {
         return "put: ok";
+    }
+
+    // TODO. 测试Server端正常处理，但是返回的entity-body中不包含任何的内容
+    @GetMapping("/no-content")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void testNoContent() {
+
+    }
+
+    @GetMapping("/testing")
+    public Object testingNoContent() {
+        return new ResponseEntity<Void>(HttpStatus.NO_CONTENT);
     }
 }

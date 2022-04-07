@@ -52,8 +52,9 @@ public class NumberGeneratorImpl implements NumberGenerator {
     }
 
     /**
-     * @PreDestroy 但实例从Spring Container容器中移除的时候，所要调用的方法
-     * PreDestroy annotation is used on methods to signal that the instance is in the process of being removed by the container
+     * @PreDestroy 当实例从Spring Container容器中移除的时候，调用的方法
+     * PreDestroy annotation is used on methods to signal that
+     * the instance is in the process of being removed by the container
      */
     @PreDestroy
     public void preDestroy() {
