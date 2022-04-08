@@ -42,7 +42,6 @@ public class RequestTesterController {
     @GetMapping("/no-content")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void testNoContent() {
-
     }
 
     @GetMapping("/testing")

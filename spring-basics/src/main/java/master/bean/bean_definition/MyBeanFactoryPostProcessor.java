@@ -6,7 +6,6 @@ import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
 import org.springframework.beans.factory.config.ConstructorArgumentValues;
 import org.springframework.beans.factory.support.AbstractBeanDefinition;
 import org.springframework.beans.factory.support.GenericBeanDefinition;
-import spring_mybatis.base.InstanceB;
 
 // BeanFactoryPostProcessor
 // 后置处理器的作用: 在bean还没有实例化之前修改bean定义的属性
@@ -21,7 +20,7 @@ public class MyBeanFactoryPostProcessor implements BeanFactoryPostProcessor {
 
         // 1. 最终从ioc中取出的bean是InstanceB, 此时容器中没有InstanceA
         //    InstanceA instanceA = context.getBean(InstanceA.class);
-        rootBeanDefinition.setBeanClass(InstanceB.class);
+        // rootBeanDefinition.setBeanClass(InstanceB.class);
 
         // 2. 在此处设置注入模型，替代Component中添加的@Autowired注解
         rootBeanDefinition.setAutowireMode(AbstractBeanDefinition.AUTOWIRE_BY_TYPE);
