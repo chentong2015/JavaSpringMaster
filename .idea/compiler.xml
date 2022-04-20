@@ -11,6 +11,7 @@
         <module name="spring-boot-template" />
         <module name="spring-data-jpa-basic" />
         <module name="spring-basics-ioc" />
+        <module name="spring-boot-tester" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

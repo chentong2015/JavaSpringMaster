@@ -15,5 +15,6 @@
         <module>spring-boot-template</module>
         <module>spring-data-jpa-basic</module>
         <module>spring-basics-ioc</module>
+        <module>spring-boot-tester</module>
     </modules>
 </project>
