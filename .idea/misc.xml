@@ -14,11 +14,17 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/spring-boot-demo1/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-upload-download-files/pom.xml" />
         <option value="$PROJECT_DIR$/spring-data-jpa-demo/pom.xml" />
       </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="SwUserDefinedSpecifications">
+    <option name="specTypeByUrl">
+      <map />
+    </option>
   </component>
 </project>
