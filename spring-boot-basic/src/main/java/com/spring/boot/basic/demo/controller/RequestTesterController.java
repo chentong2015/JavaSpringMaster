@@ -3,6 +3,9 @@ package com.spring.boot.basic.demo.controller;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.util.UriComponentsBuilder;
+
+import java.net.URI;
 
 // TODO. Spring对请求异常的默认解析，对应到指定的Http Status Code上面 > DefaultHandlerExceptionResolver
 // 发送请求可能造成的异常：
@@ -51,7 +54,40 @@ public class RequestTesterController {
 
     // TODO. 测试返回的结果中包含content, 使用ResponseEntity body
     @GetMapping("/error")
-    public ResponseEntity<String> notfound() {
+    public ResponseEntity<String> error() {
         return new ResponseEntity<>("INTERNAL SERVER ERROR", HttpStatus.INTERNAL_SERVER_ERROR);
+    }
+
+    // TODO. 对于不带body的ResponseEntity的build构建
+    @GetMapping("/null-content")
+    public ResponseEntity<Void> nullContent() {
+        URI location = URI.create("uri");
+        return ResponseEntity.created(location).build();
+    }
+
+    // TODO. 将请求后特定的URI信息设置到ResponseEntity的头部"header"中
+    // 返回结果的response头部
+    // .andExpect(header().string("Location", "/v1/statics/data/e17dd1f1");
+    @PostMapping("/response-with-header")
+    public ResponseEntity<Void> responseWithHeader() {
+        URI uri = UriComponentsBuilder
+                .fromPath("/v1/statics/data/{id}")
+                .buildAndExpand("e17dd1f1")
+                .toUri();
+        return ResponseEntity.created(uri).build();
+
+        // String id = "e17dd1f1-f72d-";
+        // return ResponseEntity.created(UriComponentsBuilder
+        //        .fromPath("/v1/examples/data/{id}")
+        //        .buildAndExpand(id).toUri()).build();
+    }
+
+    @PostMapping("/response-with-header-and-body")
+    public ResponseEntity<String> responseWithHeaderAndBody() {
+        URI uri = UriComponentsBuilder
+                .fromPath("/v1/statics/data/{id}")
+                .buildAndExpand("e17dd1f1")
+                .toUri();
+        return ResponseEntity.created(uri).body("body message");
     }
 }

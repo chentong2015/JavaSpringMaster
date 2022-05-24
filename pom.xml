@@ -16,5 +16,7 @@
         <module>spring-data-jpa-basic</module>
         <module>spring-basics-ioc</module>
         <module>spring-boot-file-upload-download</module>
+        <module>spring-boot-tester1</module>
+        <module>spring-boot-tester2</module>
     </modules>
 </project>

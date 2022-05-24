@@ -8,9 +8,11 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-boot-basic" />
         <module name="spring-boot-template" />
+        <module name="spring-basics-ioc" />
+        <module name="spring-boot-tester1" />
         <module name="spring-basics" />
         <module name="spring-data-jpa-basic" />
-        <module name="spring-basics-ioc" />
+        <module name="spring-boot-tester2" />
         <module name="spring-boot-file-upload-download" />
       </profile>
     </annotationProcessing>
