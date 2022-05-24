@@ -21,8 +21,13 @@ import java.util.List;
 @RequestMapping("/api/v1/sessions")
 public class SessionController {
 
-    @Autowired
+    // TODO. 这里应该使用Service层的注入
     private SessionRepository repository;
+
+    @Autowired
+    public SessionController(SessionRepository repository) {
+        this.repository = repository;
+    }
 
     // TODO: JPA Repository查询数据，返回List<Session>
     //  Spring MVC 将数据传递给Jackson(序列类库)，将数据转换成JSON返回

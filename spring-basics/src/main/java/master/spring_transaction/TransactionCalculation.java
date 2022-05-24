@@ -16,6 +16,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Component
 public class TransactionCalculation {
 
+    // TODO. @Transactional可以作用在class级别
     @Transactional
     public void testException() {
         // jdbcTemplate.execute("insert ...");

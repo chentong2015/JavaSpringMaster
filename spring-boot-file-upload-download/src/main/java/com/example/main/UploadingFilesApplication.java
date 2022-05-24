@@ -16,10 +16,12 @@ public class UploadingFilesApplication {
         SpringApplication.run(UploadingFilesApplication.class, args);
     }
 
-    // 在tomcat启动完成之后，自动运行指定逻辑：初始化Server端的Storage
+    // 在tomcat启动完成之后，自动运行指定逻辑
     @Bean
     CommandLineRunner init(StorageService storageService) {
+        // 实现的run(String... args)方法，带有指定的参数
         return (args) -> {
+            // 初始化Server端的Storage
             storageService.deleteAll();
             storageService.init();
         };
