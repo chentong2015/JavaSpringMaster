@@ -48,4 +48,10 @@ public class RequestTesterController {
     public Object testingNoContent() {
         return new ResponseEntity<Void>(HttpStatus.NO_CONTENT);
     }
+
+    // TODO. 测试返回的结果中包含content, 使用ResponseEntity body
+    @GetMapping("/error")
+    public ResponseEntity<String> notfound() {
+        return new ResponseEntity<>("INTERNAL SERVER ERROR", HttpStatus.INTERNAL_SERVER_ERROR);
+    }
 }
