@@ -20,11 +20,11 @@ import org.springframework.context.annotation.PropertySource;
 // 也可以直接在XML中添加配置文件 <context:property-placeholder ...>
 @PropertySource("classpath:numberGenerator.properties")
 public class NumberGeneratorConfig {
-
+    
     /**
      * 从properties中提取指定的值注入 default value expression for the argument
      * 1. 所提取的名称字符串必须完全一致, 从string转换成int类型的值 parseInt()
-     * 2. 如果在properties file无法找到指定的值，则使用提供的默认值 !!
+     * 2. TODO. 如果在properties file无法找到指定的值，则使用提供的默认值 !!
      */
     @Value("${generator.maxNumber:100}")  // Find key in PropertySource
     private int maxNumber;
