@@ -36,16 +36,8 @@ public class Test1Controller {
     @PostMapping("/products/{id}")
     public ResponseEntity<String> insertProduct(@PathVariable("id") String id, @RequestBody Product product) {
         try {
+            // 只要这里的请求表示200正常返回，则会进入异常捕获条件 !!
             return productService.insertProduct(id, product);
-
-            // 如果上面的feign client请求抛出异常，则下面的逻辑无法被执行到
-            // if (response.getStatusCode().isError()) {
-            //     System.out.println(response.getStatusCodeValue());
-            //     System.out.printf(response.getBody());
-            // } else {
-            //     System.out.printf("200 OK");
-            // }
-            // return new ResponseEntity<>(response.getBody(), response.getStatusCode());
         } catch (FeignException exception) {
             // logger.error("Error: message", exception); 需要提供日志错误的输出
             // System.out.printf(exception.getMessage()); 获取整个的exception的内容信息
@@ -69,7 +61,7 @@ public class Test1Controller {
                     .buildAndExpand("e17dd1f1")
                     .toUri();
             return ResponseEntity.created(uri).body("success");
-            
+
         } catch (FeignException exception) {
             System.out.println(exception.getMessage());
             System.out.println("exception.status(): " + exception.status());
