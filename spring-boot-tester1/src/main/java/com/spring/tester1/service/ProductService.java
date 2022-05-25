@@ -20,4 +20,7 @@ public interface ProductService {
     //       异常携带的是请求的server上的(非200)对于的错误信息 !!
     @PostMapping(value = "/products/test/{id}", consumes = "application/json;charset=UTF-8")
     ResponseEntity<String> testInsertProduct(@PathVariable("id") String id, @RequestBody Product product);
+
+    @PostMapping(value = "/products/post/{id}", consumes = "application/json;charset=UTF-8")
+    ResponseEntity<String> testPostProduct(@PathVariable("id") String id, @RequestBody Product product);
 }

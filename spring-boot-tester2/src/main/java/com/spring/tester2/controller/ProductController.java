@@ -5,10 +5,7 @@ import com.spring.tester2.exception.ProductExistException;
 import com.spring.tester2.model.Product;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -51,5 +48,26 @@ public class ProductController {
         mockProducts.put(id, product);
         // 返回不带responseBody message的空ResponseEntity
         return ResponseEntity.ok().build();
+    }
+
+    // TODO. 在没有@ExceptionHandler的情况下，这里如果直接抛出异常，将显示如下的错误
+    // 当前端显示的错误信息
+    // {
+    //    "timestamp": "2022-05-25T16:25:34.631+00:00",
+    //    "status": 500,
+    //    "error": "Internal Server Error",
+    //    "path": "/products/post/3"
+    // }
+    // 调用的client端同样显示错误信息 ==> 并不能获取到error exception的内容 !!
+    // {  "timestamp":"2022-05-25T16:26:42.087+00:00",
+    //    "status":500,
+    //    "error":"Internal Server Error",
+    //    "path":"/products/post/6"
+    // }
+    @ExceptionHandler(ProductExistException.class)
+    @PostMapping("/products/post/{id}")
+    public ResponseEntity<String> testPostProduct(@PathVariable("id") String id, @RequestBody Product product) {
+        // return new ResponseEntity<>("bad request testing", HttpStatus.BAD_REQUEST);
+        throw new ProductExistException("Product already exists");
     }
 }

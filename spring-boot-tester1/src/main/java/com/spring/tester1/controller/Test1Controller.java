@@ -63,10 +63,7 @@ public class Test1Controller {
             return ResponseEntity.created(uri).body("success");
 
         } catch (FeignException exception) {
-            System.out.println(exception.getMessage());
-            System.out.println("exception.status(): " + exception.status());
             HttpStatus httpStatus = HttpStatus.valueOf(exception.status());
-
             Optional<ByteBuffer> response = exception.responseBody();
             if (response.isPresent()) {
                 String error = StandardCharsets.UTF_8.decode(response.get()).toString();
@@ -75,6 +72,28 @@ public class Test1Controller {
             }
             // TODO. 捕获异常后，在tester1层的controller没有抛出异常
             //       直接拿到的是对应的错误信息和httpStatus
+            return new ResponseEntity<>("error: without response body", httpStatus);
+        }
+    }
+
+    // 测试：不通过@ExceptionHandler，也能"同步"拿到server端相同的报错异常 !!
+    @PostMapping("/products/post/{id}")
+    public ResponseEntity<String> testPostProduct(@PathVariable("id") String id, @RequestBody Product product) {
+        try {
+            productService.testPostProduct(id, product);
+            URI uri = UriComponentsBuilder
+                    .fromPath("/v1/test/{id}")
+                    .buildAndExpand("e17dd1f1")
+                    .toUri();
+            return ResponseEntity.created(uri).body("success");
+        } catch (FeignException exception) {
+            HttpStatus httpStatus = HttpStatus.valueOf(exception.status());
+            Optional<ByteBuffer> response = exception.responseBody();
+            if (response.isPresent()) {
+                String error = StandardCharsets.UTF_8.decode(response.get()).toString();
+                System.out.println("error ---- " + error);
+                return new ResponseEntity<>(error, httpStatus);
+            }
             return new ResponseEntity<>("error: without response body", httpStatus);
         }
     }
