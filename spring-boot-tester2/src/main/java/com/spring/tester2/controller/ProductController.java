@@ -22,6 +22,7 @@ public class ProductController {
         Product product = new Product();
         product.setId("1");
         product.setName("apple");
+        mockProducts.put("1", product);
     }
 
     @PostMapping("/products/{id}")

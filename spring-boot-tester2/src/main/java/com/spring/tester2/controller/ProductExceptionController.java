@@ -13,7 +13,7 @@ public class ProductExceptionController {
 
     // TODO. 异常处理的时候，抛出自定义的ResponseEntity<Object>
     @ExceptionHandler(value = ProductExistException.class)
-    public ResponseEntity<Object> handleProductExistException(ProductExistException exception) {
+    public ResponseEntity<String> handleProductExistException(ProductExistException exception) {
         System.out.println("Handle product exist exception !!");
         return new ResponseEntity<>(exception.getMessage(), HttpStatus.BAD_REQUEST);
     }

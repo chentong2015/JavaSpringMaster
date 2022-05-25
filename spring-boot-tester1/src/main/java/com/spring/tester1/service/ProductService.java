@@ -7,15 +7,15 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 
-// 指定要发送的Server端的URL
-@FeignClient(value = "product-service", url = "http://localhost:8082/")
+// TODO. Failed to load ApplicationContext 在初始化构建的时候，这里的feign client必须要能够构建出来
+// 指定要发送的Server端的URL, 注意测试和模拟这里的URL
+@FeignClient(value = "product-service", url = "http://localhost:5679/")
 public interface ProductService {
 
     // 这里和要发送请求的Service Controller的方法一致
     @PostMapping(value = "/products/{id}", consumes = "application/json;charset=UTF-8")
     ResponseEntity<String> insertProduct(@PathVariable("id") String id, @RequestBody Product product);
 
-    // 没有response body的返回信息
     // TODO. 但这里的方法可能抛出FeignException异常，被调用它的方法所捕获
     //       异常携带的是请求的server上的(非200)对于的错误信息 !!
     @PostMapping(value = "/products/test/{id}", consumes = "application/json;charset=UTF-8")

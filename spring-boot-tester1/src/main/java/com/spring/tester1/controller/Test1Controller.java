@@ -47,7 +47,7 @@ public class Test1Controller {
             // }
             // return new ResponseEntity<>(response.getBody(), response.getStatusCode());
         } catch (FeignException exception) {
-            // logger 需要提供日志错误的输出
+            // logger.error("Error: message", exception); 需要提供日志错误的输出
             // System.out.printf(exception.getMessage()); 获取整个的exception的内容信息
             Optional<ByteBuffer> response = exception.responseBody();
             HttpStatus httpStatus = HttpStatus.valueOf(exception.status());
@@ -59,23 +59,23 @@ public class Test1Controller {
         }
     }
 
+    // TODO. 对于ResponseEntity<String>的返回类型，可以提供类似空的ResponseEntity<Void>
     @PostMapping("/products/test/{id}")
     public ResponseEntity<String> testInsertProduct(@PathVariable("id") String id, @RequestBody Product product) {
         try {
             productService.testInsertProduct(id, product);
-            // return new ResponseEntity<>("success", HttpStatus.OK);
             URI uri = UriComponentsBuilder
                     .fromPath("/v1/statics/data/{id}")
                     .buildAndExpand("e17dd1f1")
                     .toUri();
             return ResponseEntity.created(uri).body("success");
-
+            
         } catch (FeignException exception) {
-            // logger.error("Error: message", exception); 需要提供日志错误的输出
-            // System.out.printf(exception.getMessage()); 获取整个的exception的内容信息
+            System.out.println(exception.getMessage());
+            System.out.println("exception.status(): " + exception.status());
+            HttpStatus httpStatus = HttpStatus.valueOf(exception.status());
 
             Optional<ByteBuffer> response = exception.responseBody();
-            HttpStatus httpStatus = HttpStatus.valueOf(exception.status());
             if (response.isPresent()) {
                 String error = StandardCharsets.UTF_8.decode(response.get()).toString();
                 System.out.println("error ---- " + error);
@@ -83,7 +83,7 @@ public class Test1Controller {
             }
             // TODO. 捕获异常后，在tester1层的controller没有抛出异常
             //       直接拿到的是对应的错误信息和httpStatus
-            return new ResponseEntity<>("error ...", httpStatus);
+            return new ResponseEntity<>("error: without response body", httpStatus);
         }
     }
 }
