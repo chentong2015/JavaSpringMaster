@@ -205,15 +205,7 @@ Wspring-boot-basic/src/main/java/master/command/line/runner/CommandLineRunnerCon
 [spring-boot-basic/src/main/java/com/spring/boot/basic/demo/controller/MasterController.java,d\1\d170faa77aaa6def3ab74e4911d8e89f0777ebcd
 I
 spring-boot-basic/pom.xml,f\7\f7ade08e018c9621e585b0d16da6f4dc0bb0ec8f
-K
-spring-boot-tester2/pom.xml,0\0\00d9230f2fad5b38db4777e03e19e9f76e09a8cc
 l
 <spring-boot-basic/src/main/java/master/MasterSpringBoot.java,e\2\e20c0f6ac49eca2fd14b8c86df685ff2dc01da54
 ‰
 Yspring-boot-tester2/src/main/java/com/spring/tester2/exception/ProductExistException.java,d\8\d807ec581b76fc724702b97c9087a7e8a2ab80cf
-‹
-[spring-boot-tester2/src/main/java/com/spring/tester2/exception/InternalServerException.java,3\0\303ca8ede1eb4972275782a6c0e67b307daf324b
-w
-Gspring-boot-tester2/src/main/java/com/spring/tester2/model/Product.java,c\9\c9acd57a580ffde03e504283a624caf1b8962918
-w
-Gspring-boot-tester1/src/main/java/com/spring/tester1/model/Product.java,b\5\b56d3f8fa0c1c0d41c1fb61ece94ecd9bb63c440

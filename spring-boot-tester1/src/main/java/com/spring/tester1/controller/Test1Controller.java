@@ -17,8 +17,9 @@ import java.nio.ByteBuffer;
 import java.nio.charset.StandardCharsets;
 import java.util.Optional;
 
-// 项目场景 :: SpringBootA的endpoints对等调用SpringBootB的endpoints
-//           在SpringBootB上抛出的Exception异常错误信息，需要"同步"体现在SpringBootA上
+// 项目场景 ::
+// SpringBootA的endpoints对等调用SpringBootB的endpoints
+// 在SpringBootB上抛出的Exception异常错误信息，需要"同步"体现在SpringBootA上
 @RestController
 public class Test1Controller {
 
@@ -36,6 +37,15 @@ public class Test1Controller {
     public ResponseEntity<String> insertProduct(@PathVariable("id") String id, @RequestBody Product product) {
         try {
             return productService.insertProduct(id, product);
+
+            // 如果上面的feign client请求抛出异常，则下面的逻辑无法被执行到
+            // if (response.getStatusCode().isError()) {
+            //     System.out.println(response.getStatusCodeValue());
+            //     System.out.printf(response.getBody());
+            // } else {
+            //     System.out.printf("200 OK");
+            // }
+            // return new ResponseEntity<>(response.getBody(), response.getStatusCode());
         } catch (FeignException exception) {
             // logger 需要提供日志错误的输出
             // System.out.printf(exception.getMessage()); 获取整个的exception的内容信息
@@ -47,15 +57,6 @@ public class Test1Controller {
             }
             return new ResponseEntity<>("error", httpStatus);
         }
-
-        // 如果上面的feign client请求抛出异常，则下面的逻辑无法被执行到
-        // if (response.getStatusCode().isError()) {
-        //     System.out.println(response.getStatusCodeValue());
-        //     System.out.printf(response.getBody());
-        // } else {
-        //     System.out.printf("200 OK");
-        // }
-        // return new ResponseEntity<>(response.getBody(), response.getStatusCode());
     }
 
     @PostMapping("/products/test/{id}")
@@ -68,15 +69,20 @@ public class Test1Controller {
                     .buildAndExpand("e17dd1f1")
                     .toUri();
             return ResponseEntity.created(uri).body("success");
+
         } catch (FeignException exception) {
-            // logger 需要提供日志错误的输出
+            // logger.error("Error: message", exception); 需要提供日志错误的输出
             // System.out.printf(exception.getMessage()); 获取整个的exception的内容信息
+
             Optional<ByteBuffer> response = exception.responseBody();
             HttpStatus httpStatus = HttpStatus.valueOf(exception.status());
             if (response.isPresent()) {
                 String error = StandardCharsets.UTF_8.decode(response.get()).toString();
+                System.out.println("error ---- " + error);
                 return new ResponseEntity<>(error, httpStatus);
             }
+            // TODO. 捕获异常后，在tester1层的controller没有抛出异常
+            //       直接拿到的是对应的错误信息和httpStatus
             return new ResponseEntity<>("error ...", httpStatus);
         }
     }

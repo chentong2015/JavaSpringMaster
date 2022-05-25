@@ -16,6 +16,8 @@ public interface ProductService {
     ResponseEntity<String> insertProduct(@PathVariable("id") String id, @RequestBody Product product);
 
     // 没有response body的返回信息
+    // TODO. 但这里的方法可能抛出FeignException异常，被调用它的方法所捕获
+    //       异常携带的是请求的server上的(非200)对于的错误信息 !!
     @PostMapping(value = "/products/test/{id}", consumes = "application/json;charset=UTF-8")
-    ResponseEntity<Void> testInsertProduct(@PathVariable("id") String id, @RequestBody Product product);
+    ResponseEntity<String> testInsertProduct(@PathVariable("id") String id, @RequestBody Product product);
 }

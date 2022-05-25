@@ -26,6 +26,7 @@ public class ProductController {
 
     @PostMapping("/products/{id}")
     public ResponseEntity<String> insertProduct(@PathVariable("id") String id, @RequestBody Product product) {
+        // 首先在JPA层面需要做一个判断
         if (mockProducts.containsKey(id)) {
             throw new ProductExistException("Product already exists");
         }
@@ -35,7 +36,6 @@ public class ProductController {
         } catch (Exception exception) {
             throw new InternalServerException("Find Internal Exception Error");
         }
-
         // 按照正确的方式返回的数据，不会进入异常的处理方法中
         return new ResponseEntity<>("Product insert successfully", HttpStatus.OK);
     }

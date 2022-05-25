@@ -13,7 +13,6 @@ import java.net.URI;
 // PUT http://localhost:8080/v1/api/data    > 405: "Method Not Allowed Exception"
 // PUT http://localhost:8080/v1/api/data/xx > 400: "Bad Request Exception"
 // 详细的异常信息可以返回给客户端
-
 @RestController
 @RequestMapping("/v1/api/")
 public class RequestTesterController {
@@ -66,7 +65,6 @@ public class RequestTesterController {
     }
 
     // TODO. 将请求后特定的URI信息设置到ResponseEntity的头部"header"中
-    // 返回结果的response头部
     // .andExpect(header().string("Location", "/v1/statics/data/e17dd1f1");
     @PostMapping("/response-with-header")
     public ResponseEntity<Void> responseWithHeader() {
@@ -82,6 +80,7 @@ public class RequestTesterController {
         //        .buildAndExpand(id).toUri()).build();
     }
 
+    // 设置头部信息的同时，提供response body的数据
     @PostMapping("/response-with-header-and-body")
     public ResponseEntity<String> responseWithHeaderAndBody() {
         URI uri = UriComponentsBuilder

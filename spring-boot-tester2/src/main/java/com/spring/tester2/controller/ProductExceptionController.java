@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 @ControllerAdvice
 public class ProductExceptionController {
 
-    // TODO. 异常处理的时候，将原始ResponseEntity<Void>的返回给改写了 ?
+    // TODO. 异常处理的时候，抛出自定义的ResponseEntity<Object>
     @ExceptionHandler(value = ProductExistException.class)
     public ResponseEntity<Object> handleProductExistException(ProductExistException exception) {
         System.out.println("Handle product exist exception !!");
