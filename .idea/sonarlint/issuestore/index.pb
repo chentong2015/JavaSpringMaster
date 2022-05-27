@@ -1,8 +1,4 @@
 
-k
-;spring-data-jpa-basic/src/main/java/demo/model/Speaker.java,7\6\76ea50942c0f0fcb53715752ba67541cd6b0c7de
-k
-;spring-data-jpa-basic/src/main/java/demo/model/Session.java,d\d\dde17376092ecb468c186ad452ec88cd6323ddcf
 â
 Yspring-data-jpa-basic/src/test/java/demo/controller/SessionControllerIntegrationTest.java,3\b\3b0c6b54bf65ecef3710db7e24b499d179bed1c1
 y
@@ -19,8 +15,6 @@ w
 Gspring-data-jpa-basic/src/main/java/demo/SpringBootDemoApplication.java,f\7\f72986b89d7c331325f8945b964a2d29e6eed5c0
 |
 Lspring-data-jpa-basic/src/main/java/demo/repositories/BaseJpaRepository.java,1\4\141820615162469cd1a7d79fdd8d33a66fd94e3b
-v
-Fspring-data-jpa-basic/src/main/java/demo/model/BaseGenerationType.java,2\6\2641fa06ea314ef316f8e5b9edd7401faa084106
 Ä
 Pspring-data-jpa-basic/src/main/java/demo/config/SpringBootApplicationConfig.java,0\f\0f177f91599747a4ba3655c32ec51918d71b1003
 h
@@ -149,8 +143,6 @@ Cspring-basics/src/main/java/master/bean/component/OrderService.java,2\2\2229be
 Mspring-basics/src/main/java/master/bean/import_bean/PersonImportSelector.java,7\9\79ab6eca5ce8c84e303f4c20701aa911b02e9d96
 Å
 Qspring-basics/src/main/java/base/listener/SpringApplicationLifecycleListener.java,8\7\87942d24def8db5546da8fa10fae09bda877a43a
-i
-9spring-basics/src/main/java/base/FileSystemClassPath.java,b\3\b3c92f9fd4ac61e84547273a37a61cdbb159539c
 s
 Cspring-basics-ioc/src/main/java/main/config/AppContainerConfig.java,8\0\80c705e355b2ea1bca2b3779f44e616451cdeadc
 r
@@ -221,3 +213,7 @@ K
 spring-boot-tester2/pom.xml,0\0\00d9230f2fad5b38db4777e03e19e9f76e09a8cc
 í
 bspring-boot-basic/src/main/java/com/spring/boot/basic/demo/controller/RequestTesterController.java,7\f\7ff515b4248846c2140c5d0008b4c34d30a16bb2
+K
+spring-boot-tester1/pom.xml,5\5\55b9c3c3347b9cacef1f74d78e7f4ba9e1a147d4
+Ü
+Vspring-boot-tester2/src/main/java/com/spring/tester2/SpringBootTester2Application.java,c\3\c3f7c86d680b7fe8ddac128c456d0ef7b7edc863
