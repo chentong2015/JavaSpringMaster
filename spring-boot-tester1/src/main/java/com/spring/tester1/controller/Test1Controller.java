@@ -52,6 +52,7 @@ public class Test1Controller {
     }
 
     // TODO. 对于ResponseEntity<String>的返回类型，可以提供类似空的ResponseEntity<Void>
+    //       可以不对ResponseEntity中的数据设置值
     @PostMapping("/products/test/{id}")
     public ResponseEntity<String> testInsertProduct(@PathVariable("id") String id, @RequestBody Product product) {
         try {
@@ -60,9 +61,10 @@ public class Test1Controller {
                     .fromPath("/v1/statics/data/{id}")
                     .buildAndExpand("e17dd1f1")
                     .toUri();
-            return ResponseEntity.created(uri).body("success");
+            return ResponseEntity.created(uri).build(); // .body("success")
 
         } catch (FeignException exception) {
+            System.out.println("Exception content: " + exception.contentUTF8());
             HttpStatus httpStatus = HttpStatus.valueOf(exception.status());
             Optional<ByteBuffer> response = exception.responseBody();
             if (response.isPresent()) {
@@ -70,8 +72,7 @@ public class Test1Controller {
                 System.out.println("error ---- " + error);
                 return new ResponseEntity<>(error, httpStatus);
             }
-            // TODO. 捕获异常后，在tester1层的controller没有抛出异常
-            //       直接拿到的是对应的错误信息和httpStatus
+            // TODO. 捕获异常后, 在tester1层的controller没有抛出异常; 直接拿到的是对应的错误信息和httpStatus
             return new ResponseEntity<>("error: without response body", httpStatus);
         }
     }

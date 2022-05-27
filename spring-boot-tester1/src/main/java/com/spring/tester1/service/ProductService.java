@@ -18,8 +18,9 @@ public interface ProductService {
 
     // TODO. 但这里的方法可能抛出FeignException异常，被调用它的方法所捕获
     //       异常携带的是请求的server上的(非200)对于的错误信息 !!
+    // 这里并需要设置ResponseEntity<String>, 在捕获到该方法的异常时也能拿到对应的String message !!
     @PostMapping(value = "/products/test/{id}", consumes = "application/json;charset=UTF-8")
-    ResponseEntity<String> testInsertProduct(@PathVariable("id") String id, @RequestBody Product product);
+    ResponseEntity<Void> testInsertProduct(@PathVariable("id") String id, @RequestBody Product product);
 
     @PostMapping(value = "/products/post/{id}", consumes = "application/json;charset=UTF-8")
     ResponseEntity<String> testPostProduct(@PathVariable("id") String id, @RequestBody Product product);

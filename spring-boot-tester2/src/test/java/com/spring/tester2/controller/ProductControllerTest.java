@@ -48,6 +48,6 @@ class ProductControllerTest {
                         .content(content)
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(MockMvcResultMatchers.status().isBadRequest())
-                .andExpect(content().string("Product already exists"));
+                .andExpect(content().string("Exception: Product already exists"));
     }
 }

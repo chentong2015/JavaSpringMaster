@@ -5,7 +5,10 @@ import com.spring.tester2.exception.ProductExistException;
 import com.spring.tester2.model.Product;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -64,10 +67,10 @@ public class ProductController {
     //    "error":"Internal Server Error",
     //    "path":"/products/post/6"
     // }
-    @ExceptionHandler(ProductExistException.class)
+    // @ExceptionHandler(ProductExistException.class)
     @PostMapping("/products/post/{id}")
     public ResponseEntity<String> testPostProduct(@PathVariable("id") String id, @RequestBody Product product) {
         // return new ResponseEntity<>("bad request testing", HttpStatus.BAD_REQUEST);
-        throw new ProductExistException("Product already exists");
+        throw new ProductExistException("Exception: Product already exists");
     }
 }
