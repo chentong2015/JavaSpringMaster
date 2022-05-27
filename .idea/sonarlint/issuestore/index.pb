@@ -199,15 +199,9 @@ l
 <spring-boot-basic/src/main/java/master/MasterSpringBoot.java,e\2\e20c0f6ac49eca2fd14b8c86df685ff2dc01da54
 †
 Vspring-boot-tester1/src/main/java/com/spring/tester1/SpringBootTester1Application.java,0\7\078d0f1ba00d8d5107e89d81c7fc1ae8e7a1f292
-‹
-[spring-boot-tester2/src/main/java/com/spring/tester2/exception/InternalServerException.java,3\0\303ca8ede1eb4972275782a6c0e67b307daf324b
 w
 Gspring-boot-tester1/src/main/java/com/spring/tester1/model/Product.java,b\5\b56d3f8fa0c1c0d41c1fb61ece94ecd9bb63c440
-‰
-Yspring-boot-tester2/src/main/java/com/spring/tester2/exception/ProductExistException.java,d\8\d807ec581b76fc724702b97c9087a7e8a2ab80cf
 w
 Gspring-boot-tester2/src/main/java/com/spring/tester2/model/Product.java,c\9\c9acd57a580ffde03e504283a624caf1b8962918
-K
-spring-boot-tester2/pom.xml,0\0\00d9230f2fad5b38db4777e03e19e9f76e09a8cc
 †
 Vspring-boot-tester2/src/main/java/com/spring/tester2/SpringBootTester2Application.java,c\3\c3f7c86d680b7fe8ddac128c456d0ef7b7edc863

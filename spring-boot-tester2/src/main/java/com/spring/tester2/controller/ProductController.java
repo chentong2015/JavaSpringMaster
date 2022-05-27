@@ -2,13 +2,11 @@ package com.spring.tester2.controller;
 
 import com.spring.tester2.exception.InternalServerException;
 import com.spring.tester2.exception.ProductExistException;
+import com.spring.tester2.exception.TestHandlerException;
 import com.spring.tester2.model.Product;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -53,6 +51,11 @@ public class ProductController {
         return ResponseEntity.ok().build();
     }
 
+    @PostMapping("/products/exception/{id}")
+    public ResponseEntity<String> testInsertProductException(@PathVariable("id") String id, @RequestBody Product product) {
+        return new ResponseEntity<>("Test products exception", HttpStatus.BAD_REQUEST);
+    }
+
     // TODO. 在没有@ExceptionHandler的情况下，这里如果直接抛出异常，将显示如下的错误
     // 当前端显示的错误信息
     // {
@@ -72,5 +75,11 @@ public class ProductController {
     public ResponseEntity<String> testPostProduct(@PathVariable("id") String id, @RequestBody Product product) {
         // return new ResponseEntity<>("bad request testing", HttpStatus.BAD_REQUEST);
         throw new ProductExistException("Exception: Product already exists");
+    }
+
+    @ExceptionHandler(TestHandlerException.class)
+    @PostMapping("/products/handler/{id}")
+    public ResponseEntity<Void> testPostProductWithHandler(@PathVariable("id") String id, @RequestBody Product product) {
+        throw new TestHandlerException("Exception: Product already exists");
     }
 }

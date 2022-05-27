@@ -1,4 +1,7 @@
+com\spring\tester1\exception\TestHandlerException.class
+com\spring\tester1\SpringBootTester1Application.class
+com\spring\tester1\controller\Test1ControllerOK.class
+com\spring\tester1\exception\ProductExistException.class
+com\spring\tester1\model\Product.class
 com\spring\tester1\controller\Test1Controller.class
 com\spring\tester1\service\ProductService.class
-com\spring\tester1\SpringBootTester1Application.class
-com\spring\tester1\model\Product.class

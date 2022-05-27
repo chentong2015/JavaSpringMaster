@@ -22,6 +22,13 @@ public interface ProductService {
     @PostMapping(value = "/products/test/{id}", consumes = "application/json;charset=UTF-8")
     ResponseEntity<Void> testInsertProduct(@PathVariable("id") String id, @RequestBody Product product);
 
+    @PostMapping(value = "/products/exception/{id}", consumes = "application/json;charset=UTF-8")
+    ResponseEntity<Void> testInsertProductException(@PathVariable("id") String id, @RequestBody Product product);
+
+
     @PostMapping(value = "/products/post/{id}", consumes = "application/json;charset=UTF-8")
     ResponseEntity<String> testPostProduct(@PathVariable("id") String id, @RequestBody Product product);
+
+    @PostMapping(value = "/products/handler/{id}", consumes = "application/json;charset=UTF-8")
+    ResponseEntity<Void> testPostProductHandler(@PathVariable("id") String id, @RequestBody Product product);
 }

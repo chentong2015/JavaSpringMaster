@@ -20,6 +20,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 @AutoConfigureMockMvc
 class ProductControllerTest {
 
+    // TODO. 这里使用Autowired会自动添加Controller的ExceptionHandler !!
     @Autowired
     private MockMvc mockMvc;
 
@@ -48,6 +49,6 @@ class ProductControllerTest {
                         .content(content)
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(MockMvcResultMatchers.status().isBadRequest())
-                .andExpect(content().string("Exception: Product already exists"));
+                .andExpect(content().string("Product already exists"));
     }
 }
