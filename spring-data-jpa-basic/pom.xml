@@ -48,6 +48,7 @@
             <version>2.6.3</version>
         </dependency> -->
 
+        <!-- TODO. Spring Data JPA默认添加了hibernate dependency依赖 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
