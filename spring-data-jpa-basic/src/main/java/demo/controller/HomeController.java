@@ -1,7 +1,7 @@
 package demo.controller;
 
 import demo.model.User;
-import demo.repositories.HomeRepository;
+import demo.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpHeaders;
@@ -32,7 +32,7 @@ public class HomeController {
     }
 
     @Autowired
-    private HomeRepository homeRepository;
+    private UserRepository homeRepository;
 
     // TODO: 注意这里使用的链接, 不推荐使用URL来传递重要的参数信息(可以加密之后传输)
     // http://localhost:8080/user/create?email=[email]&name=[name]

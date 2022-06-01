@@ -1,14 +1,15 @@
 package demo.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 import java.util.List;
 
 @Entity(name = "speakers")
-@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+@NamedQuery(name = "Speaker.findSpeakerBySpecialLastName",
+        // ?1 这里提供第一个参数
+        query = "select speaker from speakers speaker where speaker.last_name = ?1")
 public class Speaker {
 
     @Id

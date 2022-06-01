@@ -5,9 +5,9 @@ import org.springframework.data.repository.CrudRepository;
 
 import javax.transaction.Transactional;
 
-// 在执行时，标注事务性 !!
+// 标注执行Query时的事务性
 @Transactional
-public interface HomeRepository extends CrudRepository<User, Long> {
+public interface UserRepository extends CrudRepository<User, Long> {
 
     /**
      * This method will find a User instance in the database by its email.

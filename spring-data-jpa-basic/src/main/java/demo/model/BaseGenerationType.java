@@ -13,9 +13,8 @@ import javax.persistence.Id;
 // GenerationType.TABLE
 public class BaseGenerationType {
 
+    // 不建议使用UUID做主键
     // https://www.baeldung.com/jpa-strategies-when-set-primary-key
-
-    // UUID并不时候做主键
     @Id
     @GeneratedValue(generator = "system-id")
     @GenericGenerator(name = "system-id", strategy = "uuid2")
