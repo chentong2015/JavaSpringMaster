@@ -8,8 +8,8 @@ import java.util.List;
 
 @Entity(name = "speakers")
 @NamedQuery(name = "Speaker.findSpeakerBySpecialLastName",
-        // ?1 这里提供第一个参数
         query = "select speaker from speakers speaker where speaker.last_name = ?1")
+// ?1 这里提供第一个参数
 public class Speaker {
 
     @Id
