@@ -24,7 +24,8 @@ public class DependencyInjectionImpl implements DependencyInjection {
     }
 
     /**
-     * 2. Constructor based dependency injection    ===> 一般使用在强制的依赖，创建对象时必须注入的参数: 保证对象的不可变性 + 所需的依赖不为空 !!
+     * 2. Constructor based dependency injection
+     * ===> 一般使用在强制的依赖，创建对象时必须注入的参数: 保证对象的不可变性 + 所需的依赖不为空 !!
      * > 通过构造器来依赖注入指定的interface, 实现解耦
      * > 配置beans.xml的<constructor-arg ref="referenceToBean" /> 传递构造器的参数argument, referenceToBean表示对bean的引用
      */
@@ -35,7 +36,8 @@ public class DependencyInjectionImpl implements DependencyInjection {
     } */
 
     /**
-     * 3. Setter based dependency injection         ===> 一般用在可选的依赖, 非必须的注入, 所需要注入的一般拥有默认值 !!
+     * 3. Setter based dependency injection
+     * ===> 一般用在可选的依赖, 非必须的注入, 所需要注入的一般拥有默认值 !!
      * > 通过setter来实现依赖注入interface, 实现解耦
      * > 配置beans.xml的<property name="fieldName" ref="referenceToBean" />
      */

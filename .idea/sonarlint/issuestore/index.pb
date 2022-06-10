@@ -49,8 +49,6 @@ l
 <spring-basics/src/main/java/master/spring_ioc/AppConfig.java,d\4\d4fb9e4e13e98617fca57e11a3cfcc728617e8d8
 h
 8spring-basics/src/main/java/base/BaseSpringProjects.java,8\f\8fdbf866111623bc872e2932023244ce56fe3994
-u
-Espring-basics-ioc/src/main/java/main/ioc/DependencyInjectionImpl.java,5\d\5dc6fc2c939fe2c7289845b52eed986b32f67251
 }
 Mspring-basics/src/main/java/master/bean/bean_lifecycle/BaseBeanLifecycle.java,e\f\ef0da4fdb793669e95a6c2ddb20d699863879881
 É
@@ -65,8 +63,6 @@ Ospring-basics/src/main/java/master/bean/bean_definition/BaseBeanDefinition.java
 Wspring-basics/src/main/java/master/bean/bean_definition/MyBeanFactoryPostProcessor.java,7\0\705ffebb07b4ea4f2154a0196951f4afd7b29a0b
 n
 >spring-basics/src/main/java/base/SpringContextEnvironment.java,9\c\9cccda710b237d79997843dc732b270c48c18425
-u
-Espring-basics-ioc/src/main/java/main/component/DemoComponentImpl.java,d\b\db8596980d3a3d05c16986e8fac09761cc30a530
 {
 Kspring-boot-basic/src/main/java/master/auto_configure/Ëá™Âä®Ë£ÖÈÖçÁöÑÂÆûÁé∞,f\a\fa3d85c7bc7eb66d75637f9bcaad6ddfcfaeb973
 â
@@ -143,8 +139,6 @@ s
 Cspring-basics/src/main/java/base/config/ProfileConfigComponent.java,c\a\ca93577b38ed539a6c8bd8436d5bbea1d65e82d7
 g
 7spring-basics/src/main/java/base/application.properties,0\a\0a8c792ae4f20c17b1c7556ffa383cffe6261e9e
-w
-Gspring-basics-ioc/src/main/java/main/lifecycle/NumberGeneratorImpl.java,4\3\435975a6a5ac7124f198d9d778146138d8c4df76
 r
 Bspring-basics/src/main/java/master/spring_ioc/bean/MyBeanImpl.java,3\5\3584341e9cf8d14a22d32f182a2e345c20390bcf
 î
@@ -155,10 +149,6 @@ m
 Sspring-boot-basic/src/main/java/com/spring/boot/basic/demo/service/BaseService.java,1\a\1a78e4e7d9d8b989e4838bd3e4215dfddb52d7a1
 w
 Gspring-data-jpa-basic/src/main/java/demo/controller/HomeController.java,4\a\4aa71ab536662a3bd704f7da9e5877fc5b3f3dd1
-u
-Espring-data-jpa-basic/src/main/java/demo/services/SpeakerService.java,b\b\bb0aa017e59ea4ac6e4ac8e229b07753c24c60a6
-u
-Espring-data-jpa-basic/src/main/java/demo/services/SessionService.java,9\8\9897ef44548ebd5ff67658e913e34541f841828f
 Ç
 Rspring-basics/src/main/java/master/spring_transaction/SpringTransactionConfig.java,7\6\764c758d8a270063cb75c9c333506b32c9ba2ba8
 Å
@@ -229,13 +219,11 @@ Xspring-boot-tester1/src/main/java/com/spring/tester1/exception/TestHandlerExcep
 Zspring-boot-tester2/src/test/java/com/spring/tester2/controller/ProductControllerTest.java,b\c\bc587e41591d0c6555c025d3a51a181952de2580
 ~
 Nspring-boot-basic/src/main/java/com/spring/boot/basic/demo/BaseSpringBoot.java,2\a\2a48dd1cb0cd9f268a1c2763e06a2c947b9eaec7
-v
-Fspring-basics-ioc/src/main/java/main/config/NumberGeneratorConfig.java,c\0\c00ddbcae7a916eee92673ab3cf00fb94b13ec27
 h
 8spring-data-jpa-basic/src/main/java/demo/model/User.java,c\0\c0f33517e5020773959556070a96bdc2393cb10b
 k
 ;spring-data-jpa-basic/src/main/java/demo/model/Session.java,d\d\dde17376092ecb468c186ad452ec88cd6323ddcf
-Ä
-Pspring-data-jpa-basic/src/main/java/demo/config/SpringBootApplicationConfig.java,0\f\0f177f91599747a4ba3655c32ec51918d71b1003
 k
 ;spring-data-jpa-basic/src/main/java/demo/model/Speaker.java,7\6\76ea50942c0f0fcb53715752ba67541cd6b0c7de
+M
+spring-data-jpa-basic/pom.xml,2\2\2250b66a00f19b2ca85551551a22585169aa529a

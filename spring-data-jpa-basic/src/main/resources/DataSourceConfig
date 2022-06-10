@@ -1,29 +1,28 @@
+TODO. 使用嵌入式的数据库只能有一个Connection(一个Application Process去连接数据库)
+
 1. H2数据库的配置，使用嵌入式DB
-jdbc.database.driverClassName=org.h2.Driver
-jdbc.database.url=jdbc:h2:/database/server_db
-jdbc.database.username=sa
-jdbc.database.password=sa
+   jdbc.database.driverClassName=org.h2.Driver
+   jdbc.database.url=jdbc:h2:/database/server_db
+   jdbc.database.username=sa
+   jdbc.database.password=sa
    TODO：如果使用非默认的设置，则需要注入指定的DataSource
      @Bean
         public DataSource dataSource() {
             DriverManagerDataSource ...
 
-2. MySQL数据库的配置，走网络路径来访问数据库服务器
-spring.database.url=jdbc:mysql://localhost:3306/test
-spring.database.driver-class-name=com.mysql.cj.jdbc.Driver
-spring.database.username=root
-spring.database.password=admin
+2. MySQL数据库的配置，通过网络路径来访问数据库服务器
+   spring.database.url=jdbc:mysql://localhost:3306/test
+   spring.database.driver-class-name=com.mysql.cj.jdbc.Driver
+   spring.database.username=root
+   spring.database.password=admin
 
 3. SQLite数据库的配置，使用嵌入式DB
-   Hibernate doesn't ship with a Dialect for SQLite
-   Spring Data JPA + Hibernate没有为SQLite提供Dialect，需要自定义提供
    TODO: 直接使用spring标准的默认配置属性的方式；来配置DataSource
          不再需要提供@Bean DataSource方法
-spring.datasource.url=jdbc:sqlite:ServerDB.db
-spring.datasource.driver-class-name=org.sqlite.JDBC
-spring.datasource.username=admin
-spring.datasource.password=admin
-spring.jpa.database-platform=com.retail.experience.config.SQLDialect
-spring.jpa.hibernate.ddl-auto=update
+   spring.datasource.url=jdbc:sqlite:ServerDB.db
+   spring.datasource.driver-class-name=org.sqlite.JDBC
+   spring.datasource.username=admin
+   spring.datasource.password=admin
+   spring.jpa.database-platform=com.retail.experience.config.SQLDialect
+   spring.jpa.hibernate.ddl-auto=update
 
-TODO. 使用嵌入式的数据库只能有一个Connection(一个Application Process去连接数据库)
