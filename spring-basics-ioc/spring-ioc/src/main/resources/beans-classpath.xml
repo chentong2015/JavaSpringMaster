@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	   http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 直接通过Eclipse Bean UI界面来添加: 准确定位要找到的类型，避免手写出错
+	<bean id="myBean" class="com.example.main.basebeans.BaseBean" autowire="default">
+	</bean> -->
+</beans>

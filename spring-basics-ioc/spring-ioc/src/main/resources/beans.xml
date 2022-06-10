@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:c="http://www.springframework.org/schema/c"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- 针对于所有beans的全局的设置，bean中声明统一标准化的方法
+	     default-init-method="postConstruct" -->
+
+    <!-- 直接通过Eclipse Bean UI界面来添加: 准确定位要找到的类型，避免手写出错 
+         autowire="default" 使用默认的构造器来创建对象, 默认使用类型的默认值 
+         当自定义含参的构造器之后，需要提供构造器参数 -->
+    <bean id="myBean" class="com.example.main.basebeans.BaseBean">
+        <!-- 传入构造器参数，会根据类型自动转换
+             按照顺序index传入指定的参数值 
+             可以直接使用field名称来赋值 name="count" -->
+		<constructor-arg index="0" value="Demo" ></constructor-arg>
+		<constructor-arg index="1" value="100" ></constructor-arg>
+		
+		<!-- 使用Constructor based DI -->
+		<constructor-arg name="hireService" ref="agencyHireService" ></constructor-arg>
+
+		<!-- property属性注入的名称必须严格的一致 
+		    等效的设置
+			<property name="postalCode">
+				<value>121212</value>
+			</property> -->
+		<property name="postalCode" value="121212"></property>
+
+        <!-- 使用Setter based DI
+             注入container中自定义的bean, 使用ref name -->
+		<property name="baseService" ref="ecommerceService"></property>	
+    </bean>
+
+    <bean id="cloudService" class="com.example.main.basebeans.serviceimpl.CloudServiceImpl"> </bean>
+    <bean id="ecommerceService" class="com.example.main.basebeans.serviceimpl.EcommerceServiceImpl"> </bean>
+    <bean id="agencyHireService" class="com.example.main.basebeans.serviceimpl.AgencyHireServiceImpl"> </bean>
+    <bean id="companyHireService" class="com.example.main.basebeans.serviceimpl.CompanyHireServiceImpl"> </bean>
+    
+    <!-- 默认bean scope是singleton -->
+    <bean id="myBeanScope"
+    	  class="com.example.main.masterbeans.BeanScopes"
+    	  scope="singleton"> 
+    </bean>
+    
+    <!-- 声明bean生命周期中需要调用的方法 -->
+    <bean id="baseBeanCallback"
+    	class="com.example.main.masterbeans.BeansCallbacks"
+    	destroy-method="destroy" 
+    	init-method="initialize">
+    </bean>
+</beans>
+
+
+
+
+
+
+
+
