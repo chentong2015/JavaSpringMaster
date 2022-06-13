@@ -1,8 +1,7 @@
-package demo.model;
-
-import com.sun.istack.NotNull;
+package demo.entity;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name = "users")

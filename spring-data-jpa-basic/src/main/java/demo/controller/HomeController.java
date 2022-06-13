@@ -1,6 +1,6 @@
 package demo.controller;
 
-import demo.model.User;
+import demo.entity.User;
 import demo.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

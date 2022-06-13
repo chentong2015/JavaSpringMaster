@@ -1,17 +1,0 @@
-
-e	java:S1177"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ä¿î?
-k	java:S117G"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Š‹¥äøÿÿÿÿ
-f	java:S117O"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Âìúº
-j	java:S116"URename this field "session_id" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(­ôµø
-s	java:S116"^Rename this field "session_description" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÌŞ×¨
-s	java:S116"YRename this field "session_length" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°ª¿øÿÿÿÿÿ
-œ
-java:S1186'"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ş©“°şÿÿÿÿ
-O
-java:S1135"2Complete the task associated to this TODO comment.(İ‹éß8çëÉî/
-c	java:S1003"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¡ã‘Ğ
-b	java:S1007"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ä¿î?
-h	java:S100C"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.( ëŠÏıÿÿÿÿ
-h	java:S100G"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Š‹¥äøÿÿÿÿ
-h	java:S100K"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(šÌ“÷üÿÿÿÿ
-c	java:S100O"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Âìúº

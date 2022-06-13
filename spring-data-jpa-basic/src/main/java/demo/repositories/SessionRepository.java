@@ -1,6 +1,6 @@
 package demo.repositories;
 
-import demo.model.Session;
+import demo.entity.Session;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 // <Session, Long> 指定数据类型和Table的主键

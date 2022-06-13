@@ -1,6 +1,6 @@
 package demo.repositories;
 
-import demo.model.User;
+import demo.entity.User;
 import org.springframework.data.repository.CrudRepository;
 
 import javax.transaction.Transactional;
