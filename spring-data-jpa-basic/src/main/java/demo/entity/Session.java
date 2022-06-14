@@ -6,25 +6,27 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import java.util.List;
 
-// Entity实体映射到数据库中的Table表格，确定使用的table名称
+// Entity Name设置之后则和Table Name一致
+// 反之可以使用@Table(name="")来区别两个不同的名称
 @Entity(name = "sessions")
 // 忽略指定的属性，在序列化object对象的时候，不需要序列下面的内容
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 public class Session {
 
-    // 字段的名称需要和表的列的名称严格的一致
-    // 表明主键，这个primary key在插入数据的时候会自增
+    // 表明主键primary key在插入数据的时候会自增
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long session_id;
 
     // TODO: 下面的名称在数据库中会自动的映射到指定的列名称中
-    //      table中的名称是lower case, 会转换映射到"session_name"列名称上 !!
-    // @Column(name = "component_id", nullable = false) 或者使用列的对应标注
+    //       table中的名称是lower case, 会转换映射到"session_name"列名称上
+    // TODO. JPA完整标注: Column列的映射
+    //       @Column(name = "component_id", nullable = false) 或者使用列的对应标注
     @NotNull
     private String sessionName;
 
     @NotNull
+
     private String session_description;
 
     private Integer session_length;

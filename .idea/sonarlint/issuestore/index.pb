@@ -229,3 +229,13 @@ Y
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 I
 spring-basics-ioc/pom.xml,9\7\978e47c3d725f41f9a4e1bb584f498275eb97c0e
+x
+Hspring-data-jpa-basic/src/main/java/demo/query/SpringJpaNativeQuery.java,2\a\2a5c437be5232883527c9c23312556909ee3f336
+|
+Lspring-data-jpa-basic/src/main/java/demo/repositories/BaseJpaRepository.java,1\4\141820615162469cd1a7d79fdd8d33a66fd94e3b
+|
+Lspring-data-jpa-basic/src/main/java/demo/repositories/SessionRepository.java,2\4\24ab58782498483bbc95e5bf3ae52b318f4f9888
+w
+Gspring-data-jpa-basic/src/main/java/demo/SpringBootDemoApplication.java,f\7\f72986b89d7c331325f8945b964a2d29e6eed5c0
+l
+<spring-data-jpa-basic/src/main/java/demo/entity/Speaker.java,7\3\733274c9cb8762b932ad3cc4db860077127f7531
