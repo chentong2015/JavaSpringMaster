@@ -19,14 +19,13 @@ public class Session {
     private Long session_id;
 
     // TODO: 下面的名称在数据库中会自动的映射到指定的列名称中
-    //       table中的名称是lower case, 会转换映射到"session_name"列名称上
+    //   table中的名称是lower case, 会转换映射到"session_name"列名称上
     // TODO. JPA完整标注: Column列的映射
-    //       @Column(name = "component_id", nullable = false) 或者使用列的对应标注
+    //   @Column(name = "component_id", nullable = false) 或者使用列的对应标注
     @NotNull
     private String sessionName;
 
     @NotNull
-
     private String session_description;
 
     private Integer session_length;

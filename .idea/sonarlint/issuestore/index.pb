@@ -239,3 +239,7 @@ w
 Gspring-data-jpa-basic/src/main/java/demo/SpringBootDemoApplication.java,f\7\f72986b89d7c331325f8945b964a2d29e6eed5c0
 l
 <spring-data-jpa-basic/src/main/java/demo/entity/Speaker.java,7\3\733274c9cb8762b932ad3cc4db860077127f7531
+i
+9spring-data-jpa-basic/src/main/java/demo/entity/User.java,b\3\b38c03793db3629d862999f7c9bc9aaebe42e545
+h
+8spring-data-jpa-basic/src/main/java/Spring Boot Data JPA,c\5\c5702d05bc650e0f9568c810f1a8293596ed9699
