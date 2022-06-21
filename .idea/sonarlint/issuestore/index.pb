@@ -241,3 +241,5 @@ l
 <spring-data-jpa-basic/src/main/java/demo/entity/Speaker.java,7\3\733274c9cb8762b932ad3cc4db860077127f7531
 i
 9spring-data-jpa-basic/src/main/java/demo/entity/User.java,b\3\b38c03793db3629d862999f7c9bc9aaebe42e545
+l
+<spring-data-jpa-basic/src/main/java/demo/entity/Session.java,4\3\43df4b8a41a91b6dcb00b3e87f562718ec0fa5f6
