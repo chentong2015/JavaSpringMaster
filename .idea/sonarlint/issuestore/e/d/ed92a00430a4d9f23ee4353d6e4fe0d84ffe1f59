@@ -1,0 +1,11 @@
+
+i
+java:S1450"SRemove the "name" field and declare it as a local variable in the relevant methods.(Ë¥¼
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ãÉ‰ª
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÂË©Óúÿÿÿÿ
+S	java:S106""9Replace this use of System.out or System.err by a logger.(ÕÜÅûÿÿÿÿ
+N	java:S106'"9Replace this use of System.out or System.err by a logger.(˜Öï›
+S	java:S106,"9Replace this use of System.out or System.err by a logger.(Ê±õËÿÿÿÿÿ
+N	java:S1060"9Replace this use of System.out or System.err by a logger.(¨‰ªã
+>
+java:S1068"(Remove this unused "name" private field.(Ë¥¼
