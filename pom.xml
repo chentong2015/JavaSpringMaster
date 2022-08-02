@@ -11,12 +11,10 @@
 
     <modules>
         <module>spring-basics</module>
-        <module>spring-boot-basic</module>
-        <module>spring-boot-template</module>
-        <module>spring-data-jpa-basic</module>
         <module>spring-basics-ioc</module>
         <module>spring-boot-file-upload-download</module>
-        <module>spring-boot-tester1</module>
-        <module>spring-boot-tester2</module>
+        <module>spring-boot-demo</module>
+        <module>spring-boot-template</module>
+        <module>spring-data-jpa-basic</module>
     </modules>
 </project>
