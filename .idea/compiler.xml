@@ -8,7 +8,6 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-boot-basic" />
         <module name="spring-boot-template" />
-        <module name="spring-boot-demo" />
         <module name="spring-basics-ioc" />
         <module name="spring-ioc" />
         <module name="spring-ioc-test" />

@@ -123,16 +123,8 @@ Espring-basics/src/main/java/master/bean/bean_scope/BaseBeanScope.java,0\f\0f02
 Pspring-data-jpa-basic/src/main/java/demo/config/SpringBootApplicationConfig.java,0\f\0f177f91599747a4ba3655c32ec51918d71b1003
 Å
 Qspring-basics-ioc/spring-ioc/src/main/java/com/example/main/BaseIoCContainer.java,c\a\ca0bb82187dcc0a0ff36aefed3d2b39aec97b3e1
-T
-$spring-basics-ioc/spring-ioc/pom.xml,7\f\7f135ce1cd563e262fc00d9c00825a55f1798c6e
-Y
-)spring-basics-ioc/spring-ioc-test/pom.xml,6\c\6c74229f13f4108cb820cd207fcba0ce6d862ca7
-I
-spring-basics-ioc/pom.xml,9\7\978e47c3d725f41f9a4e1bb584f498275eb97c0e
 |
 Lspring-data-jpa-basic/src/main/java/demo/naming/SpringJpaNamingStrategy.java,8\c\8c28547fe65bd0d5bb3a08087dfbb712e7b35c94
-h
-8spring-data-jpa-basic/src/main/java/Spring Boot Data JPA,c\5\c5702d05bc650e0f9568c810f1a8293596ed9699
 ã
 [spring-basics-ioc/spring-ioc/src/main/java/com/example/main/masterbeans/BeansCallbacks.java,e\d\ed92a00430a4d9f23ee4353d6e4fe0d84ffe1f59
 ù
@@ -147,8 +139,6 @@ l
 <spring-data-jpa-basic/src/main/java/demo/entity/Speaker.java,7\3\733274c9cb8762b932ad3cc4db860077127f7531
 i
 9spring-data-jpa-basic/src/main/java/demo/entity/User.java,b\3\b38c03793db3629d862999f7c9bc9aaebe42e545
-M
-spring-data-jpa-basic/pom.xml,2\2\2250b66a00f19b2ca85551551a22585169aa529a
 |
 Lspring-data-jpa-basic/src/main/java/demo/repositories/SessionRepository.java,2\4\24ab58782498483bbc95e5bf3ae52b318f4f9888
 |
@@ -167,13 +157,17 @@ Uspring-boot-template/src/main/java/com/ctong/spring/boot/MySpringBootApplicatio
 Tspring-boot-template/src/main/java/com/ctong/spring/boot/SpringBootWebContainer.java,2\1\218e397408b1563c56cb8ab55b973c99ca6820e5
 \
 ,spring-boot-demo/spring-boot-tester1/pom.xml,5\f\5fe16709f404d1dc4c335e607eade3b1b3a7709d
-H
-spring-boot-demo/pom.xml,4\1\4133251ab4de0721302993de5293f354c4a8eae2
 à
 Xspring-boot-template/src/main/java/com/ctong/spring/boot/MySpringApplicationStarter.java,b\f\bf8ce5b200cf29cdcecf44cb6d4b9d3af205cb4e
 n
 >spring-boot-template/src/main/java/com/ctong/MySpringBoot.java,1\0\1069c718f2e5d3e94ec25cc360429c294a45594a
 {
 Kspring-boot-template/src/main/java/com/ctong/controller/HomeController.java,6\7\6795e6646226fa0aa1b5e213abf33f912f880ae6
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+w
+Gspring-data-jpa-basic/src/main/java/demo/SpringBootDemoApplication.java,f\7\f72986b89d7c331325f8945b964a2d29e6eed5c0
+\
+,spring-boot-demo/spring-boot-tester2/pom.xml,3\5\355fd5682e31f753ff33b48f1a02ee1de6848089
+h
+8spring-data-jpa-basic/src/main/java/Spring Boot Data JPA,c\5\c5702d05bc650e0f9568c810f1a8293596ed9699
+H
+spring-boot-demo/pom.xml,4\1\4133251ab4de0721302993de5293f354c4a8eae2
