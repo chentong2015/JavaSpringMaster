@@ -16,5 +16,6 @@
         <module>spring-boot-demo</module>
         <module>spring-boot-template</module>
         <module>spring-data-jpa-basic</module>
+        <module>spring-data-jpa-master</module>
     </modules>
 </project>

@@ -12,6 +12,7 @@
         <module name="spring-ioc" />
         <module name="spring-ioc-test" />
         <module name="spring-boot-tester1" />
+        <module name="spring-data-jpa-master" />
         <module name="spring-basics" />
         <module name="spring-data-jpa-basic" />
         <module name="spring-boot-tester2" />

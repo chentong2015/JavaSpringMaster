@@ -1,0 +1,5 @@
+com\spring\data\jpa\controller\SettingsController.class
+com\spring\data\jpa\entity\SettingsEntity.class
+com\spring\data\jpa\config\SpringBootMasterConfig.class
+com\spring\data\jpa\repo\SettingsRepository.class
+com\spring\data\jpa\SpringBootMasterApplication.class
