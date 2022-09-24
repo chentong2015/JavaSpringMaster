@@ -11,11 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import springfox.documentation.annotations.Cacheable;
 
-// TODO: @RequestParam可以支持几种可选参数的设置
-// 1. @RequestParam("message") String message ==> 如果没有提供，这里的message将会是null
-// 2. @RequestParam(name="message",required=false)
-// 3. @RequestParam(name="message",defaultValue="default value")
-// 4. @RequestParam(name = "message") Optional<String> message
+
 @Slf4j
 @Controller
 public class BaseController {
@@ -39,7 +35,6 @@ public class BaseController {
         return "Home page";
     }
 
-    // localhost:8080/home 不在需要提供项目名称, Spring将会自动的configure settings, 是URL的路径变短
     @GetMapping("home")
     public String home(Model model) {
         log.info("home method called ...");
@@ -48,6 +43,11 @@ public class BaseController {
         return "home";
     }
 
+    // @RequestParam 注解参数设置
+    // 1. @RequestParam("message") String message 默认message的值为null
+    // 2. @RequestParam(name="message",required=false)
+    // 3. @RequestParam(name="message",defaultValue="default value")
+    // 4. @RequestParam(name = "message") Optional<String> message
     @PostMapping(value = "play")
     public String play(@RequestParam int input) {
         System.out.println("Process the input for playing ...");

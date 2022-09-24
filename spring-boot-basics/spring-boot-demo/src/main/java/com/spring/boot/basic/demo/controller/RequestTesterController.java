@@ -7,12 +7,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 import java.net.URI;
 
-// TODO. Spring对请求异常的默认解析，对应到指定的Http Status Code上面 > DefaultHandlerExceptionResolver
-// 发送请求可能造成的异常：
-// PUT http://localhost:8080/v2/api/data    > 404: "Not Found Exception"
-// PUT http://localhost:8080/v1/api/data    > 405: "Method Not Allowed Exception"
-// PUT http://localhost:8080/v1/api/data/xx > 400: "Bad Request Exception"
-// 详细的异常信息可以返回给客户端
+// TODO. Spring对请求异常的默认解析DefaultHandlerExceptionResolver，对应不同的Status Code
 @RestController
 @RequestMapping("/v1/api/")
 public class RequestTesterController {

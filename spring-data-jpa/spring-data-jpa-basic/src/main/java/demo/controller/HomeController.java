@@ -10,7 +10,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.net.InetSocketAddress;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
@@ -28,15 +27,6 @@ public class HomeController {
     public HomeController(UserCrudRepository userRepository) {
         this.userRepository = userRepository;
     }
-
-    // Jackson会将返回的对象自动转成Json
-    @GetMapping("/status")
-    public Map getStatus() {
-        Map<String, String> map = new HashMap<>();
-        map.put("app-version", appVersion);
-        return map;
-    }
-
 
     // TODO: 注意这里使用的链接, 不推荐使用URL来传递重要的参数信息(可以加密之后传输)
     // http://localhost:8080/user/create?email=[email]&name=[name]

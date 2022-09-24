@@ -6,14 +6,14 @@ TODO: Spring全部项目 https://spring.io/projects/
 3. Spring是轻量级的，很容易使用轻量级的Web Server, 可以只选择需要的module模块
 3. Spring提倡使用POJO: Plain Old Java Object
 
-//                  运行时: 架构和所包含的Modules模块
-//                  <<Spring Framework Runtime>>
-//   Data Access/Integration                 Web
-//       JDBC / ORM
-//       OXM / JMS               WebSocket         Servlet
-//      Transactions             Web               Portiet
-// <   AOP / Aspects             Instrumentation   Messaging   >
-// <                     Core Container                        >
+//                  运行时: 架构和所包含的Modules模块                  //
+//                  <<Spring Framework Runtime>>                  //
+//   Data Access/Integration                 Web                  //
+//       JDBC / ORM                                               //
+//       OXM / JMS               WebSocket         Servlet        //
+//      Transactions             Web               Portiet        //
+// <   AOP / Aspects             Instrumentation   Messaging   >  //
+// <                     Core Container                        >  //
 //      Beans       Core             Context        SpEL
 //                          Test
 

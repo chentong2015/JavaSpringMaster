@@ -8,18 +8,17 @@ import org.springframework.transaction.annotation.Transactional;
 @Component
 public class TransactionCalculation {
 
-    // TODO. @Transactional可以作用在class级别
+    // TODO: 解决方案，注入自己在容器中的代理对象，完成调用
+    @Autowired
+    private TransactionCalculation calculation;
+
     @Transactional
     public void testException() {
         // jdbcTemplate.execute("insert ...");
         // 下面抛出异常，事务会自动回滚，执行的SQL语句不会成功
         throw new NullPointerException();
     }
-
-    // TODO: 解决方案，注入自己在容器中的代理对象，完成调用
-    @Autowired
-    private TransactionCalculation calculation;
-
+    
     @Transactional
     public void runOuterMethod() {
         // jdbcTemplate.execute("insert ...");

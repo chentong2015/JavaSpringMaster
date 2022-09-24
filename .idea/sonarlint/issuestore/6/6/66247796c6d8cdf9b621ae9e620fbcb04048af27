@@ -1,0 +1,15 @@
+
+c
+java:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(í‹Œ´úÿÿÿÿ
+c
+java:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(™Î¦Œøÿÿÿÿ
+T
+java:S1135"2Complete the task associated to this TODO comment.(Š€áúÿÿÿÿÿ8¡Æ®þ¶0
+Y
+java:S1854">Remove this useless assignment to local variable "connection".(í‹Œ´úÿÿÿÿ
+J
+java:S1481"/Remove this unused "connection" local variable.(í‹Œ´úÿÿÿÿ
+Y
+java:S1854">Remove this useless assignment to local variable "connection".(™Î¦Œøÿÿÿÿ
+J
+java:S1481"/Remove this unused "connection" local variable.(™Î¦Œøÿÿÿÿ
