@@ -16,11 +16,6 @@ public class SpringBootMasterConfig {
         dataSource.setUsername("postgres");
         dataSource.setPassword("admin");
         dataSource.setUrl("jdbc:postgresql://localhost:5432/hibernate_demo");
-
-        // dataSource.setDriverClassName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-        // dataSource.setUsername("test");
-        // dataSource.setPassword("TCHong17");
-        // dataSource.setUrl("jdbc:sqlserver://driver_name:1433;Database=test_db;Trusted_Connection=true;");
         return dataSource;
     }
 }

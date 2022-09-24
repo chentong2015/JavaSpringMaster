@@ -1,4 +1,0 @@
-基于JPA标准和Hibernate ORM中间件
-1. 取消Hibernate .hbm.xml文件，通过注解来完成"实体注入"和"Table"映射
-2. 直接使用@Entity相关的注解即可映射到数据库
-3. 简化标注，只需要标注逻辑相关@ManyToMany等注解

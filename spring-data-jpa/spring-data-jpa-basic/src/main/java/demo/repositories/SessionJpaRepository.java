@@ -13,7 +13,7 @@ import java.util.List;
 // <Session, Long> 指定数据类型和Table的主键
 // JpaRepository<Session, Long> 接口中包含基本的数据库执行的操作
 @Repository
-public interface SessionRepository extends JpaRepository<Session, Long> {
+public interface SessionJpaRepository extends JpaRepository<Session, Long> {
 
     // 根据调用是传递的参数，生成HQL查询语句，最终执行指定的SQL
     // 如果定义的HQL语句是正确的，则编译上不会由任何错误的提升 !!

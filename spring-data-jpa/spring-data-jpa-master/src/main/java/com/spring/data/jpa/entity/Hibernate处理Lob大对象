@@ -1,0 +1,8 @@
+TODO. 不同的JDBC处理Lob大对象的方式不同，需要额外配置
+Cause JDBC deals with LOB data varies from driver to driver.
+Hibernate tries to take care of all these differences, Hibernate is only partially successful at achieving this goal.
+For some database drivers (i.e. PostgresSQL), it's necessary to do some extra work to get LOBs functioning.
+
+TODO. 大对象的存储必须要放到transaction事务中，因为它可能是一个耗时的操作
+A large object can be stored in several records
+that's why you have to use a transaction. All records are correct or nothing at all.

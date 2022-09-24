@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 // 使用注解来注入Repositories和Entities
 @SpringBootApplication
-@EnableJpaRepositories("com.spring.data.jpa.repo")
+@EnableJpaRepositories("com.spring.data.jpa.repositories")
 @EntityScan("com.spring.data.jpa.entity")
 public class SpringBootMasterApplication {
 

@@ -1,6 +1,7 @@
 package demo.config;
 
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
@@ -9,7 +10,7 @@ import javax.sql.DataSource;
 
 @Configuration
 // @EnableTransactionManagement
-public class SpringBootApplicationConfig {
+public class ApplicationConfig {
 
     // TODO: 从配置文件中自动加载配置的信息，完成DataSource的设置
     // ?allowPublicKeyRetrieval=true?useSSL=false
@@ -24,15 +25,16 @@ public class SpringBootApplicationConfig {
         return dataSource;
     }
 
-    // 使用DataSourceBuilder构建DataSource
-    // @Bean
-    // public DataSource dataSource2() {
-    //     DataSourceBuilder builder = DataSourceBuilder.create();
-    //     builder.url("jdbc:mysql://localhost:3306/dbspringboot");
-    //     return builder.build();
-    // }
+    // TODO. 使用@Qualifier注解来区别注入的同类型bean, 支持不同DataSource
+    @Bean
+    @Qualifier("mysql-db2")
+    public DataSource dataSource2() {
+        // 使用DataSourceBuilder构建DataSource
+        DataSourceBuilder<?> builder = DataSourceBuilder.create();
+        builder.url("jdbc:mysql://localhost:3306/dbspringboot");
+        return builder.build();
+    }
 
-    // TODO. 如果项目支持的DataSource不唯一，可以使用@Qualifier注解来区别注入的同类型bean
     @Bean
     @Qualifier("psql-datasource")
     public DataSource getAnotherDatasource() {

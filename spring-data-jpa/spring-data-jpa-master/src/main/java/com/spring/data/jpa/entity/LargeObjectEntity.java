@@ -6,7 +6,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(name = "t_large_object_table")
-public class SettingsEntity {
+public class LargeObjectEntity {
 
     @Id
     private int id;
@@ -14,13 +14,16 @@ public class SettingsEntity {
     @Column(name = "name")
     private String name;
 
-    // TODO. 大对象的存储必须要放到transaction事务中，因为它可能是一个耗时的操作 !!
-    //  A large object can be stored in several records,
-    //  that's why you have to use a transaction. All records are correct or nothing at all.
     @Lob
     @Column(name = "json_data", nullable = false)
     @Type(type = "org.hibernate.type.StringType")
     private String jsonData;
+
+    // For binary data in Java 大的二级制数据，用于存储图片
+    @Lob
+    @Column(name = "photo")
+    @Type(type = "org.hibernate.type.BinaryType")
+    private byte[] photo;
 
     public int getId() {
         return id;
@@ -44,5 +47,13 @@ public class SettingsEntity {
 
     public void setJsonData(String jsonData) {
         this.jsonData = jsonData;
+    }
+
+    public byte[] getPhoto() {
+        return photo;
+    }
+
+    public void setPhoto(byte[] photo) {
+        this.photo = photo;
     }
 }

@@ -1,15 +1,14 @@
 package demo.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import org.hibernate.annotations.Type;
 
 import javax.persistence.*;
 import java.util.List;
 
-@Entity(name = "speakers")
-@NamedQuery(name = "Speaker.findSpeakerBySpecialLastName",
-        query = "select speaker from speakers speaker where speaker.last_name = ?1")
-// ?1 这里提供第一个参数
+@Entity(name = "demo.entity.Speaker")
+@NamedQuery(name = "Speaker.findSpeakerBySpecialLastName",  // ?1 表示提供第一个参数
+        query = "select speaker from demo.entity.Speaker speaker where speaker.last_name = ?1")
+@Table(name = "t_speakers")
 public class Speaker {
 
     @Id
@@ -21,18 +20,12 @@ public class Speaker {
     private String company;
     private String speaker_bio;
 
-    // For binary data in Java 大的二级制数据，用于存储图片
-    @Lob // Larger Object
-    @Type(type = "org.hibernate.type.BinaryType")
-    private byte[] speaker_photo;
-
     // mappedBy = "speakers": refer to the Session attribute 'speakers'
     @ManyToMany(mappedBy = "speakers")
     @JsonIgnore // 避免嵌套的循环，减少json数据结果的深度
     private List<Session> sessions;
 
     public Speaker() {
-
     }
 
     public List<Session> getSessions() {
@@ -89,13 +82,5 @@ public class Speaker {
 
     public void setSpeaker_bio(String speaker_bio) {
         this.speaker_bio = speaker_bio;
-    }
-
-    public byte[] getSpeaker_photo() {
-        return speaker_photo;
-    }
-
-    public void setSpeaker_photo(byte[] speaker_photo) {
-        this.speaker_photo = speaker_photo;
     }
 }

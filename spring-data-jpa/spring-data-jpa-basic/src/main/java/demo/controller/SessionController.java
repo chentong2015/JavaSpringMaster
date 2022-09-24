@@ -1,7 +1,7 @@
 package demo.controller;
 
 import demo.entity.Session;
-import demo.repositories.SessionRepository;
+import demo.repositories.SessionJpaRepository;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -22,10 +22,10 @@ import java.util.List;
 public class SessionController {
 
     // TODO. 这里应该使用Service层的注入
-    private SessionRepository repository;
+    private SessionJpaRepository repository;
 
     @Autowired
-    public SessionController(SessionRepository repository) {
+    public SessionController(SessionJpaRepository repository) {
         this.repository = repository;
     }
 

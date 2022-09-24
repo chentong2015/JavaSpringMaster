@@ -26,3 +26,11 @@ TODO. 使用嵌入式的数据库只能有一个Connection(一个Application Pro
    spring.jpa.database-platform=com.retail.experience.config.SQLDialect
    spring.jpa.hibernate.ddl-auto=update
 
+4. SQL Server数据库
+   dataSource.setDriverClassName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+   dataSource.setUsername("test");
+   dataSource.setPassword("TCHong17");
+   dataSource.setUrl("jdbc:sqlserver://driver_name:1433;Database=test_db;Trusted_Connection=true;");
+
+
+
