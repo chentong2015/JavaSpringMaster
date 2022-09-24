@@ -11,8 +11,6 @@ Y
 )spring-framework-basic/spring-ioc/pom.xml,c\7\c763ff85701b4de2ab18044081b24168ed13bb46
 ^
 .spring-framework-basic/spring-ioc-test/pom.xml,7\c\7cddfdeeaa2c3e45d1c1e1eb3da8402011a9d1ab
-J
-spring-boot-basics/pom.xml,4\b\4bce54ab9b1dc5d83eeae75d3416174199a0b845
 k
 ;spring-boot-basics/spring-boot-file-upload-download/pom.xml,e\d\ed18864e95008114c5be15bbe50d70675e6a2e2a
 _

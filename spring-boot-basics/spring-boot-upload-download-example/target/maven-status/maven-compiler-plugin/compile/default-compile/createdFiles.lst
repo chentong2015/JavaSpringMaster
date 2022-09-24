@@ -1,0 +1,8 @@
+com\example\main\FileDemoApplication.class
+com\example\main\controller\FileController.class
+com\example\main\exception\FileStorageException.class
+com\example\main\service\FileStorageService.class
+com\example\main\property\FileStorageProperties.class
+META-INF\spring-configuration-metadata.json
+com\example\main\exception\MyFileNotFoundException.class
+com\example\main\payload\UploadFileResponse.class

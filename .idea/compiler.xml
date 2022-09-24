@@ -15,13 +15,13 @@
         <module name="spring-basics" />
         <module name="spring-boot-tester2" />
         <module name="spring-data-jpa-basic" />
-        <module name="spring-boot-file-upload-download" />
+        <module name="spring-boot-upload-download-files" />
+        <module name="spring-boot-upload-download-example" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="spring-basics-ioc" target="1.5" />
       <module name="spring-boot-demo1" target="15" />
-      <module name="spring-boot-upload-download-files" target="11" />
       <module name="spring-data-jpa-demo" target="11" />
     </bytecodeTargetLevel>
   </component>

@@ -20,9 +20,10 @@
 
     <modules>
         <module>spring-boot-demo</module>
-        <module>spring-boot-file-upload-download</module>
         <module>spring-boot-template</module>
         <module>spring-boot-tester1</module>
         <module>spring-boot-tester2</module>
+        <module>spring-boot-upload-download-example</module>
+        <module>spring-boot-upload-download-files</module>
     </modules>
 </project>
