@@ -1,0 +1,13 @@
+com\example\main\CompareXmlAndAnnotaionConfig.class
+com\example\main\basebeans\serviceimpl\CloudServiceImpl.class
+com\example\main\masterbeans\BeanScopes.class
+com\example\main\basebeans\BaseBean.class
+com\example\main\masterbeans\BeansCallbacks.class
+com\example\main\basebeans\service\HireService.class
+com\example\main\basebeans\serviceimpl\AgencyHireServiceImpl.class
+com\example\main\masterbeans\BeanNamespaces.class
+com\example\main\basebeans\serviceimpl\EcommerceServiceImpl.class
+com\example\main\basebeans\service\BusinessService.class
+com\example\main\basebeans\serviceimpl\CompanyHireServiceImpl.class
+com\example\main\masterbeans\BeanFactory.class
+com\example\main\BaseIoCContainer.class

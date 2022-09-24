@@ -1,0 +1,15 @@
+demo\repositories\UserRepository.class
+demo\repositories\SpeakerRepository.class
+demo\repositories\BaseJpaRepository.class
+demo\controller\HomeController.class
+demo\controller\SessionController.class
+demo\query\SpringJpaNativeQuery.class
+demo\services\SessionService.class
+demo\entity\Speaker.class
+demo\config\SpringBootApplicationConfig.class
+demo\naming\SpringJpaNamingStrategy.class
+demo\services\SpeakerService.class
+demo\entity\Session.class
+demo\entity\User.class
+demo\repositories\SessionRepository.class
+demo\SpringBootDemoApplication.class

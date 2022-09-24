@@ -2,24 +2,27 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
-    <file type="web" url="file://$PROJECT_DIR$/spring-data-jpa-basic" />
     <file type="web" url="file://$PROJECT_DIR$/spring-data-jpa-demo" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-data-jpa/spring-data-jpa-basic" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-basics/spring-boot-demo/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/spring-basics-ioc/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-demo/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-demo1/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-upload-download-files/pom.xml" />
         <option value="$PROJECT_DIR$/spring-data-jpa-demo/pom.xml" />
       </set>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" project-jdk-name="15" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="SwUserDefinedSpecifications">

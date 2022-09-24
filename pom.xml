@@ -10,12 +10,8 @@
     <version>1.0-SNAPSHOT</version>
 
     <modules>
-        <module>spring-basics</module>
-        <module>spring-basics-ioc</module>
-        <module>spring-boot-file-upload-download</module>
-        <module>spring-boot-demo</module>
-        <module>spring-boot-template</module>
-        <module>spring-data-jpa-basic</module>
-        <module>spring-data-jpa-master</module>
+        <module>spring-framework-basic</module>
+        <module>spring-boot-basics</module>
+        <module>spring-data-jpa</module>
     </modules>
 </project>

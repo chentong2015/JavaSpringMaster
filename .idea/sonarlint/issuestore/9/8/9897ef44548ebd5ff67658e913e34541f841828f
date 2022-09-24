@@ -1,13 +1,0 @@
-
-c
-java:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(í‹Œ´úÿÿÿÿ
-j
-java:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(™Î¦Œøÿÿÿÿ8òÌ¹é”0
-Y
-java:S1854">Remove this useless assignment to local variable "connection".(í‹Œ´úÿÿÿÿ
-J
-java:S1481"/Remove this unused "connection" local variable.(í‹Œ´úÿÿÿÿ
-`
-java:S1854">Remove this useless assignment to local variable "connection".(™Î¦Œøÿÿÿÿ8õÌ¹é”0
-Q
-java:S1481"/Remove this unused "connection" local variable.(™Î¦Œøÿÿÿÿ8öÌ¹é”0
