@@ -1,4 +1,6 @@
-TODO: Spring全部项目 Spring projects https://spring.io/projects/
+TODO: Spring全部项目 https://spring.io/projects/
+      Spring入门测试 https://spring.io/guides
+
 1. Spring解决了J2EE中出现的比较大的问题：Enterprise Java Bean Model (EJB)
 2. Spring提供和构建infrastructure, 开发者可以专注在业务层面, 不需要关注JEE更底层的逻辑
 3. Spring是轻量级的，很容易使用轻量级的Web Server, 可以只选择需要的module模块

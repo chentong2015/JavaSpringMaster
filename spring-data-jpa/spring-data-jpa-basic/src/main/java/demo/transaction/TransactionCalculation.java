@@ -1,18 +1,10 @@
-package spring_transaction;
+package demo.transaction;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
-// Spring支持事务传播的7种设置：方法调用级别的传播
-// REQUIRED(0),
-// SUPPORTS(1),
-// MANDATORY(2),
-// REQUIRES_NEW(3),
-// NOT_SUPPORTED(4),
-// NEVER(5),
-// NESTED(6);
 @Component
 public class TransactionCalculation {
 

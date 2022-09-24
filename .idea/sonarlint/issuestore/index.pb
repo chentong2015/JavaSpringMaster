@@ -21,15 +21,7 @@ _
 .spring-boot-basics/spring-boot-tester2/pom.xml,5\2\522d096edd540515217c47d2eee27ae2468404ff
 N
 spring-framework-basic/pom.xml,2\b\2b0fd4ba19973a5ce043406623ad575c8f93ca31
-‡
-Wspring-data-jpa/spring-data-jpa-basic/src/main/java/demo/SpringBootDemoApplication.java,3\2\32802a0140635b69faaa3a6bd56abf9490cb6687
 \
 ,spring-framework-basic/spring-basics/pom.xml,c\b\cbb9c1936c797097058d6e937d7797e221119668
-’
-bspring-framework-basic/spring-basics/src/main/java/spring_transaction/SpringTransactionConfig.java,c\a\ca784c8aee161e33b51454d0693ff6044a04cac9
-‘
-aspring-framework-basic/spring-basics/src/main/java/spring_transaction/TransactionCalculation.java,1\8\1814213ebf5e6fcec8afbc58e216080851760ae1
-k
-;spring-framework-basic/spring-basics/application.properties,1\8\181424be382cf90c3cc8d5ce5325a0b0acd100ab
 ˆ
 Xspring-framework-basic/spring-basics/src/main/java/context/SpringContextEnvironment.java,9\e\9e0b85a445e1d02c1d499dc761a425f96deeade2

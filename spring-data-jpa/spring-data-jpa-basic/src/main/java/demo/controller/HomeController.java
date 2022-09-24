@@ -1,7 +1,7 @@
 package demo.controller;
 
 import demo.entity.User;
-import demo.repositories.UserCrudRepository;
+import demo.transaction.UserCrudRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpHeaders;

@@ -1,5 +1,6 @@
 package com.example.main.controller;
 
+import com.example.main.exception.StorageFileNotFoundException;
 import com.example.main.storage.StorageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
@@ -38,12 +39,6 @@ public class FileUploadController {
         return "uploadForm";
     }
 
-    // 在"redirect:/"重定向的时候，会在页面抛出Not Found 404的异常
-    // 通过自定义实现/error/错误处理页面来优化错误信息的显示 !!
-    // @ExceptionHandler(StorageFileNotFoundException.class)
-    // public ResponseEntity<StorageFileNotFoundException> handleStorageFileNotFound(StorageFileNotFoundException exc) {
-    //     return ResponseEntity.notFound().build();
-    // }
     @PostMapping("/")
     public String handleFileUpload(@RequestParam("file") MultipartFile file, RedirectAttributes redirectAttributes) {
         storageService.store(file);
@@ -51,6 +46,13 @@ public class FileUploadController {
         redirectAttributes.addFlashAttribute("message", "You successfully uploaded " + file.getOriginalFilename() + "!");
         // redirect:/重定向将调用对应的GetMapping()方法
         return "redirect:/";
+    }
+
+    // 在"redirect:/"重定向的时候，会在页面抛出Not Found 404的异常
+    // 通过自定义实现/error/错误处理页面来优化错误信息的显示 !!
+    @ExceptionHandler(StorageFileNotFoundException.class)
+    public ResponseEntity<StorageFileNotFoundException> handleStorageFileNotFound(StorageFileNotFoundException exc) {
+        return ResponseEntity.notFound().build();
     }
 
     // TODO. 直接在流量器输入指定的路径进行下载

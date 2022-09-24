@@ -1,4 +1,4 @@
-package demo.repositories;
+package demo.transaction;
 
 import demo.entity.User;
 import org.springframework.data.domain.Page;
@@ -27,7 +27,7 @@ public interface UserCrudRepository extends CrudRepository<User, Long> {
     @Modifying
     @Query(value = "update t_users u set u.name = :name where u.email like :e1%", nativeQuery = true)
     void updateUserNameByEmail(@Param("name") String newName, @Param("e1") String email);
-    
+
     @Query(value = "select * from t_users t where upper(t.name) = :name and t.email = :email order by t.id", nativeQuery = true)
     Page<User> findAllByNameAndEmail(@Param("name") String name, @Param("email") String email, Pageable pageable);
 }

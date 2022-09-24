@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 
 // 全局处理异常的ControllerAdvice类，定义任何处理异常的处理方法
 @ControllerAdvice
-public class ProductExceptionController {
+public class ProductExceptionControllerAdvice {
 
     // TODO. 异常处理的时候，抛出自定义的ResponseEntity<Object>
     @ExceptionHandler(value = ProductExistException.class)
