@@ -23,8 +23,6 @@ N
 ,spring-framework-basic/spring-basics/pom.xml,c\b\cbb9c1936c797097058d6e937d7797e221119668
 à
 Xspring-framework-basic/spring-basics/src/main/java/context/SpringContextEnvironment.java,9\e\9e0b85a445e1d02c1d499dc761a425f96deeade2
-[
-+spring-boot-basics/spring-boot-demo/pom.xml,7\5\75cd27c86bc92fdb8fc9bdfd58630cc0aaf27d3d
 Q
 !spring-data-jpa/Spring DataSource,3\7\379db5da42384e369aee20405e28c2181868d495
 õ
@@ -121,8 +119,6 @@ _spring-data-jpa/spring-data-jpa-basic/src/main/java/demo/repositories/SessionJp
 _spring-data-jpa/spring-data-jpa-basic/src/main/java/demo/repositories/SpeakerJpaRepository.java,8\b\8bdd0363c29df330d4373751a1ea58e2a661a379
 k
 ;spring-framework-basic/spring-basics/application.properties,1\8\181424be382cf90c3cc8d5ce5325a0b0acd100ab
-á
-Wspring-data-jpa/spring-data-jpa-basic/src/main/java/demo/transaction/Spring‰∫ãÂä°ÂÆûÁé∞,1\c\1c1c4b2d88313c9380e8b0bed1967f4e615d380d
 ã
 [spring-data-jpa/spring-data-jpa-basic/src/main/java/demo/config/JPA PersistenceÈÖçÁΩÆÊñá‰ª∂,c\6\c687a3c9872aabf7b34a10790b70dd9e585cc37f
 ú
@@ -135,3 +131,39 @@ tspring-boot-basics/spring-boot-demo/src/main/java/com/spring/boot/basic/demo/co
 mspring-boot-basics/spring-boot-demo/src/main/java/com/spring/boot/basic/demo/controller/MasterController.java,4\b\4b835b5b476cdc3a81074822afd87de8e983a845
 õ
 kspring-boot-basics/spring-boot-demo/src/main/java/com/spring/boot/basic/demo/controller/BaseController.java,2\f\2ff6b0ea83e37c731b964c04e6a177d453b97b4e
+ê
+`spring-data-jpa/spring-data-jpa-basic/src/main/java/demo/transaction/TransactionCalculation.java,a\1\a10a3d0869c1e6602bc2727966c608a3b39d4b92
+Ü
+Vspring-data-jpa/spring-data-jpa-basic/src/main/java/demo/config/ApplicationConfig.java,d\4\d476077763d666cce56db2cc2b075d4f61a27089
+Ç
+Rspring-data-jpa/spring-data-jpa-basic/src/main/java/demo/services/UserService.java,1\f\1ffaacb0e369cfa2e265e663b590ed2e1d28cd66
+å
+\spring-data-jpa/spring-data-jpa-basic/src/main/java/demo/transaction/UserCrudRepository.java,c\e\cec7d17c97c5c56f438fc3f7b03dd34392942e52
+ï
+espring-data-jpa/spring-data-jpa-basic/src/main/java/demo/transaction/UserPagingSortingRepository.java,b\9\b9d776b7fe42fdfd989b08141d65e883699bfd5d
+ë
+aspring-data-jpa/spring-data-jpa-basic/src/main/java/demo/config/ApplicationTransactionConfig.java,f\a\fa166495545ef992be529e0f4c4cfdbfe2432357
+á
+Wspring-data-jpa/spring-data-jpa-basic/src/main/java/demo/controller/HomeController.java,3\2\32529a269396b9a4a3be2be9801b35b7e898f271
+§
+tspring-data-jpa/spring-data-jpa-master/src/main/java/com/spring/data/jpa/controller/LargeObjectEntityController.java,0\f\0f870dbd756b9e7988453670f45165d7af7582d3
+á
+Wspring-data-jpa/spring-data-jpa-basic/src/main/java/demo/SpringBootDemoApplication.java,3\2\32802a0140635b69faaa3a6bd56abf9490cb6687
+ô
+ispring-data-jpa/spring-data-jpa-master/src/main/java/com/spring/data/jpa/SpringBootMasterApplication.java,d\8\d80d322f51e4808fc1735a1171d92b2ae971456e
+ó
+gspring-data-jpa/spring-data-jpa-master/src/main/java/com/spring/data/jpa/controller/TestController.java,9\d\9d31837bdd82087e4c1eea1e3ce4b771c21face5
+õ
+kspring-data-jpa/spring-data-jpa-master/src/main/java/com/spring/data/jpa/config/SpringBootMasterConfig.java,b\4\b43dda0ce79a14e73a4c9e0b019a677e997f9b8e
+É
+Sspring-framework-basic/spring-basics/src/main/java/spring_aop/SpringAopProject.java,8\d\8ddb8eababf47473514f29779688486994c0774a
+Y
+)spring-framework-basic/SpringÈ°πÁõÆÁÆÄ‰ªã,d\e\de0c18b7f587efce2bbbca9b658f9414598cd59e
+b
+2spring-framework-basic/Spring Native/Spring Native,8\a\8ad3ecbc8599b30f710022e9bf2af21719352901
+S
+#spring-framework-basic/SpringÁÆÄ‰ªã,7\b\7bc151b26f76e990954ba6dab81dea7481768e22
+~
+Nspring-boot-basics/spring-boot-demo/src/main/java/master/MasterSpringBoot.java,c\d\cd3150997da853f1df665cdcaf85e1e6999e1fa0
+[
++spring-boot-basics/spring-boot-demo/pom.xml,7\5\75cd27c86bc92fdb8fc9bdfd58630cc0aaf27d3d
