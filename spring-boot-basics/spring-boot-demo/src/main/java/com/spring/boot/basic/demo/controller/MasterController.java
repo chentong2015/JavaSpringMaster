@@ -3,11 +3,11 @@ package com.spring.boot.basic.demo.controller;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 @RestController
-@RequestMapping("/v1/test/master")
 public class MasterController {
 
     @GetMapping(value = "/data", produces = MediaType.APPLICATION_JSON_VALUE)
@@ -18,5 +18,11 @@ public class MasterController {
     @PostMapping(value = "/data", consumes = MediaType.APPLICATION_JSON_VALUE)
     public void post() {
         // 处理(消费)提供的JSON格式的数据
+    }
+
+    @GetMapping("/v1/info/get")
+    public List<String> getInformation() {
+        return null;
+        // return new ArrayList<>();
     }
 }
