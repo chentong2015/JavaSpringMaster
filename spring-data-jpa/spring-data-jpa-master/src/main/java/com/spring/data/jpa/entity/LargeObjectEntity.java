@@ -9,14 +9,17 @@ import javax.persistence.*;
 public class LargeObjectEntity {
 
     @Id
+    @GeneratedValue(generator = "increment")
     private int id;
 
     @Column(name = "name")
     private String name;
 
+    // TODO. Java String映射到JDBC Varchar类型
+    //  如果存储的数据量过大，则需要使用对应的JDBC LONGVARCHAR类型
     @Lob
-    @Column(name = "json_data", nullable = false)
-    @Type(type = "org.hibernate.type.StringType")
+    @Column(name = "json_data")
+    @Type(type = "org.hibernate.type.TextType")
     private String jsonData;
 
     // For binary data in Java 大的二级制数据，用于存储图片
@@ -24,6 +27,13 @@ public class LargeObjectEntity {
     @Column(name = "photo")
     @Type(type = "org.hibernate.type.BinaryType")
     private byte[] photo;
+
+    public LargeObjectEntity() {
+    }
+
+    public LargeObjectEntity(String name) {
+        this.name = name;
+    }
 
     public int getId() {
         return id;

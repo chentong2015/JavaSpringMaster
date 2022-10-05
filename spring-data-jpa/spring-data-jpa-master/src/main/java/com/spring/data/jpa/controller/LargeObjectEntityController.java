@@ -19,10 +19,17 @@ public class LargeObjectEntityController {
         this.repository = repository;
     }
 
-    @GetMapping("hello")
     @ResponseBody
+    @GetMapping("/save")
     public String hello() {
-        return "hello";
+        LargeObjectEntity entity = new LargeObjectEntity("name 1");
+        StringBuilder stringBuilder = new StringBuilder();
+        for (int i = 1; i < 100000; i++) {
+            stringBuilder.append("test test test test");
+        }
+        entity.setJsonData(stringBuilder.toString());
+        repository.save(entity);
+        return "Save ok.";
     }
 
     @GetMapping("/get")
