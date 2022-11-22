@@ -34,7 +34,7 @@ public class SpringIocBasic {
 
     // 源码分析入口: Spring Beans + Spring Context
     public static void main(String[] args) {
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(SpringAppConfig.class);
         MyBean bean = context.getBean(MyBean.class);
         bean.print();
     }

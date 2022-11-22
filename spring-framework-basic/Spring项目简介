@@ -14,8 +14,8 @@ TODO: Spring全部项目 https://spring.io/projects/
 //      Transactions             Web               Portiet        //
 // <   AOP / Aspects             Instrumentation   Messaging   >  //
 // <                     Core Container                        >  //
-//      Beans       Core             Context        SpEL
-//                          Test
+//      Beans       Core             Context        SpEL          //
+//                          Test                                  //
 
 OXM: Object XML mapping implementation => JAXB (Java Architecture for XML Binding), Castor
 JMS: Java messaging com.ctong.springboot.service

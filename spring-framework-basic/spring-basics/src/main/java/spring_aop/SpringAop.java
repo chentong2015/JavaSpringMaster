@@ -4,7 +4,7 @@ import org.springframework.aop.framework.AopContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import spring_aop.aspect_demo.model.Calculation;
-import spring_ioc.AppConfig;
+import spring_ioc.SpringAppConfig;
 
 // 该注解会注册一个AnnotationAwareAspectJAutoProxyCreator bean组件
 // 该组件实现了BeanPostProcessor接口 ==> 确定使用的后置处理器
@@ -64,7 +64,7 @@ public class SpringAop {
     //          proxyFactory.getProxy(classLoader);
     //          两种代理模式的使用
     public static void main(String[] args) {
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(SpringAppConfig.class);
         // 1. 拿到返回的代理对象，对象其中一些属性(@Autowired)是为null的
         Calculation calculation = context.getBean(Calculation.class);
         // 2. 通过代理对象调用(原始对象的)目标方法

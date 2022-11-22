@@ -1,10 +1,8 @@
-package listener;
-
 import org.springframework.context.SmartLifecycle;
 
 // Spring应用启动和关闭的监听器
 // Lifecycle interface for listening to application startup and shutdown.
-public class SpringApplicationLifecycleListener implements SmartLifecycle {
+public class SpringAppLifecycleListener implements SmartLifecycle {
 
     private volatile boolean running;
 

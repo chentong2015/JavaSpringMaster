@@ -13,8 +13,8 @@ import spring_ioc.bean.MyBeanInstance;
 // --> Spring Boot Java注解
 @Configuration // 主配置类，等效于beans.xml
 @EnableAspectJAutoProxy // 开启AOP
-@ComponentScan(basePackages = "master.spring_ioc") // 通过扫描component来注入bean
-public class AppConfig {
+@ComponentScan(basePackages = "spring_ioc") // 通过扫描component来注入bean
+public class SpringAppConfig {
 
     // 注入的bean的方法id就是方法的名称(大小写严格一致)
     // 配置bean在销毁时，callback回调的方法(class中申明的方法)
