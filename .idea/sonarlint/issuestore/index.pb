@@ -173,3 +173,17 @@ Y
 )spring-framework-basic/SpringÈ°πÁõÆÁÆÄ‰ªã,d\e\de0c18b7f587efce2bbbca9b658f9414598cd59e
 S
 #spring-framework-basic/SpringÁÆÄ‰ªã,7\b\7bc151b26f76e990954ba6dab81dea7481768e22
+k
+;spring-framework-basic/spring-basics/application.properties,1\8\181424be382cf90c3cc8d5ce5325a0b0acd100ab
+à
+Xspring-framework-basic/spring-basics/src/main/java/context/SpringContextEnvironment.java,9\e\9e0b85a445e1d02c1d499dc761a425f96deeade2
+\
+,spring-framework-basic/spring-basics/pom.xml,c\b\cbb9c1936c797097058d6e937d7797e221119668
+í
+bspring-framework-basic/spring-ioc/src/main/java/com/example/main/CompareXmlAndAnnotaionConfig.java,8\a\8aa6530b328d33523388fcd532b7f77914535a57
+Å
+Qspring-framework-basic/spring-basics/src/main/java/spring_ioc/SpringIocBasic.java,c\b\cba9664ef7b2d608fb0cdd9da20d2be88615beb0
+Ü
+Vspring-framework-basic/spring-ioc/src/main/java/com/example/main/BaseIoCContainer.java,7\f\7fa9f61206e0cf7a585bb3713f3e461c9b0bad16
+Ç
+Rspring-framework-basic/spring-basics/src/main/java/spring_ioc/SpringAppConfig.java,3\e\3e4d41b1977c0c495a53745beb8992fe315f817d

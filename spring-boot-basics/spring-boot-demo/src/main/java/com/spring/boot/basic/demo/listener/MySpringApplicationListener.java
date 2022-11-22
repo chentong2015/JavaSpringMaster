@@ -10,7 +10,7 @@ import java.net.URL;
 import java.util.Enumeration;
 
 // Spring在启动的时候
-// EventPublishingRunListener publishs ApplicationStartingEvent to ApplicationListener
+// EventPublishingRunListener publish ApplicationStartingEvent to ApplicationListener
 public class MySpringApplicationListener implements ApplicationListener<SpringApplicationEvent> {
 
     @Override
