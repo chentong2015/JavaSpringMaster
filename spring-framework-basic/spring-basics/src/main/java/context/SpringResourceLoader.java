@@ -3,9 +3,9 @@ package context;
 import org.apache.commons.io.IOUtils;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
+import org.springframework.util.ResourceUtils;
 
-import java.io.FileInputStream;
-import java.io.IOException;
+import java.io.*;
 
 public class SpringResourceLoader {
 
@@ -15,5 +15,14 @@ public class SpringResourceLoader {
         FileInputStream inputStream = new FileInputStream(resource.getFile());
         byte[] content = IOUtils.toByteArray(inputStream);
         System.out.println(content);
+    }
+
+    // 使用Spring的资源工具类从classpath中加载文件
+    public void loadFileByResourceUtils() throws FileNotFoundException {
+        String resourcePath = "sample.txt";
+        File file = ResourceUtils.getFile("classpath:" + resourcePath);
+
+        FileReader fileReader = new FileReader(resourcePath);
+        InputStreamReader inputStreamReader = new InputStreamReader(new FileInputStream(file));
     }
 }
