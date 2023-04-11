@@ -8,12 +8,12 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 @Service
-public class UserService {
+public class UserCrudService {
 
     private UserCrudRepository repository;
 
     @Autowired
-    public UserService(UserCrudRepository repository) {
+    public UserCrudService(UserCrudRepository repository) {
         this.repository = repository;
     }
 
