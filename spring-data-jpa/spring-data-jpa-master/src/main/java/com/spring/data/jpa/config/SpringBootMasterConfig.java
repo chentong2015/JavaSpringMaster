@@ -1,5 +1,7 @@
 package com.spring.data.jpa.config;
 
+import com.spring.data.jpa.service.MyConfigurationService;
+import com.spring.data.jpa.service.MyConfigurationServiceImpl;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -37,5 +39,11 @@ public class SpringBootMasterConfig {
         filterBean.setFilter(new ShallowEtagHeaderFilter());
         filterBean.setUrlPatterns(Arrays.asList("*"));
         return filterBean;
+    }
+
+    // 在@Configuration配置文件中注入Bean，特定接口的实现类
+    @Bean("MY_CONFIG_SERVICE")
+    public MyConfigurationService myConfigurationService() {
+        return new MyConfigurationServiceImpl();
     }
 }
