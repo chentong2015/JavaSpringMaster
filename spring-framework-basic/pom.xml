@@ -22,5 +22,6 @@
         <module>spring-basics</module>
         <module>spring-ioc</module>
         <module>spring-ioc-test</module>
+        <module>spring-hibernate-test</module>
     </modules>
 </project>

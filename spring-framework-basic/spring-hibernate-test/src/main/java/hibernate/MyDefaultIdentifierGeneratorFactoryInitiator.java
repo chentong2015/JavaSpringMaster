@@ -1,4 +1,4 @@
-package com.spring.data.jpa.hibernate;
+package hibernate;
 
 import org.hibernate.boot.registry.StandardServiceInitiator;
 import org.hibernate.id.factory.spi.MutableIdentifierGeneratorFactory;

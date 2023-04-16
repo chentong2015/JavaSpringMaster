@@ -1,7 +1,5 @@
 package com.spring.data.jpa.config;
 
-import com.spring.data.jpa.hibernate.MyHibernateServiceInitiator;
-import com.spring.data.jpa.hibernate.MyServiceInitiator;
 import com.spring.data.jpa.service.MyConfigurationService;
 import com.spring.data.jpa.service.MyConfigurationServiceImpl;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
@@ -47,11 +45,5 @@ public class SpringBootMasterConfig {
     @Bean("MY_CONFIG_SERVICE")
     public MyConfigurationService myConfigurationService() {
         return new MyConfigurationServiceImpl();
-    }
-
-    // 测试注入bean时，能够通过standardServiceRegistryBuilder.addInitiator()注入自定义的Initiator
-    @Bean("MY_SERVICE_INITIATOR")
-    public MyServiceInitiator myServiceInitiator() {
-        return new MyHibernateServiceInitiator();
     }
 }

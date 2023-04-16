@@ -1,4 +1,4 @@
-package com.spring.data.jpa.hibernate;
+package hibernate;
 
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.Metadata;
@@ -10,10 +10,11 @@ import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.AvailableSettings;
 import org.hibernate.dialect.PostgresPlusDialect;
+import org.springframework.stereotype.Repository;
 
 import java.util.Properties;
 
-// @Repository
+@Repository
 public class MyHibernateServiceInitiator implements MyServiceInitiator {
 
     private BootstrapServiceRegistry bootstrapServiceRegistry;

@@ -16,6 +16,7 @@
         <module name="spring-boot-tester2" />
         <module name="spring-data-jpa-basic" />
         <module name="spring-boot-upload-download-files" />
+        <module name="spring-hibernate-test" />
         <module name="spring-boot-upload-download-example" />
       </profile>
     </annotationProcessing>

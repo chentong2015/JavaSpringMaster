@@ -1,4 +1,4 @@
-package com.spring.data.jpa.hibernate;
+package hibernate;
 
 import org.hibernate.boot.Metadata;
 
