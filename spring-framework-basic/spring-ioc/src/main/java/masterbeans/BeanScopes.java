@@ -1,4 +1,4 @@
-package com.example.main.masterbeans;
+package masterbeans;
 
 //Beans Scope 5种作用域 
 // 1. singleton(Default): Scopes a single bean definition to a single object instance per Spring IoC container.
@@ -20,7 +20,7 @@ package com.example.main.masterbeans;
 //            Only valid in the context of a web-aware Spring ApplicationContext.
 public class BeanScopes {
 
-	public void testBeanScope() {
-		System.out.println("test bean scope");
-	}
+    public void testBeanScope() {
+        System.out.println("test bean scope");
+    }
 }

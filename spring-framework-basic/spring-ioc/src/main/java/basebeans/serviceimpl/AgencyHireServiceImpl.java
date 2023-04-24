@@ -1,6 +1,6 @@
-package com.example.main.basebeans.serviceimpl;
+package basebeans.serviceimpl;
 
-import com.example.main.basebeans.service.HireService;
+import basebeans.service.HireService;
 
 public class AgencyHireServiceImpl implements HireService {
 

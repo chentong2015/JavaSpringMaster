@@ -1,4 +1,4 @@
-package com.example.main.basebeans.service;
+package basebeans.service;
 
 public interface BusinessService {
 

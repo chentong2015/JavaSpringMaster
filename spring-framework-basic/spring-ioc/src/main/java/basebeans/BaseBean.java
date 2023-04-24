@@ -1,7 +1,7 @@
-package com.example.main.basebeans;
+package basebeans;
 
-import com.example.main.basebeans.service.BusinessService;
-import com.example.main.basebeans.service.HireService;
+import basebeans.service.BusinessService;
+import basebeans.service.HireService;
 
 public class BaseBean {
 

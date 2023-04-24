@@ -1,0 +1,9 @@
+org.springframework.beans.factory.BeanCreationException: UnsatisfiedDependencyException, some bean or property dependency isn't satisfied.
+错误原因: Bean没有声明或者Bean创建失败，无法在应用的中自动注入
+1. Component Annotation Missing
+2. Package Not Scanned
+   @SpringBootApplication
+   @ComponentScan(basePackages = {"xxx"})
+3. Non-unique Dependency Resolution
+   add @Qualifier to distinguish between the repositories
+4. Creation of Bean failed with exception

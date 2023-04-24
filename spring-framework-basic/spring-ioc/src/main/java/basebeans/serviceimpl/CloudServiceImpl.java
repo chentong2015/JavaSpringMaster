@@ -1,6 +1,6 @@
-package com.example.main.basebeans.serviceimpl;
+package basebeans.serviceimpl;
 
-import com.example.main.basebeans.service.BusinessService;
+import basebeans.service.BusinessService;
 
 public class CloudServiceImpl implements BusinessService {
 

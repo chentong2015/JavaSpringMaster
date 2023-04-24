@@ -1,20 +1,8 @@
-package com.example.main;
+package basebeans;
 
-import com.example.main.basebeans.BaseBean;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 
-// Spring IoC Container: Component of Spring framework, contains "Beans" and manage their lifecycle !!
-// (Business Objects(POJOs) / Beans)
-// (Configuration metadata) 读取metadata配置之后，POJOs会被加载到IoC Container ==> 推荐通过Annotation注解来实现 !!
-// -> Spring Container 
-// -> Configured system
-
-// Eclipse Maven的配置: 
-//由于耗时比较长，造成内存卡顿，使用手动添加dependency，而非使用搜索功能
-//1. Preferences > Maven  > Download repository index updates on startup 设置启动时自动下载更新
-//2. Windows > Show views > maven repository > Global Repositories > Full Index Enable/Rebuid Index
-//3. POM.xml > Dependencies > Add > Search all dependencies 
 public class BaseIoCContainer {
 
     // 1. 添加Spring Bean Configuration file: beans.xml
@@ -41,5 +29,4 @@ public class BaseIoCContainer {
         baseBean.testService();
         context.close();
     }
-
 }
