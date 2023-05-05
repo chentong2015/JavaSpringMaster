@@ -23,8 +23,10 @@ public class RoutingRuleController {
     @ResponseBody
     public String getRule() {
         Optional<RoutingRuleDao> result = repository.findByRuleElementsIsEmpty();
-        System.out.println(result.isEmpty());
+        if (result.isPresent()) {
+            System.out.println(result.get().getId());
+            System.out.println(result.get().getRuleElements());
+        }
         return "check ok";
-
     }
 }

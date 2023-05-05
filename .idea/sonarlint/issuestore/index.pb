@@ -281,17 +281,7 @@ kspring-data-jpa/spring-data-jpa-hibernate-test/src/main/java/com/example/main/c
 Vspring-framework-basic/spring-hibernate-test/src/main/java/config/HibernateConfig.java,2\5\25171b472495a7c2faceb3f6de4a6753f6ee1252
 û
 nspring-data-jpa/spring-data-jpa-hibernate-test/src/main/java/com/example/main/entity/RoutingRuleElementId.java,2\8\280cec384e644fe8e663af76ea268a015c2fbefb
-ü
-ospring-data-jpa/spring-data-jpa-hibernate-test/src/main/java/com/example/main/entity/RoutingRuleElementDao.java,c\d\cde25f780a36afd0a4bd9b9cec84a28e300ba7f9
 è
 _spring-data-jpa/spring-data-jpa-basic/src/main/java/demo/repositories/SpeakerJpaRepository.java,8\b\8bdd0363c29df330d4373751a1ea58e2a661a379
 è
 _spring-data-jpa/spring-data-jpa-basic/src/main/java/demo/repositories/SessionJpaRepository.java,9\1\91bac9d1d27f81309d69bd670aa3aee88583a73b
-ú
-lspring-data-jpa/spring-data-jpa-hibernate-test/src/main/java/com/example/main/entity/RoutingRuleRouteId.java,1\4\14961f0a33b1954c773d387bfd4e4e64cd80dd55
-ù
-mspring-data-jpa/spring-data-jpa-hibernate-test/src/main/java/com/example/main/entity/RoutingRuleRouteDao.java,c\7\c740ebba15e2aa83a1e27ff6ed26fd791b3e30bb
-ò
-hspring-data-jpa/spring-data-jpa-hibernate-test/src/main/java/com/example/main/entity/RoutingRuleDao.java,0\0\001fe15fb6d9e50f20f4e17e43d22e75e01082cc
-£
-sspring-data-jpa/spring-data-jpa-hibernate-test/src/main/java/com/example/main/repository/RoutingRuleRepository.java,f\3\f37543a26251d3bc098ba49a2ccc284c6db9c782

@@ -4,7 +4,7 @@ import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
-@Entity
+@Entity(name = "com.example.main.entity.RoutingRuleDao")
 @Table(name = "DDB_ROUTING_RULE")
 public class RoutingRuleDao {
 

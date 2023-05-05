@@ -2,7 +2,7 @@ package com.example.main.entity;
 
 import javax.persistence.*;
 
-@Entity
+@Entity(name = "com.example.main.entity.RoutingRuleElementDao")
 @Table(name = "DDB_ROUTING_RULE_ELEMENT")
 public class RoutingRuleElementDao {
 
@@ -32,4 +32,11 @@ public class RoutingRuleElementDao {
         this.routingRule = routingRule;
     }
 
+    @Override
+    public String toString() {
+        return "RoutingRuleElementDao{" +
+                "id=" + id.getRoutingRuleId() +
+                ", routingRule=" + routingRule +
+                '}';
+    }
 }

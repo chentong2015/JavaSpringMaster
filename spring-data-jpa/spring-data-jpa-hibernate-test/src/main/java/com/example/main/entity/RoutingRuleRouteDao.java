@@ -2,7 +2,7 @@ package com.example.main.entity;
 
 import javax.persistence.*;
 
-@Entity
+@Entity(name = "com.example.main.entity.RoutingRuleRouteDao")
 @Table(name = "DDB_ROUTING_RULE_ROUTE")
 public class RoutingRuleRouteDao {
 
