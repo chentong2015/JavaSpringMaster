@@ -7,16 +7,17 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-boot-template" />
-        <module name="spring-boot-demo" />
         <module name="spring-ioc" />
-        <module name="spring-ioc-test" />
         <module name="spring-boot-tester1" />
-        <module name="spring-data-jpa-master" />
         <module name="spring-basics" />
         <module name="spring-boot-tester2" />
-        <module name="spring-data-jpa-basic" />
         <module name="spring-boot-upload-download-files" />
+        <module name="spring-boot-demo" />
+        <module name="spring-ioc-test" />
+        <module name="spring-data-jpa-master" />
+        <module name="spring-data-jpa-basic" />
         <module name="spring-hibernate-test" />
+        <module name="spring-data-jpa-hibernate-test" />
         <module name="spring-boot-upload-download-example" />
       </profile>
     </annotationProcessing>

@@ -21,5 +21,6 @@
     <modules>
         <module>spring-data-jpa-basic</module>
         <module>spring-data-jpa-master</module>
+        <module>spring-data-jpa-hibernate-test</module>
     </modules>
 </project>
