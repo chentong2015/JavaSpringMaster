@@ -20,7 +20,7 @@ public class ApplicationConfig {
         dataSource.setDriverClassName("com.sybase.jdbc4.jdbc.SybDriver");
         dataSource.setUsername("INSTAL");
         dataSource.setPassword("INSTALL");
-        dataSource.setUrl("jdbc:sybase:Tds:dell719srv:4100/JAVA_INT_TESTS");
+        dataSource.setUrl("jdbc:sybase:Tds:dell719xxx:4100/JAVA_INT_TESTS");
         return dataSource;
     }
 }
