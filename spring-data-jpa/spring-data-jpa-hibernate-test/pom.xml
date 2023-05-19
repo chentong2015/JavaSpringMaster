@@ -40,6 +40,14 @@
             <artifactId>postgresql</artifactId>
             <version>42.4.2</version>
         </dependency>
+
+        <dependency>
+            <groupId>sybase</groupId>
+            <artifactId>jconn4</artifactId>
+            <version>4.0</version>
+            <scope>system</scope>
+            <systemPath>C:/SAP/jConnect-16_0/classes/jconn4.jar</systemPath>
+        </dependency>
     </dependencies>
 
     <build>

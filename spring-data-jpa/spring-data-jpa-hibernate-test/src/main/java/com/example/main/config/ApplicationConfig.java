@@ -12,10 +12,15 @@ public class ApplicationConfig {
     @Bean
     public DataSource getAnotherDatasource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        dataSource.setDriverClassName("org.postgresql.Driver");
-        dataSource.setUsername("postgres");
-        dataSource.setPassword("admin");
-        dataSource.setUrl("jdbc:postgresql://localhost:5432/hibernate_demo");
+        // dataSource.setDriverClassName("org.postgresql.Driver");
+        // dataSource.setUsername("postgres");
+        // dataSource.setPassword("admin");
+        // dataSource.setUrl("jdbc:postgresql://localhost:5432/hibernate_demo");
+
+        dataSource.setDriverClassName("com.sybase.jdbc4.jdbc.SybDriver");
+        dataSource.setUsername("INSTAL");
+        dataSource.setPassword("INSTALL");
+        dataSource.setUrl("jdbc:sybase:Tds:dell719srv:4100/JAVA_INT_TESTS");
         return dataSource;
     }
 }

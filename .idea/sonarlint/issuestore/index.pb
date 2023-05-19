@@ -273,14 +273,10 @@ Vspring-data-jpa/spring-data-jpa-basic/src/main/java/demo/config/ApplicationConf
 ispring-data-jpa/spring-data-jpa-master/src/main/java/com/spring/data/jpa/SpringBootMasterApplication.java,d\8\d80d322f51e4808fc1735a1171d92b2ae971456e
 á
 Wspring-data-jpa/spring-data-jpa-basic/src/main/java/demo/SpringBootDemoApplication.java,3\2\32802a0140635b69faaa3a6bd56abf9490cb6687
-õ
-kspring-data-jpa/spring-data-jpa-hibernate-test/src/main/java/com/example/main/config/ApplicationConfig.java,8\f\8fceabbc16a0a87544a3b790455ca60a52f5c1b3
 ]
 -spring-data-jpa/spring-data-jpa-basic/pom.xml,e\4\e4d6f806a06827ee66846237be9beeeaa5a70eed
 Ü
 Vspring-framework-basic/spring-hibernate-test/src/main/java/config/HibernateConfig.java,2\5\25171b472495a7c2faceb3f6de4a6753f6ee1252
-û
-nspring-data-jpa/spring-data-jpa-hibernate-test/src/main/java/com/example/main/entity/RoutingRuleElementId.java,2\8\280cec384e644fe8e663af76ea268a015c2fbefb
 è
 _spring-data-jpa/spring-data-jpa-basic/src/main/java/demo/repositories/SpeakerJpaRepository.java,8\b\8bdd0363c29df330d4373751a1ea58e2a661a379
 è
