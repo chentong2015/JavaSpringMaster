@@ -9,10 +9,12 @@ public class EnvironmentConfig {
 
     private Environment environment;
 
-    // 从系统环境中获取属性的配置，或者设置属性
+    // 1. 获取Spring framework context环境中的属性值
+    // 2. System.setProperty("key", "chen test"); 通过设置系统属性值来定义
     @Autowired
-    public EnvironmentConfig(Environment environment) {
-        String value = environment.getProperty("env-name");
-        System.setProperty("property_name", "false");
+    public void EnvironmentConfig(Environment environment) {
+        System.out.println(environment.getProperty("key"));
+        System.out.println(System.getProperty("key"));
+        System.out.println(System.getProperty("key2"));
     }
 }
