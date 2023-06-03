@@ -203,8 +203,6 @@ mspring-framework-basic/spring-hibernate-test/src/main/java/hibernate/MyDefaultI
 espring-framework-basic/spring-hibernate-test/src/main/java/hibernate/MyHibernateServiceInitiator.java,d\2\d206be6dc98661a6aeac04f2fa2dbc61ef367bfe
 N
 spring-framework-basic/pom.xml,2\b\2b0fd4ba19973a5ce043406623ad575c8f93ca31
-^
-.spring-data-jpa/spring-data-jpa-master/pom.xml,c\0\c0d24dec139f8c159fb358f5e4b75d3745c9955d
  
 pspring-data-jpa/spring-data-jpa-master/src/main/java/com/spring/data/jpa/controller/ConfigurationController.java,a\a\aafa0e6d6be7b8a74fd6553e987bdd33a64337ee
 œ
@@ -257,8 +255,6 @@ kspring-data-jpa/spring-data-jpa-master/src/main/java/com/spring/data/jpa/conver
 Rspring-framework-basic/spring-basics/src/main/java/IoC UnsatisfiedDependencyå¼‚å¸¸,a\6\a68127d6ac56ae657c63169d2fbcb7992f2d7e42
 Y
 )spring-framework-basic/Springæ¡†æž¶ç®€ä»‹,7\9\79b0a6834435d543a7c8b11125e56cf056019d64
-G
-spring-data-jpa/pom.xml,f\9\f9d09b46638fd55e23bd32bf63bbebb20e4dffaa
 d
 4spring-framework-basic/spring-hibernate-test/pom.xml,9\d\9df22d713b51b203c2d92254d17ca56a479049fd
 †
@@ -299,3 +295,29 @@ espring-framework-basic/spring-basics/src/main/java/bean/import_bean/PersonBeanD
 _spring-framework-basic/spring-basics/src/main/java/bean/bean_definition/BaseBeanDefinition.java,8\b\8be436a36dc6ffdc870a3c89e09e36bdbd3c0fce
 —
 gspring-framework-basic/spring-basics/src/main/java/bean/bean_definition/MyBeanFactoryPostProcessor.java,5\3\53127968e813272cb467a7416bcb4a0f71337c23
+€
+Pspring-framework-basic/spring-basics/src/main/java/config/EnvironmentConfig.java,4\a\4af92b0b55dbebf6f385655101817d87bfcad193
+^
+.spring-data-jpa/spring-data-jpa-master/pom.xml,c\0\c0d24dec139f8c159fb358f5e4b75d3745c9955d
+™
+ispring-data-jpa/spring-data-jpa-master/src/main/java/com/spring/data/jpa/SpringBootMasterApplication.java,d\8\d80d322f51e4808fc1735a1171d92b2ae971456e
+›
+kspring-data-jpa/spring-data-jpa-master/src/main/java/com/spring/data/jpa/config/SpringBootMasterConfig.java,b\4\b43dda0ce79a14e73a4c9e0b019a677e997f9b8e
+‡
+Wspring-data-jpa/spring-data-access-layer/src/main/java/com/dataaccess/layer/MyBean.java,8\8\88f476acd0f647f4d43fd1a96be097bc752346b0
+‰
+Yspring-framework-basic/spring-basics/src/main/java/bean/bean_lifecycle/BaseBeanAware.java,0\e\0ec825425e5fd9bf23cd0d11b7e4373ec837f259
+a
+1spring-data-jpa/spring-data-access-legacy/pom.xml,e\9\e9a76c8b74309b7bbe5cc5eecbde8086911b8aff
+¡
+qspring-data-jpa/spring-data-access-legacy/src/main/java/com/dataaccess/lagacy/LegacySpringApplicationContext.java,6\3\63eb660843f40f5b793fb25b6b528c3da09bcf31
+G
+spring-data-jpa/pom.xml,f\9\f9d09b46638fd55e23bd32bf63bbebb20e4dffaa
+‘
+aspring-data-jpa/spring-data-access-layer/src/main/java/com/dataaccess/layer/EnableDataAccess.java,5\b\5babc9ff528a6bf55ade298f35e337f388421c4c
+˜
+hspring-data-jpa/spring-data-access-layer/src/main/java/com/dataaccess/layer/DataAccessConfiguration.java,d\9\d97975649de0b4b0114d36f25444eff6be5ae291
+–
+fspring-data-jpa/spring-data-access-layer/src/main/java/com/dataaccess/layer/DataAccessAppListener.java,0\a\0a37e55e72d574154e6588dff0158c08abe0cab1
+Œ
+\spring-data-jpa/spring-data-access-test/src/main/java/com/dataaccess/main/bean/MyEntity.java,3\1\31220b64e6cc359aaedd3e443567a280f9dc3a7a

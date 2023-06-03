@@ -13,7 +13,7 @@ import java.util.Arrays;
 
 @Configuration
 public class SpringBootMasterConfig {
-
+    
     @Bean
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
