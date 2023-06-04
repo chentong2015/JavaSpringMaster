@@ -1,0 +1,3 @@
+com\dataaccess\main\config\DataAccessConfig.class
+com\dataaccess\main\bean\MyEntity.class
+com\dataaccess\main\SpringDataAccessApplication.class

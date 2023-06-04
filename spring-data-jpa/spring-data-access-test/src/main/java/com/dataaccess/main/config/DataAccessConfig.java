@@ -3,12 +3,17 @@ package com.dataaccess.main.config;
 import com.dataaccess.lagacy.LegacySpringApplicationContext;
 import com.dataaccess.layer.MyBean;
 import com.dataaccess.main.bean.MyEntity;
+import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 
 import java.lang.reflect.Method;
 
 @Configuration
+// @ConfigurationProperties
+@EnableConfigurationProperties
+@PropertySource("classpath:database.properties")
 public class DataAccessConfig {
 
     @Bean

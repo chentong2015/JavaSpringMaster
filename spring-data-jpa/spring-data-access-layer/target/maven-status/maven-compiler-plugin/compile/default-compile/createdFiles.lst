@@ -1,0 +1,5 @@
+com\dataaccess\layer\MyDataSourceFactory.class
+com\dataaccess\layer\EnableDataAccess.class
+com\dataaccess\layer\DataAccessAppListener.class
+com\dataaccess\layer\DataAccessConfiguration.class
+com\dataaccess\layer\MyBean.class

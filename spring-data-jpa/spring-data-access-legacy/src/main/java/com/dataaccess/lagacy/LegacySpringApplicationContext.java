@@ -16,6 +16,9 @@ public class LegacySpringApplicationContext implements ApplicationContextAware {
 
     @Override
     public void setApplicationContext(ApplicationContext context) {
+        System.out.println(context.getApplicationName());
+        System.out.println(context.getDisplayName());
+
         currentContext = context;
         if (legacyContext == null) {
             setContext(context);

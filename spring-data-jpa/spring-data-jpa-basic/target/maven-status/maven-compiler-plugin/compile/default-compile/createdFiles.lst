@@ -1,6 +1,6 @@
 demo\config\ApplicationTransactionConfig.class
+demo\services\UserCrudService.class
 demo\repositories\BaseJpaRepository.class
-demo\services\UserService.class
 demo\controller\HomeController.class
 demo\controller\SessionController.class
 demo\services\SessionService.class

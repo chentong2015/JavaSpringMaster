@@ -1,7 +1,0 @@
-
-
-java:S1450"]Remove the "currentContext" field and declare it as a local variable in the relevant methods.(²øŽ‚ÿÿÿÿÿ8ÿÖŒä‡1
-T
-java:S1068"2Remove this unused "currentContext" private field.(²øŽ‚ÿÿÿÿÿ8³×Œä‡1
-S
-java:S1144"1Remove this unused private "resetContext" method.(±Ö£™þÿÿÿÿ8³¿Šä‡1
