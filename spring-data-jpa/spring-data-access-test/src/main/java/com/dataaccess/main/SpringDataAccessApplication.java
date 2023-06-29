@@ -1,6 +1,6 @@
 package com.dataaccess.main;
 
-import com.dataaccess.layer.EnableDataAccess;
+import com.dataaccess.main.das.EnableDataAccess;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 

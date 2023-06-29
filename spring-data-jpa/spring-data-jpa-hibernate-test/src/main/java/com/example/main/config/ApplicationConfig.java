@@ -7,6 +7,7 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import javax.sql.DataSource;
 
 @Configuration
+// @PropertySource(value = "classpath:data.properties")
 public class ApplicationConfig {
 
     @Bean

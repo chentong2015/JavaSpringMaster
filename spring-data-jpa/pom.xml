@@ -23,7 +23,5 @@
         <module>spring-data-jpa-master</module>
         <module>spring-data-jpa-hibernate-test</module>
         <module>spring-data-access-test</module>
-        <module>spring-data-access-layer</module>
-        <module>spring-data-access-legacy</module>
     </modules>
 </project>

@@ -21,6 +21,8 @@
         <option value="$PROJECT_DIR$/spring-boot-upload-download-files/pom.xml" />
         <option value="$PROJECT_DIR$/spring-data-jpa-demo/pom.xml" />
         <option value="$PROJECT_DIR$/spring-data-jpa/Spring-data-layer/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-data-jpa/spring-data-access-layer/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-data-jpa/spring-data-access-legacy/pom.xml" />
       </set>
     </option>
   </component>

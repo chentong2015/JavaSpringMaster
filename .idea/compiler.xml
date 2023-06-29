@@ -9,14 +9,12 @@
         <module name="spring-boot-template" />
         <module name="spring-ioc" />
         <module name="spring-boot-tester1" />
-        <module name="spring-data-access-layer" />
         <module name="spring-data-access-test" />
         <module name="spring-basics" />
         <module name="spring-boot-tester2" />
         <module name="spring-boot-upload-download-files" />
         <module name="spring-boot-demo" />
         <module name="spring-ioc-test" />
-        <module name="spring-data-access-legacy" />
         <module name="spring-data-jpa-master" />
         <module name="spring-data-jpa-basic" />
         <module name="spring-hibernate-test" />
@@ -27,6 +25,8 @@
     <bytecodeTargetLevel>
       <module name="spring-basics-ioc" target="1.5" />
       <module name="spring-boot-demo1" target="15" />
+      <module name="spring-data-access-layer" target="15" />
+      <module name="spring-data-access-legacy" target="15" />
       <module name="spring-data-jpa-demo" target="11" />
       <module name="Spring-data-layer" target="15" />
     </bytecodeTargetLevel>
