@@ -10,7 +10,7 @@
     <version>1.0-SNAPSHOT</version>
 
     <modules>
-        <module>spring-framework-basic</module>
+        <module>basic-spring-framework</module>
         <module>spring-boot-basics</module>
         <module>spring-data-jpa</module>
     </modules>

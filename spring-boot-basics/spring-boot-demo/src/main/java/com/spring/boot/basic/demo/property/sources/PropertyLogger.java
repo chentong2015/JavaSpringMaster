@@ -1,4 +1,4 @@
-package com.spring.boot.basic.demo.logger;
+package com.spring.boot.basic.demo.property.sources;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -25,7 +25,7 @@ public class PropertyLogger {
 
         String activeProfiles = Arrays.toString(env.getActiveProfiles());
         LOGGER.info("Active profiles: {}", activeProfiles);
-        
+
         final MutablePropertySources sources = ((AbstractEnvironment) env).getPropertySources();
         StreamSupport.stream(sources.spliterator(), false)
                 .filter(EnumerablePropertySource.class::isInstance)
