@@ -20,6 +20,7 @@ public final class DataAccessAppListener implements ApplicationListener<Applicat
         props.put("my.property", "false");
         props.put("spring.jpa.properties.hibernate.id.new_generator_mappings", "false");
 
+        // TODO. 获取到App启动时所有配置的属性properties
         environment.getPropertySources().addLast(new PropertiesPropertySource("hello_properties", new Properties()));
         environment.getPropertySources().addFirst(new PropertiesPropertySource("test_properties", props));
     }
