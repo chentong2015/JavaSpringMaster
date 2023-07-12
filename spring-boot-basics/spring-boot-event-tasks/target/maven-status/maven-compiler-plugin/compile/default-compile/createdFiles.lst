@@ -1,0 +1,3 @@
+com\event\tasks\SchedulingTasksApplication.class
+com\event\tasks\AsyncScheduledTask.class
+com\event\tasks\ScheduledTasks.class

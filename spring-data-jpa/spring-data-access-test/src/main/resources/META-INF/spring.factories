@@ -1,1 +1,0 @@
-org.springframework.context.ApplicationListener=com.dataaccess.main.das.DataAccessAppListener
