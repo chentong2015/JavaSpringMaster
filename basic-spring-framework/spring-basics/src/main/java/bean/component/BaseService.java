@@ -26,8 +26,8 @@ public class BaseService {
     // public UserService() { }
 
     // 在没有默认构造方法的情况下，Spring无法判断使用那个含参数的构造器
-    // TODO: 如果只有一个，则直接使用唯一的一个构造器
-    //       如果有多个，则可以添加一个@Autowired，不能添加多个
+    // TODO: 如果只有一个，则直接使用唯一的一个构造器 => 构造器上不在不在需要添加@Autowired
+    //   如果有多个，则可以添加一个@Autowired，不能添加多个
     private OrderService orderService1;
 
     // 构造器注入(如果只有唯一一个构造器)

@@ -1,0 +1,6 @@
+
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¤è¾ÿÿÿÿÿ
+e
+java:S1854"HRemove this useless assignment to local variable "getBeanByClassMethod".(Ãæ€ß8ÏÑ™˜1
+V
+java:S1481"9Remove this unused "getBeanByClassMethod" local variable.(Ãæ€ß8ÏÑ™˜1
