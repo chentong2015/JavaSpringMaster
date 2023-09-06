@@ -13,4 +13,10 @@ public class ItemRemovedListener {
         System.out.println(event.getName());
         System.out.println("handle removed event");
     }
+
+    // 使用注解声明要监听的事件类型
+    @EventListener(ItemRemovedEvent.class)
+    public void handleUserRemovedEventPlus() {
+        System.out.println("target removed event");
+    }
 }

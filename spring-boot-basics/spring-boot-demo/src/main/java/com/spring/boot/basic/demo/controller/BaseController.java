@@ -16,7 +16,7 @@ import springfox.documentation.annotations.Cacheable;
 @Controller
 public class BaseController {
 
-    private BaseService baseService;
+    private final BaseService baseService;
 
     @Autowired
     public BaseController(BaseService baseService) {
