@@ -1,7 +1,0 @@
-D:\Work My Projects\Spring Master\JavaSpringMaster\spring-boot-basics\spring-boot-upload-download-example\src\main\java\com\example\main\property\FileStorageProperties.java
-D:\Work My Projects\Spring Master\JavaSpringMaster\spring-boot-basics\spring-boot-upload-download-example\src\main\java\com\example\main\exception\MyFileNotFoundException.java
-D:\Work My Projects\Spring Master\JavaSpringMaster\spring-boot-basics\spring-boot-upload-download-example\src\main\java\com\example\main\controller\FileController.java
-D:\Work My Projects\Spring Master\JavaSpringMaster\spring-boot-basics\spring-boot-upload-download-example\src\main\java\com\example\main\service\FileStorageService.java
-D:\Work My Projects\Spring Master\JavaSpringMaster\spring-boot-basics\spring-boot-upload-download-example\src\main\java\com\example\main\FileDemoApplication.java
-D:\Work My Projects\Spring Master\JavaSpringMaster\spring-boot-basics\spring-boot-upload-download-example\src\main\java\com\example\main\payload\UploadFileResponse.java
-D:\Work My Projects\Spring Master\JavaSpringMaster\spring-boot-basics\spring-boot-upload-download-example\src\main\java\com\example\main\exception\FileStorageException.java

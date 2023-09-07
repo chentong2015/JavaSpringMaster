@@ -1,4 +1,4 @@
-package main.config;
+package annotation.config;
 
 public class MyDateSource {
 

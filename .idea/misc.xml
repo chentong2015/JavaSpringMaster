@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-basics/spring-boot-demo/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-basics/spring-boot-upload-download-files/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-data-jpa/spring-jpa-hibernate-test/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

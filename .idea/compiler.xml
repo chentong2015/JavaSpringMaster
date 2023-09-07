@@ -9,31 +9,16 @@
         <module name="spring-boot-template" />
         <module name="spring-boot-tester1" />
         <module name="spring-data-access-test" />
+        <module name="spring-framework" />
         <module name="spring-boot-tester2" />
         <module name="spring-boot-upload-download-files" />
         <module name="spring-boot-event-tasks" />
         <module name="spring-boot-demo" />
+        <module name="spring-jpa-hibernate-test" />
         <module name="spring-data-jpa-master" />
         <module name="spring-data-jpa-basic" />
-        <module name="spring-boot-upload-download-example" />
-      </profile>
-      <profile name="Annotation profile for JavaSpringMaster" enabled="true">
-        <sourceOutputDir name="../spring-basics/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../spring-basics/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="spring-framework" />
-      </profile>
-      <profile name="Annotation profile for spring-ioc-basic" enabled="true">
-        <sourceOutputDir name="../spring-ioc/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../spring-ioc/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
         <module name="spring-ioc-basic" />
-      </profile>
-      <profile name="Annotation profile for spring-jpa-hibernate-test" enabled="true">
-        <sourceOutputDir name="../spring-data-jpa-hibernate-test/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../spring-data-jpa-hibernate-test/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="spring-jpa-hibernate-test" />
+        <module name="spring-boot-upload-download-example" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

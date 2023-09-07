@@ -1,3 +1,13 @@
+com\events\application\SpringEventsApplication.class
 com\event\tasks\SchedulingTasksApplication.class
-com\event\tasks\AsyncScheduledTask.class
+com\events\application\listener\ItemCreationApplicationListener.class
 com\event\tasks\ScheduledTasks.class
+com\events\application\listener\async\AsyncItemCreationListener.class
+com\event\tasks\AsyncScheduledTask.class
+com\events\application\event\ItemRemovedEvent.class
+com\events\application\listener\ItemRemovedListener.class
+com\events\application\controller\ItemEventController.class
+com\events\application\listener\transactional\TransactionalItemEventListener.class
+com\events\application\publisher\EventPublisher.class
+com\events\application\listener\DataAccessApplicationListener.class
+com\events\application\event\ItemCreationEvent.class

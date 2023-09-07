@@ -8,7 +8,7 @@
     <!-- 直接通过Eclipse Bean UI界面来添加: 准确定位要找到的类型，避免手写出错 
          autowire="default" 使用默认的构造器来创建对象, 默认使用类型的默认值 
          当自定义含参的构造器之后，需要提供构造器参数 -->
-    <bean id="myBean" class="xml.bean.BaseBean">
+    <bean id="myBean" class="xml.BaseBean">
         <!-- 传入构造器参数，会根据类型自动转换，按照顺序index传入指定的参数值
              可以直接使用field名称来赋值 name="count" -->
         <constructor-arg index="0" value="Demo"></constructor-arg>
@@ -29,18 +29,16 @@
         <property name="baseService" ref="ecommerceService"></property>
     </bean>
 
-    <bean id="cloudService" class="xml.bean.serviceimpl.CloudServiceImpl"/>
-    <bean id="ecommerceService" class="xml.bean.serviceimpl.EcommerceServiceImpl"/>
-    <bean id="agencyHireService" class="xml.bean.serviceimpl.AgencyHireServiceImpl"/>
-    <bean id="companyHireService" class="xml.bean.serviceimpl.CompanyHireServiceImpl"/>
+    <bean id="cloudService" class="xml.serviceimpl.CloudServiceImpl"/>
+    <bean id="ecommerceService" class="xml.serviceimpl.EcommerceServiceImpl"/>
+    <bean id="agencyHireService" class="xml.serviceimpl.AgencyHireServiceImpl"/>
+    <bean id="companyHireService" class="xml.serviceimpl.CompanyHireServiceImpl"/>
 
-    <!-- 默认bean scope是singleton: 不需要添加 -->
-    <bean id="myBeanScope" class="masterbeans.BeanScopes" scope="singleton">
-    </bean>
-
-    <!-- 声明bean生命周期中需要调用的方法 -->
-    <bean id="baseBeanCallback" class="bean.BeansCallbacks" destroy-method="destroy" init-method="initialize">
-    </bean>
+    <!-- 默认bean scope是singleton: 不需要添加
+    <bean id="myBeanDemo" class="com.example.MyBeanDemo"
+          scope="singleton"         默认的Scope作用域为singleton，无需设置
+          destroy-method="destroy"  调用bean中定义的方法在不同的生命周期执行
+          init-method="initialize" /> -->
 </beans>
 
 

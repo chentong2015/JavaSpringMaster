@@ -1,7 +1,7 @@
-package main.lifecycle;
+package annotation.lifecycle;
 
-import main.annotation.qualifier.GuessCount;
-import main.annotation.qualifier.MaxNumber;
+import annotation.qualifier.GuessCount;
+import annotation.qualifier.MaxNumber;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

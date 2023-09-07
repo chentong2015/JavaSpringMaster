@@ -1,4 +1,4 @@
-package main.config;
+package annotation.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -13,7 +13,7 @@ import org.springframework.context.annotation.Import;
  */
 @Configuration // 替换beans.xml文件中最大的标签<beans>，从而使用纯annotation来配置(注入)
 @Import(NumberGeneratorConfig.class) // 从不同的配置文件中加载bean
-@ComponentScan(basePackages = "main")
+@ComponentScan(basePackages = "annotation")
 public class AppContainerConfig {
 
     // The configuration class contains beans definitions 类型中应该声明bean方法(代表bean的定义，对象的创建)

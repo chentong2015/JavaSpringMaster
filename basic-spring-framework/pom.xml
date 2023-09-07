@@ -19,9 +19,7 @@
     </properties>
 
     <modules>
-        <module>spring-basics</module>
-        <module>spring-ioc</module>
-        <module>spring-ioc-test</module>
-        <module>spring-hibernate-test</module>
+        <module>spring-framework</module>
+        <module>spring-ioc-basic</module>
     </modules>
 </project>

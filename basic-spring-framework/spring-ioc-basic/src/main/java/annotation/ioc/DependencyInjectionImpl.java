@@ -1,13 +1,13 @@
-package main.ioc;
+package annotation.ioc;
 
-import main.lifecycle.NumberGenerator;
+import annotation.lifecycle.NumberGenerator;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class DependencyInjectionImpl implements DependencyInjection {
 
     /**
      * 1. Field based dependency injection
-     * > Autowiring Beans：Spring Container auto inject and set the field !!  ===> 推荐使用 !! 同样适用在Constructor & Setter
+     * > Autowiring Beans：Spring Container auto-inject and set the field !!  ===> 推荐使用 !! 同样适用在Constructor & Setter
      * > 添加注解, Container会自动从beans中获取bean, 并实现注入到instance variable
      * > Autowiring by type from name 'dependencyInjection' to bean named 'numberGenerator'
      */

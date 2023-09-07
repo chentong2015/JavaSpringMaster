@@ -1,8 +1,0 @@
-com\example\main\storage\FileSystemStorageService.class
-com\example\main\UploadingFilesApplication.class
-com\example\main\controller\FileUploadController.class
-com\example\main\exception\StorageFileNotFoundException.class
-com\example\main\storage\StorageService.class
-META-INF\spring-configuration-metadata.json
-com\example\main\storage\StorageProperties.class
-com\example\main\exception\StorageException.class

@@ -1,9 +1,0 @@
-com\dataaccess\main\das\EnableDataAccess.class
-com\dataaccess\main\das\MyBean.class
-com\dataaccess\main\das\MyDataSourceFactory.class
-com\dataaccess\main\SpringDataAccessApplication.class
-com\dataaccess\main\das\DataAccessAppListener.class
-com\dataaccess\main\config\DataAccessConfig.class
-com\dataaccess\main\das\DataAccessConfiguration.class
-com\dataaccess\main\context\LegacySpringApplicationContext.class
-com\dataaccess\main\bean\MyEntity.class

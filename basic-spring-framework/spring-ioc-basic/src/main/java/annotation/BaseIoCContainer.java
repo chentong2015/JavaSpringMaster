@@ -1,15 +1,14 @@
-package main;
+package annotation;
 
-import main.component.DemoComponent;
-import main.config.AppContainerConfig;
-import main.config.MyDateSource;
-import main.lifecycle.NumberGenerator;
+import annotation.component.DemoComponent;
+import annotation.config.AppContainerConfig;
+import annotation.config.MyDateSource;
+import annotation.lifecycle.NumberGenerator;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
- * TODO beans官方文档: https://docs.spring.io/spring-framework/docs/current/reference/html/core.html#beans
  * Bean (Simple java object): beans are created with the configuration metadata that you supply to the container
  * Spring IoC Container     : component of Spring framework that contains beans and manage their lifecycle
  * .

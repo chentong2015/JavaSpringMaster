@@ -1,7 +1,7 @@
-package main.config;
+package annotation.config;
 
-import main.annotation.qualifier.GuessCount;
-import main.annotation.qualifier.MaxNumber;
+import annotation.qualifier.GuessCount;
+import annotation.qualifier.MaxNumber;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
@@ -20,7 +20,7 @@ import org.springframework.context.annotation.PropertySource;
 // 也可以直接在XML中添加配置文件 <context:property-placeholder ...>
 @PropertySource("classpath:numberGenerator.properties")
 public class NumberGeneratorConfig {
-    
+
     /**
      * 从properties中提取指定的值注入 default value expression for the argument
      * 1. 所提取的名称字符串必须完全一致, 从string转换成int类型的值 parseInt()
