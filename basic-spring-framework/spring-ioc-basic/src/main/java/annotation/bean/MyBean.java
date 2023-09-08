@@ -1,4 +1,4 @@
-package spring_ioc.bean;
+package annotation.bean;
 
 public interface MyBean {
 

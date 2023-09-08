@@ -1,7 +1,8 @@
-package spring_ioc;
+package annotation;
 
+import annotation.bean.MyBean;
+import annotation.config.SpringAppConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import spring_ioc.bean.MyBean;
 
 // Spring能够更好的管理java中的对象，相当于对象的管理者 !!
 // 被Spring管理的对象才能完成自动注入，依赖注入
@@ -11,7 +12,7 @@ import spring_ioc.bean.MyBean;
 // 2. 控制什么: Bean(对象)
 // 3. 为什么要控制: 解耦，依赖抽象
 // 4. 那些方面反转: 创建的权利反转，交给容器来托管
-public class SpringIocBasic {
+public class SpringIocConfiguration {
 
     // 如何理解Spring IoC容器?  Spring IOC Container是什么?
     // BeanFactory IoC容器 : 完成一序列功能的一系列组件共同构成IOC容器

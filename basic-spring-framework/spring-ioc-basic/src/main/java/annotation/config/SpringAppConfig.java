@@ -1,10 +1,10 @@
-package spring_ioc;
+package annotation.config;
 
+import annotation.bean.MyBeanImpl;
+import annotation.bean.MyBeanInstance;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import spring_ioc.bean.MyBeanImpl;
-import spring_ioc.bean.MyBeanInstance;
 
 @Configuration // 主配置类，等效于beans.xml
 @ComponentScan(basePackages = "spring_ioc") // 通过扫描component来注入bean

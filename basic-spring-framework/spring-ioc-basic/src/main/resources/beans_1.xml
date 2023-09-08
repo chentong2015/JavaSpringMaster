@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- 为Spring IoC所做的配置文件 -->
+
+    <!-- 通过Spring aop schema来使用Aspect, 配置逻辑和注解一致
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    <spring_framework.bean id="aBean" class="spring_framework.spring_ioc.baseMyBeanImpl"/>
+    <aop:main.config>
+        <aop:aspect id="myAspect" ref="aBean"></aop:aspect>
+        <spring_framework.spring_aop:pointcut id="businessService" expression="execution(* transfer(..))"/>
+    </aop:main.config> -->
+
+    <!-- 在声明Bean时，使用<props>配置来注入collections属性集合
+        Album = Album{title='Please Please Me', year=1963, songs=[], publisher={}, props={color=Black, type=CD, duration=1 Hour}}
+    <bean id="album" class="org.spring.core.Album">
+        <property name="title" value="Please Please Me" />
+        <property name="year" value="1963" />
+        <property name="props">
+            TODO: inject a collection of name-value pairs where the name
+                  and value are both Strings.
+            <props>
+                <prop key="color">Black</prop>
+                <prop key="type">CD</prop>
+                <prop key="duration">1 Hour</prop>
+            </props>
+        </property>
+    </bean> -->
+</beans>
