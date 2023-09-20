@@ -16,7 +16,7 @@ import java.lang.reflect.Method;
 @PropertySource("classpath:database.properties")
 public class DataAccessConfig {
 
-    // Check here if we are in a spring data context or in a murex context
+    // Check here if we are in a spring data context or in a ctong context
     @Bean
     public MyEntity createMyEntity(LegacySpringApplicationContext applicationContext) throws Exception {
         Class<?> springDataClass = Class.forName("com.dataaccess.main.context.LegacySpringApplicationContext");

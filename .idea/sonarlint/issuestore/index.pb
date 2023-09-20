@@ -173,8 +173,6 @@ kspring-data-jpa/spring-data-jpa-master/src/main/java/com/spring/data/jpa/reposi
 jspring-data-jpa/spring-data-access-test/src/main/java/com/dataaccess/main/das/DataAccessConfiguration.java,b\8\b84b3275c7571f43bc824a4dbb747db4866aa839
 _
 /spring-data-jpa/spring-data-access-test/pom.xml,f\8\f8595730d25fa13abbb8e87f0b51306970b1d597
-ñ
-fspring-data-jpa/spring-data-access-test/src/main/java/com/dataaccess/main/config/DataAccessConfig.java,d\7\d723d4d6a5909a6f7d672dee05fcd26285a78ea5
 ö
 jspring-data-jpa/spring-data-access-test/src/main/java/com/dataaccess/main/SpringDataAccessApplication.java,f\3\f35189a5bb1d21e965d3df8af1c131b295d79666
 •
@@ -201,20 +199,14 @@ vspring-boot-basics/spring-boot-demo/src/main/java/com/spring/boot/basic/demo/li
 pspring-boot-basics/spring-boot-demo/src/main/java/com/spring/boot/basic/demo/interceptors/MasterInterceptor.java,e\b\eba6e0bdb19be4589ba2ea020c2804b7ea34ceeb
 °
 qspring-boot-basics/spring-boot-demo/src/main/java/com/spring/boot/basic/demo/property/sources/PropertyLogger.java,e\8\e834a67c0f04bf5f5748bc8af19194e016358410
-ü
-ospring-boot-basics/spring-boot-demo/src/main/java/master/access_control_controller/AccessControlController.java,5\c\5c199e7cb69c19588888ba9648611328fafdbc67
 ê
 `spring-boot-basics/spring-boot-demo/src/main/java/master/access_control_controller/Greeting.java,c\b\cb89e49b6d843f6dedc8249548ca2523448eae7e
-è
-_spring-boot-basics/spring-boot-demo/src/main/java/master/access_control_controller/UI Page.html,3\1\3119761a5cffe27524ef24aef26f2d425bcf770f
 ò
 hspring-boot-basics/spring-boot-demo/src/main/java/master/async_controller/SpringBootAsyncController.java,4\3\43f53bdf3edb8dd5baf1b48d62a072cdbb70d4e2
 É
 Sspring-boot-basics/spring-boot-demo/src/main/java/master/cache/SpringBootCache.java,b\f\bf67df656f4e0911440ad30fda9c55df5f338904
 ô
 ispring-boot-basics/spring-boot-demo/src/main/java/master/command/line/runner/CommandLineRunnerConfig.java,c\4\c4fc09df89c70591b96130c06fcecee84c1fd53a
-õ
-kspring-boot-basics/spring-boot-demo/src/main/java/master/async_controller/AsyncControllerConfiguration.java,9\0\904ee70090429c81ae1fe9288e7cbc8ea87c91e6
 ù
 mspring-boot-basics/spring-boot-demo/src/main/java/com/spring/boot/basic/demo/controller/MasterController.java,4\b\4b835b5b476cdc3a81074822afd87de8e983a845
 y
@@ -353,3 +345,13 @@ bbasic-spring-framework/spring-ioc-basic/src/main/java/annotation/config/NumberG
 \basic-spring-framework/spring-ioc-basic/src/main/java/annotation/SpringIocConfiguration.java,0\9\09af099f1c2fd4ec7482e2087e72222b357e8467
 x
 Hbasic-spring-framework/spring-ioc-basic/src/main/java/SpringResourcePath,4\b\4b052fafa04b000f4a9081c929c5e1eabc401300
+[
++spring-boot-basics/spring-boot-demo/pom.xml,7\5\75cd27c86bc92fdb8fc9bdfd58630cc0aaf27d3d
+ö
+jspring-boot-basics/spring-boot-demo/src/main/java/com/spring/boot/basic/demo/config/MyConditionalBean.java,4\c\4c7d90975a32c80969e0625667cac00608f22542
+°
+qspring-boot-basics/spring-boot-demo/src/main/java/com/spring/boot/basic/demo/config/ConfigurationOnCondition.java,7\3\731bf8c40766ae60ca06dbda35493e6b99987164
+õ
+kspring-boot-basics/spring-boot-demo/src/main/java/com/spring/boot/basic/demo/controller/BaseController.java,2\f\2ff6b0ea83e37c731b964c04e6a177d453b97b4e
+ú
+lspring-boot-basics/spring-boot-demo/src/main/java/com/spring/boot/basic/demo/BasicSpringbootApplication.java,f\1\f19447669003a0d2feade6b0241989882a8b02a9

@@ -19,7 +19,7 @@ public class AsyncControllerConfiguration {
         executor.setCorePoolSize(10);
         executor.setMaxPoolSize(10);
         executor.setQueueCapacity(500);
-        executor.setThreadNamePrefix("Murex server thread:");
+        executor.setThreadNamePrefix("Server thread:");
         executor.initialize();
         return executor;
     }
