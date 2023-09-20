@@ -1,10 +1,12 @@
-package config;
+package context;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
 import org.springframework.core.env.Environment;
 
 @Configuration
+@Profile("dev") // 配置该类型只会在"dev" profile中出现，在production中不会出现
 public class EnvironmentConfig {
 
     private Environment environment;
