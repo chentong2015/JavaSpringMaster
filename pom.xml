@@ -13,5 +13,7 @@
         <module>basic-spring-framework</module>
         <module>spring-boot-basics</module>
         <module>spring-data-jpa</module>
+        <module>spring-batch-basic</module>
+        <module>spring-data-jdbc</module>
     </modules>
 </project>

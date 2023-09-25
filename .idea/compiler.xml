@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-boot-template" />
+        <module name="spring-jdbc-template" />
         <module name="spring-boot-tester1" />
         <module name="spring-data-access-test" />
         <module name="spring-framework" />
@@ -18,6 +19,7 @@
         <module name="spring-data-jpa-master" />
         <module name="spring-data-jpa-basic" />
         <module name="spring-ioc-basic" />
+        <module name="spring-batch-basic" />
         <module name="spring-boot-upload-download-example" />
       </profile>
     </annotationProcessing>
