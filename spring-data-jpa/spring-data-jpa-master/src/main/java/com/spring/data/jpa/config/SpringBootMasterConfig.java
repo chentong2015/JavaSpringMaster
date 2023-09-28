@@ -13,21 +13,14 @@ import java.util.Arrays;
 
 @Configuration
 public class SpringBootMasterConfig {
-    
+
     @Bean
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        // dataSource.setDriverClassName("org.postgresql.Driver");
-        // dataSource.setUsername("postgres");
-        // dataSource.setPassword("admin");
-        // dataSource.setUrl("jdbc:postgresql://localhost:5432/hibernate_demo");
-
-        dataSource.setDriverClassName("org.hsqldb.jdbc.JDBCDriver");
-        dataSource.setUsername("SA");
-        dataSource.setPassword("");
-        // dataSource.setUrl("jdbc:hsqldb:hsql://localhost/xdb");
-        // dataSource.setUrl("jdbc:hsqldb:http://localhost/"); // 走HTTP来连接Server
-        dataSource.setUrl("jdbc:hsqldb:mem:."); // im memory 嵌入式只能有一个连接
+        dataSource.setDriverClassName("org.postgresql.Driver");
+        dataSource.setUsername("postgres");
+        dataSource.setPassword("admin");
+        dataSource.setUrl("jdbc:postgresql://localhost:5432/hibernate_demo");
         return dataSource;
     }
 

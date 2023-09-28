@@ -46,13 +46,12 @@
             <artifactId>spring-boot-starter-web</artifactId>
             <version>2.5.5</version>
         </dependency>
-
-        <!-- 提供缓存支持 -->
+        <!-- Spring Boot内嵌Tomcat依赖部署web应用，不能打包jsp文件
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-cache</artifactId>
-            <version>2.5.5</version>
-        </dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-core</artifactId>
+            <version>10.0.11</version>
+         </dependency> -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-configuration-processor</artifactId>
@@ -88,18 +87,12 @@
             <artifactId>springfox-swagger-ui</artifactId>
             <version>2.9.2</version>
         </dependency>
+
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-annotations</artifactId>
             <version>2.12.5</version>
         </dependency>
-
-        <!-- 使用内嵌的tomcat容器 - Spring Boot会内嵌该tomcat
-        <dependency>
-            <groupId>org.apache.tomcat.embed</groupId>
-            <artifactId>tomcat-embed-core</artifactId>
-            <version>10.0.11</version>
-        </dependency> -->
     </dependencies>
 
     <build>

@@ -11,8 +11,8 @@ import javax.sql.DataSource;
 @Configuration
 public class ApplicationConfig {
 
-    // TODO: 从配置文件中自动加载配置的信息，完成DataSource的设置
-    // ?allowPublicKeyRetrieval=true?useSSL=false
+    // TODO: 从配置文件中自动加载配置的信息，完成DataSource的设置 ?allowPublicKeyRetrieval=true?useSSL=false
+    //  如果这里的DataSource连接出错，则会在Spring Boot启动时抛出异常 Connection: Refused
     @Bean
     @Qualifier("mysql-datasource")
     public DataSource dataSource() {

@@ -8,7 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.sql.SQLException;
 
-// PagingAndSortingRepository 不会作为bean被注入到IoC中
+// 不添加@Repository则不会作为bean被注入到IoC中
 public interface UserPagingSortingRepository extends PagingAndSortingRepository<User, Long> {
 
     @Transactional(propagation = Propagation.SUPPORTS, readOnly = true)

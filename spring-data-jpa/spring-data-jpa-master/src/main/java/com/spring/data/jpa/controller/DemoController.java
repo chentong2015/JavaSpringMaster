@@ -20,6 +20,11 @@ public class DemoController {
         this.demoEntityRepository = demoEntityRepository;
     }
 
+    @GetMapping("/demo/home")
+    public String demoHome() {
+        return "demo home";
+    }
+
     // TODO. Jackson会将返回的对象自动转成Json格式
     @GetMapping("/test")
     public Map testContentMap() {

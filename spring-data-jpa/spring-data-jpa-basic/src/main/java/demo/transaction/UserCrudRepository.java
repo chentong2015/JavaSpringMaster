@@ -11,9 +11,8 @@ import org.springframework.stereotype.Repository;
 
 import javax.transaction.Transactional;
 
-// @Transactional注解标明该Repository中的所有方法都将以事务的方式执行
 @Repository
-@Transactional
+@Transactional // 标明该Repository中的所有方法都将以事务的方式执行
 public interface UserCrudRepository extends CrudRepository<User, Long> {
 
     /**
