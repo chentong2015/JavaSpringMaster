@@ -1,0 +1,5 @@
+D:\Work My Projects\Spring Master\JavaSpringMaster\spring-batch-basic\src\main\java\com\spring\batch\model\Person.java
+D:\Work My Projects\Spring Master\JavaSpringMaster\spring-batch-basic\src\main\java\com\spring\batch\components\PersonItemProcessor.java
+D:\Work My Projects\Spring Master\JavaSpringMaster\spring-batch-basic\src\main\java\com\spring\batch\config\BatchConfiguration.java
+D:\Work My Projects\Spring Master\JavaSpringMaster\spring-batch-basic\src\main\java\com\spring\batch\SpringBatchServiceApp.java
+D:\Work My Projects\Spring Master\JavaSpringMaster\spring-batch-basic\src\main\java\com\spring\batch\components\JobCompletionNotificationListener.java

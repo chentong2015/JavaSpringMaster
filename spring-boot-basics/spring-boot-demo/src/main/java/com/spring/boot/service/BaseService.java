@@ -1,6 +1,6 @@
 package com.spring.boot.service;
 
-import com.spring.boot.basic.demo.thymeleaf.ISpringInternationalization;
+import com.spring.boot.thymeleaf.ISpringInternationalization;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

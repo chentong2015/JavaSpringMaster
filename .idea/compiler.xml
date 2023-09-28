@@ -7,19 +7,20 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-boot-template" />
-        <module name="spring-jdbc-template" />
         <module name="spring-boot-tester1" />
         <module name="spring-data-access-test" />
         <module name="spring-framework" />
         <module name="spring-boot-tester2" />
         <module name="spring-boot-upload-download-files" />
         <module name="spring-boot-event-tasks" />
+        <module name="spring-data-jdbc-template" />
         <module name="spring-boot-demo" />
         <module name="spring-jpa-hibernate-test" />
         <module name="spring-data-jpa-master" />
         <module name="spring-data-jpa-basic" />
         <module name="spring-ioc-basic" />
         <module name="spring-batch-basic" />
+        <module name="spring-data-jpa-hibernate-test" />
         <module name="spring-boot-upload-download-example" />
       </profile>
     </annotationProcessing>
@@ -28,10 +29,13 @@
       <module name="spring-boot-demo1" target="15" />
       <module name="spring-data-access-layer" target="15" />
       <module name="spring-data-access-legacy" target="15" />
+      <module name="spring-data-jdbc" target="15" />
       <module name="spring-data-jpa-demo" target="11" />
       <module name="Spring-data-layer" target="15" />
       <module name="spring-hibernate-test" target="15" />
       <module name="spring-ioc-test" target="11" />
+      <module name="spring-jdbc-template" target="11" />
+      <module name="spring-jpa-hibernate-test" target="15" />
     </bytecodeTargetLevel>
   </component>
 </project>

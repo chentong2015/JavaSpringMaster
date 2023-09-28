@@ -1,0 +1,6 @@
+com\spring\batch\SpringBatchServiceApp.class
+com\spring\batch\components\JobCompletionNotificationListener$PersonRowMapper.class
+com\spring\batch\model\Person.class
+com\spring\batch\components\JobCompletionNotificationListener.class
+com\spring\batch\config\BatchConfiguration.class
+com\spring\batch\components\PersonItemProcessor.class

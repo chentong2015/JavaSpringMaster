@@ -40,7 +40,8 @@
             <version>5.3.10</version>
         </dependency>
 
-        <!-- TODO: spring-boot-starter的作用: 集成和准备项目所需要的依赖，只使用一个依赖启动项目 -->
+        <!-- TODO: spring-boot-starter的作用:
+        集成和准备项目所需要的依赖，只使用一个依赖启动项目 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -74,6 +75,13 @@
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
             <version>1.2.11</version>
+        </dependency>
+
+        <!-- 用来构建DataSource数据库连接池，提供更好的可靠性保护 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-dbcp2</artifactId>
+            <version>2.8.0</version>
         </dependency>
 
         <!-- 用于API文档的维护 -->

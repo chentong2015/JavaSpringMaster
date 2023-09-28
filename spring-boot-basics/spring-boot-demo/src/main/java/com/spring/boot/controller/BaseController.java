@@ -1,6 +1,6 @@
 package com.spring.boot.controller;
 
-import com.spring.boot.basic.demo.service.BaseService;
+import com.spring.boot.service.BaseService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
