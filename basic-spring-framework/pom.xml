@@ -20,6 +20,6 @@
 
     <modules>
         <module>spring-framework</module>
-        <module>spring-ioc-basic</module>
+        <module>spring-framework-ioc</module>
     </modules>
 </project>

@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="spring-boot-template" />
         <module name="spring-boot-tester1" />
+        <module name="spring-aspect-oriented-programming" />
         <module name="spring-data-access-test" />
         <module name="spring-framework" />
         <module name="spring-boot-tester2" />
@@ -18,10 +19,10 @@
         <module name="spring-jpa-hibernate-test" />
         <module name="spring-data-jpa-master" />
         <module name="spring-data-jpa-basic" />
-        <module name="spring-ioc-basic" />
         <module name="spring-batch-basic" />
         <module name="spring-data-jpa-hibernate-test" />
         <module name="spring-boot-upload-download-example" />
+        <module name="spring-framework-ioc" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

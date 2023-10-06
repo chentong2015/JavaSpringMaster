@@ -11,8 +11,9 @@
 
     <modules>
         <module>basic-spring-framework</module>
+        <module>spring-aspect-oriented-programming</module>
+        <module>spring-batch-basic</module>
         <module>spring-boot-basics</module>
         <module>spring-data</module>
-        <module>spring-batch-basic</module>
     </modules>
 </project>

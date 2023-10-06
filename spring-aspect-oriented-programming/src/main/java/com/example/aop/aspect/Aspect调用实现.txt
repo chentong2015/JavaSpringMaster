@@ -1,0 +1,40 @@
+代理对象如何调用到目标方法 ?
+设计精髓: 通过5个结点放到链条中，通过"责任链+递归"的方式驱动执行，0驱动1，1驱动2，，，
+
+TODO: 将链接器中的advisor(@Before, @After..)取出来，转成拦截器的链条
+  链条中保存的顺序就时执行的顺序(spring会控制排序)
+JdkDynamicAopProxy.invoke()
+0. ExposeInvocationInterceptor
+1. AspectAfterThrowingAdvice
+2. AfterReturningAdvice
+3. AspectAfterAdvice
+4. MethodBeforeAdviceInterceptor
+List<Object> chain = this.advised.getInterceptorsAndDynamicInterceptionAdvice(method, targetClass);
+
+TODO: 通过Switch Case将切面的通知解析成对应的类型
+最终解析效果 ReflectiveAspectJAdvisorFactory.getAdvice();
+ switch (aspectJAnnotation.getAnnotationType()) {
+	case AtAround:
+		springAdvice = new AspectJAroundAdvice(candidateAdviceMethod, expressionPointcut, aspectInstanceFactory);
+		break;
+	case AtBefore:
+		springAdvice = new AspectJMethodBeforeAdvice(candidateAdviceMethod, expressionPointcut, aspectInstanceFactory);
+		break;
+	case AtAfter:
+		springAdvice = new AspectJAfterAdvice(candidateAdviceMethod, expressionPointcut, aspectInstanceFactory);
+		break;
+	case AtAfterReturning:
+		springAdvice = new AspectJAfterReturningAdvice(candidateAdviceMethod, expressionPointcut, aspectInstanceFactory);
+		AfterReturning afterReturningAnnotation = (AfterReturning) aspectJAnnotation.getAnnotation();
+		if (StringUtils.hasText(afterReturningAnnotation.returning())) {
+			springAdvice.setReturningName(afterReturningAnnotation.returning());
+		}
+		break;
+	case AtAfterThrowing:
+		springAdvice = new AspectJAfterThrowingAdvice(candidateAdviceMethod, expressionPointcut, aspectInstanceFactory);
+		AfterThrowing afterThrowingAnnotation = (AfterThrowing) aspectJAnnotation.getAnnotation();
+		if (StringUtils.hasText(afterThrowingAnnotation.throwing())) {
+			springAdvice.setThrowingName(afterThrowingAnnotation.throwing());
+		}
+		break;
+ }
