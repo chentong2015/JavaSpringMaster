@@ -36,7 +36,6 @@
       <module name="spring-hibernate-test" target="15" />
       <module name="spring-ioc-test" target="11" />
       <module name="spring-jdbc-template" target="11" />
-      <module name="spring-jpa-hibernate-test" target="15" />
     </bytecodeTargetLevel>
   </component>
 </project>
