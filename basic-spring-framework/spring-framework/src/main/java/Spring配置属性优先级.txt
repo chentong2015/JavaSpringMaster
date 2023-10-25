@@ -1,3 +1,7 @@
+TODO. Spring支持的所有的公共配置属性，直接在application.properties中设置
+# Common Application Properties
+# https://docs.spring.io/spring-boot/docs/current/reference/html/application-properties.html
+
 1. command line args
 2. spring application json args
 3. servlet paras

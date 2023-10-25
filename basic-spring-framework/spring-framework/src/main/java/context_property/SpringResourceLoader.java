@@ -1,4 +1,4 @@
-package context;
+package context_property;
 
 import org.apache.commons.io.IOUtils;
 import org.springframework.core.io.ClassPathResource;

@@ -1,4 +1,4 @@
-package bean;
+package bean.bean_lifecycle;
 
 // Callback 回调方法：
 // 1. 能够做为参数传递给被的方法，在某个event事件发生的时候触发invoke 
