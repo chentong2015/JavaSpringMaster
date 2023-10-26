@@ -15,7 +15,6 @@
         <module name="spring-boot-upload-download-files" />
         <module name="spring-boot-event-tasks" />
         <module name="spring-data-jdbc-template" />
-        <module name="spring-boot-https" />
         <module name="spring-boot-demo" />
         <module name="spring-jpa-hibernate-test" />
         <module name="spring-data-jpa-master" />
@@ -29,6 +28,7 @@
     <bytecodeTargetLevel>
       <module name="spring-basics-ioc" target="1.5" />
       <module name="spring-boot-demo1" target="15" />
+      <module name="spring-boot-https" target="15" />
       <module name="spring-data-access-layer" target="15" />
       <module name="spring-data-access-legacy" target="15" />
       <module name="spring-data-jdbc" target="15" />
