@@ -15,6 +15,7 @@
         <module name="spring-boot-upload-download-files" />
         <module name="spring-boot-event-tasks" />
         <module name="spring-data-jdbc-template" />
+        <module name="spring-boot-https" />
         <module name="spring-boot-demo" />
         <module name="spring-jpa-hibernate-test" />
         <module name="spring-data-jpa-master" />

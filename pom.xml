@@ -15,5 +15,6 @@
         <module>spring-batch-basic</module>
         <module>spring-boot-basics</module>
         <module>spring-data</module>
+        <module>spring-boot-master</module>
     </modules>
 </project>
