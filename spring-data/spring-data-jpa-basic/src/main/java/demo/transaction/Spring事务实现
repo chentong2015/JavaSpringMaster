@@ -1,8 +1,7 @@
-Spring事务
 1. 隔离级别基于数据库的隔离级别
-2. 底层的工作原理:
-   基于AOP来实现，会为标注了@Transactional注解的类型(或者方法)创建代理
-   Spring creates proxies for all the classes annotated with @Transactional, either on the class or on any of the methods
+2. 底层的实现原理:
+   基于AOP来实现，Spring为标记@Transactional注解的类型(或者方法)创建代理
+   Spring creates proxies for all classes annotated with @Transactional, either on class or any methods
 
    使用Cglib: 创建继承类(Proxy代理类)来执行对数据库的请求操作, 不同于JDK通过接口来实现
    class DemoTransactionProxy extends DemoTransactionClass {

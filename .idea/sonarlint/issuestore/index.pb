@@ -123,8 +123,6 @@ Zspring-boot-basics/spring-boot-demo/src/main/java/com/spring/boot/service/BaseS
 espring-data/spring-data-jpa-master/src/main/java/com/spring/data/jpa/SpringBootMasterApplication.java,2\0\20d3ea84f6c5ebcce1c14ffacf0c96f2db404ec1
 ò
 hspring-data/spring-data-jdbc-template/src/main/java/com/jdbc/template/routing/MultiDataSourceHolder.java,0\e\0e7caaf570997b6e40c67aad0b4b81c23ffda888
-í
-bspring-data/spring-data-jdbc-template/src/main/java/com/jdbc/template/template/InformationDao.java,e\d\ed50b8cf80654686f3e41bf2ce7c6ce68dc55077
 §
 tspring-data/spring-data-jdbc-template/src/main/java/com/jdbc/template/template/SpringNamedParameterJdbcTemplate.java,a\2\a234330143a5ada4617b068de923f3201d0fa882
 É
@@ -137,12 +135,6 @@ Z
 gspring-data/spring-data-jpa-master/src/main/java/com/spring/data/jpa/config/SpringBootMasterConfig.java,2\4\24e1b96dbdfcc2eb2a5668fb0eb1096ed6c78756
 å
 \spring-data/spring-data-jdbc-template/src/main/java/com/jdbc/template/model/Information.java,6\d\6dd372cbf89f22ede265d1a304e70298360f6bc1
-ï
-espring-data/spring-data-jdbc-template/src/main/java/com/jdbc/template/controller/IndexController.java,9\9\99263772639ab85e0244309a04ed80167308bfaa
-ê
-`spring-data/spring-data-jdbc-template/src/main/java/com/jdbc/template/SpringJdbcTemplateApp.java,3\e\3e7dd6dfb79059f91792bbd8328bf103988c0538
-ë
-aspring-data/spring-data-jdbc-template/src/main/java/com/jdbc/template/template/InfoRowMapper.java,9\c\9c958bdb4f31ed9a627af6df77c96e4218a0db7e
 ù
 mspring-boot-basics/spring-boot-tester2/src/test/java/com/spring/tester2/controller/ProductControllerTest.java,d\6\d615e2518dbea736e70f7c3a1b6f5554dcd75d16
 ^
@@ -177,8 +169,6 @@ kspring-boot-basics/spring-boot-demo/src/main/java/com/spring/boot/controller/ac
 +spring-boot-basics/spring-boot-demo/pom.xml,7\5\75cd27c86bc92fdb8fc9bdfd58630cc0aaf27d3d
 Y
 )spring-data/spring-data-jpa-basic/pom.xml,7\1\715a3aa9deff8836b32adda82e042bf60ab40b2a
-É
-Sspring-data/spring-data-jpa-basic/src/main/java/demo/SpringBootDemoApplication.java,0\a\0ac10f5c43f739b109784d4ef5651c930a2563bb
 z
 Jspring-batch-basic/src/main/java/com/spring/batch/Spring BatchÊâπÈáèÂ§ÑÁêÜ,1\a\1a3ff55ab9c899c4e440b3562c48d6328aca8631
 Ç
