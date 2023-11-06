@@ -149,8 +149,6 @@ s
 Cspring-batch-basic/src/main/java/com/spring/batch/model/Person.java,a\6\a6bbb5e89bb6510055d2eae6f8fe2f684cd98701
 ì
 cspring-batch-basic/src/main/java/com/spring/batch/components/JobCompletionNotificationListener.java,8\a\8ab8fa0cb21429a016c949a74524a9f97911cc46
-J
-spring-batch-basic/pom.xml,a\6\a65debb9c9344918a2dba967e2212850fbf55bd7
 Ö
 Uspring-batch-basic/src/main/java/com/spring/batch/components/PersonItemProcessor.java,0\b\0be7745b09ab4576c729824b0b94cf35ad856a80
 _
@@ -197,28 +195,18 @@ Sspring-aspect-oriented-programming/src/main/java/com/example/aop/entity/Horses.
 Qspring-aspect-oriented-programming/src/main/java/com/example/aop/entity/Race.java,a\2\a205f8e7e67671ee1c8cd291195f35e8ade034dd
 ñ
 fspring-aspect-oriented-programming/src/main/java/com/example/aop/exception/MyApplicationException.java,a\a\aa0a3ea99c7a4cd53b80e35674c75613015ec10c
-ç
-]spring-aspect-oriented-programming/src/test/java/com/example/aop/service/RaceServiceTest.java,6\1\61f87a01bdbbf6c0c389c5766b19210778598f19
 è
 _spring-aspect-oriented-programming/src/main/java/com/example/aop/repository/RaceRepository.java,d\7\d72bb44529bc2904e362aa4e7f6230cbdfed780f
 â
 Yspring-aspect-oriented-programming/src/main/java/com/example/aop/service/RaceService.java,7\0\7075e6582f9f054b3db957dd496381933e2934c5
-Z
-*spring-aspect-oriented-programming/pom.xml,b\4\b4dc633634896fa380f7100b56b00a343f31f8e7
 à
 Xspring-aspect-oriented-programming/src/main/java/com/example/aop/SpringFrameworkAOP.java,4\b\4be9bff3848836cc717368d40d89a5bba140d4b8
-ì
-cspring-aspect-oriented-programming/src/test/java/com/example/aop/controller/RaceControllerTest.java,1\a\1a472f992189eecbd06dfa14bfa4942676cef2db
 `
 0basic-spring-framework/Spring FrameworkÂÖºÂÆπÊÄß,6\3\63ca00fdbd9238de1f8f2a348744263f257152b5
 Y
 )basic-spring-framework/SpringÊ°ÜÊû∂ÁÆÄ‰ªã,a\d\ad560f76a55eb4de4982c072182ff0306ae91cc5
-Ö
-Uspring-aspect-oriented-programming/src/main/java/source/code/aop/Spring AOPÊ∫êÁ†Å.txt,9\5\9597d351f26682fd22a0ea1e12f2c4cfad97203c
 é
 ^spring-aspect-oriented-programming/src/main/java/com/example/aop/aspect/AspectRaceService.java,e\1\e1ac6e6d2d0ab9182446a3975b6e8bb834d37982
-ã
-[spring-aspect-oriented-programming/src/main/java/source/code/aop/Spring AOPÂ∫ïÂ±ÇÂÆûÁé∞.txt,6\d\6deecde59fee8286f4673271f2de63cd720b373a
 ì
 cspring-aspect-oriented-programming/src/main/java/com/example/aop/config/SpringAopConfiguration.java,8\6\86d9a04bbf13cc562aa5279a3ac359244a601ad6
 Ö
@@ -325,3 +313,21 @@ J
 spring-boot-master/pom.xml,e\1\e119e4d782e9ea21b74efb9ef724317f2f386ae5
 J
 spring-boot-basics/pom.xml,4\b\4bce54ab9b1dc5d83eeae75d3416174199a0b845
+É
+Sspring-data/spring-data-jpa-basic/src/main/java/demo/transaction/Spring‰∫ãÂä°ÂÆûÁé∞,d\0\d04acbfb4bd5338c93671499f926cb053cd71ad9
+å
+\spring-data/spring-data-jpa-basic/src/main/java/demo/transaction/TransactionCalculation.java,4\f\4ff5d41f88a7eceb455377ecefebef4e2dd3e940
+à
+Xspring-data/spring-data-jpa-basic/src/main/java/demo/transaction/UserCrudRepository.java,9\c\9c1fc7877777dce6fe9faa159558b795abd7e055
+É
+Sspring-data/spring-data-jpa-basic/src/main/java/demo/SpringBootDemoApplication.java,0\a\0ac10f5c43f739b109784d4ef5651c930a2563bb
+ë
+aspring-data/spring-data-jpa-basic/src/main/java/demo/transaction/UserPagingSortingRepository.java,3\1\311c9bba51c826269e7037a37564dfed7be2b3ce
+ï
+espring-data/spring-data-jdbc-template/src/main/java/com/jdbc/template/controller/IndexController.java,9\9\99263772639ab85e0244309a04ed80167308bfaa
+ê
+`spring-data/spring-data-jdbc-template/src/main/java/com/jdbc/template/SpringJdbcTemplateApp.java,3\e\3e7dd6dfb79059f91792bbd8328bf103988c0538
+í
+bspring-data/spring-data-jdbc-template/src/main/java/com/jdbc/template/template/InformationDao.java,e\d\ed50b8cf80654686f3e41bf2ce7c6ce68dc55077
+ë
+aspring-data/spring-data-jdbc-template/src/main/java/com/jdbc/template/template/InfoRowMapper.java,9\c\9c958bdb4f31ed9a627af6df77c96e4218a0db7e

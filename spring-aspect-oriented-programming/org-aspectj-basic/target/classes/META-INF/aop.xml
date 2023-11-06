@@ -1,0 +1,9 @@
+<aspectj>
+    <aspects>
+        <aspect name="com.aspect.main.aspect.SecuredMethodAspect"/>
+
+        <weaver options="-verbose -showWeaveInfo">
+            <include within="com.aspect.*"/>
+        </weaver>
+    </aspects>
+</aspectj>
