@@ -1,0 +1,3 @@
+com\aspectj\template\Command.class
+com\aspectj\template\TracedClass.class
+com\aspectj\template\aspect\TracingAspectTest.class

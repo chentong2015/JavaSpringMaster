@@ -1,0 +1,9 @@
+D:\Work My Projects\Java Spring Master\JavaSpringMaster\spring-aspect-oriented-programming\org-aspectj-template\src\main\java\com\aspectj\template\property\PropertiesExtractor.java
+D:\Work My Projects\Java Spring Master\JavaSpringMaster\spring-aspect-oriented-programming\org-aspectj-template\src\main\java\com\aspectj\template\annotations\EnableTracing.java
+D:\Work My Projects\Java Spring Master\JavaSpringMaster\spring-aspect-oriented-programming\org-aspectj-template\src\main\java\com\aspectj\template\aspect\TracingAspect.java
+D:\Work My Projects\Java Spring Master\JavaSpringMaster\spring-aspect-oriented-programming\org-aspectj-template\src\main\java\com\aspectj\template\TraceLog.java
+D:\Work My Projects\Java Spring Master\JavaSpringMaster\spring-aspect-oriented-programming\org-aspectj-template\src\main\java\com\aspectj\template\annotations\TracedProperty.java
+D:\Work My Projects\Java Spring Master\JavaSpringMaster\spring-aspect-oriented-programming\org-aspectj-template\src\main\java\com\aspectj\template\Trace.java
+D:\Work My Projects\Java Spring Master\JavaSpringMaster\spring-aspect-oriented-programming\org-aspectj-template\src\main\java\com\aspectj\template\property\DefaultPropertyExtractor.java
+D:\Work My Projects\Java Spring Master\JavaSpringMaster\spring-aspect-oriented-programming\org-aspectj-template\src\main\java\com\aspectj\template\annotations\Traced.java
+D:\Work My Projects\Java Spring Master\JavaSpringMaster\spring-aspect-oriented-programming\org-aspectj-template\src\main\java\com\aspectj\template\config\TracingAspectConfiguration.java

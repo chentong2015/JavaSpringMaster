@@ -1,0 +1,9 @@
+com\aspectj\template\property\DefaultPropertyExtractor.class
+com\aspectj\template\property\PropertiesExtractor.class
+com\aspectj\template\TraceLog.class
+com\aspectj\template\annotations\EnableTracing.class
+com\aspectj\template\Trace.class
+com\aspectj\template\annotations\Traced.class
+com\aspectj\template\annotations\TracedProperty.class
+com\aspectj\template\config\TracingAspectConfiguration.class
+com\aspectj\template\aspect\TracingAspect.class
