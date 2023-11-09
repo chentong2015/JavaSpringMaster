@@ -1,1 +1,14 @@
+定义和声明bean scope: 支持XML和Annotation两种形式
+1. singleton
+   <bean id="loginService" class="***.LoginService" scope="singleton" />
+
+   @Bean("loginService") 支持定义bean的别名,可以使用类型的全路径
+   @Scope("singleton")
+
+2. prototype
+   <bean id="loginService" class="***.LoginService" scope="prototype" />
+
+   @Bean({"org.springframework.security.config.**.httpSecurity"})
+   @Scope("prototype")
+
 https://docs.spring.io/spring-framework/docs/3.0.0.M3/reference/html/ch04s04.html

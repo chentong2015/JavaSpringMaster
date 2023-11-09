@@ -1,0 +1,15 @@
+
+g	java:S112?"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8ñÏİ¦º1
+Q
+java:S3740L"/Provide the parametrized type for this generic.(ªÉ¾ÿùÿÿÿÿ8É×ô§º1
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(Œİíèÿÿÿÿÿ8õÊú¦º1
+O
+java:S1135!"2Complete the task associated to this TODO comment.(Ì¤ú8•Üö§º1
+T
+java:S11356"2Complete the task associated to this TODO comment.(õÇŠ´øÿÿÿÿ8¥¸ù§º1
+>
+java:S3864:"!Remove this use of "Stream.peek".(Àú¥÷8Ğİ¦º1
+I
+java:S3011:",This accessibility update should be removed.(Àú¥÷8Ğİ¦º1
+K
+java:S1905M")Remove this unnecessary cast to "Object".( €ÃÙüÿÿÿÿ8ä×ô§º1
