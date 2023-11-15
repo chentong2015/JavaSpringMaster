@@ -1,7 +1,7 @@
 package circular_dependency;
 
 // TODO: Spring使用"三级缓存"来解决"循环依赖"的问题  ==> 扩展到死锁，相互依赖问题的解决
-//       二三级缓存的目的是为了解决循环依赖，如果没有出现，则两个缓存其实没有起到实质性的作用
+//  二三级缓存的目的是为了解决循环依赖，如果没有出现，则两个缓存其实没有起到实质性的作用
 // 1. 单例池  singletonObjects: ConcurrentHashMap(256)
 // 2. 二级缓存 earlySingletonObjects: ConcurrentHashMap(16)
 // 3. 三级缓存 singletonFactories: HashMap(16)

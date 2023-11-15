@@ -22,8 +22,6 @@ public class EnvPropertyLogger {
     @EventListener
     public void handleContextRefresh(ContextRefreshedEvent event) {
         final Environment env = event.getApplicationContext().getEnvironment();
-        LOGGER.info("====== Environment and configuration ======");
-
         String activeProfiles = Arrays.toString(env.getActiveProfiles());
         LOGGER.info("Active profiles: {}", activeProfiles);
 

@@ -1,0 +1,3 @@
+# 等效于server.port=5000
+server:
+  port: 5000

@@ -12,6 +12,7 @@ import org.springframework.stereotype.Component;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
+// 使用JdbcTemplate来执行Batch Operations和Database有关的操作
 @Component
 public class JobCompletionNotificationListener implements JobExecutionListener {
 

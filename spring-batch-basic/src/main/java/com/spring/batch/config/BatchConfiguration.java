@@ -18,14 +18,13 @@ import org.springframework.batch.item.file.mapping.BeanWrapperFieldSetMapper;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.io.ClassPathResource;
-import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.transaction.PlatformTransactionManager;
 
 import javax.sql.DataSource;
 
 @Configuration
 public class BatchConfiguration {
-    
+
     // 以下的bean会被Batch自动装配进行注入
     // [org/springframework/boot/autoconfigure/batch/BatchAutoConfiguration$SpringBootBatchConfiguration.class]
     // @Bean(name = "jobRepository")
@@ -88,15 +87,5 @@ public class BatchConfiguration {
                 .sql("INSERT INTO people (first_name, last_name) VALUES (:firstName, :lastName)")
                 .dataSource(dataSource)
                 .build();
-    }
-
-    @Bean
-    public DataSource dataSource() {
-        DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        dataSource.setDriverClassName("org.postgresql.Driver");
-        dataSource.setUsername("postgres");
-        dataSource.setPassword("admin");
-        dataSource.setUrl("jdbc:postgresql://localhost:5432/hibernate_demo");
-        return dataSource;
     }
 }

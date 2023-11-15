@@ -1,0 +1,17 @@
+D:\Work My Projects\Java Spring Master\JavaSpringMaster\spring-data\spring-data-jpa-basic\src\main\java\demo\entity\Speaker.java
+D:\Work My Projects\Java Spring Master\JavaSpringMaster\spring-data\spring-data-jpa-basic\src\main\java\demo\services\SessionService.java
+D:\Work My Projects\Java Spring Master\JavaSpringMaster\spring-data\spring-data-jpa-basic\src\main\java\demo\entity\Session.java
+D:\Work My Projects\Java Spring Master\JavaSpringMaster\spring-data\spring-data-jpa-basic\src\main\java\demo\services\UserCrudService.java
+D:\Work My Projects\Java Spring Master\JavaSpringMaster\spring-data\spring-data-jpa-basic\src\main\java\demo\repositories\SpeakerJpaRepository.java
+D:\Work My Projects\Java Spring Master\JavaSpringMaster\spring-data\spring-data-jpa-basic\src\main\java\demo\repositories\SessionJpaRepository.java
+D:\Work My Projects\Java Spring Master\JavaSpringMaster\spring-data\spring-data-jpa-basic\src\main\java\demo\SpringBootDemoApplication.java
+D:\Work My Projects\Java Spring Master\JavaSpringMaster\spring-data\spring-data-jpa-basic\src\main\java\demo\transaction\TransactionCalculation.java
+D:\Work My Projects\Java Spring Master\JavaSpringMaster\spring-data\spring-data-jpa-basic\src\main\java\demo\config\ApplicationTransactionConfig.java
+D:\Work My Projects\Java Spring Master\JavaSpringMaster\spring-data\spring-data-jpa-basic\src\main\java\demo\transaction\UserPagingSortingRepository.java
+D:\Work My Projects\Java Spring Master\JavaSpringMaster\spring-data\spring-data-jpa-basic\src\main\java\demo\config\ApplicationConfig.java
+D:\Work My Projects\Java Spring Master\JavaSpringMaster\spring-data\spring-data-jpa-basic\src\main\java\demo\entity\User.java
+D:\Work My Projects\Java Spring Master\JavaSpringMaster\spring-data\spring-data-jpa-basic\src\main\java\demo\controller\SessionController.java
+D:\Work My Projects\Java Spring Master\JavaSpringMaster\spring-data\spring-data-jpa-basic\src\main\java\demo\controller\UserPageableController.java
+D:\Work My Projects\Java Spring Master\JavaSpringMaster\spring-data\spring-data-jpa-basic\src\main\java\demo\repositories\BaseJpaRepository.java
+D:\Work My Projects\Java Spring Master\JavaSpringMaster\spring-data\spring-data-jpa-basic\src\main\java\demo\transaction\UserCrudRepository.java
+D:\Work My Projects\Java Spring Master\JavaSpringMaster\spring-data\spring-data-jpa-basic\src\main\java\demo\controller\HomeController.java

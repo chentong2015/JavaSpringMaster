@@ -1,0 +1,16 @@
+com\example\main\entity\RoutingRuleRouteDao.class
+com\example\main\idgenerator\MyDefaultIdentifierGeneratorFactory.class
+com\example\main\config\ApplicationConfig.class
+com\example\main\entity\RoutingRuleDao.class
+com\example\main\controller\RoutingRuleController.class
+com\example\main\entity\RoutingRuleElementId.class
+com\example\main\entity\RoutingRuleRouteId.class
+com\example\main\service\MyHibernateServiceInitiator.class
+com\example\main\config\HibernateConfig.class
+com\example\main\repository\RoutingRuleRepository.class
+com\example\main\MainApplication.class
+com\example\main\SpringHibernateTester.class
+com\example\main\entity\RoutingRuleElementDao.class
+com\example\main\idgenerator\SequenceIdGenerator.class
+com\example\main\idgenerator\MyDefaultIdentifierGeneratorFactoryInitiator.class
+com\example\main\service\MyServiceInitiator.class

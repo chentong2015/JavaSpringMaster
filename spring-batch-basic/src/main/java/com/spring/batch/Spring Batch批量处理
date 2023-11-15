@@ -1,7 +1,11 @@
-Batch批量数据处理会涉及到数据的转换以及数据的输出和存储
+Batch批量数据处理:
+数据转换(conversion)以及数据的输出(IO)和存储(storage)
 Job:
- Step1: input -> process -> output
- Step2: ...
+  Step1:
+      -> input: reader()
+      -> process: ItemProcessor
+      -> output: writer()
+  Step2: ...
 
 https://spring.io/guides/gs/batch-processing/
 https://www.baeldung.com/introduction-to-spring-batch
