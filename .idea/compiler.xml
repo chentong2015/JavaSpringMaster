@@ -11,6 +11,7 @@
         <module name="spring-boot-tester1" />
         <module name="spring-data-access-test" />
         <module name="spring-framework" />
+        <module name="spring-basics" />
         <module name="spring-boot-tester2" />
         <module name="spring-boot-upload-download-files" />
         <module name="spring-boot-event-tasks" />
@@ -23,6 +24,7 @@
         <module name="spring-data-jpa-basic" />
         <module name="spring-batch-basic" />
         <module name="spring-data-jpa-hibernate-test" />
+        <module name="spring-batch-master" />
         <module name="spring-boot-upload-download-example" />
         <module name="spring-framework-ioc" />
       </profile>

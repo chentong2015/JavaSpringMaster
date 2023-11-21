@@ -1,0 +1,15 @@
+创建一套完整的数据读写以及操作的模板化流程
+其中包含: 数据的IO + 数据转换(Conversion) + 存储(Storage)
+
+定义每个任务中要执行的重复的Step步骤
+Job:
+  Step1:
+      -> input: reader()
+      -> process: ItemProcessor
+      -> output: writer()
+  Step2:
+       -> input: reader()
+       -> process: ItemProcessor
+       -> output: writer()
+  Step3:
+       ...

@@ -12,9 +12,9 @@
     <modules>
         <module>basic-spring-framework</module>
         <module>spring-aspect-oriented-programming</module>
-        <module>spring-batch-basic</module>
+        <module>spring-batch</module>
         <module>spring-boot-basics</module>
-        <module>spring-data</module>
         <module>spring-boot-master</module>
+        <module>spring-data</module>
     </modules>
 </project>
