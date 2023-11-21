@@ -1,0 +1,4 @@
+Batch architecture:
+1. A job repository does the work of scheduling and interacting with the job.
+2. A job can have more than one step.
+3. Each step follows the sequence of reading data, processing it and writing it.
