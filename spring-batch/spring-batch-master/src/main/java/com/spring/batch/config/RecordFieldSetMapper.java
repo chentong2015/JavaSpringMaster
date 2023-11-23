@@ -1,4 +1,4 @@
-package com.spring.batch.components;
+package com.spring.batch.config;
 
 import com.spring.batch.xml.Transaction;
 import org.springframework.batch.item.file.mapping.FieldSetMapper;
@@ -18,7 +18,7 @@ public class RecordFieldSetMapper implements FieldSetMapper<Transaction> {
         transaction.setUserId(fieldSet.readInt(1));
         transaction.setAmount(fieldSet.readDouble(3));
         String dateString = fieldSet.readString(2);
-        transaction.setTransactionDate(LocalDate.parse(dateString, formatter).atStartOfDay());
+        transaction.setDate(LocalDate.parse(dateString, formatter).atStartOfDay());
         return transaction;
     }
 }

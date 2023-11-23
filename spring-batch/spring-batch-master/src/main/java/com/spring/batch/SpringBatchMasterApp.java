@@ -6,17 +6,15 @@ import org.springframework.batch.core.JobExecution;
 import org.springframework.batch.core.JobParameters;
 import org.springframework.batch.core.launch.JobLauncher;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.annotation.Profile;
 
-@Profile("spring")
 public class SpringBatchMasterApp {
 
     public static void main(String[] args) {
-        // Spring Java config
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext();
         context.register(BatchConfiguration.class);
         context.refresh();
 
+        // 使用指定的JobLauncher去执行特定的Job, 结果为JobExecution
         JobLauncher jobLauncher = (JobLauncher) context.getBean("jobLauncher");
         Job job = (Job) context.getBean("firstBatchJob");
 

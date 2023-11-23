@@ -18,62 +18,21 @@ import org.springframework.batch.support.transaction.ResourcelessTransactionMana
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Profile;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.WritableResource;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
-import org.springframework.oxm.Marshaller;
 import org.springframework.oxm.jaxb.Jaxb2Marshaller;
 import org.springframework.transaction.PlatformTransactionManager;
 
 import javax.sql.DataSource;
 
-@Profile("spring")
 public class BatchConfiguration {
 
-    @Value("input/record.csv")
+    @Value("input/transactions.csv")
     private Resource inputCsv;
 
     @Value("file:xml/output.xml")
     private Resource outputXml;
-
-    @Bean
-    public ItemReader<Transaction> itemReader() throws UnexpectedInputException, ParseException {
-        FlatFileItemReader<Transaction> reader = new FlatFileItemReader<Transaction>();
-        DelimitedLineTokenizer tokenizer = new DelimitedLineTokenizer();
-        String[] tokens = {"username", "userid", "transactiondate", "amount"};
-        tokenizer.setNames(tokens);
-        reader.setResource(inputCsv);
-        DefaultLineMapper<Transaction> lineMapper =
-                new DefaultLineMapper<Transaction>();
-        lineMapper.setLineTokenizer(tokenizer);
-
-        // TODO. fix RecordFieldSetMapper
-        // lineMapper.setFieldSetMapper(new RecordFieldSetMapper());
-        reader.setLineMapper(lineMapper);
-        return reader;
-    }
-
-    @Bean
-    public ItemProcessor<Transaction, Transaction> itemProcessor() {
-        return new CustomItemProcessor();
-    }
-
-    @Bean
-    public ItemWriter<Transaction> itemWriter(Marshaller marshaller) {
-        StaxEventItemWriter<Transaction> itemWriter = new StaxEventItemWriter<>();
-        itemWriter.setMarshaller(marshaller);
-        itemWriter.setRootTagName("transactionRecord");
-        itemWriter.setResource((WritableResource) outputXml);
-        return itemWriter;
-    }
-
-    @Bean
-    public Marshaller marshaller() {
-        Jaxb2Marshaller marshaller = new Jaxb2Marshaller();
-        marshaller.setClassesToBeBound(Transaction.class);
-        return marshaller;
-    }
 
     @Bean(name = "firstBatchJob")
     public Job job(JobRepository jobRepository, @Qualifier("step1") Step step1) {
@@ -97,6 +56,39 @@ public class BatchConfiguration {
                 .build();
     }
 
+    @Bean
+    public ItemReader<Transaction> itemReader() throws UnexpectedInputException, ParseException {
+        FlatFileItemReader<Transaction> reader = new FlatFileItemReader<>();
+        DelimitedLineTokenizer tokenizer = new DelimitedLineTokenizer();
+        String[] tokens = {"username", "userid", "date", "amount"};
+        tokenizer.setNames(tokens);
+        reader.setResource(inputCsv);
+        DefaultLineMapper<Transaction> lineMapper = new DefaultLineMapper<>();
+        lineMapper.setLineTokenizer(tokenizer);
+
+        // TODO. fix RecordFieldSetMapper
+        // lineMapper.setFieldSetMapper(new RecordFieldSetMapper());
+        reader.setLineMapper(lineMapper);
+        return reader;
+    }
+
+    @Bean
+    public ItemProcessor<Transaction, Transaction> itemProcessor() {
+        return new CustomItemProcessor();
+    }
+
+    @Bean
+    public ItemWriter<Transaction> itemWriter() {
+        StaxEventItemWriter<Transaction> itemWriter = new StaxEventItemWriter<>();
+        Jaxb2Marshaller marshaller = new Jaxb2Marshaller();
+        marshaller.setClassesToBeBound(Transaction.class);
+
+        itemWriter.setMarshaller(marshaller);
+        itemWriter.setRootTagName("transactionRecord");
+        itemWriter.setResource((WritableResource) outputXml);
+        return itemWriter;
+    }
+
     @Bean(name = "jobLauncher")
     public JobLauncher getJobLauncher() throws Exception {
         TaskExecutorJobLauncher jobLauncher = new TaskExecutorJobLauncher();
@@ -109,7 +101,7 @@ public class BatchConfiguration {
     public JobRepository getJobRepository() throws Exception {
         JobRepositoryFactoryBean factory = new JobRepositoryFactoryBean();
         factory.setDataSource(dataSource());
-        factory.setTransactionManager(getTransactionManager());
+        factory.setTransactionManager(new ResourcelessTransactionManager());
         factory.afterPropertiesSet();
         return factory.getObject();
     }
@@ -119,12 +111,7 @@ public class BatchConfiguration {
         dataSource.setDriverClassName("org.postgresql.Driver");
         dataSource.setUsername("postgres");
         dataSource.setPassword("admin");
-        dataSource.setUrl("jdbc:postgresql://localhost:5432/hibernate_demo");
+        dataSource.setUrl("jdbc:postgresql://localhost:5432/spring_db");
         return dataSource;
-    }
-
-    @Bean(name = "transactionManager")
-    public PlatformTransactionManager getTransactionManager() {
-        return new ResourcelessTransactionManager();
     }
 }

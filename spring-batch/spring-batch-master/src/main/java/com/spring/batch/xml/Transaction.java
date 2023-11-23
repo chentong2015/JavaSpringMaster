@@ -9,16 +9,16 @@ public class Transaction {
 
     private String username;
     private int userId;
-    private LocalDateTime transactionDate;
+    private LocalDateTime date;
     private double amount;
 
     public Transaction() {
     }
 
-    public Transaction(String username, int userId, LocalDateTime transactionDate, double amount) {
+    public Transaction(String username, int userId, LocalDateTime date, double amount) {
         this.username = username;
         this.userId = userId;
-        this.transactionDate = transactionDate;
+        this.date = date;
         this.amount = amount;
     }
 
@@ -38,12 +38,12 @@ public class Transaction {
         this.userId = userId;
     }
 
-    public LocalDateTime getTransactionDate() {
-        return transactionDate;
+    public LocalDateTime getDate() {
+        return date;
     }
 
-    public void setTransactionDate(LocalDateTime transactionDate) {
-        this.transactionDate = transactionDate;
+    public void setDate(LocalDateTime date) {
+        this.date = date;
     }
 
     public double getAmount() {
@@ -57,7 +57,6 @@ public class Transaction {
     @Override
     public String toString() {
         return "Transaction [username=" + username + ", userId=" + userId
-                + ", transactionDate=" + transactionDate + ", amount=" + amount
-                + "]";
+                + ", date=" + date + ", amount=" + amount + "]";
     }
 }
