@@ -1,7 +1,7 @@
 package com.jdbc.template.controller;
 
 import com.jdbc.template.model.Information;
-import com.jdbc.template.template.SpringJdbcTemplate;
+import com.jdbc.template.template.JdbcTemplateBase;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class IndexController {
 
-    private SpringJdbcTemplate jdbcTemplate;
+    private JdbcTemplateBase jdbcTemplate;
 
     @Autowired
-    public IndexController(SpringJdbcTemplate jdbcTemplate) {
+    public IndexController(JdbcTemplateBase jdbcTemplate) {
         this.jdbcTemplate = jdbcTemplate;
     }
 

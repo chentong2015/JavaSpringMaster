@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 import javax.sql.DataSource;
 
 @Repository("baseJdbcTemplate")
-public class SpringJdbcTemplate implements InformationDao {
+public class JdbcTemplateBase implements InformationDao {
 
     private JdbcTemplate jdbcTemplate;
 

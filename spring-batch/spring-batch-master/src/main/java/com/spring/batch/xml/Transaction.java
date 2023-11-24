@@ -2,21 +2,24 @@ package com.spring.batch.xml;
 
 import jakarta.xml.bind.annotation.XmlRootElement;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
-@SuppressWarnings("restriction")
+// 定义生成XML文件的根标签
+// <?xml version="1.0" encoding="UTF-8"?>
+// <transactionRecord>
+// </transactionRecord>
 @XmlRootElement(name = "transactionRecord")
 public class Transaction {
 
     private String username;
     private int userId;
-    private LocalDateTime date;
+    private LocalDate date;
     private double amount;
 
     public Transaction() {
     }
 
-    public Transaction(String username, int userId, LocalDateTime date, double amount) {
+    public Transaction(String username, int userId, LocalDate date, double amount) {
         this.username = username;
         this.userId = userId;
         this.date = date;
@@ -39,11 +42,11 @@ public class Transaction {
         this.userId = userId;
     }
 
-    public LocalDateTime getDate() {
+    public LocalDate getDate() {
         return date;
     }
 
-    public void setDate(LocalDateTime date) {
+    public void setDate(LocalDate date) {
         this.date = date;
     }
 

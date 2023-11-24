@@ -28,17 +28,19 @@ import javax.sql.DataSource;
 
 public class BatchConfiguration {
 
-    @Value("input/transactions.csv")
+    // Resource资源来自于Classpath路径
+    @Value("transactions.csv")
     private Resource inputCsv;
 
-    // 定位在当前项目的根目录
-    @Value("file:xml/output.xml")
+    // 当前项目的根目录的相对路径
+    @Value("file:spring-batch/spring-batch-master/xml/output.xml")
     private Resource outputXml;
 
     // TODO. 定义要执行的Job以及Step(Read, Process, Write)
-    @Bean(name = "firstBatchJob")
+    // 相同的Job名称只会在BATCH_JOB_INSTANCE中记录一次，避免重复执行
+    @Bean(name = "firstBatchJob-10")
     public Job job(JobRepository jobRepository, @Qualifier("step1") Step step1) {
-        return new JobBuilder("firstBatchJob", jobRepository)
+        return new JobBuilder("firstBatchJob-10", jobRepository)
                 .preventRestart()
                 .start(step1)
                 .build();
@@ -61,14 +63,15 @@ public class BatchConfiguration {
     @Bean
     public ItemReader<Transaction> itemReader() throws UnexpectedInputException, ParseException {
         FlatFileItemReader<Transaction> reader = new FlatFileItemReader<>();
-        DelimitedLineTokenizer tokenizer = new DelimitedLineTokenizer();
-        String[] tokens = {"username", "userid", "date", "amount"};
-        tokenizer.setNames(tokens);
         reader.setResource(inputCsv);
-        DefaultLineMapper<Transaction> lineMapper = new DefaultLineMapper<>();
-        lineMapper.setLineTokenizer(tokenizer);
 
-        // lineMapper.setFieldSetMapper(new RecordFieldSetMapper());
+        // 自定义CSV文件读取的Delimited分隔符标识, 用于FieldSetMapper解析时同通过名称读取
+        DelimitedLineTokenizer lineTokenizer = new DelimitedLineTokenizer();
+        lineTokenizer.setNames("username", "userid", "date", "amount");
+
+        DefaultLineMapper<Transaction> lineMapper = new DefaultLineMapper<>();
+        lineMapper.setLineTokenizer(lineTokenizer);
+        lineMapper.setFieldSetMapper(new RecordFieldSetMapper());
         reader.setLineMapper(lineMapper);
         return reader;
     }
@@ -114,7 +117,7 @@ public class BatchConfiguration {
         dataSource.setDriverClassName("org.postgresql.Driver");
         dataSource.setUsername("postgres");
         dataSource.setPassword("admin");
-        dataSource.setUrl("jdbc:postgresql://localhost:5432/hibernate_demo");
+        dataSource.setUrl("jdbc:postgresql://localhost:5432/spring_db");
         return dataSource;
     }
 

@@ -16,7 +16,7 @@ public class SpringBatchMasterApp {
 
         // 使用指定的JobLauncher去执行特定的Job, 结果为JobExecution
         JobLauncher jobLauncher = (JobLauncher) context.getBean("jobLauncher");
-        Job job = (Job) context.getBean("firstBatchJob");
+        Job job = (Job) context.getBean("firstBatchJob-10");
 
         System.out.println("Starting the batch job");
         try {

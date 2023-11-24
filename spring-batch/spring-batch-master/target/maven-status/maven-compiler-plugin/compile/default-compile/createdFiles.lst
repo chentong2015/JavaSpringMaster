@@ -1,5 +1,5 @@
-com\spring\batch\config\CustomItemProcessor.class
-com\spring\batch\config\RecordFieldSetMapper.class
 com\spring\batch\config\BatchConfiguration.class
+com\spring\batch\config\CustomItemProcessor.class
 com\spring\batch\xml\Transaction.class
+com\spring\batch\config\RecordFieldSetMapper.class
 com\spring\batch\SpringBatchMasterApp.class
