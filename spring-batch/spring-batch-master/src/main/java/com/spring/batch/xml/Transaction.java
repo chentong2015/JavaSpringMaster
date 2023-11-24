@@ -1,6 +1,7 @@
 package com.spring.batch.xml;
 
-import javax.xml.bind.annotation.XmlRootElement;
+import jakarta.xml.bind.annotation.XmlRootElement;
+
 import java.time.LocalDateTime;
 
 @SuppressWarnings("restriction")

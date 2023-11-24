@@ -31,9 +31,11 @@ public class BatchConfiguration {
     @Value("input/transactions.csv")
     private Resource inputCsv;
 
+    // 定位在当前项目的根目录
     @Value("file:xml/output.xml")
     private Resource outputXml;
 
+    // TODO. 定义要执行的Job以及Step(Read, Process, Write)
     @Bean(name = "firstBatchJob")
     public Job job(JobRepository jobRepository, @Qualifier("step1") Step step1) {
         return new JobBuilder("firstBatchJob", jobRepository)
@@ -66,7 +68,6 @@ public class BatchConfiguration {
         DefaultLineMapper<Transaction> lineMapper = new DefaultLineMapper<>();
         lineMapper.setLineTokenizer(tokenizer);
 
-        // TODO. fix RecordFieldSetMapper
         // lineMapper.setFieldSetMapper(new RecordFieldSetMapper());
         reader.setLineMapper(lineMapper);
         return reader;
@@ -89,6 +90,7 @@ public class BatchConfiguration {
         return itemWriter;
     }
 
+    // TODO. JobLauncher任务的启动需要在DataSource中记录数据，需要定义JobRepository
     @Bean(name = "jobLauncher")
     public JobLauncher getJobLauncher() throws Exception {
         TaskExecutorJobLauncher jobLauncher = new TaskExecutorJobLauncher();
@@ -101,17 +103,23 @@ public class BatchConfiguration {
     public JobRepository getJobRepository() throws Exception {
         JobRepositoryFactoryBean factory = new JobRepositoryFactoryBean();
         factory.setDataSource(dataSource());
-        factory.setTransactionManager(new ResourcelessTransactionManager());
+        factory.setTransactionManager(getTransactionManager());
         factory.afterPropertiesSet();
         return factory.getObject();
     }
 
+    @Bean
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
         dataSource.setDriverClassName("org.postgresql.Driver");
         dataSource.setUsername("postgres");
         dataSource.setPassword("admin");
-        dataSource.setUrl("jdbc:postgresql://localhost:5432/spring_db");
+        dataSource.setUrl("jdbc:postgresql://localhost:5432/hibernate_demo");
         return dataSource;
+    }
+
+    @Bean(name = "transactionManager")
+    public PlatformTransactionManager getTransactionManager() {
+        return new ResourcelessTransactionManager();
     }
 }
