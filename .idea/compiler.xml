@@ -18,6 +18,7 @@
         <module name="spring-boot-event-tasks" />
         <module name="spring-aop-basic" />
         <module name="spring-data-jdbc-template" />
+        <module name="spring-boot-events" />
         <module name="spring-boot-demo" />
         <module name="org-aspectj-template" />
         <module name="spring-jpa-hibernate-test" />

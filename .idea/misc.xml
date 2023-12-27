@@ -15,24 +15,9 @@
         <option value="$PROJECT_DIR$/spring-data/spring-data-jpa-hibernate-test/pom.xml" />
       </list>
     </option>
-    <option name="ignoredFiles">
-      <set>
-        <option value="$PROJECT_DIR$/basic-spring-framework/spring-hibernate-test/pom.xml" />
-        <option value="$PROJECT_DIR$/basic-spring-framework/spring-ioc-test/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-basics-ioc/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot-demo/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot-demo1/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot-master/spring-boot-https/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-boot-upload-download-files/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-data-jdbc/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-data-jpa-demo/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-data-jpa/Spring-data-layer/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-data-jpa/spring-data-access-layer/pom.xml" />
-        <option value="$PROJECT_DIR$/spring-data-jpa/spring-data-access-legacy/pom.xml" />
-      </set>
-    </option>
+    <option name="workspaceImportForciblyTurnedOn" value="true" />
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" default="true" project-jdk-name="17 (2)" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17 (2)" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
   <component name="SwUserDefinedSpecifications">

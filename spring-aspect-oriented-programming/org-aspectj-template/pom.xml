@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>org-aspectj-master</artifactId>
+    <artifactId>org-aspectj-template</artifactId>
 
     <properties>
         <maven.compiler.source>15</maven.compiler.source>
@@ -20,7 +20,7 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <version>5.3.0</version>
+            <version>5.3.19</version>
         </dependency>
 
         <dependency>
