@@ -1,3 +1,0 @@
-Embedded Tomcat嵌入式Web容器不支持打包jsp文件到jar文件中
-2.1 使用war插件将JSP打包成war
-2.2 使用别的前端渲染引擎

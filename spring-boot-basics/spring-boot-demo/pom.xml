@@ -40,8 +40,7 @@
             <version>5.3.10</version>
         </dependency>
 
-        <!-- TODO: spring-boot-starter的作用:
-        集成和准备项目所需要的依赖，只使用一个依赖启动项目 -->
+        <!-- TODO: spring-boot-starter的作用: 集成和准备项目所需要的依赖，只使用一个依赖启动项目 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>

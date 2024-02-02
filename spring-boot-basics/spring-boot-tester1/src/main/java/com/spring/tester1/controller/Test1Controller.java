@@ -17,7 +17,7 @@ import java.nio.ByteBuffer;
 import java.nio.charset.StandardCharsets;
 import java.util.Optional;
 
-// 项目场景 ::
+// 项目场景:
 // SpringBootA的endpoints对等调用SpringBootB的endpoints
 // 在SpringBootB上抛出的Exception异常错误信息，需要"同步"体现在SpringBootA上
 @RestController
@@ -32,7 +32,7 @@ public class Test1Controller {
     }
 
     // TODO. 使用Spring Cloud Feign发送请求，报出的错误是FeignException
-    //       通过捕获可以获得和server端一致的报错信息 + StatusCode
+    //  通过捕获可以获得和server端一致的报错信息 + StatusCode
     @PostMapping("/products/{id}")
     public ResponseEntity<String> insertProduct(@PathVariable("id") String id, @RequestBody Product product) {
         try {
@@ -52,7 +52,7 @@ public class Test1Controller {
     }
 
     // TODO. 对于ResponseEntity<String>的返回类型，可以提供类似空的ResponseEntity<Void>
-    //       可以不对ResponseEntity中的数据设置值
+    //  可以不对ResponseEntity中的数据设置值
     @PostMapping("/products/test/{id}")
     public ResponseEntity<String> testInsertProduct(@PathVariable("id") String id, @RequestBody Product product) {
         try {

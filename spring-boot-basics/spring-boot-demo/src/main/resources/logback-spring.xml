@@ -14,5 +14,4 @@
     <logger name="org.springframework" level="INFO"/>
     <!-- 日期          Level process_ID  thead_Name        Logger_Name                     Logger_Message
          2021-03-21.. INFO  7920    -   [nio-8080-exec-1] c.e.b.main.controller.BaseController : home method called ... -->
-
 </configuration>
