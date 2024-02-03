@@ -21,7 +21,7 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
-            <version>3.0.0</version>
+            <version>3.1.2</version>
             <!-- 在调用日志系统周期性的输出信息时，存在logback-classic和slf4冲突 -->
             <exclusions>
                 <exclusion>
@@ -48,7 +48,6 @@
             <version>3.1.6</version>
             <scope>test</scope>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>

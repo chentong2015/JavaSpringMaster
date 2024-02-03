@@ -1,0 +1,7 @@
+为什么使用事件驱动，而非使用方法调用 ？
+能够实现异步解耦(decouple)，方便扩展
+- 通过事件来启动不同层次的业务逻辑
+- 避免面向过程式(流程式)的代码
+
+https://spring.io/event-driven
+https://reflectoring.io/spring-boot-application-events-explained/
