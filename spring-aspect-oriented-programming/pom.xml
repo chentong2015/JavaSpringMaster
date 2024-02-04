@@ -13,8 +13,6 @@
     <packaging>pom</packaging>
     <modules>
         <module>spring-aop-basic</module>
-        <module>org-aspectj-basic</module>
-        <module>org-aspectj-template</module>
     </modules>
 
     <properties>

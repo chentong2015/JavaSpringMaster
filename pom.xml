@@ -16,5 +16,6 @@
         <module>spring-boot-basics</module>
         <module>spring-boot-master</module>
         <module>spring-data</module>
+        <module>spring-events-driven</module>
     </modules>
 </project>

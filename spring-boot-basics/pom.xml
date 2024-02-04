@@ -20,7 +20,6 @@
 
     <modules>
         <module>spring-boot-demo</module>
-        <module>spring-boot-events</module>
         <module>spring-boot-tester1</module>
         <module>spring-boot-tester2</module>
         <module>spring-boot-upload-download-example</module>

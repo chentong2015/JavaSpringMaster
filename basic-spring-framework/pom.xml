@@ -19,7 +19,7 @@
     </properties>
 
     <modules>
-        <module>spring-framework</module>
+        <module>spring-basics</module>
         <module>spring-framework-ioc</module>
     </modules>
 </project>

@@ -1,6 +1,0 @@
-com\aspect\main\model\SecuredClass.class
-com\aspect\main\model\Secured.class
-com\aspect\main\MainAspect.class
-com\aspect\main\aspect\SecuredMethodAspect.class
-com\aspect\main\aspect\EventInterceptor.class
-com\aspect\main\aspect\AroundAspectDemo.class

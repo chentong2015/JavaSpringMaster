@@ -8,7 +8,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-boot-template" />
-        <module name="org-aspectj-basic" />
         <module name="spring-boot-tester1" />
         <module name="spring-data-access-test" />
         <module name="spring-framework" />
@@ -18,9 +17,7 @@
         <module name="spring-boot-event-tasks" />
         <module name="spring-aop-basic" />
         <module name="spring-data-jdbc-template" />
-        <module name="spring-boot-events" />
         <module name="spring-boot-demo" />
-        <module name="org-aspectj-template" />
         <module name="spring-jpa-hibernate-test" />
         <module name="spring-data-jpa-master" />
         <module name="spring-data-jpa-basic" />
@@ -32,6 +29,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="org-aspectj-basic" target="15" />
+      <module name="org-aspectj-template" target="15" />
       <module name="spring-basics-ioc" target="1.5" />
       <module name="spring-boot-demo1" target="15" />
       <module name="spring-boot-https" target="15" />
@@ -40,6 +39,7 @@
       <module name="spring-data-jdbc" target="15" />
       <module name="spring-data-jpa-demo" target="11" />
       <module name="Spring-data-layer" target="15" />
+      <module name="spring-events-driven" target="17" />
       <module name="spring-hibernate-test" target="15" />
       <module name="spring-ioc-test" target="11" />
       <module name="spring-jdbc-template" target="11" />
