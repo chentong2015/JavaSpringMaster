@@ -1,7 +1,0 @@
-com\spring\tester2\controller\ProductExceptionControllerAdvice.class
-com\spring\tester2\exception\ProductExistException.class
-com\spring\tester2\SpringBootTester2Application.class
-com\spring\tester2\controller\ProductController.class
-com\spring\tester2\exception\InternalServerException.class
-com\spring\tester2\exception\TestHandlerException.class
-com\spring\tester2\model\Product.class

@@ -3,6 +3,22 @@
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/basic-spring-framework/spring-framework-ioc/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/basic-spring-framework/spring-framework-ioc/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-basics/spring-boot-caching/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-basics/spring-boot-caching/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-basics/spring-boot-exception-handler/spring-boot-tester1/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-basics/spring-boot-exception-handler/spring-boot-tester1/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-basics/spring-boot-exception-handler/spring-boot-tester2/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-basics/spring-boot-exception-handler/spring-boot-tester2/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-basics/spring-boot-exception-handler/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-basics/spring-boot-exception-handler/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-basics/spring-boot-file-uploader/spring-boot-upload-download-example/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-basics/spring-boot-file-uploader/spring-boot-upload-download-example/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-basics/spring-boot-file-uploader/spring-boot-upload-download-files/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-basics/spring-boot-file-uploader/spring-boot-upload-download-files/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-basics/spring-boot-file-uploader/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-basics/spring-boot-file-uploader/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-basics/spring-boot-swagger-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-basics/spring-boot-swagger-api/src/main/resources" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

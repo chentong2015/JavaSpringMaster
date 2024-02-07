@@ -19,10 +19,10 @@
     </properties>
 
     <modules>
-        <module>spring-boot-demo</module>
-        <module>spring-boot-tester1</module>
-        <module>spring-boot-tester2</module>
-        <module>spring-boot-upload-download-example</module>
-        <module>spring-boot-upload-download-files</module>
+        <module>demo-spring-boot</module>
+        <module>spring-boot-caching</module>
+        <module>spring-boot-exception-handler</module>
+        <module>spring-boot-file-uploader</module>
+        <module>spring-boot-swagger-api</module>
     </modules>
 </project>

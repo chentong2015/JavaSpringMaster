@@ -13,6 +13,7 @@
         <option value="$PROJECT_DIR$/spring-boot-basics/spring-boot-upload-download-files/pom.xml" />
         <option value="$PROJECT_DIR$/spring-data-jpa/spring-jpa-hibernate-test/pom.xml" />
         <option value="$PROJECT_DIR$/spring-data/spring-data-jpa-hibernate-test/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-basics/spring-boot-caching/pom.xml" />
       </list>
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />

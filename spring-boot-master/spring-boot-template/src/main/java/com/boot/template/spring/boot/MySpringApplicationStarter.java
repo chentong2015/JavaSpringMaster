@@ -9,21 +9,18 @@ import org.apache.catalina.startup.Tomcat;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.servlet.DispatcherServlet;
 
-// 1. 先创建Spring容器
-// 2. 再创建Web Server
 public class MySpringApplicationStarter {
 
+    private static String hostname = "localhost";
+    private static int port = 8081;
+
     public static AnnotationConfigWebApplicationContext run(Class config) {
-        AnnotationConfigWebApplicationContext appContext =
-                new AnnotationConfigWebApplicationContext();
+        AnnotationConfigWebApplicationContext appContext = new AnnotationConfigWebApplicationContext();
         appContext.register(config);
         // appContext.refresh(); // 激活容器，为容器加载组件，然后填充指定bean
         startTomcat(appContext);
         return appContext;
     }
-
-    private static String hostname = "localhost";
-    private static int port = 8081;
 
     private static void startTomcat(AnnotationConfigWebApplicationContext appContext) {
         Tomcat tomcat = new Tomcat();
@@ -53,7 +50,6 @@ public class MySpringApplicationStarter {
 
         // 在tomcat context中添加指定mapping下的DispatcherServlet
         context.addServletMappingDecoded("/", "dispatcher");
-
         try {
             tomcat.start();
             System.out.println("tomcat started at " + hostname + ":" + port);

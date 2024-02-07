@@ -10,8 +10,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 public class BaseQualifier {
 
     /**
-     * 1. 这里的变量名称必须和bean method方法的名称一致，才能完整自动注入 !
-     * 2. 使用指定的Qualifier Annotation来实现注入, 和方法名称无关 !!
+     * 1. 这里的变量名称必须和bean method方法的名称一致，才能完整自动注入
+     * 2. 使用指定的Qualifier Annotation来实现注入, 和方法名称无关
      */
     @Autowired
     @annotation.qualifier.MaxNumber

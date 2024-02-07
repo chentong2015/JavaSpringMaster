@@ -19,7 +19,7 @@
     </properties>
 
     <modules>
-        <module>spring-data-jpa-basic</module>
+        <module>demo-spring-data-jpa</module>
         <module>spring-data-jpa-master</module>
         <module>spring-data-jpa-hibernate-test</module>
         <module>spring-data-access-test</module>

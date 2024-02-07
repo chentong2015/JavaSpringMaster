@@ -1,5 +1,0 @@
-com\example\aop\aspect\MyServiceClass.class
-com\example\aop\SpringAopConfiguration.class
-com\example\aop\aspect\AspectFastCalculation.class
-com\example\aop\SpringFrameworkAOP.class
-com\example\aop\aspect\AspectRaceService.class

@@ -10,22 +10,25 @@
         <module name="spring-boot-template" />
         <module name="spring-boot-tester1" />
         <module name="spring-data-access-test" />
+        <module name="demo-spring-boot" />
         <module name="spring-framework" />
         <module name="spring-basics" />
         <module name="spring-boot-tester2" />
         <module name="spring-boot-upload-download-files" />
+        <module name="spring-boot-caching" />
         <module name="spring-boot-event-tasks" />
         <module name="spring-aop-basic" />
         <module name="spring-data-jdbc-template" />
-        <module name="spring-boot-demo" />
+        <module name="spring-events-driven" />
         <module name="spring-jpa-hibernate-test" />
         <module name="spring-data-jpa-master" />
-        <module name="spring-data-jpa-basic" />
+        <module name="spring-boot-swagger-api" />
         <module name="spring-batch-basic" />
         <module name="spring-data-jpa-hibernate-test" />
         <module name="spring-batch-master" />
         <module name="spring-boot-upload-download-example" />
         <module name="spring-framework-ioc" />
+        <module name="demo-spring-data-jpa" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -39,7 +42,6 @@
       <module name="spring-data-jdbc" target="15" />
       <module name="spring-data-jpa-demo" target="11" />
       <module name="Spring-data-layer" target="15" />
-      <module name="spring-events-driven" target="17" />
       <module name="spring-hibernate-test" target="15" />
       <module name="spring-ioc-test" target="11" />
       <module name="spring-jdbc-template" target="11" />

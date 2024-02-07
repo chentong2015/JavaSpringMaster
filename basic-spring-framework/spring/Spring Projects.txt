@@ -1,0 +1,32 @@
+Spring Projects
+1. Spring解决了J2EE中出现的比较大的问题：Enterprise Java Bean Model (EJB)
+2. Spring提供和构建infrastructure, 开发者可以专注在业务层面, 不需要关注JEE更底层的逻辑
+3. Spring是轻量级的，很容易使用轻量级的Web Server, 可以只选择需要的module模块
+3. Spring提倡使用POJO: Plain Old Java Object
+
+TODO. Spring框架的利弊
+1. 开源项目，功能齐全，直接使用
+2. 版本过多问题，源代码问题，潜在bug问题
+3. Spring框架安全问题
+
+Spring MVC: Spring Web整合了Spring MVC
+MVC；一种可大可小的架构, 对于Spring来说，指的是程序架构，用一套原理(放大到程序维度)构建起来的项目 ==> ios ui mvc
+Spring: 框架非常大, 模块非常多
+1. AOP (Aspect Oriented Programming): 面向方面(横切面)编程, 在程序的纵剖面做些什么事情 ==> logging, authorization, security
+2. Spring Core 最贴近Java底层，灵活(反射)的做配置
+
+Spring MVC 不足之处
+1. View页面层，渲染引擎(JSP, JSF均过时, 比较重): Thymeleaf(轻便), Freemarker / JSTL ...
+2. Spring擅长中间逻辑层的构建
+3. 数据库交互: JPA (Java持久层API, 标准的API, 有利于框架的更换，抽象隔离) Hibernate / MyBatis
+
+TODO. Spring Framework兼容性问题
+https://github.com/spring-projects/spring-framework/wiki/Spring-Framework-Versions
+以下依赖的v6版本构建在Java17上，如果在JDK15的环境下使用，会造成如下的异常
+原因是由于使用的Framework框架的版本太高，导致项目中无法获取并兼容 !!
+"class file has wrong version 61.0, should be 59.0"
+ <dependency>
+     <groupId>org.springframework</groupId>
+     <artifactId>spring-jdbc</artifactId>
+     <version>5.3.26</version>
+ </dependency>

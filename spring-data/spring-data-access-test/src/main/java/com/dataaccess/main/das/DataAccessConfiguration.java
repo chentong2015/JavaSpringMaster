@@ -18,12 +18,10 @@ public class DataAccessConfiguration {
     @Bean
     public MyBean testEnvironmentAndCreateBean(Environment environment, MyDataSourceFactory myDataSourceFactory) {
         System.out.println(environment.getProperty("my.property"));
-
         System.out.println(environment.getProperty("spring.liquibase.enabled"));
         System.out.println(environment.getProperty("key.name"));
 
         System.out.println(System.getProperty("key.name"));
-
         myDataSourceFactory.printDataSourceFactory();
         return new MyBean();
     }

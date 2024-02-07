@@ -1,8 +1,0 @@
-com\spring\batch\SpringBatchServiceApp.class
-com\spring\batch\config\PersonItemProcessor.class
-com\spring\batch\components\PersonRowMapper.class
-com\spring\batch\model\Person.class
-com\spring\batch\components\JobCompletionNotificationListener.class
-com\spring\batch\config\BatchConfiguration.class
-com\spring\batch\config\BatchConfiguration$1.class
-com\spring\batch\config\BatchCoreConfiguration.class

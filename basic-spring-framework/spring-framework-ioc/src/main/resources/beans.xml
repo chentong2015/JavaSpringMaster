@@ -8,7 +8,7 @@
     <!-- 直接通过Eclipse Bean UI界面来添加: 准确定位要找到的类型，避免手写出错 
          autowire="default" 使用默认的构造器来创建对象, 默认使用类型的默认值 
          当自定义含参的构造器之后，需要提供构造器参数 -->
-    <bean id="myBean" class="xml.BaseBean">
+    <bean id="myBean" class="xml.bean.BaseBean">
         <!-- 传入构造器参数，会根据类型自动转换，按照顺序index传入指定的参数值
              可以直接使用field名称来赋值 name="count" -->
         <constructor-arg index="0" value="Demo"></constructor-arg>
