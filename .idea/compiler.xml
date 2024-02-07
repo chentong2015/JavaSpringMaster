@@ -19,6 +19,7 @@
         <module name="spring-boot-event-tasks" />
         <module name="spring-aop-basic" />
         <module name="spring-data-jdbc-template" />
+        <module name="custom-spring-boot" />
         <module name="spring-events-driven" />
         <module name="spring-jpa-hibernate-test" />
         <module name="spring-data-jpa-master" />
