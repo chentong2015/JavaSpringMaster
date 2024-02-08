@@ -19,7 +19,8 @@
     </properties>
 
     <modules>
-        <module>spring-basics</module>
+        <module>spring-framework</module>
+        <module>spring-framework-custom</module>
         <module>spring-framework-ioc</module>
     </modules>
 </project>
