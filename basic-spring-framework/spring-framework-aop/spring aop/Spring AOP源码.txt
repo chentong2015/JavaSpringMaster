@@ -1,0 +1,18 @@
+Spring AOP源码分析入口:
+AnnotationConfigApplicationContext.AnnotationConfigApplicationContext(Class<?>... componentClasses)
+AbstractApplicationContext.refresh()
+  AbstractApplicationContext.finishBeanFactoryInitialization(ConfigurableListableBeanFactory beanFactory)
+  DefaultListableBeanFactory.preInstantiateSingletons()
+
+AbstractBeanFactory.getBean(String name)
+AbstractBeanFactory.doGetBean(name, null, null, false);
+   DefaultSingletonBeanRegistry.getSingleton(beanName);
+   AbstractBeanFactory.createBean()
+      // 下面的方法返回了代理对象
+      AbstractAutowireCapableBeanFactory.doCreateBean(beanName, mbdToUse, args)
+      AbstractAutowireCapableBeanFactory.initializeBean(beanName, exposedObject, mbd);
+      AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(wrappedBean, beanName);
+         AbstractAutoProxyCreator.postProcessBeforeInstantiation()
+         AbstractAutoProxyCreator.createProxy()
+         proxyFactory.getProxy(classLoader);
+         // 两种代理模式的使用

@@ -8,34 +8,40 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-boot-template" />
+        <module name="spring-framework-aop" />
         <module name="spring-boot-tester1" />
         <module name="spring-data-access-test" />
         <module name="demo-spring-boot" />
-        <module name="spring-framework" />
-        <module name="spring-basics" />
         <module name="spring-boot-tester2" />
         <module name="spring-boot-upload-download-files" />
         <module name="spring-boot-caching" />
         <module name="spring-boot-event-tasks" />
-        <module name="spring-aop-basic" />
         <module name="spring-data-jdbc-template" />
+        <module name="spring-core-ioc" />
         <module name="spring-events-driven" />
-        <module name="spring-framework-custom" />
         <module name="spring-jpa-hibernate-test" />
         <module name="spring-data-jpa-master" />
         <module name="spring-boot-swagger-api" />
         <module name="spring-batch-basic" />
         <module name="spring-data-jpa-hibernate-test" />
         <module name="spring-batch-master" />
+        <module name="spring-framework-master" />
         <module name="spring-boot-upload-download-example" />
-        <module name="spring-framework-ioc" />
         <module name="demo-spring-data-jpa" />
+      </profile>
+      <profile name="Annotation profile for JavaSpringMaster" enabled="true">
+        <sourceOutputDir name="../spring-framework/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../spring-framework/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-context-beans" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="org-aspectj-basic" target="15" />
       <module name="org-aspectj-template" target="15" />
+      <module name="spring-aop-basic" target="15" />
       <module name="spring-basics-ioc" target="1.5" />
+      <module name="spring-boot-aop" target="15" />
       <module name="spring-boot-demo1" target="15" />
       <module name="spring-boot-https" target="15" />
       <module name="spring-data-access-layer" target="15" />

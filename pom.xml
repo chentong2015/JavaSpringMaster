@@ -11,7 +11,6 @@
 
     <modules>
         <module>basic-spring-framework</module>
-        <module>spring-boot-aop</module>
         <module>spring-batch</module>
         <module>spring-boot-basics</module>
         <module>spring-boot-master</module>

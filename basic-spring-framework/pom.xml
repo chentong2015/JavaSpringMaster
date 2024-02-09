@@ -19,8 +19,9 @@
     </properties>
 
     <modules>
-        <module>spring-framework</module>
-        <module>spring-framework-custom</module>
-        <module>spring-framework-ioc</module>
+        <module>spring-context-beans</module>
+        <module>spring-core-ioc</module>
+        <module>spring-framework-master</module>
+        <module>spring-framework-aop</module>
     </modules>
 </project>
