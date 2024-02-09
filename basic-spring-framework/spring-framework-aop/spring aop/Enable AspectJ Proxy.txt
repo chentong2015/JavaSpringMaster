@@ -1,0 +1,19 @@
+TODO. @EnableAspectJAutoProxy 本质上是往Spring IoC中注入了一个后置处理器
+ 通过后置处理器来生成代理对象并添加对应的Aspect切面
+AnnotationAwareAspectJAutoProxyCreator.class extends BeanPostProcessor
+
+@EnableAspectJAutoProxy(proxyTargetClass = false, exposeProxy = false)
+1. proxyTargetClass = false 默认使用JdkDynamicAopProxy，而不是cglib代理
+2. exposeProxy = false      默认不将Proxy暴露给ThreadLocal，无法通过AopContext.currentProxy()获取
+
+TODO: exposeProxy: 配置是否将proxy暴露到ThreadLocal
+Proxy should be exposed by the AOP framework as ThreadLocal for retrieval via the AopContext
+指示代理应由AOP框架公开为ThreadLocal(线程本地存储), 之后通过AopContext类来进行检索
+  JdkDynamicAopProxy.invoke()
+  	if (this.advised.exposeProxy) {
+  	保存之前老的proxy，用于在finally中恢复
+  	oldProxy = AopContext.setCurrentProxy(proxy);
+  	setProxyContext = true;
+  }
+  exposeProxy=true;  从线程变量中取出代理对象，然后调用方法，同样会被切入(被增强)
+  exposeProxy=false; 该方法的调用this.add(10, 10);不会被增强

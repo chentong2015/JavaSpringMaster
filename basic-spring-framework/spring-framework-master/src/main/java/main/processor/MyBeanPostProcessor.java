@@ -25,17 +25,18 @@ public class MyBeanPostProcessor implements BeanPostProcessor {
     }
 
     // TODO. 使用后置处理器在创建bean的初始化后生成代理对象，完成AOP逻辑
-    //  找出bean对应的所有要执行的Aspect切面方法，保存到代理对象中
+    //  找出bean对应的所有要执行的Aspect切面方法pointcut，保存到代理对象中
     //  在调用返回的代理对象方法时，执行相应的Aspect切面方法
     @Override
     public Object postProcessAfterInitialization(Object bean, String beanName) {
         System.out.println("postProcessAfterInitialization");
+        // 需要判断bean是否需要进行AOP
         if (beanName.equals("iComponentImpl")) {
             // 生成代理对象并执行额外的逻辑(Aspect切面逻辑)
             return Proxy.newProxyInstance(
                     MyBeanPostProcessor.class.getClassLoader(), bean.getClass().getInterfaces(),
                     (proxy, method, args) -> {
-                        System.out.println("Proxy calling");
+                        System.out.println("IComponent proxy calling");
                         return method.invoke(bean, args);
                     }
             );
