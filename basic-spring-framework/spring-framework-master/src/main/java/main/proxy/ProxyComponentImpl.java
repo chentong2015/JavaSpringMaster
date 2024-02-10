@@ -1,4 +1,4 @@
-package main.bean;
+package main.proxy;
 
 import com.spring.annotation.Component;
 

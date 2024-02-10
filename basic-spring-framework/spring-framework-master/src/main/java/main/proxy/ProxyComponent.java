@@ -1,4 +1,4 @@
-package main.bean;
+package main.proxy;
 
 public interface ProxyComponent {
 

@@ -2,7 +2,7 @@ package main;
 
 import com.spring.CustomApplicationContext;
 import main.bean.BeanPostConstruct;
-import main.bean.ProxyComponent;
+import main.proxy.ProxyComponent;
 import main.service.UserService;
 
 public class CustomSpringBootApplication {
