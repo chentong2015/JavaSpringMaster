@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Import;
 
 // TODO. 三种注入bean(A simple Java Object)的方式
 // 1. 自定义通过@Import注解来注入
-//    - 引入其他的配置类@Import(AnotherConfiguration.class)
+//    - 引入其他配置@Import(AnotherConfiguration.class)
 //    - 直接注入类型MyBean.class
 //    - 自定义实现ImportSelector进行批量注入
 //    - 自定义实现ImportBeanDefinitionRegistrar注册器来匹配注入bean定义

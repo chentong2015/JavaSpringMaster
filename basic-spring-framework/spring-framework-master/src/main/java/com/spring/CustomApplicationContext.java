@@ -1,41 +1,39 @@
 package com.spring;
 
 import com.spring.annotation.*;
-import com.spring.interfacz.BeanNameAware;
+import com.spring.factory.CustomBeanFactory;
 import com.spring.interfacz.BeanPostProcessor;
-import com.spring.interfacz.InitializingBean;
 import com.spring.model.BeanDefinition;
 import com.spring.util.FileResourcesUtils;
 
 import java.io.File;
-import java.lang.reflect.Field;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
 // 自定义的Spring Context容器类
+// 包含bean对象以及bean定义的缓存池，方便快速获取
 public class CustomApplicationContext {
 
     private Class configClass;
-
-    // TODO. 以下所有的属性都封装在BeanFactory工厂中
-    // bean的单例池，存储所有的单例bean的对象
-    private ConcurrentHashMap<String, Object> singletonObjects = new ConcurrentHashMap<>();
-    // 存储bean定义的map
-    private ConcurrentHashMap<String, BeanDefinition> beanDefinitionMap = new ConcurrentHashMap<>();
-    // 存储扫描后的所有后置处理器，在创建bean时执行后置的处理
-    private List<BeanPostProcessor> beanPostProcessorList = new ArrayList<>();
+    private CustomBeanFactory beanFactory;
+    private ConcurrentHashMap<String, Object> singletonObjects;  // bean单例池存储所有单例对象
+    private ConcurrentHashMap<String, BeanDefinition> beanDefinitionMap; // 存储bean定义的map
 
     // 解析Config类型上有那些Spring提供的注解, 扫描所有的Components
     public CustomApplicationContext(Class configClass) {
         this.configClass = configClass;
+        this.beanFactory = new CustomBeanFactory(this);
+        this.singletonObjects = new ConcurrentHashMap<>();
+        this.beanDefinitionMap = new ConcurrentHashMap<>();
         scanComponents();
         initSingletonBean();
     }
 
     private void scanComponents() {
-        ComponentScan componentScan = (ComponentScan) configClass.getDeclaredAnnotation(ComponentScan.class);
+        // 获取注解中定义的属性值
+        ComponentScan componentScan = (ComponentScan) configClass
+                .getDeclaredAnnotation(ComponentScan.class);
         String pathScan = componentScan.value().replace(".", "/");
         // 拿到指定路径下加载的类型
         List<File> fileList = FileResourcesUtils.getClassFiles(pathScan);
@@ -50,9 +48,12 @@ public class CustomApplicationContext {
         try {
             Class<?> clazz = CustomApplicationContext.class.getClassLoader().loadClass(className);
             if (clazz.isAnnotationPresent(Component.class)) {
-                // 或者注解上设置的值
+                // 获取Component注解设置的值，默认使用类型名称作为bean的名称
                 Component componentAnnotation = clazz.getDeclaredAnnotation(Component.class);
                 String beanName = componentAnnotation.value();
+                if (beanName == null || beanName.isEmpty()) {
+                    beanName = clazz.getSimpleName();
+                }
 
                 BeanDefinition beanDefinition = new BeanDefinition();
                 beanDefinition.setClazz(clazz);
@@ -67,8 +68,9 @@ public class CustomApplicationContext {
                 // TODO. 判断继承特殊接口的类型, Spring源码使用getBean()来创建的bean实例本身
                 //  在这里直接创建，类型本身的属性没有办法被依赖注入
                 if (BeanPostProcessor.class.isAssignableFrom(clazz)) {
-                    BeanPostProcessor instance = (BeanPostProcessor) clazz.getDeclaredConstructor().newInstance();
-                    beanPostProcessorList.add(instance);
+                    BeanPostProcessor instance = (BeanPostProcessor)
+                            clazz.getDeclaredConstructor().newInstance();
+                    this.beanFactory.addBeanPostProcessor(instance);
                 }
             }
         } catch (Exception exception) {
@@ -76,59 +78,15 @@ public class CustomApplicationContext {
         }
     }
 
+    // TODO. 初始化bean时会根据bean definition中的Scope来确定初始化的时机
     private void initSingletonBean() {
         for (Map.Entry<String, BeanDefinition> entry : beanDefinitionMap.entrySet() ) {
             String beanName = entry.getKey();
             BeanDefinition beanDefinition = entry.getValue();
             if (beanDefinition.getScope().equals("singleton")) {
-               Object bean = createBean(beanName, beanDefinition);
+               Object bean = this.beanFactory.doCreateBean(beanName, beanDefinition);
                singletonObjects.put(beanName, bean);
             }
-        }
-    }
-
-    // TODO. 根据bean definition来创建bean的对象并依赖注入
-    // 根据bean的scope来确定创建bean对象的时机
-    private Object createBean(String beanName, BeanDefinition beanDefinition) {
-        try {
-            // 实例化: 通过Class反射(调用无餐构造器)得到一个bean的新对象
-            Class clazz = beanDefinition.getClazz();
-            Object instance = clazz.getDeclaredConstructor().newInstance();
-
-            // 依赖注入: 给指定对象的指定属性赋值, 根据属性的名称来查找/创建
-            for (Field declaredField: clazz.getDeclaredFields()) {
-                if (declaredField.isAnnotationPresent(Autowired.class)) {
-                    Object filedInstance = getBean(declaredField.getName());
-                    if (filedInstance == null) {
-                        // 没有办法注入bean
-                    }
-                    declaredField.setAccessible(true);
-                    declaredField.set(instance, filedInstance);
-                }
-            }
-
-            // Aware回调: 回调特殊方法的实现(继承自特殊接口)
-            if (instance instanceof BeanNameAware) {
-                ((BeanNameAware) instance).setBeanName(beanName);
-            }
-
-            // postProcessBeforeInitialization 后置处理器, 初始化前
-            for (BeanPostProcessor beanPostProcessor: beanPostProcessorList) {
-                instance = beanPostProcessor.postProcessBeforeInitialization(instance, beanName);
-            }
-
-            // Init初始化：调用初始化接口的实现
-            if (instance instanceof InitializingBean) {
-                ((InitializingBean) instance).afterPropertiesSet();
-            }
-
-            // TODO. 初始化后返回的对象才是Spring容器总真正的对象(或代理对象)
-            for (BeanPostProcessor beanPostProcessor: beanPostProcessorList) {
-                instance = beanPostProcessor.postProcessAfterInitialization(instance, beanName);
-            }
-            return instance;
-        } catch (Exception exception) {
-            throw new RuntimeException("Failed to create bean object", exception);
         }
     }
 
@@ -139,12 +97,22 @@ public class CustomApplicationContext {
                 return singletonObjects.get(beanName);
             } else if (beanDefinition.getScope().equals("prototype")) {
                 // Create new instance for each time
-                return createBean(beanName, beanDefinition);
+                return this.beanFactory.doCreateBean(beanName, beanDefinition);
             } else {
                 throw new RuntimeException("Bean scope exception");
             }
         } else {
             throw new NullPointerException("Can not find the bean");
         }
+    }
+
+    // 支持根据类型来从IoC容器中获取bean对象
+    public <T> T getBean(Class<T> clazz) {
+        for (BeanDefinition beanDefinition: beanDefinitionMap.values()) {
+            if (beanDefinition.getClazz().equals(clazz)) {
+                // get bean based on scope
+            }
+        }
+        return null;
     }
 }

@@ -11,11 +11,3 @@ Bean的创建过程:
                   ---> 代理对象(@Autowired的属性为null)
  --> spring_framework.bean(属性有值)
  如果有AOP，则将代理对象放置到Spring容器中，之后从其中取代理对象
-
- class -> BeanDefinition
-       -> 对象
-       -> 属性赋值
-       -> init(before, after)
-       -> aware
-       -> bean
-       -> applicationContext

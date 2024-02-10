@@ -15,6 +15,7 @@
         <module name="spring-boot-tester2" />
         <module name="spring-boot-upload-download-files" />
         <module name="spring-boot-caching" />
+        <module name="spring-context-beans" />
         <module name="spring-boot-event-tasks" />
         <module name="spring-data-jdbc-template" />
         <module name="spring-core-ioc" />
@@ -28,12 +29,6 @@
         <module name="spring-framework-master" />
         <module name="spring-boot-upload-download-example" />
         <module name="demo-spring-data-jpa" />
-      </profile>
-      <profile name="Annotation profile for JavaSpringMaster" enabled="true">
-        <sourceOutputDir name="../spring-framework/target/generated-sources/annotations" />
-        <sourceTestOutputDir name="../spring-framework/target/generated-test-sources/test-annotations" />
-        <outputRelativeToContentRoot value="true" />
-        <module name="spring-context-beans" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

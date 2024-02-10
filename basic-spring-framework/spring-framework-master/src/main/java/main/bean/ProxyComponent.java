@@ -1,6 +1,6 @@
 package main.bean;
 
-public interface IComponent {
+public interface ProxyComponent {
 
     void test();
 }

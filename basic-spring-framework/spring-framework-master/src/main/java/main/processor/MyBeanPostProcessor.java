@@ -2,11 +2,8 @@ package main.processor;
 
 import com.spring.annotation.Component;
 import com.spring.interfacz.BeanPostProcessor;
-import main.bean.IComponent;
 import main.service.UserService;
 
-import java.lang.reflect.InvocationHandler;
-import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
 // 1. 特殊的bean需要被注入
@@ -31,12 +28,12 @@ public class MyBeanPostProcessor implements BeanPostProcessor {
     public Object postProcessAfterInitialization(Object bean, String beanName) {
         System.out.println("postProcessAfterInitialization");
         // 需要判断bean是否需要进行AOP
-        if (beanName.equals("iComponentImpl")) {
+        if (beanName.equals("proxyComponentImpl")) {
             // 生成代理对象并执行额外的逻辑(Aspect切面逻辑)
             return Proxy.newProxyInstance(
                     MyBeanPostProcessor.class.getClassLoader(), bean.getClass().getInterfaces(),
                     (proxy, method, args) -> {
-                        System.out.println("IComponent proxy calling");
+                        System.out.println("Component proxy calling");
                         return method.invoke(bean, args);
                     }
             );

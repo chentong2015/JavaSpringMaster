@@ -1,4 +1,4 @@
-package bean.lifecycle;
+package xml.bean;
 
 // Container中bean的实例化的方法
 // 1. 使用构造器和setter
@@ -12,7 +12,7 @@ public class BeanInstanceCreation {
         this.name = name;
     }
 
-    // 使用bean的静态方法来创建对象 <bean ... factory-method="createInstance" >
+    // 使用bean静态方法来创建对象 <bean ... factory-method="createInstance" >
     public static BeanInstanceCreation createInstance(String name) {
         System.out.println("invoke static factory method");
         return new BeanInstanceCreation(name);

@@ -1,16 +1,10 @@
-package bean.lifecycle;
+package xml.bean;
 
 // Callback 回调方法：
 // 1. 能够做为参数传递给被的方法，在某个event事件发生的时候触发invoke 
 // 2. 定义bean的回调方法，container会自动在满足条件的时候触发
 // 3. 这些回调方法关联着bean's lifecycle
 public class BeansCallbacks {
-
-    // 1. 实现InitializingBean接口: ===> @PostConstruct
-    // afterPropertiesSet(在bean所有properties设置好之后，由BeanFactroy invoke)
-
-    // 2. 实现DisposableBean接口: ===> @PreDestroy
-    // destroy method (在单列对象销毁的时候，由BeanFactroy invoke)
 
     // Bean Lifecycle 调用的顺序:
     // 1. constructor
