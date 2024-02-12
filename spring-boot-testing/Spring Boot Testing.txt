@@ -1,0 +1,16 @@
+TODO. Spring Boot为什么易于测试 ？
+本质在于Spring Context中的Bean可以被替换，从而构建测试条件
+
+spring-boot-starter-test 集成了下面的四种测试
+ 1. JUnit  从Boot 2.4开始集成JUnit5，需要补充依赖来测试JUnit4功能
+ 2. Hamcrest
+ 3. Mockito
+ 4. Sprint Test (Testing tool and integration testing support)
+
+TODO. 使用@RunWith注解的测试类型必须具有单元测试@Test ？
+@RunWith(SpringRunner.class) 针对Junit4测试框架
+    provides a bridge between Spring Boot test features and JUnit.
+    Whenever we are using any Spring Boot testing features in our JUnit tests
+@RunWith(SpringJUnit4ClassRunner.class)
+    import org.junit.runner.RunWith;
+    import org.springframework.test.context.junit4.SpringRunner;

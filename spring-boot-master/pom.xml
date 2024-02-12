@@ -12,11 +12,27 @@
 
     <artifactId>spring-boot-master</artifactId>
     <modules>
-        <module>spring-boot-template</module>
+        <module>spring-boot-skeleton</module>
+        <module>spring-boot-starter-custom</module>
     </modules>
-
     <properties>
         <maven.compiler.source>15</maven.compiler.source>
         <maven.compiler.target>15</maven.compiler.target>
     </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.example</groupId>
+                <artifactId>spring-common-api</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.example</groupId>
+                <artifactId>spring-boot-server</artifactId>
+                <version>1.0-SNAPSHOT</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 </project>

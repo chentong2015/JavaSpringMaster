@@ -2,6 +2,7 @@ package com.spring.boot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
 
 // TODO. Spring Boot启动注意
 // 1. 启动类型不能放置在空包路径下(Won't be accessible from the default package)
@@ -18,6 +19,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class DemoSpringBootApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DemoSpringBootApplication.class, args);
+        ConfigurableApplicationContext applicationContext = SpringApplication.run(DemoSpringBootApplication.class, args);
+        // Close ApplicationContext programmatically
+        // applicationContext.close();
     }
 }

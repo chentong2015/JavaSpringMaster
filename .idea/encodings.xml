@@ -28,6 +28,16 @@
     <file url="file://$PROJECT_DIR$/spring-boot-basics/spring-boot-file-uploader/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-basics/spring-boot-swagger-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-basics/spring-boot-swagger-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-master/spring-boot-skeleton/spring-boot-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-master/spring-boot-skeleton/spring-boot-client/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-master/spring-boot-skeleton/spring-boot-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-master/spring-boot-skeleton/spring-boot-server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-master/spring-boot-skeleton/spring-common-api/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-master/spring-boot-skeleton/spring-common-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-master/spring-boot-skeleton/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-master/spring-boot-skeleton/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-testing/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-testing/src/main/resources" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

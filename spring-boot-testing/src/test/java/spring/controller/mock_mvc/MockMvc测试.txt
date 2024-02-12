@@ -1,0 +1,31 @@
+MockMvc: send HTTP requests into the DispatcherServlet and make assertions about the result
+MockHttpServletRequest:
+     HTTP Method = GET
+     Request URI = /
+      Parameters = {}
+         Headers = [Accept:"application/json"]
+            Body = null
+   Session Attrs = {}
+MockHttpServletResponse:
+          Status = 200
+   Error message = null
+         这里的头部会统计出BodyContent的字符长度
+         Headers = [Content-Type:"application/json", Content-Length:"10"]
+    Content type = application/json
+            页面返回内容的直接是String形式的
+            Body = Index Page
+   Forwarded URL = null
+  Redirected URL = null
+         Cookies = []
+
+TODO: 使用MockMvcResultMatchers来匹配测试返回的结果
+https://www.tabnine.com/code/java/methods/org.springframework.test.web.servlet.result.MockMvcResultMatchers/jsonPath
+mockMvc.perform(get("/myapp/resource/1"))
+	.andExpect(status().isOk())
+	.andExpect(jsonPath("$[0].date").exists())
+	.andExpect(jsonPath("$[0].type").value("1"))
+	.andExpect(jsonPath("$[0].element.list").value(new ArrayList<>()))
+	.andExpect(jsonPath("$[0].element.id").value("42"))
+	.andExpect(jsonPath("$[0].element.*", hasSize(2)))
+	.andExpect(jsonPath("$[0].*", hasSize(3)))
+	.andExpect(jsonPath("$.*", hasSize(1)));
