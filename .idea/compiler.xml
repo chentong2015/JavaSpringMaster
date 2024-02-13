@@ -14,6 +14,7 @@
         <module name="spring-boot-tester2" />
         <module name="spring-boot-caching" />
         <module name="spring-boot-event-tasks" />
+        <module name="spring-boot-auto-configure" />
         <module name="spring-jpa-hibernate-test" />
         <module name="spring-data-jpa-hibernate-test" />
         <module name="spring-batch-master" />
