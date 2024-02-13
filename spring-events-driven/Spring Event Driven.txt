@@ -1,0 +1,2 @@
+https://spring.io/event-driven
+https://reflectoring.io/spring-boot-application-events-explained/
