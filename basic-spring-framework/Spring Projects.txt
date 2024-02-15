@@ -5,9 +5,8 @@ Spring Projects
 3. Spring提倡使用POJO: Plain Old Java Object
 
 TODO. Spring框架的利弊
-1. 开源项目，功能齐全，直接使用
-2. 版本过多问题，源代码问题，潜在bug问题
-3. Spring框架安全问题
+1. 开源项目，功能齐全，保持持续的更新和向后兼容(需要不停迭代)
+2. 版本过多，源代码复杂，潜在bug和安全问题
 
 Spring MVC: Spring Web整合了Spring MVC
 MVC；一种可大可小的架构, 对于Spring来说，指的是程序架构，用一套原理(放大到程序维度)构建起来的项目 ==> ios ui mvc
