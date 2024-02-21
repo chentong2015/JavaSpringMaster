@@ -3,7 +3,8 @@ Spring Boot: 构建在Spring MVC之上(使用spring-webmvc依赖)，提供高效
 2. 去掉外部的tomcat启动起来, 使用内嵌的tomcat包
 3. 使用Spring Boot时不推荐使用注解@EnableWebMvc，可导致无法使用WebMvcAutoConfiguration功能
 
-TODO. spring-boot-starter的作用: 集成和准备项目所需要的依赖，只使用一个依赖启动项目 -->
+TODO. spring-boot-starter的作用:
+ 集成和准备项目所需要的依赖，内嵌tomcat无需做任何Servlet配置
 <dependency>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-web</artifactId>
