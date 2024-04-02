@@ -14,10 +14,11 @@
         <module name="spring-boot-tester2" />
         <module name="spring-boot-caching" />
         <module name="spring-boot-event-tasks" />
+        <module name="spring-batch-core" />
+        <module name="spring-boot2-batch" />
         <module name="spring-boot-auto-configure" />
         <module name="spring-jpa-hibernate-test" />
         <module name="spring-data-jpa-hibernate-test" />
-        <module name="spring-batch-master" />
         <module name="spring-framework-master" />
         <module name="demo-spring-data-jpa" />
         <module name="spring-boot-server" />
@@ -27,12 +28,12 @@
         <module name="spring-boot-upload-download-files" />
         <module name="spring-context-beans" />
         <module name="spring-data-jdbc-template" />
+        <module name="spring-boot3-batch" />
         <module name="spring-core-ioc" />
         <module name="spring-events-driven" />
         <module name="spring-common-api" />
         <module name="spring-data-jpa-master" />
         <module name="spring-boot-swagger-api" />
-        <module name="spring-batch-basic" />
         <module name="spring-boot-upload-download-example" />
       </profile>
     </annotationProcessing>

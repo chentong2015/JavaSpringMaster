@@ -13,8 +13,9 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>spring-batch-basic</module>
-        <module>spring-batch-master</module>
+        <module>spring-batch-core</module>
+        <module>spring-boot2-batch</module>
+        <module>spring-boot3-batch</module>
     </modules>
 
     <properties>

@@ -18,6 +18,8 @@ public class JdbcTemplateBatch implements InformationDao {
         this.jdbcTemplate = new JdbcTemplate(dataSource);
     }
 
+    // 1. 设置PreparedStatement的参数
+    // 2. 批量执行相同的SQL，传递list列表序列的参数
     public int[] batchUpdate(final List<Information> infoList) {
         return this.jdbcTemplate.batchUpdate(
                 "INSERT INTO information (id, name, place, year) VALUES (?, ?, ?, ?)",
