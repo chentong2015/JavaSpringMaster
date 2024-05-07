@@ -1,17 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
-    <file url="file://$PROJECT_DIR$/basic-spring-framework/spring-core-ioc/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/basic-spring-framework/spring-core-ioc/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/basic-spring-framework/spring-framework-aop/spring aop/AspectJ AOP实现.txt" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/basic-spring-framework/spring-framework-aop/spring aop/org-aspectj" charset="GBK" />
-    <file url="file://$PROJECT_DIR$/basic-spring-framework/spring-framework-aop/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/basic-spring-framework/spring-framework-aop/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/basic-spring-framework/spring-framework-aop/src/test" charset="GBK" />
     <file url="file://$PROJECT_DIR$/basic-spring-framework/spring-framework-ioc/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/basic-spring-framework/spring-framework-ioc/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/basic-spring-framework/spring-framework-master/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/basic-spring-framework/spring-framework-master/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-batch/spring-batch-testing/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-batch/spring-batch-testing/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-batch/spring-boot2-batch/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-batch/spring-boot2-batch/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-basics/spring-boot-caching/src/main/java" charset="UTF-8" />
@@ -42,6 +35,24 @@
     <file url="file://$PROJECT_DIR$/spring-boot-master/spring-boot-skeleton/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-testing/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-testing/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-core-ioc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-core-ioc/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-framework-aop/spring aop/AspectJ AOP实现.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/spring-framework-aop/spring aop/org-aspectj" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/spring-framework-aop/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-framework-aop/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-framework-aop/src/test" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/spring-framework-master/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-framework-master/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../SpringBootApplications/spring-boot-basics/spring-boot-exception-handler/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../SpringBootApplications/spring-boot-basics/spring-boot-exception-handler/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../SpringBootApplications/spring-boot-basics/spring-boot-file-uploader/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../SpringBootApplications/spring-boot-basics/spring-boot-file-uploader/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../SpringBootApplications/spring-boot-master/spring-boot-skeleton/spring-boot-client/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../SpringBootApplications/spring-boot-master/spring-boot-skeleton/spring-boot-server/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../SpringBootApplications/spring-boot-master/spring-boot-skeleton/spring-common-api/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../SpringBootApplications/spring-boot-master/spring-boot-skeleton/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/../SpringBootApplications/spring-boot-master/spring-boot-skeleton/src/main/resources" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

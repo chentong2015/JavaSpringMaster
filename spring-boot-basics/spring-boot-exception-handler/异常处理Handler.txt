@@ -1,5 +1,0 @@
-项目测试场景:
-test1项目的endpoints对等调用test2项目的endpoints
-test2项目抛出的异常信息是否能够同步的体现在test1项目上
-
-Spring对请求异常的默认解析DefaultHandlerExceptionResolver，对应不同Status Code

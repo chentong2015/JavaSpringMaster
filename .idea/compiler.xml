@@ -7,48 +7,57 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-boot-tester1" />
-        <module name="spring-data-access-test" />
-        <module name="demo-spring-boot" />
-        <module name="spring-boot-testing" />
-        <module name="spring-boot-tester2" />
-        <module name="spring-boot-caching" />
         <module name="spring-boot-event-tasks" />
-        <module name="spring-batch-core" />
-        <module name="spring-boot2-batch" />
-        <module name="spring-boot-auto-configure" />
         <module name="spring-jpa-hibernate-test" />
-        <module name="spring-data-jpa-hibernate-test" />
         <module name="spring-framework-master" />
-        <module name="demo-spring-data-jpa" />
-        <module name="spring-boot-server" />
         <module name="spring-framework-aop" />
-        <module name="spring-boot-starter-custom" />
-        <module name="spring-boot-client" />
-        <module name="spring-boot-upload-download-files" />
         <module name="spring-context-beans" />
-        <module name="spring-data-jdbc-template" />
-        <module name="spring-boot3-batch" />
         <module name="spring-core-ioc" />
         <module name="spring-events-driven" />
-        <module name="spring-common-api" />
-        <module name="spring-data-jpa-master" />
-        <module name="spring-boot-swagger-api" />
-        <module name="spring-boot-upload-download-example" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="basic-spring-framework" target="11" />
+      <module name="demo-spring-boot" target="11" />
+      <module name="demo-spring-data-jpa" target="11" />
       <module name="org-aspectj-basic" target="15" />
       <module name="org-aspectj-template" target="15" />
       <module name="spring-aop-basic" target="15" />
       <module name="spring-basics-ioc" target="1.5" />
+      <module name="spring-batch" target="15" />
+      <module name="spring-batch-core" target="15" />
+      <module name="spring-batch-testing" target="17" />
       <module name="spring-boot-aop" target="15" />
+      <module name="spring-boot-auto-configure" target="17" />
+      <module name="spring-boot-basics" target="11" />
+      <module name="spring-boot-caching" target="17" />
+      <module name="spring-boot-client" target="17" />
       <module name="spring-boot-demo1" target="15" />
+      <module name="spring-boot-exception-handler" target="17" />
+      <module name="spring-boot-file-uploader" target="17" />
       <module name="spring-boot-https" target="15" />
+      <module name="spring-boot-master" target="15" />
+      <module name="spring-boot-server" target="17" />
+      <module name="spring-boot-skeleton" target="17" />
+      <module name="spring-boot-starter-custom" target="15" />
+      <module name="spring-boot-swagger-api" target="17" />
+      <module name="spring-boot-tester1" target="11" />
+      <module name="spring-boot-tester2" target="11" />
+      <module name="spring-boot-testing" target="17" />
+      <module name="spring-boot-upload-download-example" target="15" />
+      <module name="spring-boot-upload-download-files" target="11" />
+      <module name="spring-boot2-batch" target="17" />
+      <module name="spring-boot3-batch" target="17" />
+      <module name="spring-common-api" target="17" />
+      <module name="spring-data" target="11" />
       <module name="spring-data-access-layer" target="15" />
       <module name="spring-data-access-legacy" target="15" />
+      <module name="spring-data-access-test" target="15" />
       <module name="spring-data-jdbc" target="15" />
+      <module name="spring-data-jdbc-template" target="15" />
       <module name="spring-data-jpa-demo" target="11" />
+      <module name="spring-data-jpa-hibernate-test" target="15" />
+      <module name="spring-data-jpa-master" target="11" />
       <module name="Spring-data-layer" target="15" />
       <module name="spring-hibernate-test" target="15" />
       <module name="spring-ioc-test" target="11" />

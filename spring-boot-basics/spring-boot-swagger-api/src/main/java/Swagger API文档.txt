@@ -1,7 +1,0 @@
-自动生成Endpoints的APIs文档
-http://localhost:8080/v2/api-docs     json格式的API文档
-http://localhost:8080/swagger-ui.html UI格式的API文档
-
-Swagger2 API完整配置
-https://springfox.github.io/springfox/docs/current/#quick-start-guides
-
