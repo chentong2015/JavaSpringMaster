@@ -1,4 +1,4 @@
-package annotation;
+package annotation.config;
 
 import annotation.bean.MyBeanImpl;
 import annotation.bean.MyBeanInstance;
@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 // 主配置类等效于beans.xml, 通过扫描component来注入bean
 @Configuration
 @ComponentScan(basePackages = "annotation")
-public class SpringAppConfig {
+public class AppCoreConfiguration {
 
     // 注入的bean的方法id就是方法的名称(大小写严格一致)
     // 配置bean在销毁时，callback回调的方法(class中申明的方法)
