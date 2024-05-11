@@ -1,11 +1,14 @@
 TODO. 三种注入bean(A simple Java Object)的方式
 1. 自定义通过@Import注解来注入
-   - 引入配置@Import(Configuration.class), 通过@Bean方法注入
-   - 通过注解(@Component, @Service)直接注入Bean
-   - 自定义实现ImportSelector进行批量注入
-   - 自定义实现ImportBeanDefinitionRegistrar注册器来匹配注入bean定义
+- 引入配置@Import(Configuration.class), 通过@Bean方法注入
+- 通过注解(@Component, @Service)直接注入Bean
+- 自定义实现ImportSelector进行批量注入
+- 自定义实现ImportBeanDefinitionRegistrar注册器来匹配注入bean定义
 
 2. Spring IOC自动装配
-   - ComponentScan 自动扫描特殊注解进行注入
-   - AutoConfigurationImportSelector 自动装配默认路径下所有预定义bean
-     \META-INF\spring.factories
+- ComponentScan 自动扫描特殊注解进行注入
+- AutoConfigurationImportSelector 自动装配默认路径下所有预定义bean
+  \META-INF\spring.factories
+
+TODO. 在注入Bean时会自动完成DI依赖注入，如果无法完成(例如无法找到对应的Object)
+org.springframework.beans.factory.UnsatisfiedDependencyException
