@@ -1,6 +1,6 @@
 package annotation.ioc;
 
-interface DependencyInjection {
+public interface DependencyInjection {
 
     void testDependencyInjection();
 }

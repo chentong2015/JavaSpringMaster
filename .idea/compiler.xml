@@ -7,20 +7,20 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-boot-event-tasks" />
-        <module name="spring-jpa-hibernate-test" />
-        <module name="spring-framework-master" />
-        <module name="spring-framework-aop" />
-        <module name="spring-context-beans" />
+        <module name="org-aspectj-basic" />
         <module name="spring-core-ioc" />
         <module name="spring-events-driven" />
+        <module name="spring-jpa-hibernate-test" />
+        <module name="spring-core-ioc-master" />
+        <module name="spring-context-beans" />
+        <module name="spring-boot-event-tasks" />
+        <module name="spring-aop-core" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="basic-spring-framework" target="11" />
       <module name="demo-spring-boot" target="11" />
       <module name="demo-spring-data-jpa" target="11" />
-      <module name="org-aspectj-basic" target="15" />
       <module name="org-aspectj-template" target="15" />
       <module name="spring-aop-basic" target="15" />
       <module name="spring-basics-ioc" target="1.5" />

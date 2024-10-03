@@ -10,6 +10,12 @@
     </parent>
 
     <artifactId>spring-framework-aop</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>org-aspectj-basic</module>
+        <module>spring-aop-core</module>
+    </modules>
+
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
@@ -35,6 +41,7 @@
             <artifactId>spring-aop</artifactId>
             <version>5.3.29</version>
         </dependency>
+
         <!-- Spring Aspects 面向切面编程，底层引入org.aspectj依赖
              或者需要自定义添加org.aspectj:org.aspectjweaver -->
         <dependency>

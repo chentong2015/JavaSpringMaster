@@ -1,0 +1,19 @@
+Aspect Class 本身也是一个bean
+1. 需要注入到Spring IoC中
+2. Aspect Bean由Spring容器管理并用于生成bean的代理对象
+   Aspect Bean不应该交给用户端去读取调用
+
+TODO: 注入Aspect
+@Component(value = "aspectClass")
+@Aspect
+public class AspectClass() {
+
+    @PointCut()
+
+    @AfterReturning()
+}
+
+TODO. 定义Aspect Bean执行的优先级
+@Order(value = 10)
+@Order指定切面执行顺序，数值越大优先级越低，默认Integer.MAX_VALUE
+多个切面bean默认是没有统一的执行顺序的，需要通过Order数字来自定义严格的执行顺序
