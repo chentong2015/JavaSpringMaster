@@ -1,0 +1,9 @@
+TODO. IOC中注入bean(A simple Java Object)的方式
+1. 实现ImportSelector进行批量注入
+2. 实现ImportBeanDefinitionRegistrar 注册器来匹配注入bean定义
+3. 自定添加Bean注解(@Component, @Service)，通过@ComponentScan来扫描注入
+4. 在@Configuration类中自定义@Bean方法，通过返回Bean Object来注入
+
+在注入Bean时会自动完成DI依赖注入
+如果无法完成(例如无法找到对应的Object)则抛出如下异常
+org.springframework.beans.factory.UnsatisfiedDependencyException

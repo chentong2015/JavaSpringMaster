@@ -11,7 +11,7 @@
 
     <modules>
         <module>spring-context-beans</module>
-        <module>spring-core-ioc</module>
+        <module>spring-context-beans-xml</module>
         <module>spring-core-ioc-master</module>
         <module>spring-events-driven</module>
         <module>spring-framework-aop</module>

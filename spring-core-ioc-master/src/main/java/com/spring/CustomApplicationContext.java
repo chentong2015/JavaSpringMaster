@@ -4,7 +4,6 @@ import com.spring.annotation.*;
 import com.spring.interfacz.BeanPostProcessor;
 import com.spring.lifecycle.CustomBeanFactory;
 import com.spring.model.BeanDefinition;
-import com.spring.util.FileResourcesUtils;
 
 import java.io.File;
 import java.util.List;
@@ -35,8 +34,8 @@ public class CustomApplicationContext {
         ComponentScan componentScan = (ComponentScan) configClass.getDeclaredAnnotation(ComponentScan.class);
         String pathScan = componentScan.value().replace(".", "/");
         // 拿到指定路径下加载的类型
-        List<File> fileList = FileResourcesUtils.getClassFiles(pathScan);
-        List<String> classNameList = FileResourcesUtils.getClassNamesFromFiles(fileList);
+        List<File> fileList = FileResourceLoader.getClassFiles(pathScan);
+        List<String> classNameList = FileResourceLoader.getClassNamesFromFiles(fileList);
         for (String className: classNameList) {
             parseBeanDefinitions(className);
         }

@@ -21,6 +21,7 @@
         <option value="$PROJECT_DIR$/spring-batch/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-aop/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-aop/spring-aop-basic/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-context-beans-annotation/pom.xml" />
         <option value="$PROJECT_DIR$/spring-data/pom.xml" />
       </set>
     </option>
