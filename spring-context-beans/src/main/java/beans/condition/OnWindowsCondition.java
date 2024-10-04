@@ -1,12 +1,10 @@
-package beans.bean_import.condition;
+package beans.condition;
 
 import org.springframework.context.annotation.Condition;
 import org.springframework.context.annotation.ConditionContext;
 import org.springframework.context.annotation.Conditional;
 import org.springframework.core.type.AnnotatedTypeMetadata;
 
-// 注入基于特定Condition条件的Bean
-@Conditional(OnWindowsCondition.class)
 public class OnWindowsCondition implements Condition {
 
     @Override
