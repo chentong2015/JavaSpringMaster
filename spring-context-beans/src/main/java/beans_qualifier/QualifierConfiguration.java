@@ -1,4 +1,4 @@
-package qualifier;
+package beans_qualifier;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

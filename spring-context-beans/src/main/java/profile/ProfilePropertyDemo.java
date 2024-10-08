@@ -7,16 +7,10 @@ import org.springframework.core.env.Environment;
 public class ProfilePropertyDemo {
 
     public static void main(String[] args) {
-        ConfigurableApplicationContext context = new AnnotationConfigApplicationContext(ConfigProfile.class);
-        // 检查应用设置的profile配置
-        Environment environment = context.getEnvironment();
-        for (String profile: environment.getActiveProfiles()) {
-            System.out.println(profile);
-        }
-        // 检查注入的bean
-        if (context.containsBean("bean-model")) {
-            BeanModel beanModel = (BeanModel) context.getBean("bean-model");
-            beanModel.printBaseModel();
-        }
+        ConfigurableApplicationContext context =
+                new AnnotationConfigApplicationContext(ProfileConfiguration.class);
+
+        // 检测是否注入了指定过的Bean对象
+        System.out.println(context.containsBean("bean-model"));
     }
 }

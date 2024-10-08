@@ -7,8 +7,11 @@ import org.springframework.core.env.Environment;
 public class EnvironmentPropertyDemo {
 
     public static void main(String[] args) {
-        ConfigurableApplicationContext context = new AnnotationConfigApplicationContext(ConfigEnvironment.class);
+        ConfigurableApplicationContext context =
+                new AnnotationConfigApplicationContext(EnvironmentConfiguration.class);
         Environment environment = context.getEnvironment();
+
+        // System.setProperty("name", "test222");
 
         String name = environment.getProperty("name", "default");
         String coder = environment.getProperty("coder", "coder");

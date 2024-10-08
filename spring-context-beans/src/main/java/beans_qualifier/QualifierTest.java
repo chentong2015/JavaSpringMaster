@@ -1,4 +1,4 @@
-package qualifier;
+package beans_qualifier;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;

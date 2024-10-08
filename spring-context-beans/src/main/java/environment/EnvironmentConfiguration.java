@@ -6,8 +6,8 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
 
 @Configuration
-@ComponentScan(basePackages = "properties.environment")
-public class ConfigEnvironment {
+@ComponentScan(basePackages = "environment")
+public class EnvironmentConfiguration {
 
     private Environment environment;
 

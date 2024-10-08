@@ -12,16 +12,17 @@ import java.util.Arrays;
 import java.util.stream.StreamSupport;
 
 @Component
-public class EnvironmentPropertiesLogger {
+public class EnvironmentContextListener {
 
-    // 显示Environment环境中配置的属性，被激活的属性
+    // 监听ContextRefreshedEvent刷新事件，显示Environment环境中配置的属性
     @EventListener
     public void handleContextRefresh(ContextRefreshedEvent event) {
-        final Environment env = event.getApplicationContext().getEnvironment();
+        Environment env = event.getApplicationContext().getEnvironment();
+
         String activeProfiles = Arrays.toString(env.getActiveProfiles());
         System.out.println("Active profiles: " + activeProfiles);
 
-        final MutablePropertySources sources = ((AbstractEnvironment) env).getPropertySources();
+        MutablePropertySources sources = ((AbstractEnvironment) env).getPropertySources();
         StreamSupport.stream(sources.spliterator(), false)
                 .filter(EnumerablePropertySource.class::isInstance)
                 .map(ps -> ((EnumerablePropertySource<?>) ps).getPropertyNames())
