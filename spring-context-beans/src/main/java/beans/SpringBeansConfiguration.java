@@ -23,6 +23,8 @@ public class SpringBeansConfiguration {
         return new MyBean();
     }
 
+    // 创建Bean方法参数会自动从IoC中获取Bean Object
+    // 反之抛出NoSuchBeanDefinitionException异常
     @Bean
     public MyBeanCtor testAutoInjection(MyBean myBean) {
         myBean.print();

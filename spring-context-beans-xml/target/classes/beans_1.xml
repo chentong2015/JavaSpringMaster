@@ -7,7 +7,7 @@
 
     <!-- 通过Spring aop schema来使用Aspect, 配置逻辑和注解一致
     xmlns:aop="http://www.springframework.org/schema/aop"
-    <spring_framework.bean id="aBean" class="spring_framework.spring_ioc.baseMyBeanImpl"/>
+    <spring_framework.beans id="aBean" class="spring_framework.spring_ioc.baseMyBeanImpl"/>
     <aop:main.config>
         <aop:aspect id="myAspect" ref="aBean"></aop:aspect>
         <spring_framework.spring_aop:pointcut id="businessService" expression="execution(* transfer(..))"/>
@@ -15,7 +15,7 @@
 
     <!-- 在声明Bean时，使用<props>配置来注入collections属性集合
         Album = Album{title='Please Please Me', year=1963, songs=[], publisher={}, props={color=Black, type=CD, duration=1 Hour}}
-    <bean id="album" class="org.spring.core.Album">
+    <beans id="album" class="org.spring.core.Album">
         <property name="title" value="Please Please Me" />
         <property name="year" value="1963" />
         <property name="props">
@@ -27,5 +27,5 @@
                 <prop key="duration">1 Hour</prop>
             </props>
         </property>
-    </bean> -->
+    </beans> -->
 </beans>
