@@ -10,9 +10,9 @@
     <version>1.0-SNAPSHOT</version>
 
     <modules>
+        <module>spring-context-bean-xml</module>
         <module>spring-context-beans</module>
-        <module>spring-context-beans-xml</module>
-        <module>spring-core-ioc-master</module>
+        <module>spring-context-ioc-master</module>
         <module>spring-events-driven</module>
         <module>spring-framework-aop</module>
     </modules>

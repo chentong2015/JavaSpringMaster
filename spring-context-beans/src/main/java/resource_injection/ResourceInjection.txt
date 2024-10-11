@@ -1,0 +1,13 @@
+TODO. jakarta.annotation.Resource
+Spring also supports injection by using @Resource on fields or bean property setter methods.
+
+Spring支持使用@Resource注解来注入Bean对象
+1. 可以指定注入Bean Name名称
+2. 默认使用field属性名称和setter方法中属性名称
+
+Spring支持使用@Resource从IoC中获取Bean对象 => 类似于@Autowired
+1. 判断bean name名称匹配
+2. 判断primary type match类型匹配
+能够自动注入IoC中默认注入的Bean对象，例如ApplicationContext, BeanFactory
+
+https://docs.spring.io/spring-framework/reference/core/beans/annotation-config/resource.html
