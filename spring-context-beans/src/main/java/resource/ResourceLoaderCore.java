@@ -1,3 +1,5 @@
+package resource;
+
 import org.springframework.core.io.*;
 import org.springframework.util.ResourceUtils;
 
@@ -6,7 +8,7 @@ import java.nio.charset.Charset;
 import java.util.stream.Collectors;
 
 // TODO. Spring Core提供两种资源加载路径: Filesystem, Classpath
-public class SpringResourceLoader {
+public class ResourceLoaderCore {
 
     public static void main(String[] args) throws IOException {
         // TODO. 直接从Classpath获取Resource资源数据
