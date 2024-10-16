@@ -22,10 +22,11 @@ public class UserService implements BeanNameAware, InitializingBean {
         System.out.println("Call setBeanName");
     }
 
+    // Init Bean: 自定义初始化Bean的相关内容
     @Override
     public void afterPropertiesSet() throws Exception {
-        // 自定义实现的逻辑，可以做数据的验证
-        System.out.println("Initializing bean");
+        System.out.println("Initializing... bean");
+        System.out.println("Initialized Successfully");
     }
 
     public void testBeanPostProcessor() {

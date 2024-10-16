@@ -11,8 +11,6 @@ import com.spring.model.BeanDefinition;
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 // TODO. Bean Factory: 根据bean definition来创建bean的对象
@@ -78,7 +76,7 @@ public class CustomBeanFactory {
             wrappedBean = beanPostProcessor.postProcessBeforeInitialization(wrappedBean, beanName);
         }
 
-        // Init初始化：调用初始化接口的实现
+        // Init初始化: 执行自定义的初始化逻辑，验证bean初始化是否正确
         if (wrappedBean instanceof InitializingBean) {
             ((InitializingBean) wrappedBean).afterPropertiesSet();
         }
