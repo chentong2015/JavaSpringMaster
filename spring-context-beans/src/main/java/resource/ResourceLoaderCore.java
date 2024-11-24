@@ -15,10 +15,10 @@ public class ResourceLoaderCore {
         Resource resource1 = new DefaultResourceLoader().getResource("static/sample.txt");
         Resource resource2 = new ClassPathResource("static/app.json");
         System.out.println(resource2.getContentAsString(Charset.defaultCharset()));
+        System.out.println(resource2.getURL());
 
         // TODO. 直接从Filesystem文件系统路径加载Resource资源
         Resource fileSystemResource = new FileSystemResource("root/full/path/text.xml");
-
 
         // 从classpath(/resources)目录加载FileInputStream
         File file = ResourceUtils.getFile("classpath:static/sample.txt");

@@ -16,7 +16,7 @@ public class ResourceLocationDemo {
     @Value("file.csv")
     private Resource resource1;
 
-    // File项目路径下的资源
+    // Resource资源来自于File项目路径下
     @Value("file:spring-context-beans/src/main/resources/output.xml")
     private Resource resource2;
 
