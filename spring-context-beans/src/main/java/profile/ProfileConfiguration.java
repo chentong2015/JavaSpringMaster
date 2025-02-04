@@ -2,24 +2,26 @@ package profile;
 
 import org.springframework.context.annotation.*;
 
-// TODO. 运行时指定使用的profile配置 -Dspring.profiles.active=dev
+// TODO. -Dspring.profiles.active=dev 运行时profile配置
 // application-{profile}.properties
 // application-dev.properties
 // application-prod.properties
+
 @Profile("dev")
 @Configuration
 @ComponentScan(basePackages = "properties.profile")
 public class ProfileConfiguration {
 
-    // 只有当profile设置成dev时才会注入指定的bean
+    // 当profile设置成dev时才会注入bean
     @Bean(name = "bean-model")
     public BeanModel beanModel() {
         return new BeanModel();
     }
 
-    class BeanModel {
-        public void printBaseModel() {
-            System.out.println("Print bean model");
-        }
+    // 缩小profile的设置范围
+    @Bean
+    @Profile("test")
+    public BeanModel2 beanModel2() {
+        return new BeanModel2();
     }
 }
