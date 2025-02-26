@@ -50,6 +50,7 @@
       <module name="spring-boot3-batch" target="17" />
       <module name="spring-common-api" target="17" />
       <module name="spring-context-beans-annotation" target="17" />
+      <module name="spring-core-ioc" target="11" />
       <module name="spring-data" target="11" />
       <module name="spring-data-access-layer" target="15" />
       <module name="spring-data-access-legacy" target="15" />
@@ -60,6 +61,7 @@
       <module name="spring-data-jpa-hibernate-test" target="15" />
       <module name="spring-data-jpa-master" target="11" />
       <module name="Spring-data-layer" target="15" />
+      <module name="spring-framework-master" target="17" />
       <module name="spring-hibernate-test" target="15" />
       <module name="spring-ioc-test" target="11" />
       <module name="spring-jdbc-template" target="11" />
