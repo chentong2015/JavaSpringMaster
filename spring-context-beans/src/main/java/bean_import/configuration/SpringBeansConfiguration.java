@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 // TODO. Configuration配置器
 // 1. 使用@Import来导入配置类@Configuration (包含bean的声明)
 // 2. 使用@Import来引入Register.class和Selector.class (自定义Bean的选择和注册)
-
+//
 // @Import(value = {AnotherImportConfiguration.class})
 // @Import(value = {CustomBeanDefinitionRegister.class, CustomImportSelector.class})
 @Configuration
