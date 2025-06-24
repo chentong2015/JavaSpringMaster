@@ -1,4 +1,4 @@
-package bean_import.bean_conflict.qualifier;
+package bean_import.qualifier;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

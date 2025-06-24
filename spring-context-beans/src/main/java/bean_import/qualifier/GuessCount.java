@@ -1,4 +1,4 @@
-package bean_import.bean_conflict.qualifier;
+package bean_import.qualifier;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 
@@ -10,5 +10,6 @@ import java.lang.annotation.Target;
 @Qualifier
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.FIELD, ElementType.PARAMETER, ElementType.METHOD})
-public @interface MaxNumber {
+public @interface GuessCount {
+
 }

@@ -1,4 +1,4 @@
-package bean_import.bean_conflict.qualifier;
+package bean_import.qualifier;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
