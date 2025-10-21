@@ -11,9 +11,9 @@
         <module name="spring-events-driven" />
         <module name="spring-jpa-hibernate-test" />
         <module name="spring-context-bean-xml" />
-        <module name="spring-context-ioc-master" />
         <module name="spring-context-beans" />
         <module name="spring-boot-event-tasks" />
+        <module name="spring-context-ioc-custom" />
         <module name="spring-aop-core" />
       </profile>
     </annotationProcessing>
