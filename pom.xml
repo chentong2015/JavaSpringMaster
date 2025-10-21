@@ -12,7 +12,7 @@
     <modules>
         <module>spring-context-bean-xml</module>
         <module>spring-context-beans</module>
-        <module>spring-context-ioc-master</module>
+        <module>spring-context-ioc-custom</module>
         <module>spring-events-driven</module>
         <module>spring-framework-aop</module>
     </modules>
