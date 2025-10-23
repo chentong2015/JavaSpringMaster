@@ -1,3 +1,0 @@
-Spring Event 事件相应系统
-https://spring.io/event-driven
-https://reflectoring.io/spring-boot-application-events-explained/
