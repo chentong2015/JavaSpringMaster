@@ -8,7 +8,6 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="org-aspectj-basic" />
-        <module name="spring-events-driven" />
         <module name="spring-jpa-hibernate-test" />
         <module name="spring-context-bean-xml" />
         <module name="spring-context-beans" />
@@ -61,6 +60,7 @@
       <module name="spring-data-jpa-hibernate-test" target="15" />
       <module name="spring-data-jpa-master" target="11" />
       <module name="Spring-data-layer" target="15" />
+      <module name="spring-events-driven" target="17" />
       <module name="spring-framework-master" target="17" />
       <module name="spring-hibernate-test" target="15" />
       <module name="spring-ioc-test" target="11" />
