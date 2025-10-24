@@ -1,11 +1,11 @@
 AspectJ provides an implementation of AOP and has three core concepts:
-- Join Point ÇĞÈëµã£¬±»À¹½ØµÄ·½·¨
-- Pointcut ¶ÔÁ¬½ÓÇĞÈëµã½øĞĞÀ¹½Ø¶¨Òå
-- Advice Í¨Öª£¬À¹½ØºóÖ´ĞĞµÄ´úÂë
+- Join Point åˆ‡å…¥ç‚¹ï¼Œè¢«æ‹¦æˆªçš„æ–¹æ³•
+- Pointcut å¯¹è¿æ¥åˆ‡å…¥ç‚¹è¿›è¡Œæ‹¦æˆªå®šä¹‰
+- Advice é€šçŸ¥ï¼Œæ‹¦æˆªåæ‰§è¡Œçš„ä»£ç 
 
-TODO. ´úÀí¶ÔÏóÈçºÎµ÷ÓÃµ½Ä¿±ê·½·¨ ?
-Í¨¹ı"ÔğÈÎÁ´+µİ¹é"µÄ·½Ê½Çı¶¯Ö´ĞĞ£¬0Çı¶¯1£¬1Çı¶¯2£¬£¬£¬
-½«Á´½ÓÆ÷ÖĞµÄadvisor(@Before, @After..)È¡³öÀ´£¬×ª³ÉÀ¹½ØÆ÷µÄÁ´Ìõ£¬±£´æµÄË³Ğò¾ÍÊ±Ö´ĞĞµÄË³Ğò
+TODO. ä»£ç†å¯¹è±¡å¦‚ä½•è°ƒç”¨åˆ°ç›®æ ‡æ–¹æ³• ?
+é€šè¿‡"è´£ä»»é“¾+é€’å½’"çš„æ–¹å¼é©±åŠ¨æ‰§è¡Œï¼Œ0é©±åŠ¨1ï¼Œ1é©±åŠ¨2ï¼Œï¼Œï¼Œ
+å°†é“¾æ¥å™¨ä¸­çš„advisor(@Before, @After..)å–å‡ºæ¥ï¼Œè½¬æˆæ‹¦æˆªå™¨çš„é“¾æ¡ï¼Œä¿å­˜çš„é¡ºåºå°±æ—¶æ‰§è¡Œçš„é¡ºåº
 JdkDynamicAopProxy.invoke()
 0. ExposeInvocationInterceptor
 1. AspectAfterThrowingAdvice
@@ -14,8 +14,8 @@ JdkDynamicAopProxy.invoke()
 4. MethodBeforeAdviceInterceptor
 List<Object> chain = this.advised.getInterceptorsAndDynamicInterceptionAdvice(method, targetClass);
 
-TODO: Í¨¹ıSwitch Case½«ÇĞÃæµÄÍ¨Öª½âÎö³É¶ÔÓ¦µÄÀàĞÍ
-×îÖÕ½âÎöĞ§¹û ReflectiveAspectJAdvisorFactory.getAdvice();
+TODO: é€šè¿‡Switch Caseå°†åˆ‡é¢çš„é€šçŸ¥è§£ææˆå¯¹åº”çš„ç±»å‹
+æœ€ç»ˆè§£ææ•ˆæœ ReflectiveAspectJAdvisorFactory.getAdvice();
  switch (aspectJAnnotation.getAnnotationType()) {
 	case AtAround:
 		springAdvice = new AspectJAroundAdvice(candidateAdviceMethod, expressionPointcut, aspectInstanceFactory);

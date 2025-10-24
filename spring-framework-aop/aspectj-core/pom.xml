@@ -9,7 +9,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>org-aspectj-basic</artifactId>
+    <artifactId>aspectj-core</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

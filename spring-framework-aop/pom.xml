@@ -12,7 +12,7 @@
     <artifactId>spring-framework-aop</artifactId>
     <packaging>pom</packaging>
     <modules>
-        <module>org-aspectj-basic</module>
+        <module>aspectj-core</module>
         <module>spring-aop-core</module>
     </modules>
 
