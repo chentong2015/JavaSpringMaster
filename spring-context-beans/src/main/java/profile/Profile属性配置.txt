@@ -1,0 +1,6 @@
+spring.profiles.active=dev 属性配置文件中设置
+
+-Dspring.profiles.active=dev 运行时profile配置
+application-{profile}.properties
+application-dev.properties
+application-prod.properties

@@ -1,3 +1,0 @@
-TODO. 如何从Spring IoC容器中获取注入的bean
-1. @Autowired (Constructor, Method方法参数)
-2. 从ApplicationContext中获取指定的bean(getBean(), getBeanByClass())

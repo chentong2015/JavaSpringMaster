@@ -1,6 +1,0 @@
-aspect\SecuredMethodAspect.class
-MainAspect.class
-model\SecuredClass.class
-model\Secured.class
-aspect\AspectEventInterceptor.class
-aspect\AspectAroundDemo.class

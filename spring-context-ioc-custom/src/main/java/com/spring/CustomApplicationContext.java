@@ -2,10 +2,12 @@ package com.spring;
 
 import com.spring.annotation.*;
 import com.spring.interfacz.BeanPostProcessor;
-import com.spring.lifecycle.CustomBeanFactory;
+import com.spring.factory.CustomBeanFactory;
 import com.spring.model.BeanDefinition;
+import com.spring.processor.BeanFactoryPostProcessor;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
@@ -19,13 +21,23 @@ public class CustomApplicationContext {
     private ConcurrentHashMap<String, Object> singletonObjects;  // bean单例池存储所有单例对象
     private ConcurrentHashMap<String, BeanDefinition> beanDefinitionMap; // 存储bean定义的map
 
+    // BeanFactoryPostProcessors to apply on refresh.
+    private final List<BeanFactoryPostProcessor> beanFactoryPostProcessors = new ArrayList<>();
+
     // 解析Config类型上有那些Spring提供的注解, 扫描所有的Components
     public CustomApplicationContext(Class configClass) {
         this.configClass = configClass;
         this.beanFactory = new CustomBeanFactory(this);
         this.singletonObjects = new ConcurrentHashMap<>();
         this.beanDefinitionMap = new ConcurrentHashMap<>();
+    }
+
+    public void refresh() {
         scanComponents();
+
+        // Bean工厂后置处理器, 在创建Bean对象前修改Bean定义
+        invokeBeanFactoryPostProcessors();
+
         initSingletonBean();
     }
 
@@ -76,7 +88,17 @@ public class CustomApplicationContext {
         }
     }
 
-    // TODO. 初始化bean时会根据bean definition中的Scope来确定初始化的时机
+    public void addBeanFactoryPostProcessor(BeanFactoryPostProcessor postProcessor) {
+        this.beanFactoryPostProcessors.add(postProcessor);
+    }
+
+    private void invokeBeanFactoryPostProcessors() {
+        for (BeanFactoryPostProcessor beanFactoryPostProcessor : beanFactoryPostProcessors) {
+            beanFactoryPostProcessor.postProcessBeanFactory(this.beanFactory);
+        }
+    }
+
+    // TODO. 根据bean definition中的Scope来确定bean初始化时机
     private void initSingletonBean() {
         for (Map.Entry<String, BeanDefinition> entry : beanDefinitionMap.entrySet() ) {
             String beanName = entry.getKey();
@@ -86,6 +108,10 @@ public class CustomApplicationContext {
                singletonObjects.put(beanName, bean);
             }
         }
+    }
+
+    public BeanDefinition getBeanDefinition(String beanName) {
+        return beanDefinitionMap.get(beanName);
     }
 
     public Object getBean(String beanName) {

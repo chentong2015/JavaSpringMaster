@@ -1,0 +1,15 @@
+TODO. 如何在IOC中注入bean ?
+1. 使用Bean注解(@Component, @Service)，通过@ComponentScan来扫描注入
+2. 定义@Configuration类中@Bean方法，通过返回Bean Object来注入
+3. 实现ImportSelector进行批量注入
+4. 实现ImportBeanDefinitionRegistrar 注册器来匹配注入bean定义
+
+TODO. Bean名称遵循以下规则
+默认以类型名称为基准命名: MyBean -> myBean, MYBean -> MYBean
+提供自定义设置名称: @Component("myBeanImpl"), @Bean("beanName")
+
+TODO. 如何注入多个同类型的bean对象 ?
+- @Primary 设置Bean的优先级
+- @Qualifier 使用限定符注解来区分
+- @Bean("customBeanName") 设置不同bean名称
+- spring.main.allow-bean-definition-overriding=true 允许重写前面加载的Bean定义

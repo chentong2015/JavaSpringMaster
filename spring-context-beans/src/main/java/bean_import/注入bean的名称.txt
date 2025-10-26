@@ -1,3 +1,0 @@
-IOC中注入的Bean名称遵循以下规则
-1. 在注入自定义设置名称: @Component("myBeanImpl"), @Bean("beanName")
-2. 默认以类型名称为基准命名: MyBean -> myBean, MYBean -> MYBean

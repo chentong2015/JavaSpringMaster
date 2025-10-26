@@ -20,4 +20,13 @@ public class BeanDefinition {
     public void setScope(String scope) {
         this.scope = scope;
     }
+
+    public boolean isSingleton() {
+        return scope.equals("singleton");
+    }
+
+    public boolean isPrototype() {
+        return scope.equals("prototype");
+    }
+
 }

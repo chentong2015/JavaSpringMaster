@@ -10,7 +10,7 @@
     <!-- 添加component scan扫描指定的package中的添加了@Component注解的类型来作为bean
          该功能同时默认具有<context:annotation-JndiDataSource/>的功能，能够监测到特定的annotation标记
          使用scan方式获取component，则不需要再标明<beans>的配置 -->
-    <context:component-scan base-package="annotation"/>
+    <context:component-scan base-package="xml"/>
 
     <bean id="dataSource" class="xml.bean.MyDateSource">
         <!-- 通过setter方法注入 -->
