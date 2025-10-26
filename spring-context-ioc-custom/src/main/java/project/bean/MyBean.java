@@ -1,4 +1,4 @@
-package main.bean;
+package project.bean;
 
 import com.spring.annotation.Component;
 

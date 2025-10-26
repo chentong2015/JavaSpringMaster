@@ -1,4 +1,4 @@
-package main.proxy;
+package project.proxy;
 
 public interface ProxyComponent {
 

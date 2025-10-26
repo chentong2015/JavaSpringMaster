@@ -8,8 +8,8 @@ ConfigurableApplicationContext contextFileSystem = new FileSystemXmlApplicationC
 // FileSystemResources 从项目root路径下面找相对路径
 // 添加file:前缀将改成通过filesystem来查找
 // 1. file:beans.xml 放置在项目root目录
-// 2. file:src/main/resources/beans.xml 放置在resources资源目录中
-ConfigurableApplicationContext contextFileSystemResources = new ClassPathXmlApplicationContext("file:src/main/resources/beans.xml");
+// 2. file:src/project/resources/beans.xml 放置在resources资源目录中
+ConfigurableApplicationContext contextFileSystemResources = new ClassPathXmlApplicationContext("file:src/project/resources/beans.xml");
 
 TODO: resources目录是默认的classpath
 // ClassPath：从classpath加载配置文件

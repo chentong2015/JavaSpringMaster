@@ -1,4 +1,4 @@
-package main.service;
+package project.service;
 
 import com.spring.annotation.Autowired;
 import com.spring.interfacz.BeanNameAware;

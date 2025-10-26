@@ -34,8 +34,10 @@ public class FileResourceLoader {
         for (File file: fileList) {
             String filepath = file.getAbsolutePath();
             if (filepath.endsWith(".class")) {
-                String className = filepath.substring(filepath.indexOf("main"), filepath.indexOf(".class"));
-                classNameList.add(className.replace("/", "."));
+                String className = filepath.substring(filepath.indexOf("project"), filepath.indexOf(".class"));
+                String classNameFormatted = className.replace("/", ".")
+                        .replace("\\", ".");
+                classNameList.add(classNameFormatted);
             }
         }
         return classNameList;

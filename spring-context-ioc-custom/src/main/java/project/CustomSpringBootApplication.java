@@ -1,11 +1,11 @@
-package main;
+package project;
 
 import com.spring.CustomApplicationContext;
 import com.spring.model.BeanDefinition;
-import main.bean.BeanPostConstruct;
-import main.processor.MyBeanFactoryPostProcessor;
-import main.proxy.ProxyComponent;
-import main.service.UserService;
+import project.bean.BeanPostConstruct;
+import project.processor.MyBeanFactoryPostProcessor;
+import project.proxy.ProxyComponent;
+import project.service.UserService;
 
 public class CustomSpringBootApplication {
 
@@ -27,7 +27,7 @@ public class CustomSpringBootApplication {
         System.out.println(beanWithPostConstruct);
 
         // 检测bean定义是否被BeanFactoryPostProcessor后置处理器修改
-        BeanDefinition beanDefinition = context.getBeanDefinition("myBean");
+        BeanDefinition beanDefinition = context.getBeanDefinition("MyBean");
         System.out.println(beanDefinition.isSingleton());
         System.out.println(beanDefinition.isPrototype());
     }

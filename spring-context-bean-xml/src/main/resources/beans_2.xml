@@ -33,7 +33,7 @@
     <!-- <beans class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/> -->
 
     <!-- 通过声明的bean id从container中获取注入的类型(提供全路径) -->
-    <!-- <beans id="numberGenerator" class="main.lifecycle.NumberGeneratorImpl">
+    <!-- <beans id="numberGenerator" class="project.lifecycle.NumberGeneratorImpl">
              里面可设置类型的属性和方法的使用
              For each beans, its dependencies are expressed in the form of properties or constructor arguments
              Each property or constructor argument is the value to set, or a reference to another beans

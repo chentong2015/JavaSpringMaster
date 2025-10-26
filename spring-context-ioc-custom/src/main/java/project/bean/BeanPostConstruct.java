@@ -1,4 +1,4 @@
-package main.bean;
+package project.bean;
 
 import com.spring.annotation.Component;
 import com.spring.annotation.PostConstruct;
@@ -21,11 +21,6 @@ public class BeanPostConstruct {
     public BeanPostConstruct(BeanDemo beanDemo) {
         this.beanDemo = beanDemo;
         System.out.println("Construct 1");
-    }
-
-    public BeanPostConstruct(BeanDemo beanDemo1,  BeanDemo beanDemo2) {
-        this.beanDemo = beanDemo1;
-        System.out.println("Construct 2");
     }
 
     // 该标记的方法会在bean被实例化之后调用

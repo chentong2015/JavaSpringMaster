@@ -12,4 +12,4 @@ TODO. 如何注入多个同类型的bean对象 ?
 - @Primary 设置Bean的优先级
 - @Qualifier 使用限定符注解来区分
 - @Bean("customBeanName") 设置不同bean名称
-- spring.main.allow-bean-definition-overriding=true 允许重写前面加载的Bean定义
+- spring.project.allow-bean-definition-overriding=true 允许重写前面加载的Bean定义

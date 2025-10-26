@@ -1,8 +1,8 @@
-package main.processor;
+package project.processor;
 
 import com.spring.annotation.Component;
 import com.spring.interfacz.BeanPostProcessor;
-import main.service.UserService;
+import project.service.UserService;
 
 import java.lang.reflect.Proxy;
 
