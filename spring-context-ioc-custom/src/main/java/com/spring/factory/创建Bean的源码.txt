@@ -34,7 +34,7 @@ AbstractAutowireCapableBeanFactory.java
 			}
 		}
 
-		// Eagerly cache singletons to be able to resolve circular references
+		// Eagerly cache singletons to be able to resolve circular_dependency references
 		// even when triggered by lifecycle interfaces like BeanFactoryAware.
 
 		// TODO: 如果当前创建的是单例bean，并且允许循环依赖，并且还在创建过程中
@@ -43,7 +43,7 @@ AbstractAutowireCapableBeanFactory.java
 		if (earlySingletonExposure) {
 			if (logger.isTraceEnabled()) {
 				logger.trace("Eagerly caching spring_framework.beans '" + beanName
-				+ "' to allow for resolving potential circular references");
+				+ "' to allow for resolving potential circular_dependency references");
 			}
 			// 使用lambda表达式来传递多个信息: beanName, spring_framework.beans definition, bean原始对象
 			// TODO: 添加到三级缓存中 singletonFactories

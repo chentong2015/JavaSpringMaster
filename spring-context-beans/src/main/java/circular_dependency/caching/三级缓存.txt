@@ -1,0 +1,19 @@
+TODO: Spring使用"三级缓存"来解决"循环依赖"的死锁问题
+ 二三级缓存目的是为了解决循环依赖，如果没有出现，则两个缓存没有实质性作用
+ 当通过构造注入时产生循环依赖，导致无法实例化报错，此时二三级缓存无效
+
+1. 单例池  singletonObjects: ConcurrentHashMap(256)
+2. 二级缓存 earlySingletonObjects: ConcurrentHashMap(16)
+3. 三级缓存 singletonFactories: HashMap(16)
+
+TODO. 二级缓存的基础逻辑
+A a = new A();
+B b = new B();
+b.a = a;   这里a对象不"完整", 经过下一步属性赋值后a对象完整
+a.b = b;   最终创建对象的属性都是有值
+
+TODO. 如何判断AService出现了循环依赖?
+creatingSet<'aService'> 表示正在创建的bean
+earlyProxyReference Map 判断是否提前进行AOP，执行过lambda表达式
+如果在其他bean创建过程中使用到这个正在创建的bean(在set中)，则是一种循环依赖，需要提前AOP
+creatingSet.remove('aService')
