@@ -1,4 +1,4 @@
-package bean_scope;
+package bean_import.scope;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

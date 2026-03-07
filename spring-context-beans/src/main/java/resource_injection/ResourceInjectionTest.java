@@ -1,8 +1,8 @@
 package resource_injection;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import resource_injection.res.InjectionResourceFields;
-import resource_injection.res.InjectionResourceSetter;
+import resource_injection.bean.InjectionResourceFields;
+import resource_injection.bean.InjectionResourceSetter;
 
 import java.util.List;
 
@@ -10,7 +10,7 @@ public class ResourceInjectionTest {
 
     public static void main(String[] args) {
         AnnotationConfigApplicationContext appContext = new AnnotationConfigApplicationContext();
-        appContext.register(ResourceInjectionConfig.class);
+        appContext.register(ResourceBeanInjectionConfig.class);
         appContext.refresh();
 
         InjectionResourceSetter resSetter = (InjectionResourceSetter) appContext.getBean("myResourceSetter");

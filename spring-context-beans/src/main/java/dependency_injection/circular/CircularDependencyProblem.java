@@ -1,4 +1,4 @@
-package dependency_injection_circular;
+package dependency_injection.circular;
 
 // Spring并没有解决所有的循环依赖问题
 // 当通过构造注入时产生的相互依赖，由于没有办法实例化，没有办法生成原始对象，二三级缓存无效

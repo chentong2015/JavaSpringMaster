@@ -1,4 +1,4 @@
-package resource_injection.res;
+package resource_injection.bean;
 
 import javax.annotation.Resource;
 import java.util.List;

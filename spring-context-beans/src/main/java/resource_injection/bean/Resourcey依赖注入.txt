@@ -1,0 +1,6 @@
+TODO. javax.annotation.Resource -> jakarta.annotation.Resource
+Spring also supports injection by using @Resource on fields or bean property setter methods.
+
+JSR-250(jakarta.annotation) 属于JavaEE和Jakarta EE遗产, 不推荐使用
+
+https://docs.spring.io/spring-framework/reference/core/beans/annotation-config/resource.html

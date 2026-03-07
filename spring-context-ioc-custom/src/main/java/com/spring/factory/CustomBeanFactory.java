@@ -27,22 +27,22 @@ public class CustomBeanFactory {
         beanPostProcessorList = new CopyOnWriteArrayList<>();
     }
 
+    // 实例化: 通过Class反射(调用无餐构造器)得到一个bean的新对象
     public Object doCreateBean(String beanName, BeanDefinition beanDefinition) {
         try {
-            // 实例化: 通过Class反射(调用无餐构造器)得到一个bean的新对象
             // TODO. 默认调用的是无参构造器，Spring会推断使用那个构造方法
             Class clazz = beanDefinition.getClazz();
             Object instance = clazz.getDeclaredConstructor().newInstance();
 
-            this.populateBean(clazz, instance);
+            this.injectBean(clazz, instance);
             return this.initializeBean(beanName, instance);
         } catch (Exception exception) {
             throw new RuntimeException("Failed to create bean object", exception);
         }
     }
 
-    public void populateBean(Class clazz, Object instance) throws IllegalAccessException, InvocationTargetException {
-        // 依赖注入: 给指定对象的指定属性赋值, 根据属性的名称来查找/创建
+    // 依赖注入: 给指定对象的指定属性赋值, 根据属性的名称来查找/创建
+    public void injectBean(Class clazz, Object instance) throws IllegalAccessException, InvocationTargetException {
         for (Field declaredField: clazz.getDeclaredFields()) {
             if (declaredField.isAnnotationPresent(Autowired.class)) {
                 Object filedInstance = this.applicationContext.getBean(declaredField.getName());
