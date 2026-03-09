@@ -27,7 +27,7 @@ public class CustomBeanFactory {
         beanPostProcessorList = new CopyOnWriteArrayList<>();
     }
 
-    // 实例化: 通过Class反射(调用无餐构造器)得到一个bean的新对象
+    // TODO. 实例化: 通过Class反射(调用无餐构造器)得到一个bean的新对象
     public Object doCreateBean(String beanName, BeanDefinition beanDefinition) {
         try {
             // TODO. 默认调用的是无参构造器，Spring会推断使用那个构造方法
@@ -41,7 +41,7 @@ public class CustomBeanFactory {
         }
     }
 
-    // 依赖注入: 给指定对象的指定属性赋值, 根据属性的名称来查找/创建
+    // TODO. 依赖注入: 给指定对象的指定属性赋值, 根据属性的名称来查找/创建
     public void injectBean(Class clazz, Object instance) throws IllegalAccessException, InvocationTargetException {
         for (Field declaredField: clazz.getDeclaredFields()) {
             if (declaredField.isAnnotationPresent(Autowired.class)) {
@@ -63,12 +63,12 @@ public class CustomBeanFactory {
         }
     }
 
+    // TODO. 初始化后返回的对象才是Spring容器总真正的对象(或代理对象)
     public Object initializeBean(String beanName, Object bean) throws Exception {
         // Aware回调: 回调特殊方法的实现(继承自特殊接口)
         if (bean instanceof BeanNameAware) {
             ((BeanNameAware) bean).setBeanName(beanName);
         }
-
         Object wrappedBean = bean;
 
         // postProcessBeforeInitialization 后置处理器, 初始化前
@@ -76,12 +76,12 @@ public class CustomBeanFactory {
             wrappedBean = beanPostProcessor.postProcessBeforeInitialization(wrappedBean, beanName);
         }
 
-        // Init初始化: 执行自定义的初始化逻辑，验证bean初始化是否正确
+        // TODO. Init初始化: 执行自定义的初始化逻辑，验证bean初始化是否正确
         if (wrappedBean instanceof InitializingBean) {
             ((InitializingBean) wrappedBean).afterPropertiesSet();
         }
 
-        // TODO. 初始化后返回的对象才是Spring容器总真正的对象(或代理对象)
+        // postProcessAfterInitialization 后置处理器, 初始化后
         for (BeanPostProcessor beanPostProcessor: beanPostProcessorList) {
             wrappedBean = beanPostProcessor.postProcessAfterInitialization(wrappedBean, beanName);
         }

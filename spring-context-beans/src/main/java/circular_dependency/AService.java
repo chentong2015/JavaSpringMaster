@@ -5,9 +5,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class AService {
 
-    private final LazyBService bService;
+    private final LazyInjection bService;
 
-    public AService(LazyBService bService) {
+    public AService(LazyInjection bService) {
         this.bService = bService;
     }
 
