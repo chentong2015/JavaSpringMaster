@@ -7,3 +7,9 @@ TODO. 如何在IOC中注入bean ?
 TODO. Bean名称遵循以下规则
 默认以类型名称为基准命名: MyBean -> myBean, MYBean -> MYBean
 提供自定义设置名称: @Component("myBeanImpl"), @Bean("beanName")
+
+TODO. 多个bean定义冲突的解决办法 ?
+1. @Primary               设置优先级
+2. @Qualifier("beanName") 使用限定符来区分
+3. @Bean("customBeanName") 设置不同名称
+4. spring.project.allow-bean-definition-overriding=true 运行bean定义重写
