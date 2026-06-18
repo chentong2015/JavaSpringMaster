@@ -8,9 +8,8 @@ public class SpringAopProjectApp {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(SpringAopConfig.class);
         AroundBean aroundBean = context.getBean(AroundBean.class);
-        aroundBean.hello(); // AOP Proxy 代理对象在调用方法
-
-        // ServiceClass serviceClass = context.getBean(ServiceClass.class);
-        // serviceClass.printSomething();
+        aroundBean.hello(); // AOP代理对象在调用方法
+        System.out.println("------------------------------");
+        aroundBean.helloByProxy(); // 主动获取AOP代理对象来调用
     }
 }
