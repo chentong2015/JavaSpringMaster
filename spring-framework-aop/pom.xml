@@ -10,11 +10,6 @@
     </parent>
 
     <artifactId>spring-framework-aop</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>aspectj-core</module>
-        <module>spring-aop-core</module>
-    </modules>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

@@ -1,9 +1,0 @@
-
-x
-java:S1450"]Remove the "currentContext" field and declare it as a local variable in the relevant methods.(²ψ‚ÿÿÿÿÿ
-M	java:S106"9Replace this use of System.out or System.err by a logger.(ΖαΙ'
-N	java:S106"9Replace this use of System.out or System.err by a logger.(φτι
-M
-java:S1068"2Remove this unused "currentContext" private field.(²ψ‚ÿÿÿÿÿ
-L
-java:S1144""1Remove this unused private "resetContext" method.(±Φ£™ώÿÿÿÿ

@@ -1,0 +1,15 @@
+Spring AOP编程
+1. @EnableAspectJAutoProxy 激活AspectJ方面编程
+2. @Aspect @Component      注入Aspect Bean
+3. @Pointcut               定义切入点以及执行的逻辑
+
+TODO. @EnableAspectJAutoProxy(proxyTargetClass = false, exposeProxy = false)
+本质上是往Spring IoC中注入了一个后置处理器, 生成代理对象并添加对应的Aspect切面
+AnnotationAwareAspectJAutoProxyCreator.class extends BeanPostProcessor
+
+- proxyTargetClass = false
+  默认使用Jdk动态代理(实现接口)，而非Cglib代理(继承子类)
+- exposeProxy = false
+  默认不将Proxy暴露给ThreadLocal，无法通过AopContext.currentProxy()获取
+  Proxy should be exposed by the AOP framework as ThreadLocal for retrieval via the AopContext
+- exposeProxy=true;  从线程变量中取出代理对象，然后调用方法，同样会被切入(被增强)
