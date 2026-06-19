@@ -30,15 +30,12 @@
             <version>5.3.29</version>
         </dependency>
 
-        <!-- Spring Aop注解 -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-aop</artifactId>
             <version>5.3.29</version>
         </dependency>
-
-        <!-- Spring Aspects 面向切面编程，底层引入org.aspectj依赖
-             或者需要自定义添加org.aspectj:org.aspectjweaver -->
+        <!-- 底层引入org.aspectj依赖或需自定义添加org.aspectj:org.aspectjweaver -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-aspects</artifactId>
@@ -48,14 +45,20 @@
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.13.1</version>
+            <version>2.13.4.2</version>
             <scope>compile</scope>
         </dependency>
 
         <dependency>
             <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
-            <version>RELEASE</version>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>6.0.3</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>6.0.3</version>
             <scope>test</scope>
         </dependency>
     </dependencies>

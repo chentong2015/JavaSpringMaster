@@ -1,4 +1,4 @@
-package aop.template;
+package template;
 
 import template.aspect.TracingAspect;
 import template.model.Command;
@@ -11,11 +11,10 @@ class TracingAspectTest {
     private TracedClass tracedClass; // 被代理类(被拦截的类型)
     private TracedClass tracedClassProxy; // Proxy代理类(实际调用的Proxy Method)
 
+    // 静态测试, 自定义构建Proxy Class, 测试代理方法的执行
     @BeforeEach
     void setup() {
         tracedClass = new TracedClass();
-
-        // 静态测试, 自定义构建Proxy Class, 测试代理方法的执行
         AspectJProxyFactory aspectJProxyFactory = new AspectJProxyFactory(tracedClass);
         aspectJProxyFactory.addAspect(TracingAspect.class);
         tracedClassProxy = aspectJProxyFactory.getProxy();

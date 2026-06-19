@@ -7,6 +7,11 @@ import org.springframework.stereotype.Component;
 @Component
 public class HelloComponent {
 
+    // 沒有被切面拦截的方法
+    public void base() {
+        System.out.println("Base no proxy");
+    }
+
     // TODO. 被AOP代理对象调用, 实现Aspect切面效果
     public void hello() {
         System.out.println("in hello");

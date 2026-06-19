@@ -3,8 +3,15 @@ AspectJ provides an implementation of AOP and has three core concepts:
 - JoinPoint 被拦截的方法
 - Advice 拦截后执行的代码
 
+TODO. AspectJ 纯项目
+需要在编译阶段对Aspect类进行编织, 否则切面不会生效
+- aspectjrt, aspectjweaver
+- aop.xml
+- aspectj-maven-plugin
+- aspectj.post-compile-weaving
+
 TODO. 代理对象如何调用到目标方法 ?
-通过"责任链+递归"方式驱动执行，将链接器中advisor(@Before, @After..)取出来，转成拦截器的链条顺序执行
+通过"责任链+递归"方式驱动执行，将链接器中advisor(@Before, @After..)取出来转成拦截器链条执行
 JdkDynamicAopProxy.invoke()
 0. ExposeInvocationInterceptor
 1. AspectAfterThrowingAdvice

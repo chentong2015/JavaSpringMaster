@@ -1,4 +1,4 @@
-package template.config;
+package template;
 
 import template.aspect.TracingAspect;
 import org.springframework.context.annotation.Bean;

@@ -1,4 +1,4 @@
-package aop.template;
+package template;
 
 import template.aspect.Traced;
 import template.aspect.TracedProperty;
@@ -14,7 +14,7 @@ public class TracedClass {
         System.out.println("call traced method");
     }
 
-    // @Traced(operation = "staticOperationName")
+    @Traced(operation = "staticOperationName")
     public int tracedMethodWithReturnValue(@TracedProperty String input1, String input2) {
         return 5431;
     }
