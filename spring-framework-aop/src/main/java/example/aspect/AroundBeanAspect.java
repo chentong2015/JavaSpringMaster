@@ -8,12 +8,6 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.springframework.stereotype.Component;
 
-// @Around定义被拦截的方法所执行的前后文
-// in around before execution(void org.example.aop.bean.AroundBean.hello())
-//   before execution(void org.example.aop.bean.AroundBean.hello())
-//     in hello
-//   after execution(void org.example.aop.bean.AroundBean.hello())
-// in around after execution(void org.example.aop.bean.AroundBean.hello())
 @Aspect
 @Component
 public class AroundBeanAspect {
@@ -23,6 +17,7 @@ public class AroundBeanAspect {
         System.out.println("before " + joinPoint);
     }
 
+    // @Around 定义被拦截的方法所执行的前后文
     // execution() 定义被拦截的方法的原型
     @Around("execution(void example.bean.AroundBean.hello())")
     public void aroundHello(ProceedingJoinPoint joinPoint) throws Throwable {

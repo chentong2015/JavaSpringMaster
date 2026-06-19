@@ -6,7 +6,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class SpringAopProjectApp {
 
     public static void main(String[] args) {
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(SpringAopConfig.class);
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(SpringAopEnableConfig.class);
         AroundBean aroundBean = context.getBean(AroundBean.class);
         aroundBean.hello(); // AOP代理对象在调用方法
         System.out.println("------------------------------");

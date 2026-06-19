@@ -10,6 +10,7 @@ import example.bean.Secured;
 @Aspect
 public class SecuredClassAspect {
 
+    // 拦截特殊自定义注解方法的调用
     @Before("@annotation(secured)")
     public void before(JoinPoint jp, Secured secured) {
         System.out.println("Before：" + jp.getSignature());
