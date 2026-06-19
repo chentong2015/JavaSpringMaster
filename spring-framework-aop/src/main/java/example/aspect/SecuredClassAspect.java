@@ -5,7 +5,7 @@ import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
-import example.bean.Secured;
+import example.model.Secured;
 
 @Aspect
 public class SecuredClassAspect {

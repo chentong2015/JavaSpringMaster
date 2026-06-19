@@ -1,4 +1,4 @@
-package example.bean;
+package example.model;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

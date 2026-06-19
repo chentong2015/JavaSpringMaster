@@ -1,5 +1,6 @@
-package example.bean;
+package example.component;
 
+import example.model.Secured;
 import org.springframework.stereotype.Component;
 
 @Component
