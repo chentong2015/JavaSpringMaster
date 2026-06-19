@@ -1,3 +1,15 @@
+Spring AOP编程
+1. @EnableAspectJAutoProxy 激活AspectJ方面编程
+2. @Aspect @Component      注入Aspect Bean
+3. @Pointcut               定义切入点以及执行的逻辑
+
+TODO. @EnableAspectJAutoProxy(proxyTargetClass = false, exposeProxy = false)
+本质上是往Spring IoC中注入了一个后置处理器, 生成代理对象并添加对应的Aspect切面
+AnnotationAwareAspectJAutoProxyCreator.class extends BeanPostProcessor
+- proxyTargetClass = false Jdk动态代理(实现接口)或Cglib代理(继承子类)
+- exposeProxy = false 默认不将Proxy暴露给ThreadLocal, 无法通过AopContext.currentProxy()获取
+- exposeProxy=true;   从线程变量中取出代理对象调用方法, 等效造成Aspect切面效果
+
 TODO: AOP如何解析切面 ?
 BeanFactoryAspectJAdvisorsBuilder.buildAspectJAdvisors()
 1. 从容器中获取所有的bean进行遍历，从bean的名称中获取class对象，然后判断是否标注@Aspect注解，如果是则为切面类型
@@ -9,13 +21,6 @@ Aspect切面本身是一个bean，会添加到Spring容器中(由Spring容器管
 1. 从Spring容器中找出所有切面bean，全部遍历
 2. 遍历每一个切面bean的所有方法，是否有配的切匹面方法
 3. 如果有则将切面方法(代理逻辑)保存到Proxy代理类型，之后执行
-
-@Component(value = "aspectClass")
-@Aspect
-public class AspectClass() {
-    @PointCut()
-    @AfterReturning()
-}
 
 TODO. 定义Aspect Bean执行优先级
 @Order(value = 10)
