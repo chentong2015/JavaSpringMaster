@@ -6,10 +6,9 @@ import org.springframework.stereotype.Component;
 
 @Aspect
 @Component
-public class ServiceClassFullAspect {
+public class PointCutFullAspect {
 
-    // 切入点：调用指定类型中的所有方法
-    @Pointcut("execution(* example.component.ServiceClass.*(..))")
+    @Pointcut("execution(* example.component.PointCutClass.*(..))")
     private void pointCut() {
     }
 
@@ -23,6 +22,12 @@ public class ServiceClassFullAspect {
         System.out.println(methodName);
     }
 
+    // 异常通知在catch中执行
+    @AfterThrowing(value = "pointCut()")
+    public void methodAfterThrowing() {
+        System.out.println("methodAfterThrowing");
+    }
+
     // TODO. afterReturning在方法最后触发, 不一定能执行到
     // AfterReturningAdviceInterceptor.invoke方法
     // public Object invoke(MethodInvocation mi) throws Throwable {
@@ -33,12 +38,6 @@ public class ServiceClassFullAspect {
     @AfterReturning(value = "pointCut()", returning = "result")
     public void methodReturning(JoinPoint joinPoint, Object result) {
         System.out.println("methodReturning");
-    }
-
-    // 异常通知在catch中执行
-    @AfterThrowing(value = "pointCut()")
-    public void methodAfterThrowing() {
-        System.out.println("methodAfterThrowing");
     }
 
     // TODO: 后置通知的方法始终会被执行: AspectJAfterAdvice.invoke方法
