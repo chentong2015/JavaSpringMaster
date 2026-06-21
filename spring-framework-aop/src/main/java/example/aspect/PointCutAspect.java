@@ -21,7 +21,7 @@ public class PointCutAspect {
         System.out.println("after pointcut printing");
     }
 
-    // TODO. @Pointcut切入点组后表达
+    // TODO. @Pointcut切入点 组合表达
     @Pointcut("@target(org.springframework.stereotype.Repository)")
     public void repositoryMethods() {}
 
