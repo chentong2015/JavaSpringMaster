@@ -36,4 +36,10 @@ public class SpringBeansConfiguration {
     public MyBean myBean2() {
         return new MyBean();
     }
+
+    // TODO. 自动调用对象的生命周期函数(对象创建后初始化，对象销毁)
+    @Bean(name = "full-bean", initMethod = "init", destroyMethod = "stop")
+    public MyBean myBeanFull() {
+        return new MyBean();
+    }
 }

@@ -16,5 +16,11 @@ public class SpringBeansImportApplication {
 
         MyBean newBean = (MyBean) appContext.getBean("new-bean");
         myBean.print("new-bean");
+
+        MyBean fullBean = (MyBean) appContext.getBean("full-bean");
+        myBean.print("full-bean");
+
+        // 关闭Spring IOC容器并销毁注入bean对象
+        appContext.close();
     }
 }
